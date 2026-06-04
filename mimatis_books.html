@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIMATIS — Books & Remembrance</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green:#1D9E75;--green-dark:#085041;--green-light:#E1F5EE;
+  --blush:#F2B8C6;--blush-light:#FDF0F4;
+  --off:#FAFAF8;--white:#fff;--cream:#FBF7F2;
+  --ink:#1E1E1E;--mid:#3D3D3D;--soft:#767676;--border:#E8E4DF;
+}
+body{font-family:'DM Sans',sans-serif;font-weight:300;font-size:18px;line-height:1.95;background:var(--off);color:var(--ink);-webkit-font-smoothing:antialiased}
+
+/* NAV */
+.nav{height:64px;background:#fff;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 3rem;position:sticky;top:0;z-index:100}
+.nav-logo{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:400;letter-spacing:.28em;text-transform:uppercase;color:var(--green-dark);text-decoration:none}
+.nav-back{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--soft);text-decoration:none;display:flex;align-items:center;gap:.4rem}
+.nav-back::before{content:'←';font-size:.9rem}
+.nav-back:hover{color:var(--green)}
+
+/* PAGE */
+.page-inner{max-width:1100px;margin:0 auto;padding:4rem 3rem 6rem}
+
+/* HEADER */
+.page-eye{font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:.75rem;font-weight:400}
+.page-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:300;color:var(--ink);line-height:1.1;margin-bottom:1.25rem}
+.page-title em{font-style:italic;color:var(--green-dark)}
+.page-intro{font-size:1rem;color:var(--mid);line-height:1.9;max-width:660px;margin-bottom:3.5rem;font-weight:300;padding-bottom:2.5rem;border-bottom:0.5px solid var(--border)}
+
+/* SECTION LABELS */
+.section-label{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--soft);margin-bottom:1.5rem;display:flex;align-items:center;gap:1rem}
+.section-label::after{content:'';flex:1;height:0.5px;background:var(--border)}
+
+/* RESOURCE CARDS GRID */
+.res-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);margin-bottom:3.5rem}
+.res-card{background:var(--white);padding:2rem;transition:background .15s}
+.res-card:hover{background:var(--cream)}
+.res-type{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:.65rem;font-weight:400}
+.res-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:400;color:var(--ink);line-height:1.3;margin-bottom:.35rem}
+.res-author{font-size:.78rem;color:var(--soft);margin-bottom:.85rem;font-style:italic}
+.res-desc{font-size:.88rem;color:var(--mid);line-height:1.85;margin-bottom:1.1rem;font-weight:300}
+.res-link{font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green);text-decoration:none;display:inline-flex;align-items:center;gap:.3rem;transition:color .15s}
+.res-link:hover{color:var(--green-dark)}
+.res-link::after{content:'→'}
+
+/* MEMORIAL ART CARD */
+.art-card{background:var(--white);border:0.5px solid var(--border);padding:2.5rem;margin-bottom:3.5rem;display:grid;grid-template-columns:1fr auto;gap:2.5rem;align-items:start}
+.art-initial{width:72px;height:72px;border-radius:50%;background:var(--green-light);border:2px solid var(--green);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:2rem;font-style:italic;color:var(--green);flex-shrink:0}
+.art-type{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:.65rem}
+.art-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:400;color:var(--ink);margin-bottom:.4rem}
+.art-subtitle{font-size:.82rem;color:var(--soft);font-style:italic;margin-bottom:.9rem}
+.art-desc{font-size:.88rem;color:var(--mid);line-height:1.85;margin-bottom:1.1rem;font-weight:300}
+.art-link{font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green);text-decoration:none;display:inline-flex;align-items:center;gap:.3rem;transition:color .15s}
+.art-link:hover{color:var(--green-dark)}
+.art-link::after{content:'→'}
+
+/* CASKET CARD — Hart van Hout */
+.casket-card{background:var(--green-light);border:0.5px solid rgba(29,158,117,.2);padding:2.5rem;margin-bottom:3.5rem}
+.casket-card-inner{max-width:680px}
+.casket-type{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:.65rem}
+.casket-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:400;color:var(--green-dark);margin-bottom:.3rem}
+.casket-sub{font-size:.8rem;color:var(--green);margin-bottom:1rem;font-style:italic}
+.casket-desc{font-size:.9rem;color:var(--green-dark);line-height:1.9;margin-bottom:.85rem;font-weight:300}
+.casket-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.1rem}
+.casket-tag{font-size:.65rem;letter-spacing:.08em;background:rgba(8,80,65,.1);color:var(--green-dark);padding:3px 10px;border-radius:20px}
+.casket-link{font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green-dark);text-decoration:none;display:inline-flex;align-items:center;gap:.3rem;border-bottom:1px solid rgba(8,80,65,.25);padding-bottom:2px;transition:border-color .15s}
+.casket-link:hover{border-color:var(--green-dark)}
+.casket-link::after{content:'→'}
+
+/* EDIT GUIDE */
+
+
+
+
+
+@media(max-width:760px){
+  .page-inner{padding:2.5rem 1.25rem 4rem}
+  .res-grid{grid-template-columns:1fr}
+  .art-card{grid-template-columns:1fr}
+  .nav{padding:0 1.25rem}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav-logo" href="https://www.mimatis.org">MIMATIS</a>
+  <a class="nav-back" href="https://www.mimatis.org">Back to MIMATIS</a>
+</nav>
+
+<div class="page-inner">
+
+  <span class="page-eye">Recommended reading &middot; Memorial art &middot; Remembrance</span>
+  <h1 class="page-title">Books &amp; <em>Remembrance</em></h1>
+  <p class="page-intro">When a baby has died, it can be helpful and comforting to read books written by others who have walked the same path. Literature on loss offers recognition, understanding, and the quiet reassurance that you are not alone. Below you will find a careful selection of books, memorial art, and remembrance makers — including resources for children and partners.</p>
+
+  <!-- ── BOOKS ── -->
+  <div class="section-label">Books for bereaved parents</div>
+
+  <div class="res-grid">
+
+    <div class="res-card">
+      <span class="res-type">Book &middot; Memoir</span>
+      <div class="res-title">Still Here: A Memoir of Love, Loss, and Triumph After Stillbirth</div>
+      <div class="res-author">Alishia Anderson</div>
+      <p class="res-desc">A personal account of navigating the loss of a first-born son at 28 weeks. Written to remove the shame and isolation that too often surrounds baby loss — and to give voice to the often-forgotten perspective of a grieving father.</p>
+      <a class="res-link" href="https://www.amazon.com/Still-Here-Memoir-Triumph-Stillbirth/dp/1732582505?&linkCode=sl1&tag=up010-20&linkId=15276ce384d15fb44e27d47ce53e871e&language=en_US" target="_blank" rel="noopener">Buy on Amazon</a>
+    </div>
+
+    <div class="res-card">
+      <span class="res-type">Book &middot; Children&rsquo;s</span>
+      <div class="res-title">Happy Tears &amp; Rainbow Babies</div>
+      <div class="res-author">Natasha Carlow</div>
+      <p class="res-desc">A beautifully illustrated children&rsquo;s book for ages 4&ndash;8 that gently helps young children understand pregnancy loss and the arrival of a rainbow baby. Written by a bereaved mother with warmth and honesty.</p>
+      <a class="res-link" href="https://www.amazon.com/Happy-Tears-Rainbow-Babies-Carlow/dp/B09X3KBKQC" target="_blank" rel="noopener">Buy on Amazon</a>
+    </div>
+
+    <!-- ADD NEW BOOKS HERE — copy one of the res-card blocks above -->
+
+  </div>
+
+  <!-- ── HART VAN HOUT — CASKETS ── -->
+  <div class="section-label">Handmade caskets &amp; urns</div>
+
+  <div class="casket-card">
+    <div class="casket-card-inner">
+      <span class="casket-type">Handmade &middot; Netherlands &middot; Ships worldwide</span>
+      <div class="casket-title">Hart van Hout &mdash; Heart of Wood</div>
+      <div class="casket-sub">Arnaldo Lopez &mdash; hartvanhout.nl</div>
+      <p class="casket-desc">In 2007, Arnaldo Lopez lost his son Silvan in the 29th week of pregnancy. Unable to find something that felt right, he built a casket himself from a solid tree trunk — a small heart of wood. He soon realised he could offer the same comfort to other parents.</p>
+      <p class="casket-desc">Since 2010, Arnaldo has been handmaking heart-shaped wooden caskets and urns for families after baby loss. Made from layered ecological poplar wood, available in sizes from 15 to 60 cm — for miscarriage, premature babies, and full-term babies. Suitable for both burial and cremation.</p>
+      <div class="casket-tags">
+        <span class="casket-tag">Based in Netherlands</span>
+        <span class="casket-tag">Ships worldwide</span>
+        <span class="casket-tag">15&ndash;60 cm sizes</span>
+        <span class="casket-tag">Burial &amp; cremation</span>
+        <span class="casket-tag">Special requests welcome</span>
+      </div>
+      <a class="casket-link" href="https://hartvanhout.nl/" target="_blank" rel="noopener">Visit hartvanhout.nl</a>
+    </div>
+  </div>
+
+  <!-- ── MEMORIAL ART ── -->
+  <div class="section-label">Memorial art</div>
+
+  <div class="art-card">
+    <div>
+      <span class="art-type">Memorial art &middot; Personalised</span>
+      <div class="art-title">Viktorija Liau</div>
+      <div class="art-subtitle">Handcrafted memorial art for babies and children</div>
+      <p class="art-desc">Viktorija creates delicate, personalised memorial pieces for families after baby loss — including handprint and footprint art, memorial portraits, and keepsake illustrations. Each piece is made with quiet care and deep respect for the baby and family it honours.</p>
+      <a class="art-link" href="https://viktorijaliau.net" target="_blank" rel="noopener">Visit viktorijaliau.net</a>
+    </div>
+    <div class="art-initial">V</div>
+  </div>
+
+  <!-- ── ADD MORE SECTIONS HERE ──
+  To add a new book: copy a res-card block inside the res-grid.
+  To add a new service or product: copy the casket-card or art-card block.
+  To add a new section: add a new section-label div and the cards beneath it.
+  -->
+</div>
+
+</body>
+</html>
