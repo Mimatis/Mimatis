@@ -3370,6 +3370,11 @@ var gardenLoaded=false;
 // ── SUPABASE PERMANENT GARDEN ──
 const SUPA_URL='https://llqimrbuioewaoqdqlnp.supabase.co';
 const SUPA_KEY='sb_publishable_eCLsVcOx9NV-YUCaxAh9pw_ks6eSnwW';
+// Decide which table to use based on where the site is running
+const PRODUCTION_HOSTS = ['mimatis.org', 'www.mimatis.org', 'mimatis.pages.dev'];
+const FLOWERS_TABLE = PRODUCTION_HOSTS.includes(location.hostname)
+  ? 'flowers'           // the real memorial garden
+  : 'flowers_staging';  // any preview / staging URL
 let _sb=null;
 function getSB(){
   if(!_sb) _sb=supabase.createClient(SUPA_URL,SUPA_KEY);
@@ -3389,7 +3394,7 @@ async function initGarden(){
   var canvas=document.getElementById('gc');
   if(!canvas)return;
   try{
-    var r=await getSB().from('flowers').select('*').order('created_at',{ascending:true});
+    var r=await getSB().from(FLOWERS_TABLE).select('*').order('created_at',{ascending:true});
     var rows=r.data||[];
     fc=rows.length;
     rows.forEach(function(row,i){
@@ -3426,7 +3431,7 @@ async function plantFlower(){
   var btn=document.getElementById('plant-btn');
   if(btn){btn.textContent='Planting...';btn.disabled=true;}
   try{
-    await getSB().from('flowers').insert([{
+    await getSB().from(FLOWERS_TABLE).insert([{
       baby_name:name,
       flower_emoji:emoji,
       year:year||null
