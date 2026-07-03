@@ -708,6 +708,10 @@ footer{background:var(--green-dark);padding:3rem 3rem}
 .jentry:hover{opacity:.72}
 .jentry-thumb{flex:0 0 188px;width:188px;height:120px;border-radius:6px;overflow:hidden;background:var(--green-light);color:var(--green);display:flex;align-items:center;justify-content:center}
 .jentry-thumb svg{width:100%;height:100%;display:block}
+.jentry-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.jentry-thumb-video{position:relative}
+.jentry-thumb-video::after{content:"";position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);width:38px;height:38px;border-radius:50%;background:rgba(0,0,0,.5)}
+.jentry-thumb-video::before{content:"";position:absolute;z-index:2;left:50%;top:50%;transform:translate(-44%,-50%);border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent #fff}
 .jentry-text{flex:1;min-width:0}
 .jentry-pillar{font-family:'Montserrat',sans-serif;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:.5rem}
 .jentry-title{font-family:'Inter',sans-serif;font-size:1.18rem;font-weight:400;line-height:1.32;color:var(--ink);margin-bottom:.5rem}
@@ -2088,8 +2092,17 @@ p></div>
 
       <!-- ENTRY LIST -->
       <div class="jlist">
+        <article class="jentry" data-pillar="film" onclick="window.open('https://youtu.be/K3LmoFEKDIQ','_blank','noopener')">
+          <div class="jentry-thumb jentry-thumb-video"><img src="https://img.youtube.com/vi/K3LmoFEKDIQ/mqdefault.jpg" alt="Sounds of Stillness — a short film about stillbirth and grief" loading="lazy"></div>
+          <div class="jentry-text">
+            <span class="jentry-pillar">Short Film</span>
+            <h3 class="jentry-title">Sounds of Stillness</h3>
+            <p class="jentry-excerpt">An experimental short documentary about stillbirth and silent grief — released on Mother’s Day, and filmed on Mother’s Day two years earlier.</p>
+            <span class="jentry-meta">Short film &middot; YouTube</span>
+          </div>
+        </article>
         <article class="jentry" data-pillar="history" onclick="window.open('https://mamoszurnalas.lt/viktorija-isgyvenau-vaiko-gimima-zinodama-kad-jis-jau-mires/','_blank','noopener')">
-          <div class="jentry-thumb"><svg viewBox="0 0 200 128" fill="none" aria-hidden="true"><rect x="88" y="56" width="24" height="46" rx="2" stroke="currentColor" stroke-width="2.2"/><path d="M100 50c7-6 7-13 0-22-7 9-7 16 0 22z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" fill="currentColor" fill-opacity=".12"/><line x1="100" y1="56" x2="100" y2="50" stroke="currentColor" stroke-width="1.6"/><path d="M74 102h52" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></div>
+          <div class="jentry-thumb"><img src="/assets/journal-mamos-zurnalas.jpg" alt="Victoria with her baby — Mamos žurnalas feature" loading="lazy"></div>
           <div class="jentry-text">
             <span class="jentry-pillar">In the Press</span>
             <h3 class="jentry-title">&ldquo;I lived through my child&rsquo;s birth, knowing they had already died&rdquo;</h3>
@@ -2888,6 +2901,7 @@ p></div>
       <button class="foot-link" onclick="showPage('legal')">Legal Notice</button>
       <a href="https://www.instagram.com/mimatis.community/" target="_blank" class="foot-link">Instagram</a>
       <a href="https://www.linkedin.com/company/105863107/" target="_blank" class="foot-link">LinkedIn</a>
+      <a href="https://www.facebook.com/profile.php?id=61591476064107" target="_blank" rel="noopener" class="foot-link">Facebook</a>
     </div>
     <p class="foot-copy">&copy; 2024 MIMATIS Community &middot; www.mimatis.org &middot; All resources are independent organisations. MIMATIS does not provide medical advice.</p>
   </div>
