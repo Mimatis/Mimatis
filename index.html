@@ -1139,6 +1139,64 @@ footer{background:var(--green-dark);padding:3rem 3rem}
   .who-compact-card{border-right:none;border-bottom:0.5px solid var(--border)}
   .who-compact-card:last-child{border-bottom:none}
 }
+
+/* ---- Take Action (scoped) ---- */
+#pg-action{padding-top:68px}
+#pg-action .act-wrap{max-width:1080px;margin:0 auto;padding:0 3rem}
+#pg-action .act-narrow{max-width:680px;margin:0 auto;padding:0 3rem;text-align:center}
+#pg-action section{padding:96px 0}
+#pg-action .act-hero{padding:72px 0 96px}
+#pg-action .act-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+#pg-action .act-eye{font-family:'Montserrat',sans-serif;font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:1.25rem}
+#pg-action .act-h1{font-family:'Inter',sans-serif;font-size:48px;font-weight:500;line-height:1.08;letter-spacing:-.01em;color:var(--ink);margin-bottom:1.5rem}
+#pg-action .act-lead{font-size:1.05rem;color:var(--mid);line-height:1.75;max-width:30rem;margin-bottom:2rem}
+#pg-action .act-ctas{display:flex;align-items:center;gap:1.75rem;flex-wrap:wrap}
+#pg-action .act-btn{display:inline-block;font-family:'Montserrat',sans-serif;font-size:.85rem;font-weight:500;letter-spacing:.03em;background:var(--green);color:#fff;border:0;border-radius:3px;padding:1rem 2.2rem;cursor:pointer;text-decoration:none;transition:background .2s}
+#pg-action .act-btn:hover{background:var(--green-dark);color:#fff}
+#pg-action .act-link{font-size:.9rem;color:var(--green-dark);text-decoration:none;font-weight:500}
+#pg-action .act-link:hover{text-decoration:underline}
+#pg-action .act-hero-art{display:flex;justify-content:center}
+#pg-action .act-cluster{width:100%;max-width:360px;height:auto}
+#pg-action .act-stats{background:var(--green-light);padding:72px 0}
+#pg-action .act-stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem;text-align:center}
+#pg-action .act-num{display:block;font-family:'Inter',sans-serif;font-size:2.4rem;font-weight:500;color:var(--green);line-height:1.15;margin-bottom:.6rem}
+#pg-action .act-stat p{font-size:.95rem;color:var(--mid);line-height:1.6;max-width:16rem;margin:0 auto}
+#pg-action .act-src{font-size:12px;color:var(--soft);text-align:center;margin-top:2.5rem}
+#pg-action .act-h2{font-family:'Inter',sans-serif;font-size:2rem;font-weight:500;color:var(--ink);line-height:1.2;margin-bottom:.75rem}
+#pg-action .act-paths .act-h2,#pg-action .act-intro{text-align:center}
+#pg-action .act-intro{font-size:1rem;color:var(--mid);margin-bottom:3rem}
+#pg-action .act-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.75rem}
+#pg-action .act-card{border:1px solid var(--border);border-top:4px solid var(--green);padding:2.25rem 2rem;background:#fff}
+#pg-action .act-card-a{border-top-color:var(--blush)}
+#pg-action .act-bloom{width:40px;height:40px;margin-bottom:1.1rem;display:block}
+#pg-action .act-card h3{font-family:'Inter',sans-serif;font-size:1.3rem;font-weight:500;color:var(--ink);margin-bottom:.7rem}
+#pg-action .act-card p{font-size:.95rem;color:var(--mid);line-height:1.75}
+#pg-action .act-care p{font-size:1rem;color:var(--mid);line-height:1.8;margin-bottom:1rem}
+#pg-action .act-partners-lbl{display:block;font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--soft);margin:2.5rem 0 1.25rem}
+#pg-action .act-partners{display:flex;justify-content:center;align-items:center;gap:2.5rem;flex-wrap:wrap}
+#pg-action .act-partners img{max-height:70px;max-width:170px;width:auto;height:auto;display:block}
+#pg-action .act-partner{position:relative;overflow:hidden;background:#F6EAFB}
+#pg-action .act-corner{position:absolute;right:-90px;bottom:-90px;width:300px;height:300px;pointer-events:none}
+#pg-action .act-partner-inner{position:relative}
+#pg-action .act-partner p{font-size:1.02rem;color:var(--mid);line-height:1.8;margin-bottom:2rem}
+#pg-action .act-small{display:block;font-size:.82rem;color:var(--soft);margin-top:1rem}
+#pg-action .act-reg{font-size:.72rem;color:var(--soft);text-align:center;padding:1.5rem 1rem;margin:0}
+@keyframes actSpin{to{transform:rotate(360deg)}}
+#pg-action .act-spin{animation:actSpin 55s linear infinite}
+#pg-action .act-spin2{animation:actSpin 45s linear infinite reverse}
+@media (prefers-reduced-motion:reduce){#pg-action .act-spin,#pg-action .act-spin2{animation:none}}
+@media(max-width:780px){
+  #pg-action section{padding:56px 0}
+  #pg-action .act-hero{padding:40px 0 56px}
+  #pg-action .act-wrap,#pg-action .act-narrow{padding:0 16px}
+  #pg-action .act-hero-grid{grid-template-columns:1fr;gap:2rem}
+  #pg-action .act-h1{font-size:32px}
+  #pg-action .act-cluster{max-width:260px}
+  #pg-action .act-stat-row,#pg-action .act-cards{grid-template-columns:1fr;gap:2rem}
+  #pg-action .act-num{font-size:2rem}
+  #pg-action .act-h2{font-size:1.6rem}
+  #pg-action .act-corner{width:200px;height:200px;right:-70px;bottom:-70px}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -1222,6 +1280,7 @@ footer{background:var(--green-dark);padding:3rem 3rem}
     <button onclick="showPage('story')" data-page="story">Who We Are</button>
     <button onclick="showPage('journal')" data-page="journal">Journal</button>
     <button onclick="showPage('collab')" data-page="collab">Collaborate</button>
+    <button onclick="showPage('action')" data-page="action">Take Action</button>
     <div class="nav-dd-wrap" id="nav-dd-support">
       
       <div class="nav-dd-menu" id="nav-dd-menu">
@@ -1250,6 +1309,7 @@ footer{background:var(--green-dark);padding:3rem 3rem}
   <button onclick="showPage('story');closeMob()">Who We Are</button>
   <button onclick="showPage('journal');closeMob()">Journal</button>
   <button onclick="showPage('collab');closeMob()">Collaborate</button>
+  <button onclick="showPage('action');closeMob()">Take Action</button>
     
   <button onclick="showPage('privacy');closeMob()">Privacy Policy</button>
   <button onclick="showPage('legal');closeMob()">Legal Notice</button>
@@ -2671,6 +2731,71 @@ p></div>
 
 
 
+<!-- ============ TAKE ACTION ============ -->
+<div id="pg-action" class="pg">
+  <section class="act-hero">
+    <div class="act-wrap act-hero-grid">
+      <div>
+        <span class="act-eye">Take action</span>
+        <h1 class="act-h1">Together, we can change what happens when a baby dies.</h1>
+        <p class="act-lead">Every family deserves care, understanding and hope. And every baby deserves the best chance to be born safely. MIMATIS brings both together.</p>
+        <div class="act-ctas">
+          <button class="act-btn" onclick="document.getElementById('action-partner').scrollIntoView({behavior:'smooth'})">Partner with us</button>
+          <a class="act-link" href="#story" onclick="showPage('story');return false;">Read our story &rarr;</a>
+        </div>
+      </div>
+      <div class="act-hero-art"><svg class="act-cluster" viewBox="0 0 360 360" aria-hidden="true"><path d="M150 250 C140 300 160 330 150 360" stroke="#00708A" stroke-opacity=".45" stroke-width="2" fill="none"/><path d="M250 205 C265 260 245 310 262 360" stroke="#00708A" stroke-opacity=".45" stroke-width="2" fill="none"/><g class="act-spin" style="transform-origin:150px 165px"><ellipse cx="150" cy="99.0" rx="38.4" ry="66.0" fill="#E2A9F1" fill-opacity="0.55" transform="rotate(0.0 150 165)"/><ellipse cx="150" cy="99.0" rx="38.4" ry="66.0" fill="#E2A9F1" fill-opacity="0.55" transform="rotate(51.4 150 165)"/><ellipse cx="150" cy="99.0" rx="38.4" ry="66.0" fill="#E2A9F1" fill-opacity="0.55" transform="rotate(102.9 150 165)"/><ellipse cx="150" cy="99.0" rx="38.4" ry="66.0" fill="#E2A9F1" fill-opacity="0.55" transform="rotate(154.3 150 165)"/><ellipse cx="150" cy="99.0" rx="38.4" ry="66.0" fill="#E2A9F1" fill-opacity="0.55" transform="rotate(205.7 150 165)"/><ellipse cx="150" cy="99.0" rx="38.4" ry="66.0" fill="#E2A9F1" fill-opacity="0.55" transform="rotate(257.1 150 165)"/><ellipse cx="150" cy="99.0" rx="38.4" ry="66.0" fill="#E2A9F1" fill-opacity="0.55" transform="rotate(308.6 150 165)"/><circle cx="150" cy="165" r="19.2" fill="#00708A" fill-opacity=".85"/></g><g class="act-spin2" style="transform-origin:250px 150px"><ellipse cx="250" cy="106.0" rx="25.6" ry="44.0" fill="#0097B2" fill-opacity="0.5" transform="rotate(15.0 250 150)"/><ellipse cx="250" cy="106.0" rx="25.6" ry="44.0" fill="#0097B2" fill-opacity="0.5" transform="rotate(75.0 250 150)"/><ellipse cx="250" cy="106.0" rx="25.6" ry="44.0" fill="#0097B2" fill-opacity="0.5" transform="rotate(135.0 250 150)"/><ellipse cx="250" cy="106.0" rx="25.6" ry="44.0" fill="#0097B2" fill-opacity="0.5" transform="rotate(195.0 250 150)"/><ellipse cx="250" cy="106.0" rx="25.6" ry="44.0" fill="#0097B2" fill-opacity="0.5" transform="rotate(255.0 250 150)"/><ellipse cx="250" cy="106.0" rx="25.6" ry="44.0" fill="#0097B2" fill-opacity="0.5" transform="rotate(315.0 250 150)"/><circle cx="250" cy="150" r="12.8" fill="#00708A" fill-opacity=".85"/></g><g><ellipse cx="95" cy="63.6" rx="15.4" ry="26.4" fill="#9FDCE8" fill-opacity="0.75" transform="rotate(10.0 95 90)"/><ellipse cx="95" cy="63.6" rx="15.4" ry="26.4" fill="#9FDCE8" fill-opacity="0.75" transform="rotate(82.0 95 90)"/><ellipse cx="95" cy="63.6" rx="15.4" ry="26.4" fill="#9FDCE8" fill-opacity="0.75" transform="rotate(154.0 95 90)"/><ellipse cx="95" cy="63.6" rx="15.4" ry="26.4" fill="#9FDCE8" fill-opacity="0.75" transform="rotate(226.0 95 90)"/><ellipse cx="95" cy="63.6" rx="15.4" ry="26.4" fill="#9FDCE8" fill-opacity="0.75" transform="rotate(298.0 95 90)"/><circle cx="95" cy="90" r="7.7" fill="#00708A" fill-opacity=".85"/></g><g><ellipse cx="285" cy="238.0" rx="12.8" ry="22.0" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(0.0 285 260)"/><ellipse cx="285" cy="238.0" rx="12.8" ry="22.0" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(45.0 285 260)"/><ellipse cx="285" cy="238.0" rx="12.8" ry="22.0" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(90.0 285 260)"/><ellipse cx="285" cy="238.0" rx="12.8" ry="22.0" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(135.0 285 260)"/><ellipse cx="285" cy="238.0" rx="12.8" ry="22.0" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(180.0 285 260)"/><ellipse cx="285" cy="238.0" rx="12.8" ry="22.0" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(225.0 285 260)"/><ellipse cx="285" cy="238.0" rx="12.8" ry="22.0" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(270.0 285 260)"/><ellipse cx="285" cy="238.0" rx="12.8" ry="22.0" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(315.0 285 260)"/><circle cx="285" cy="260" r="6.4" fill="#00708A" fill-opacity=".85"/></g></svg></div>
+    </div>
+  </section>
+
+  <section class="act-stats">
+    <div class="act-wrap">
+      <div class="act-stat-row">
+        <div class="act-stat"><span class="act-num">1.9 million</span><p>babies are stillborn every year worldwide</p></div>
+        <div class="act-stat"><span class="act-num">Every 16 seconds</span><p>a family somewhere loses a baby before birth</p></div>
+        <div class="act-stat"><span class="act-num">Many</span><p>stillbirths can be prevented with better care, awareness and research</p></div>
+      </div>
+      <p class="act-src">Sources: UN Inter-agency Group for Child Mortality Estimation (2023); UNICEF, &ldquo;A Neglected Tragedy&rdquo; (2020); WHO.</p>
+    </div>
+  </section>
+
+  <section class="act-paths">
+    <div class="act-wrap">
+      <h2 class="act-h2">Two ways to make a difference</h2>
+      <p class="act-intro">MIMATIS works on both sides of the same story.</p>
+      <div class="act-cards">
+        <div class="act-card act-card-a"><svg class="act-bloom" viewBox="0 0 40 40" aria-hidden="true"><g><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(0.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(60.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(120.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(180.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(240.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(300.0 20 20)"/><circle cx="20" cy="20" r="3.0" fill="#00708A" fill-opacity=".85"/></g></svg><h3>Care for bereaved parents</h3><p>Help us make sure no parent leaves hospital without information, support and someone who understands. Resources, guidance and community, free for every family, in every country we can reach.</p></div>
+        <div class="act-card act-card-b"><svg class="act-bloom" viewBox="0 0 40 40" aria-hidden="true"><g><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#0097B2" fill-opacity="0.7" transform="rotate(0.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#0097B2" fill-opacity="0.7" transform="rotate(60.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#0097B2" fill-opacity="0.7" transform="rotate(120.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#0097B2" fill-opacity="0.7" transform="rotate(180.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#0097B2" fill-opacity="0.7" transform="rotate(240.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#0097B2" fill-opacity="0.7" transform="rotate(300.0 20 20)"/><circle cx="20" cy="20" r="3.0" fill="#00708A" fill-opacity=".85"/></g></svg><h3>Prevent stillbirth</h3><p>Help us raise awareness of the warning signs and support research into why babies die. Some stillbirths are preventable, and every answer brings safer births closer.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="act-care">
+    <div class="act-narrow">
+      <h2 class="act-h2">Working together with care systems</h2>
+      <p>Real change happens where families receive care. MIMATIS wants to work alongside hospitals, healthcare professionals, researchers and public institutions to bring better bereavement care and stronger prevention into everyday practice.</p>
+      <p>We share what parents tell us, offer practical tools for staff, and support research that can save lives.</p>
+      <span class="act-partners-lbl">Our partners</span>
+      <div class="act-partners">
+        <a href="https://krizinionestumocentras.lt/" target="_blank" rel="noopener"><img src="/assets/partner-krizinio-nestumo-centras.png" alt="Krizinio N&#279;&scaron;tumo Centras" loading="lazy"></a>
+        <a href="https://stillbirthalliance.org" target="_blank" rel="noopener"><img src="/assets/partner-international-stillbirth-alliance.png" alt="International Stillbirth Alliance" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="act-partner" id="action-partner">
+    <svg class="act-corner" viewBox="0 0 300 300" aria-hidden="true"><g class="act-spin" style="transform-origin:170px 170px"><ellipse cx="170" cy="98.5" rx="41.6" ry="71.5" fill="#E2A9F1" fill-opacity="0.45" transform="rotate(0.0 170 170)"/><ellipse cx="170" cy="98.5" rx="41.6" ry="71.5" fill="#E2A9F1" fill-opacity="0.45" transform="rotate(45.0 170 170)"/><ellipse cx="170" cy="98.5" rx="41.6" ry="71.5" fill="#E2A9F1" fill-opacity="0.45" transform="rotate(90.0 170 170)"/><ellipse cx="170" cy="98.5" rx="41.6" ry="71.5" fill="#E2A9F1" fill-opacity="0.45" transform="rotate(135.0 170 170)"/><ellipse cx="170" cy="98.5" rx="41.6" ry="71.5" fill="#E2A9F1" fill-opacity="0.45" transform="rotate(180.0 170 170)"/><ellipse cx="170" cy="98.5" rx="41.6" ry="71.5" fill="#E2A9F1" fill-opacity="0.45" transform="rotate(225.0 170 170)"/><ellipse cx="170" cy="98.5" rx="41.6" ry="71.5" fill="#E2A9F1" fill-opacity="0.45" transform="rotate(270.0 170 170)"/><ellipse cx="170" cy="98.5" rx="41.6" ry="71.5" fill="#E2A9F1" fill-opacity="0.45" transform="rotate(315.0 170 170)"/><circle cx="170" cy="170" r="20.8" fill="#00708A" fill-opacity=".85"/></g><g><ellipse cx="80" cy="57.0" rx="19.2" ry="33.0" fill="#0097B2" fill-opacity="0.4" transform="rotate(20.0 80 90)"/><ellipse cx="80" cy="57.0" rx="19.2" ry="33.0" fill="#0097B2" fill-opacity="0.4" transform="rotate(80.0 80 90)"/><ellipse cx="80" cy="57.0" rx="19.2" ry="33.0" fill="#0097B2" fill-opacity="0.4" transform="rotate(140.0 80 90)"/><ellipse cx="80" cy="57.0" rx="19.2" ry="33.0" fill="#0097B2" fill-opacity="0.4" transform="rotate(200.0 80 90)"/><ellipse cx="80" cy="57.0" rx="19.2" ry="33.0" fill="#0097B2" fill-opacity="0.4" transform="rotate(260.0 80 90)"/><ellipse cx="80" cy="57.0" rx="19.2" ry="33.0" fill="#0097B2" fill-opacity="0.4" transform="rotate(320.0 80 90)"/><circle cx="80" cy="90" r="9.6" fill="#00708A" fill-opacity=".85"/></g></svg>
+    <div class="act-narrow act-partner-inner">
+      <h2 class="act-h2">Partner with us</h2>
+      <p>We are looking for companies and organisations who want to help bring projects to life, through creative initiatives, events or shared missions. Whether you have a clear idea or simply want to help, we would love to hear from you.</p>
+      <a class="act-btn" href="mailto:mimatis.community@gmail.com?subject=Partnership%20with%20MIMATIS">Reach out to us</a>
+      <span class="act-small">We&rsquo;d love to hear from you.</span>
+    </div>
+  </section>
+
+  <p class="act-reg">Asociaci&oacute;n MIMATIS &middot; Registered association no. 633.864 (Registro Nacional de Asociaciones, Spain)</p>
+</div>
+
 <div id="pg-privacy" class="pg">
   <div class="pg-inner-narrow">
     <span class="sec-eye">Legal &middot; GDPR Compliant</span>
@@ -2681,7 +2806,7 @@ p></div>
 
       <div>
         <h3 style="font-family:'Inter',sans-serif;font-size:1.1rem;font-weight:400;color:var(--ink);margin-bottom:.75rem">1. Who we are</h3>
-        <p style="font-size:.87rem;color:var(--mid);line-height:1.85">MIMATIS is a free, compassionate digital resource for parents who have experienced miscarriage, stillbirth, or neonatal loss. MIMATIS is in the process of registering as a non-profit association (<em>asociaci&oacute;n sin &aacute;nimo de lucro</em>) in Spain under the name <strong>Asociaci&oacute;n MIMATIS</strong>. Until registration is complete, the website is operated by its founder. Contact: <a href="mailto:mimatis.community@gmail.com" style="color:var(--green-dark);text-decoration:none">mimatis.community@gmail.com</a></p>
+        <p style="font-size:.87rem;color:var(--mid);line-height:1.85">MIMATIS is a free, compassionate digital resource for parents who have experienced miscarriage, stillbirth, or neonatal loss. MIMATIS is a registered non-profit association in Spain (Registro Nacional de Asociaciones, N&uacute;mero 633864). Contact: <a href="mailto:mimatis.community@gmail.com" style="color:var(--green-dark);text-decoration:none">mimatis.community@gmail.com</a></p>
       </div>
 
       <div>
@@ -2761,9 +2886,9 @@ p></div>
       <div>
         <h3 style="font-family:'Inter',sans-serif;font-size:1.1rem;font-weight:400;color:var(--ink);margin-bottom:.75rem">Organisation</h3>
         <div style="background:var(--off);border:1px solid var(--bdr);padding:1.75rem;display:flex;flex-direction:column;gap:.6rem">
-          <div style="display:grid;grid-template-columns:160px 1fr;gap:.5rem"><span style="font-size:.75rem;color:var(--soft);text-transform:uppercase;letter-spacing:.1em">Name</span><span style="font-size:.85rem;color:var(--ink)">Asociaci&oacute;n MIMATIS <span style="color:var(--soft);font-size:.78rem">(registration pending)</span></span></div>
+          <div style="display:grid;grid-template-columns:160px 1fr;gap:.5rem"><span style="font-size:.75rem;color:var(--soft);text-transform:uppercase;letter-spacing:.1em">Name</span><span style="font-size:.85rem;color:var(--ink)">Asociaci&oacute;n MIMATIS</span></div>
           <div style="display:grid;grid-template-columns:160px 1fr;gap:.5rem"><span style="font-size:.75rem;color:var(--soft);text-transform:uppercase;letter-spacing:.1em">Type</span><span style="font-size:.85rem;color:var(--ink)">Non-profit association (<em>asociaci&oacute;n sin &aacute;nimo de lucro</em>), Spain</span></div>
-          <div style="display:grid;grid-template-columns:160px 1fr;gap:.5rem"><span style="font-size:.75rem;color:var(--soft);text-transform:uppercase;letter-spacing:.1em">Registration No.</span><span style="font-size:.85rem;color:var(--ink);color:var(--soft);font-style:italic">Pending &mdash; will be updated upon registration</span></div>
+          <div style="display:grid;grid-template-columns:160px 1fr;gap:.5rem"><span style="font-size:.75rem;color:var(--soft);text-transform:uppercase;letter-spacing:.1em">Registration No.</span><span style="font-size:.85rem;color:var(--ink)">633864 &mdash; Registro Nacional de Asociaciones (Spain)</span></div>
           <div style="display:grid;grid-template-columns:160px 1fr;gap:.5rem"><span style="font-size:.75rem;color:var(--soft);text-transform:uppercase;letter-spacing:.1em">Country</span><span style="font-size:.85rem;color:var(--ink)">Spain</span></div>
           <div style="display:grid;grid-template-columns:160px 1fr;gap:.5rem"><span style="font-size:.75rem;color:var(--soft);text-transform:uppercase;letter-spacing:.1em">Contact</span><span style="font-size:.85rem;color:var(--ink)"><a href="mailto:mimatis.community@gmail.com" style="color:var(--green-dark);text-decoration:none">mimatis.community@gmail.com</a></span></div>
           <div style="display:grid;grid-template-columns:160px 1fr;gap:.5rem"><span style="font-size:.75rem;color:var(--soft);text-transform:uppercase;letter-spacing:.1em">Website</span><span style="font-size:.85rem;color:var(--ink)">www.mimatis.org</span></div>
@@ -2800,10 +2925,7 @@ p></div>
   <div class="pg-inner-narrow">
     <span class="sec-eye">Internal Document &middot; Draft</span>
     <h2 class="sec-title">Association <em>Statutes</em></h2>
-    <p style="font-size:.8rem;color:var(--soft);margin-bottom:.75rem;font-style:italic">Draft version &mdash; for review only. Must be reviewed by a Spanish lawyer before submission.</p>
-    <div style="background:#F8F0FC;border:1px solid rgba(201,169,155,.3);padding:1rem 1.5rem;margin-bottom:3rem;border-radius:2px">
-      <p style="font-size:.82rem;color:var(--mid);line-height:1.6"><strong style="color:var(--green-dark)">Important:</strong> These statutes are a working draft. Before filing, have them reviewed by a Spanish lawyer or <em>asesor&iacute;a</em> to ensure compliance with Ley Org&aacute;nica 1/2002 and any autonomous community requirements.</p>
-    </div>
+    <p style="font-size:.85rem;color:var(--mid);margin-bottom:3rem">MIMATIS is a registered non-profit association in Spain (Registro Nacional de Asociaciones, N&uacute;mero 633864).</p>
     <div style="display:flex;flex-direction:column;gap:2.25rem;font-size:.87rem;color:var(--mid);line-height:1.9">
 
       <div><h3 style="font-family:'Inter',sans-serif;font-size:1.05rem;font-weight:400;color:var(--ink);margin-bottom:.6rem">Article 1 &mdash; Name</h3><p>The association is constituted under the name <strong>Asociaci&oacute;n MIMATIS</strong>, hereinafter referred to as &ldquo;the Association&rdquo;.</p></div>
@@ -3152,6 +3274,7 @@ var PAGE_META={
   books:{t:'Books & Remembrance | MIMATIS',d:'Carefully chosen books and remembrance art for grieving parents after miscarriage, stillbirth or neonatal loss.'},
   story:{t:'Our Story | MIMATIS',d:'Why MIMATIS exists \u2014 Victoria\u2019s story of losing her daughter Maya at 34 weeks, and building a free platform so no parent faces loss without support.'},
   collab:{t:'Collaboration & Partnership | MIMATIS',d:'Work with MIMATIS \u2014 for charities, healthcare professionals, researchers and funders who want to close the gap in care after baby loss.'},
+  action:{t:'Take Action \u2014 MIMATIS',d:'Partner with MIMATIS to support parents after the loss of a baby and to help prevent stillbirth through awareness and research.'},
   journal:{t:'Journal \u2014 Grief, Memory & Resilience | MIMATIS',d:'Stories about the beloved babies who were lost \u2014 and about grief, memory, history, research, art and nature after loss.'},
   privacy:{t:'Privacy Policy | MIMATIS',d:'How MIMATIS handles your data \u2014 GDPR-compliant privacy policy.'},
   legal:{t:'Legal Notice | MIMATIS',d:'Legal information about MIMATIS.'},
