@@ -1197,6 +1197,16 @@ footer{background:var(--green-dark);padding:3rem 3rem}
   #pg-action .act-h2{font-size:1.6rem}
   #pg-action .act-corner{width:200px;height:200px;right:-70px;bottom:-70px}
 }
+
+/* ── Background images: preview on staging (Oct 2026). Remove this block to undo. ── */
+#pg-home .hero-section{background:linear-gradient(rgba(255,255,255,.38),rgba(255,255,255,.38)),url('assets/bg-butterflies.jpg') center/cover no-repeat}
+#pg-home .hero-section::before,#pg-home .hero-section::after{display:none}
+#pg-home .home-findhelp{background:linear-gradient(rgba(255,255,255,.55),rgba(255,255,255,.55)),url('assets/bg-haze.jpg') center/cover no-repeat}
+.newsletter-section{background:linear-gradient(rgba(255,255,255,.6),rgba(255,255,255,.6)),url('assets/bg-flowers.jpg') center/cover no-repeat}
+.newsletter-section .nl-privacy,.newsletter-section .nl-privacy a{color:var(--mid)}
+#pg-home .home-findhelp .home-findhelp-left span:first-child{color:var(--green-dark)}
+@media(max-width:780px){#pg-home .hero-section{background-position:30% center}}
+/* ── end background preview ── */
 </style>
 <script type="application/ld+json">
 {
