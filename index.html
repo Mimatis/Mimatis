@@ -1207,6 +1207,47 @@ footer{background:var(--green-dark);padding:3rem 3rem}
 #pg-home .home-findhelp .home-findhelp-left span:first-child{color:var(--green-dark)}
 @media(max-width:780px){#pg-home .hero-section{background-position:30% center}}
 /* ── end background preview ── */
+
+/* ── Journal: news layout (Oct 2026) ── */
+.jn-wrap{max-width:1160px;margin:0 auto;padding:3rem 3rem 4rem}
+.jn-head{display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;flex-wrap:wrap;padding-bottom:1.5rem;margin-bottom:2.25rem;border-bottom:1px solid var(--border)}
+.jn-eye{font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:.6rem}
+.jn-h1{font-family:'Inter',sans-serif;font-size:clamp(1.7rem,3vw,2.3rem);font-weight:500;line-height:1.15;color:var(--ink)}
+.jn-tabs{display:flex;gap:.4rem;flex-wrap:wrap}
+.jn-tabs .jtab{font-size:.66rem;letter-spacing:.08em;padding:.45rem .9rem;border:1px solid var(--border);border-radius:3px;color:var(--mid);background:#fff}
+.jn-tabs .jtab.active,.jn-tabs .jtab:hover{background:var(--green-dark);border-color:var(--green-dark);color:#fff}
+.jn-lead,.jn-card{cursor:pointer;background:#fff}
+.jn-lead:focus-visible,.jn-card:focus-visible{outline:2px solid var(--green);outline-offset:4px}
+.jn-lead{display:grid;grid-template-columns:1.25fr 1fr;gap:2.5rem;align-items:center;padding-bottom:2.75rem;margin-bottom:2.75rem;border-bottom:1px solid var(--border)}
+.jn-img{position:relative;overflow:hidden;border-radius:4px;background:var(--green-light);color:var(--green);aspect-ratio:16/10;display:flex;align-items:center;justify-content:center}
+.jn-lead .jn-img{aspect-ratio:4/3}
+.jn-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.jn-img svg{width:70%;height:auto;display:block}
+.jn-lead:hover .jn-img img,.jn-card:hover .jn-img img{transform:scale(1.03)}
+.jn-video::after{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:48px;height:48px;border-radius:50%;background:rgba(0,0,0,.5)}
+.jn-video::before{content:"";position:absolute;z-index:2;left:50%;top:50%;transform:translate(-40%,-50%);border-style:solid;border-width:9px 0 9px 15px;border-color:transparent transparent transparent #fff}
+.jn-cat{display:block;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin-bottom:.6rem}
+.jn-title{font-family:'Inter',sans-serif;font-weight:500;color:var(--ink);line-height:1.28;font-size:1.15rem;margin-bottom:.6rem}
+.jn-title em{font-style:italic;color:var(--green-dark)}
+.jn-lead .jn-title{font-size:clamp(1.6rem,2.6vw,2.2rem);line-height:1.15;margin-bottom:1rem}
+.jn-exc{font-size:.9rem;color:var(--mid);line-height:1.7;margin-bottom:.8rem}
+.jn-lead .jn-exc{font-size:1.02rem;line-height:1.75;margin-bottom:1rem}
+.jn-meta{display:block;font-size:.74rem;color:var(--soft);margin-bottom:.7rem}
+.jn-more{font-size:.8rem;font-weight:500;color:var(--green-dark)}
+.jn-lead:hover .jn-more,.jn-card:hover .jn-more{text-decoration:underline}
+.jn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem 2rem}
+.jn-card .jn-body{padding-top:1.1rem}
+.jn-card .jn-exc{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+#journal-landing .jshare{max-width:640px;margin:4rem auto 0;padding-top:3rem;border-top:1px solid var(--border)}
+@media(max-width:960px){.jn-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.jn-wrap{padding:2rem 16px 3rem}.jn-lead{grid-template-columns:1fr;gap:1.25rem}.jn-grid{grid-template-columns:1fr;gap:2.25rem}.jn-head{margin-bottom:1.75rem}}
+@media (prefers-reduced-motion:reduce){.jn-img img{transition:none}}
+.article-footer{max-width:680px;margin:0 auto;padding:1rem 3rem 4rem;text-align:center}
+.article-footer .footer-rule{height:1px;background:var(--border);margin-bottom:1.5rem}
+.article-footer .footer-back{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--green-dark);text-decoration:none}
+.article-footer .footer-back:hover{text-decoration:underline}
+@media(max-width:700px){.article-footer{padding:1rem 16px 3rem}}
+/* ── end Journal news layout ── */
 </style>
 <script type="application/ld+json">
 {
@@ -2102,81 +2143,106 @@ p></div>
 
   <!-- JOURNAL LANDING -->
   <div class="gs-sub-view active" id="journal-landing">
-    <div class="journal-inner" style="padding:3rem">
-      <!-- INTRO -->
-      <div class="journal-intro">
-        <p class="journal-lead">Sharing stories about the beloved babies who were lost due to stillbirth, late miscarriage and neonatal death helps to open the door for greater connection, knowledge, awareness, and education.</p>
-      </div>
-
-      <!-- ENTRY LIST -->
-      <div class="jlist">
-        <article class="jentry" data-pillar="borders" onclick="openJournalArticle('october15')">
-          <div class="jentry-thumb"><img src="/assets/journal-15-october-thumb.jpg" alt="15 October, Pregnancy and Infant Loss Remembrance Day poster" loading="lazy"></div>
-          <div class="jentry-text">
-            <span class="jentry-pillar">Across Borders, Across Grief</span>
-            <h3 class="jentry-title">15 October: how Europe <em>remembers</em></h3>
-            <p class="jentry-excerpt">From a conference on perinatal grief at Hospital de Sant Pau in Barcelona to the Wave of Light at 7&nbsp;pm: how the remembrance day was marked across Europe in 2026.</p>
-            <span class="jentry-meta">16 October 2026</span>
+    <div class="jn-wrap">
+      <header class="jn-head">
+        <div><span class="jn-eye">MIMATIS Journal</span><h1 class="jn-h1">Stories, research and remembrance</h1></div>
+        <div class="jn-tabs" role="toolbar" aria-label="Filter articles"><button class="jtab active" onclick="filterJournal('all',this)">All</button>
+<button class="jtab" onclick="filterJournal('art',this)">Art &amp; memory</button>
+<button class="jtab" onclick="filterJournal('borders',this)">Across borders</button>
+<button class="jtab" onclick="filterJournal('history',this)">Stories &amp; history</button>
+<button class="jtab" onclick="filterJournal('nature',this)">Nature</button>
+<button class="jtab" onclick="filterJournal('research',this)">Research</button>
+<button class="jtab" onclick="filterJournal('film',this)">Film</button></div>
+      </header>
+      <article class="jn-lead" data-pillar="art" onclick="openJournalArticle('seedletters')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+          <div class="jn-img"><img src="/assets/journal-seed-letter-envelope.jpg" alt="A green envelope holding a MIMATIS seed letter, resting on leaves" loading="lazy"></div>
+          <div class="jn-body">
+            <span class="jn-cat">Art &amp; Memory</span>
+            <h3 class="jn-title">Seed letters: words that <em>grow into flowers</em></h3>
+            <p class="jn-exc">Write to your baby on paper filled with poppy seeds, plant it, and watch the words become flowers. A ritual for the first weeks, for the years that follow, and for brothers and sisters.</p>
+            <span class="jn-meta">16 Oct 2026 &middot; 4 min read</span>
+            <span class="jn-more">Read the article &rarr;</span>
           </div>
         </article>
-        <article class="jentry" data-pillar="film" onclick="window.open('https://youtu.be/K3LmoFEKDIQ','_blank','noopener')">
-          <div class="jentry-thumb jentry-thumb-video"><img src="https://img.youtube.com/vi/K3LmoFEKDIQ/mqdefault.jpg" alt="Sounds of Stillness — a short film about stillbirth and grief" loading="lazy"></div>
-          <div class="jentry-text">
-            <span class="jentry-pillar">Short Film</span>
-            <h3 class="jentry-title">Sounds of Stillness</h3>
-            <p class="jentry-excerpt">An experimental short documentary about stillbirth and silent grief — released on Mother’s Day, and filmed on Mother’s Day two years earlier.</p>
-            <span class="jentry-meta">Short film &middot; YouTube</span>
+      <div class="jn-grid">
+        <article class="jn-card" data-pillar="borders" onclick="openJournalArticle('october15')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+          <div class="jn-img"><img src="/assets/journal-15-october-thumb.jpg" alt="15 October, Pregnancy and Infant Loss Remembrance Day poster" loading="lazy"></div>
+          <div class="jn-body">
+            <span class="jn-cat">Across Borders, Across Grief</span>
+            <h3 class="jn-title">15 October: how Europe <em>remembers</em></h3>
+            <p class="jn-exc">From a conference on perinatal grief at Hospital de Sant Pau in Barcelona to the Wave of Light at 7&nbsp;pm: how the remembrance day was marked across Europe in 2026.</p>
+            <span class="jn-meta">16 Oct 2026 &middot; 4 min read</span>
+            <span class="jn-more">Read the article &rarr;</span>
           </div>
         </article>
-        <article class="jentry" data-pillar="history" onclick="window.open('https://mamoszurnalas.lt/viktorija-isgyvenau-vaiko-gimima-zinodama-kad-jis-jau-mires/','_blank','noopener')">
-          <div class="jentry-thumb"><img src="/assets/journal-mamos-zurnalas.jpg" alt="Victoria with her baby — Mamos žurnalas feature" loading="lazy"></div>
-          <div class="jentry-text">
-            <span class="jentry-pillar">In the Press</span>
-            <h3 class="jentry-title">&ldquo;I lived through my child&rsquo;s birth, knowing they had already died&rdquo;</h3>
-            <p class="jentry-excerpt">Victoria&rsquo;s own story, featured in the Lithuanian magazine Mamos &#382;urnalas &mdash; losing her daughter Maya, and the path that led her to build MIMATIS.</p>
-            <span class="jentry-meta">Mamos &#382;urnalas &middot; In Lithuanian</span>
+<article class="jn-card" data-pillar="film" onclick="window.open('https://youtu.be/K3LmoFEKDIQ','_blank','noopener')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+          <div class="jn-img jn-video"><img src="https://img.youtube.com/vi/K3LmoFEKDIQ/mqdefault.jpg" alt="Sounds of Stillness — a short film about stillbirth and grief" loading="lazy"></div>
+          <div class="jn-body">
+            <span class="jn-cat">Short Film</span>
+            <h3 class="jn-title">Sounds of Stillness</h3>
+            <p class="jn-exc">An experimental short documentary about stillbirth and silent grief — released on Mother’s Day, and filmed on Mother’s Day two years earlier.</p>
+            <span class="jn-meta">Short film &middot; YouTube</span>
+            <span class="jn-more">Watch the film &#8599;</span>
           </div>
         </article>
-        <article class="jentry" data-pillar="history" onclick="openJournalArticle('cslewis')">
-          <div class="jentry-thumb"><img src="/assets/journal-baby-heart.jpg" alt="A heart-shaped biscuit iced with the word Baby" loading="lazy"></div>
-          <div class="jentry-text">
-            <span class="jentry-pillar">History &amp; Literature</span>
-            <h3 class="jentry-title">&ldquo;No one ever told me grief felt so like <em>fear.&rdquo;</em></h3>
-            <p class="jentry-excerpt">After losing his wife Joy, C.S. Lewis wrote one of the most honest accounts of grief ever published. What he described mirrors what bereaved parents feel today.</p>
-            <span class="jentry-meta">C.S. Lewis &middot; A Grief Observed</span>
+<article class="jn-card" data-pillar="history" onclick="window.open('https://mamoszurnalas.lt/viktorija-isgyvenau-vaiko-gimima-zinodama-kad-jis-jau-mires/','_blank','noopener')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+          <div class="jn-img"><img src="/assets/journal-mamos-zurnalas.jpg" alt="Victoria with her baby — Mamos žurnalas feature" loading="lazy"></div>
+          <div class="jn-body">
+            <span class="jn-cat">In the Press</span>
+            <h3 class="jn-title">&ldquo;I lived through my child&rsquo;s birth, knowing they had already died&rdquo;</h3>
+            <p class="jn-exc">Victoria&rsquo;s own story, featured in the Lithuanian magazine Mamos &#382;urnalas &mdash; losing her daughter Maya, and the path that led her to build MIMATIS.</p>
+            <span class="jn-meta">Mamos &#382;urnalas &middot; In Lithuanian</span>
+            <span class="jn-more">Read the feature &#8599;</span>
           </div>
         </article>
-        <article class="jentry" data-pillar="history" onclick="openJournalArticle('darwin')">
-          <div class="jentry-thumb"><img src="/assets/journal-angel.jpg" alt="A small porcelain angel beside candlelight" loading="lazy"></div>
-          <div class="jentry-text">
-            <span class="jentry-pillar">Stories of Meaning</span>
-            <h3 class="jentry-title">Charles Darwin lost his daughter Annie at <em>ten years old</em></h3>
-            <p class="jentry-excerpt">What his private letters reveal about grief, love, and the limits of reason &mdash; and how loss shaped one of history&rsquo;s greatest minds.</p>
-            <span class="jentry-meta">Charles Darwin &middot; 1851</span>
+<article class="jn-card" data-pillar="history" onclick="openJournalArticle('cslewis')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+          <div class="jn-img"><img src="/assets/journal-baby-heart.jpg" alt="A heart-shaped biscuit iced with the word Baby" loading="lazy"></div>
+          <div class="jn-body">
+            <span class="jn-cat">History &amp; Literature</span>
+            <h3 class="jn-title">&ldquo;No one ever told me grief felt so like <em>fear.&rdquo;</em></h3>
+            <p class="jn-exc">After losing his wife Joy, C.S. Lewis wrote one of the most honest accounts of grief ever published. What he described mirrors what bereaved parents feel today.</p>
+            <span class="jn-meta">3 min read</span>
+            <span class="jn-more">Read the article &rarr;</span>
           </div>
         </article>
-        <article class="jentry" data-pillar="art" onclick="openJournalArticle('memoryboxes')">
-          <div class="jentry-thumb"><img src="/assets/journal-memorial-tree.jpg" alt="Dummies and handwritten notes tied to a memorial tree" loading="lazy"></div>
-          <div class="jentry-text">
-            <span class="jentry-pillar">Healing Through Art</span>
-            <h3 class="jentry-title">Memory boxes &mdash; what to put in them, and <em>why they help</em></h3>
-            <p class="jentry-excerpt">A memory box is not about preserving grief. It is about acknowledging that your baby existed and that their existence mattered.</p>
+<article class="jn-card" data-pillar="history" onclick="openJournalArticle('darwin')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+          <div class="jn-img"><img src="/assets/journal-angel.jpg" alt="A small porcelain angel beside candlelight" loading="lazy"></div>
+          <div class="jn-body">
+            <span class="jn-cat">Stories of Meaning</span>
+            <h3 class="jn-title">Charles Darwin lost his daughter Annie at <em>ten years old</em></h3>
+            <p class="jn-exc">What his private letters reveal about grief, love, and the limits of reason &mdash; and how loss shaped one of history&rsquo;s greatest minds.</p>
+            <span class="jn-meta">3 min read</span>
+            <span class="jn-more">Read the article &rarr;</span>
           </div>
         </article>
-        <article class="jentry" data-pillar="nature" onclick="openJournalArticle('water')">
-          <div class="jentry-thumb"><svg viewBox="0 0 200 128" fill="none" aria-hidden="true"><path d="M50 54c8-6 17-6 25 0s17 6 25 0 17-6 25 0 17 6 25 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M50 70c8-6 17-6 25 0s17 6 25 0 17-6 25 0 17 6 25 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity=".7"/><path d="M50 86c8-6 17-6 25 0s17 6 25 0 17-6 25 0 17 6 25 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity=".45"/></svg></div>
-          <div class="jentry-text">
-            <span class="jentry-pillar">Nature &amp; Grief</span>
-            <h3 class="jentry-title">Why grieving people seek <em>water</em></h3>
-            <p class="jentry-excerpt">Rivers, oceans, lakes. Research on the nervous system is beginning to explain why so many bereaved parents are drawn to water after loss.</p>
+<article class="jn-card" data-pillar="art" onclick="openJournalArticle('memoryboxes')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+          <div class="jn-img"><img src="/assets/journal-memorial-tree.jpg" alt="Dummies and handwritten notes tied to a memorial tree" loading="lazy"></div>
+          <div class="jn-body">
+            <span class="jn-cat">Healing Through Art</span>
+            <h3 class="jn-title">Memory boxes &mdash; what to put in them, and <em>why they help</em></h3>
+            <p class="jn-exc">A memory box is not about preserving grief. It is about acknowledging that your baby existed and that their existence mattered.</p>
+            <span class="jn-meta">3 min read</span>
+            <span class="jn-more">Read the article &rarr;</span>
           </div>
         </article>
-        <article class="jentry" data-pillar="research" onclick="openJournalArticle('ptsd')">
-          <div class="jentry-thumb"><svg viewBox="0 0 200 128" fill="none" aria-hidden="true"><path d="M100 94S68 75 68 53c0-10 8-17 17-17 7 0 12 4 15 9 3-5 8-9 15-9 9 0 17 7 17 17 0 22-32 41-32 41z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M72 62h13l5-11 7 20 5-9h24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div class="jentry-text">
-            <span class="jentry-pillar">New Research</span>
-            <h3 class="jentry-title">When grief lives in the body &mdash; <em>what the science says</em></h3>
-            <p class="jentry-excerpt">Between 30 and 60% of bereaved parents meet clinical criteria for PTSD. New research shows exactly why grief manifests physically.</p>
+<article class="jn-card" data-pillar="nature" onclick="openJournalArticle('water')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+          <div class="jn-img"><svg viewBox="0 0 200 128" fill="none" aria-hidden="true"><path d="M50 54c8-6 17-6 25 0s17 6 25 0 17-6 25 0 17 6 25 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M50 70c8-6 17-6 25 0s17 6 25 0 17-6 25 0 17 6 25 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity=".7"/><path d="M50 86c8-6 17-6 25 0s17 6 25 0 17-6 25 0 17 6 25 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity=".45"/></svg></div>
+          <div class="jn-body">
+            <span class="jn-cat">Nature &amp; Grief</span>
+            <h3 class="jn-title">Why grieving people seek <em>water</em></h3>
+            <p class="jn-exc">Rivers, oceans, lakes. Research on the nervous system is beginning to explain why so many bereaved parents are drawn to water after loss.</p>
+            <span class="jn-meta">4 min read</span>
+            <span class="jn-more">Read the article &rarr;</span>
+          </div>
+        </article>
+<article class="jn-card" data-pillar="research" onclick="openJournalArticle('ptsd')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+          <div class="jn-img"><svg viewBox="0 0 200 128" fill="none" aria-hidden="true"><path d="M100 94S68 75 68 53c0-10 8-17 17-17 7 0 12 4 15 9 3-5 8-9 15-9 9 0 17 7 17 17 0 22-32 41-32 41z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M72 62h13l5-11 7 20 5-9h24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="jn-body">
+            <span class="jn-cat">New Research</span>
+            <h3 class="jn-title">When grief lives in the body &mdash; <em>what the science says</em></h3>
+            <p class="jn-exc">Between 30 and 60% of bereaved parents meet clinical criteria for PTSD. New research shows exactly why grief manifests physically.</p>
+            <span class="jn-meta">2 min read</span>
+            <span class="jn-more">Read the article &rarr;</span>
           </div>
         </article>
       </div>
@@ -2187,6 +2253,97 @@ p></div>
         <p class="jshare-note">When sending an email, I agree to my story being published on <a href="https://www.mimatis.org">mimatis.org</a> and republishing my story and/or image on MIMATIS social media channels. We very much appreciate your submission. Please note that we will use our discretion when publishing stories and images on our website.</p>
       </div>
     </div>
+  </div>
+
+  <!-- ARTICLE: SEED LETTERS -->
+  <div class="gs-sub-view" id="journal-seedletters">
+    <div style="padding:1.25rem 3rem 0;max-width:860px;margin:0 auto"><button class="article-back" onclick="openJournalArticle('landing')">Back to Journal</button></div>
+    <div class="article-page"><div class="article-hero">
+  <span class="article-pillar">Art &amp; Memory</span>
+  <h1 class="article-title">Seed letters: words that <em>grow into flowers</em></h1>
+  <p class="article-subtitle">MIMATIS seed letters are made of paper with poppy seeds inside. You write to your baby, plant the letter, and in time the words become flowers. A small ritual for the first weeks, and for the years that follow.</p>
+  <div class="article-meta">
+    <span>16 October 2026</span><span class="meta-dot"></span>
+    <span>Art &amp; Memory</span><span class="meta-dot"></span>
+    <span>MIMATIS Journal</span>
+  </div>
+</div>
+
+<div class="illustration-wrap" style="background:#2F4A2C">
+  <img src="/assets/journal-seed-letter-envelope.jpg" alt="A sage-green envelope with a MIMATIS seed letter inside, resting on green leaves among daisies" loading="lazy" style="display:block;width:100%;max-width:520px;height:auto;margin:0 auto">
+</div>
+
+<div class="article-body">
+
+<p>Some things are hard to say out loud. A letter gives them a place. A seed letter goes one step further: once it is written, it can be planted, and what you wrote becomes part of something that grows.</p>
+
+<p>Each MIMATIS seed letter is handcrafted from paper with <strong>poppy seeds</strong> set into it. The card carries a simple line drawing of flowers and leaves in turquoise, pink, orange and green, and three short lines: <em>to write is to remember</em>, <em>to plant is to continue</em>, and <em>for a memory that deserves to bloom</em>. It comes in a soft green envelope.</p>
+
+<h2>Why <em>poppies</em></h2>
+
+<p>Poppies have been a flower of remembrance for more than a century. They are also generous plants. They grow easily, they flower in late spring and early summer, and they drop their own seed. Where poppies have flowered once, they often return the next year, and the year after, without being planted again.</p>
+
+<p>That is what makes them right for a letter to a baby who died. You plant the letter once. The flowers can come back every year.</p>
+
+<h2>How to plant a seed letter</h2>
+
+<ul style="font-size:1.05rem;color:var(--mid);line-height:1.9;margin:0 0 1.75rem 1.25rem">
+<li><strong>Write first.</strong> Use a pen or pencil. Write as much or as little as you want: your baby&rsquo;s name, a date, a few words, a whole letter.</li>
+<li><strong>Choose a place.</strong> A garden bed, a balcony pot or a window box, somewhere with plenty of light.</li>
+<li><strong>Plant it close to the surface.</strong> Lay the letter flat on the soil and cover it with only a thin layer, a few millimetres. Poppy seeds need light to start growing.</li>
+<li><strong>Keep it damp.</strong> Water gently so the paper stays moist while it softens and the seeds wake. The paper breaks down into the soil.</li>
+<li><strong>Wait.</strong> Poppies sown in autumn often flower the following late spring. Sown in spring, they can flower that summer.</li>
+</ul>
+
+<div class="illustration-wrap" style="background:#3A2A22">
+  <img src="/assets/journal-seed-letter-planting.jpg" alt="A seed letter laid in the soil of a terracotta planter, partly covered with earth" loading="lazy" style="display:block;width:100%;max-width:460px;height:auto;margin:0 auto">
+</div>
+
+<h2>A letter for the <em>years that come later</em></h2>
+
+<p>Grief after the loss of a baby does not end on a set date. It changes shape. The due date, the first birthday that never happened, the year your baby would have started school: these days arrive whether or not anyone else remembers them. Many parents describe their baby as still part of their lives ten, twenty and thirty years later.</p>
+
+<p>A seed letter does not have to be written in the first weeks. It can be written on an anniversary, on 15 October, on a birthday, or on an ordinary day when you want to say something. Some families write one every year. Each time, the flowers that follow are new, and so is what you wrote.</p>
+
+<p>And when poppies return on their own in early summer, there is something to look at and to name. A place in the garden that belongs to your baby.</p>
+
+<div class="pull-quote">
+  <p>You plant the letter once. The flowers can come back every year.</p>
+</div>
+
+<h2>A gentle activity for <em>brothers and sisters</em></h2>
+
+<p>Children grieve too, often in short bursts and in ways adults do not expect. They may not have the words, and they do not always want to talk. A seed letter gives them something to do with their hands.</p>
+
+<div class="illustration-wrap" style="background:#EDE6D8">
+  <img src="/assets/journal-seed-letter-painting.jpg" alt="A child painting with watercolours at a table, with a MIMATIS seed letter in the foreground" loading="lazy" style="display:block;width:100%;max-width:460px;height:auto;margin:0 auto">
+</div>
+
+<ul style="font-size:1.05rem;color:var(--mid);line-height:1.9;margin:0 0 1.75rem 1.25rem">
+<li><strong>Children who can write</strong> can write to their brother or sister: what they would have shown them, what they feel today, or simply a name.</li>
+<li><strong>Younger children can draw or paint.</strong> Colours, shapes, a picture of the family. There is no right way to do it.</li>
+<li><strong>Plant it together.</strong> Let the child choose the place, cover the letter with soil and do the watering.</li>
+<li><strong>Watch it grow.</strong> Checking for the first shoots gives a child a reason to return to the place and to talk about the baby, in their own time.</li>
+</ul>
+
+<p>For many children, seeing flowers come up where they planted their letter is a way of understanding that love continues, even when someone has died. It is also something the whole family can share, each with their own letter.</p>
+
+<h2>Write, plant, <em>remember</em></h2>
+
+<p>A seed letter is small. It asks for nothing more than a few words, a little soil and some patience. What it gives back is a place to return to, and flowers that bring life to a day that may otherwise be hard.</p>
+
+<p>If you would like to know more about MIMATIS seed letters, or would like some for your family or your hospital, write to us at <a href="mailto:contact@mimatis.org?subject=Seed%20letters">contact@mimatis.org</a>.</p>
+
+<div class="article-source">
+  <span class="source-label">Related</span>
+  <p class="source-text"><a href="#" onclick="openJournalArticle('memoryboxes');return false;">Memory boxes: what to put in them, and why they help</a> &middot; <a href="#garden" onclick="showPage('garden');return false;">Plant a flower in the MIMATIS memorial garden</a> &middot; <a href="#support" onclick="showPage('support');return false;">Guidance for brothers and sisters</a></p>
+</div>
+</div>
+
+<div class="article-footer">
+  <div class="footer-rule"></div>
+  <a class="footer-back" href="https://www.mimatis.org">Back to MIMATIS</a>
+</div></div>
   </div>
 
   <!-- ARTICLE: 15 OCTOBER ACROSS EUROPE -->
