@@ -15,11 +15,14 @@ au:{name:'Australia',flag:'AU',cards:[
     {tag:'Funeral Directory',name:'Australian Funeral Directors Association',desc:'Find compassionate funeral directors across Australia who specialise in infant and baby loss.',link:'https://www.afda.org.au'},
   ]},
 at:{name:'Austria',flag:'AT',cards:[
-    {tag:'Support Community',name:'Stille Geburt Austria',desc:'Austrian community for parents after stillbirth — peer stories, information, and connection with other bereaved families.',link:'https://www.stillegeburt.at'},
-    {tag:'Association',name:'Sternenkinder Austria',desc:'Austrian star children association — support, resources, and memory items for parents after pregnancy and infant loss.',link:'https://www.sternenkinder.at'},
-    {tag:'Helpline 24/7',name:'Telefonseelsorge Osterreich',desc:'Free 24/7 emotional support: 142.',link:'https://www.telefonseelsorge.at'},
-    {tag:'Hospital',name:'AKH Wien Perinatologie',desc:"Vienna General Hospital with specialist perinatal bereavement care and midwife support.",link:'https://www.akhwien.at'},
-  ],funeral:[]},
+    {tag:'Information',name:'Initiative Stille Geburt',desc:'Austrian initiative for parents whose baby died in pregnancy, at birth or in the first year: your rights, farewell and funerals, grief, midwife care and self-help groups.',link:'https://www.stille-geburt.net'},
+    {tag:'Association',name:'Verein Regenbogen (Vienna)',desc:'Self-help association run by parents whose babies died. Monthly groups, counselling, baby clothes and memorial events. Tel: 0676 642 86 92.',link:'https://www.shg-regenbogen.at'},
+    {tag:'Association',name:'Verein Pusteblume',desc:'Free clothing for Sternenkinder, comfort packages and answers to parents\u2019 questions, across Austria.',link:'https://www.verein-pusteblume.at'},
+    {tag:'Support',name:'Family counselling centres',desc:'About 400 publicly funded centres offering free, anonymous counselling, including after loss, in more than 30 languages.',link:'https://www.bundeskanzleramt.gv.at/agenda/familie/begleitung-beratung-hilfe/familienberatung.html'},
+    {tag:'Helpline 24/7',name:'Telefonseelsorge',desc:'Free, confidential emotional support day and night: 142. Chat daily 16:00\u201323:00.',link:'https://www.telefonseelsorge.at'},
+  ],funeral:[
+    {tag:'Funeral',name:'Burial of Sternenkinder',desc:'Babies of 500 g or more must be buried in every state; under 500 g, rules differ by state. If parents arrange nothing, the hospital must. Many cemeteries have graves for Sternenkinder.',link:'https://www.oesterreich.gv.at/de/themen/familie_und_partnerschaft/geburt-eines-kindes/4/Seite.080101'},
+  ]},
 be:{name:'Belgium',flag:'BE',cards:[
     {tag:'Association',name:'Petites Etoiles',desc:'Belgian association for parents after perinatal loss — counselling, peer groups, and memory support.',link:'https://www.petitesetoiles.be'},
     {tag:'Association',name:'De Mooiste Ster',desc:'Non-profit supporting parents who lost a baby during or shortly after birth — comfort packages and support network.',link:'https://www.demooiinstenier.be'},
