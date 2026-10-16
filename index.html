@@ -1197,6 +1197,16 @@ footer{background:var(--green-dark);padding:3rem 3rem}
   #pg-action .act-h2{font-size:1.6rem}
   #pg-action .act-corner{width:200px;height:200px;right:-70px;bottom:-70px}
 }
+
+/* ── Background images: preview on staging (Oct 2026). Remove this block to undo. ── */
+#pg-home .hero-section{background:linear-gradient(rgba(255,255,255,.38),rgba(255,255,255,.38)),url('assets/bg-butterflies.jpg') center/cover no-repeat}
+#pg-home .hero-section::before,#pg-home .hero-section::after{display:none}
+#pg-home .home-findhelp{background:linear-gradient(rgba(255,255,255,.55),rgba(255,255,255,.55)),url('assets/bg-haze.jpg') center/cover no-repeat}
+.newsletter-section{background:linear-gradient(rgba(255,255,255,.6),rgba(255,255,255,.6)),url('assets/bg-flowers.jpg') center/cover no-repeat}
+.newsletter-section .nl-privacy,.newsletter-section .nl-privacy a{color:var(--mid)}
+#pg-home .home-findhelp .home-findhelp-left span:first-child{color:var(--green-dark)}
+@media(max-width:780px){#pg-home .hero-section{background-position:30% center}}
+/* ── end background preview ── */
 </style>
 <script type="application/ld+json">
 {
@@ -3065,13 +3075,14 @@ fi:{name:'Finland',flag:'FI',cards:[
     {tag:'Association',name:'Suomen Mielenterveysseura',desc:'Finnish Mental Health Association — grief counselling and referrals for bereaved families.',link:'https://www.mielenterveysseura.fi'},
   ],funeral:[]},
 fr:{name:'France',flag:'FR',cards:[
-    {tag:'Association',name:'AGAPA',desc:"National association supporting parents after perinatal bereavement — local groups, counselling, and online resources.",link:'https://agapa.fr'},
-    {tag:'Association',name:'Petite Emilie',desc:'French association providing peer support to parents after perinatal death.',link:'https://www.petite-emilie.org'},
-    {tag:'Association',name:'Naitre et Vivre',desc:'French association after sudden infant death — also supports parents after stillbirth and miscarriage.',link:'https://www.naitreetvivre.com'},
-    {tag:'Association',name:'SPAMA',desc:'Provides bereavement support to parents after perinatal loss (any cause) and after a prenatal diagnosis.',link:'https://www.spama.asso.fr'},
-    {tag:'Helpline 24/7',name:'SOS Amitie',desc:'French listening line: 09 72 39 40 50 (24/7).',link:'https://www.sos-amitie.com'},
+    {tag:'Association',name:'AGAPA',desc:'Listening and support after pregnancy loss or the death of a baby, with trained volunteer listeners and support groups. Tel: 01 40 45 06 36.',link:'https://www.agapa.fr'},
+    {tag:'Association',name:'SPAMA',desc:'Support for parents after perinatal death and after a serious prenatal diagnosis. Listening line on weekday mornings: 07 87 85 37 81.',link:'https://www.spama.asso.fr'},
+    {tag:'Association',name:'Petite \u00c9milie',desc:'Since 2003, for parents after a termination for medical reasons or perinatal loss. Forum, booklets and practical information on rights.',link:'https://www.petiteemilie.org'},
+    {tag:'Association',name:'Nos Tout-Petits',desc:'Monthly groups, sibling workshops and remembrance ceremonies. Based in Lille, with groups in several regions.',link:'https://www.nostoutpetits.fr'},
+    {tag:'Association',name:'Na\u00eetre et Vivre',desc:'For parents after the death of a baby, including perinatal loss. Listening line: 01 47 23 05 08.',link:'https://www.naitre-et-vivre.org'},
+    {tag:'Helpline 24/7',name:'3114',desc:'National suicide prevention line. Free, 24 hours a day, also for family members.',link:'https://www.sante.fr/le-numero-national-de-prevention-du-suicide-0'},
   ],funeral:[
-    {tag:'Funeral Support',name:'Funecap Groupe',desc:'French funeral group with specialist services for babies and children — compassionate, affordable options nationwide.',link:'https://www.funecap.com'},
+    {tag:'Funeral',name:'Funeral or hospital cremation: 14 days to decide',desc:'From 15 weeks (SA), parents have 14 days to arrange the funeral themselves or leave it to the hospital. Full guide in English and French.',link:'https://www.mimatis.org/france#goodbye'},
   ]},
 de:{name:'Germany',flag:'DE',cards:[
     {tag:'Association',name:'Verband verwaiste Eltern (VEID)',desc:'National network for bereaved parents — peer groups, counselling referrals, and practical resources across Germany.',link:'https://www.veid.de'},
