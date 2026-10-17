@@ -1248,6 +1248,82 @@ footer{background:var(--green-dark);padding:3rem 3rem}
 .article-footer .footer-back:hover{text-decoration:underline}
 @media(max-width:700px){.article-footer{padding:1rem 16px 3rem}}
 /* ── end Journal news layout ── */
+
+/* ── Home redesign (Oct 2026) ── */
+#pg-home .hero-inner{max-width:820px}
+.hm-find{background:rgba(255,255,255,.82);border:1px solid rgba(0,112,138,.18);border-radius:6px;padding:1.4rem 1.5rem 1.1rem;max-width:620px;backdrop-filter:blur(2px)}
+.hm-find-lbl{display:block;font-family:'Inter',sans-serif;font-size:1.05rem;font-weight:500;color:var(--ink);margin-bottom:.8rem}
+.hm-find-row{display:flex;gap:.6rem;flex-wrap:wrap}
+.hm-select{flex:1 1 240px;min-width:0;font-family:'Montserrat',sans-serif;font-size:.95rem;color:var(--ink);padding:.85rem 2.4rem .85rem 1rem;border:1.5px solid var(--green);border-radius:4px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2300708A' stroke-width='2' fill='none'/%3E%3C/svg%3E") no-repeat right 1rem center;-webkit-appearance:none;appearance:none;cursor:pointer}
+.hm-select:focus{outline:2px solid var(--green-dark);outline-offset:2px}
+.hm-go{flex:0 0 auto}
+.hm-find-more{display:flex;flex-wrap:wrap;gap:.35rem .6rem;align-items:center;margin-top:.9rem;font-size:.82rem;color:var(--soft)}
+.hm-find-more button{background:none;border:0;padding:0;font:inherit;color:var(--green-dark);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.hm-sec{padding:96px 0}
+.hm-wrap{max-width:1120px;margin:0 auto;padding:0 3rem}
+.hm-eye{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:1rem}
+.hm-center{text-align:center}
+.hm-h2{font-family:'Inter',sans-serif;font-size:clamp(1.7rem,3vw,2.3rem);font-weight:500;line-height:1.18;color:var(--ink);margin-bottom:1rem;letter-spacing:-.01em}
+.hm-intro{font-size:1.02rem;color:var(--mid);line-height:1.75;max-width:40rem;margin-bottom:2.5rem}
+.hm-p{font-size:1.02rem;color:var(--mid);line-height:1.85;margin-bottom:1.1rem}
+.hm-path-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.75rem}
+.hm-path{border:1px solid var(--border);border-top:4px solid var(--green);padding:2.1rem 1.9rem;background:#fff;display:flex;flex-direction:column}
+.hm-path-a{border-top-color:var(--blush)}
+.hm-bloom{width:38px;height:38px;margin-bottom:1rem;display:block}
+.hm-path-for{font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green);margin-bottom:.5rem}
+.hm-path h3{font-family:'Inter',sans-serif;font-size:1.3rem;font-weight:500;color:var(--ink);margin-bottom:.7rem;line-height:1.25}
+.hm-path p{font-size:.93rem;color:var(--mid);line-height:1.75;margin-bottom:1.2rem;flex:1}
+.hm-path-link{align-self:flex-start;background:none;border:0;padding:0;font-family:'Montserrat',sans-serif;font-size:.86rem;font-weight:500;color:var(--green-dark);cursor:pointer}
+.hm-path-link:hover{text-decoration:underline}
+.hm-guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
+.hm-guide{display:flex;flex-direction:column;text-align:left;background:#fff;border:0;padding:1.7rem 1.6rem;cursor:pointer;font-family:'Montserrat',sans-serif;transition:background .2s}
+.hm-guide:hover{background:var(--green-light)}
+.hm-n{font-size:.7rem;color:var(--green);margin-bottom:.6rem;letter-spacing:.1em}
+.hm-gt{font-family:'Inter',sans-serif;font-size:1.08rem;font-weight:500;color:var(--ink);margin-bottom:.45rem;line-height:1.3}
+.hm-gd{font-size:.88rem;color:var(--mid);line-height:1.65}
+.hm-more-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:1.5rem}
+.hm-tile{display:flex;flex-direction:column;gap:.3rem;text-align:left;background:var(--lav-tint,#F6EAFB);border:0;border-radius:4px;padding:1.2rem 1.4rem;cursor:pointer;font-family:'Montserrat',sans-serif;font-size:.9rem;color:var(--mid);line-height:1.55}
+.hm-tile:hover{background:#EFDDF7}
+.hm-tile-k{font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green-dark)}
+.hm-hosp{position:relative;background:linear-gradient(rgba(255,255,255,.78),rgba(255,255,255,.78)),url('/assets/bg-white-flowers.jpg') center/cover no-repeat}
+.hm-hosp-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3.5rem;align-items:center}
+.hm-hosp-card{background:#fff;border-top:4px solid var(--green);padding:2.2rem 2rem;box-shadow:0 0 0 1px var(--border)}
+.hm-hosp-card h3{font-family:'Inter',sans-serif;font-size:1.2rem;font-weight:500;color:var(--ink);margin-bottom:1rem}
+.hm-list{list-style:none;margin:0 0 1.6rem;padding:0}
+.hm-list li{position:relative;padding-left:1.2rem;margin-bottom:.6rem;font-size:.93rem;color:var(--mid);line-height:1.65}
+.hm-list li::before{content:"";position:absolute;left:.1rem;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--green)}
+.hm-btn{width:100%;text-align:center}
+.hm-mail-lbl{font-size:.8rem;color:var(--soft);margin:1.6rem 0 .25rem}
+.hm-mail{font-family:'Inter',sans-serif;font-size:clamp(1.3rem,2.4vw,1.7rem);font-weight:500;color:var(--green-dark);text-decoration:none;border-bottom:2px solid var(--blush);word-break:break-word}
+.hm-mail:hover{border-bottom-color:var(--green)}
+.hm-comp{position:relative;overflow:hidden;background:var(--green)}
+.hm-star{position:absolute;right:-60px;top:-20px;width:min(560px,55vw);height:auto;pointer-events:none;opacity:.9}
+.hm-comp-inner{position:relative;z-index:1}
+.hm-eye-w{color:#fff;opacity:.85}
+.hm-w{color:#fff}
+.hm-comp-lead{max-width:36rem}
+.hm-comp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin:2.5rem 0 3rem}
+.hm-comp-card{background:#fff;border-radius:4px;padding:1.6rem 1.4rem}
+.hm-comp-card h3{font-family:'Inter',sans-serif;font-size:1.05rem;font-weight:500;color:var(--ink);margin-bottom:.5rem}
+.hm-comp-card p{font-size:.88rem;color:var(--mid);line-height:1.65}
+.hm-comp-mail p{font-size:1rem;margin-bottom:.4rem}
+.hm-mail-w{color:#fff;font-size:clamp(1.6rem,3.4vw,2.4rem);border-bottom-color:rgba(255,255,255,.55)}
+.hm-mail-w:hover{border-bottom-color:#fff}
+.hm-small{font-size:.78rem!important;opacity:.85;margin-top:1.2rem!important}
+.hm-aware{background:#F5F4F0}
+.hm-aware-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:3.5rem;align-items:center}
+.hm-poster{width:100%;height:auto;display:block;border-radius:4px}
+.hm-facts{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem 1.5rem;margin:1.75rem 0 1.25rem}
+.hm-fact{border-top:2px solid var(--blush);padding-top:.8rem}
+.hm-fn{display:block;font-family:'Inter',sans-serif;font-size:1.6rem;font-weight:500;color:var(--green);line-height:1.2;margin-bottom:.3rem}
+.hm-fact p{font-size:.88rem;color:var(--mid);line-height:1.55}
+.hm-src{font-size:.78rem;color:var(--soft)}
+.hm-inline{background:none;border:0;padding:0;font:inherit;color:var(--green-dark);cursor:pointer;text-decoration:underline;margin-left:.3rem}
+#pg-research .stat-cards-section{padding:0 0 3rem;border-top:0;background:none}
+@media(max-width:960px){.hm-path-grid{grid-template-columns:1fr}.hm-guide-grid{grid-template-columns:1fr 1fr}.hm-comp-grid{grid-template-columns:1fr 1fr}.hm-hosp-grid,.hm-aware-grid{grid-template-columns:1fr;gap:2.5rem}.hm-poster{max-width:420px}}
+@media(max-width:700px){.hm-sec{padding:60px 0}.hm-wrap{padding:0 16px}.hm-guide-grid,.hm-more-row,.hm-comp-grid,.hm-facts{grid-template-columns:1fr}.hm-find{padding:1.1rem 1rem .9rem}.hm-go{width:100%}.hm-star{display:none}.hm-hosp-card{padding:1.7rem 1.3rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* ── end Home redesign ── */
 </style>
 <script type="application/ld+json">
 {
@@ -1370,27 +1446,20 @@ footer{background:var(--green-dark);padding:3rem 3rem}
   <!-- HERO -->
   <div class="hero-section">
     <div class="hero-inner">
-      <span class="hero-eyebrow">Bereavement care &middot; Worldwide</span>
+      <span class="hero-eyebrow">Pregnancy and baby loss &middot; Support in 29 countries</span>
       <h1 class="hero-title">For every parent<br>who has <em>lost a baby.</em></h1>
-      <p class="hero-sub">A digital platform reaching bereaved parents across Europe and beyond &mdash; removing the language and geographic barriers that prevent families from finding care after loss.</p>
-      <div class="hero-btns">
-        <button class="btn-ink" onclick="showPage('help')">Find support in your country</button>
-        <button class="btn-bdr" onclick="showPage('garden')">Memorial garden</button>
-        <button class="btn-bdr" onclick="showPage('support')">Guidance &amp; support</button>
+      <p class="hero-sub">Verified support, practical guidance and a place to remember, for parents after miscarriage, stillbirth or the death of a baby, wherever they live.</p>
+      <div class="hm-find">
+        <label class="hm-find-lbl" for="hm-country">Find support where you are</label>
+        <div class="hm-find-row">
+          <select id="hm-country" class="hm-select" onkeydown="if(event.key==='Enter')hmGo()">
+            <option value="">Choose your country</option>
+            <option value="australia">Australia</option><option value="austria">Austria</option><option value="belgium">Belgium</option><option value="croatia">Croatia</option><option value="cyprus">Cyprus</option><option value="czech-republic">Czech Republic</option><option value="denmark">Denmark</option><option value="estonia">Estonia</option><option value="finland">Finland</option><option value="france">France</option><option value="germany">Germany</option><option value="greece">Greece</option><option value="hungary">Hungary</option><option value="ireland">Ireland</option><option value="italy">Italy</option><option value="latvia">Latvia</option><option value="lithuania">Lithuania</option><option value="luxembourg">Luxembourg</option><option value="malta">Malta</option><option value="netherlands">Netherlands</option><option value="poland">Poland</option><option value="portugal">Portugal</option><option value="romania">Romania</option><option value="slovakia">Slovakia</option><option value="slovenia">Slovenia</option><option value="spain">Spain</option><option value="sweden">Sweden</option><option value="united-kingdom">United Kingdom</option><option value="united-states">United States</option>
+          </select>
+          <button class="btn-ink hm-go" onclick="hmGo()">Show support</button>
+        </div>
+        <p class="hm-find-more"><button onclick="showPage('help')">All 29 countries</button><span>&middot;</span><button onclick="showPage('support')">Guidance for the first days</button><span>&middot;</span><button onclick="showPage('garden')">Memorial garden</button></p>
       </div>
-    </div>
-  </div>
-
-  <!-- IMPACT NUMBERS -->
-  <div class="impact-strip">
-    <div class="impact-inner">
-      <div class="impact-item"><span class="impact-n">29</span><span class="impact-l">Countries with<br>verified support</span></div>
-      <div class="impact-divider"></div>
-      <div class="impact-item"><span class="impact-n">23</span><span class="impact-l">Peer-reviewed<br>research studies</span></div>
-      <div class="impact-divider"></div>
-      <div class="impact-item"><span class="impact-n">44</span><span class="impact-l">Pregnancy losses<br>every minute</span></div>
-      <div class="impact-divider"></div>
-      <div class="impact-item"><span class="impact-n">10+</span><span class="impact-l">Languages in our<br>information cards</span></div>
     </div>
   </div>
 
@@ -1416,6 +1485,136 @@ footer{background:var(--green-dark);padding:3rem 3rem}
     </div>
   </div>
 
+  <!-- THREE PATHS -->
+  <section class="hm-sec hm-paths" aria-labelledby="hm-paths-h">
+    <div class="hm-wrap">
+      <span class="hm-eye hm-center">How MIMATIS helps</span>
+      <h2 class="hm-h2 hm-center" id="hm-paths-h">Three ways we work</h2>
+      <div class="hm-path-grid">
+        <div class="hm-path hm-path-a">
+          <svg class="hm-bloom" viewBox="0 0 40 40" aria-hidden="true"><g><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(0.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(60.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(120.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(180.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(240.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(300.0 20 20)"/><circle cx="20" cy="20" r="3.0" fill="#00708A" fill-opacity=".85"/></g></svg>
+          <span class="hm-path-for">For parents</span>
+          <h3>Support where you are</h3>
+          <p>Helplines, associations, hospital bereavement teams and funeral information, checked country by country. Full guides for Spain, France and Austria.</p>
+          <button class="hm-path-link" onclick="showPage('help')">Find support &rarr;</button>
+        </div>
+        <div class="hm-path">
+          <svg class="hm-bloom" viewBox="0 0 40 40" aria-hidden="true"><g><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#0097B2" fill-opacity="0.7" transform="rotate(0.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#0097B2" fill-opacity="0.7" transform="rotate(60.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#0097B2" fill-opacity="0.7" transform="rotate(120.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#0097B2" fill-opacity="0.7" transform="rotate(180.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#0097B2" fill-opacity="0.7" transform="rotate(240.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#0097B2" fill-opacity="0.7" transform="rotate(300.0 20 20)"/><circle cx="20" cy="20" r="3.0" fill="#00708A" fill-opacity=".85"/></g></svg>
+          <span class="hm-path-for">With hospitals</span>
+          <h3>Better care from the first hour</h3>
+          <p>The hospital is where every family passes through. We work with maternity teams so that parents leave with time, memories and someone to call.</p>
+          <button class="hm-path-link" onclick="hmScroll('hm-hospitals')">How we work with hospitals &rarr;</button>
+        </div>
+        <div class="hm-path hm-path-a">
+          <svg class="hm-bloom" viewBox="0 0 40 40" aria-hidden="true"><g><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(0.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(60.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(120.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(180.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(240.0 20 20)"/><ellipse cx="20" cy="9.5" rx="6.1" ry="10.5" fill="#E2A9F1" fill-opacity="0.7" transform="rotate(300.0 20 20)"/><circle cx="20" cy="20" r="3.0" fill="#00708A" fill-opacity=".85"/></g></svg>
+          <span class="hm-path-for">With companies</span>
+          <h3>Partner with MIMATIS</h3>
+          <p>Sponsor a language, bring comfort items to hospitals, or support your own teams. Companies can help us reach every parent.</p>
+          <button class="hm-path-link" onclick="hmScroll('hm-companies')">Ways to partner &rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUMBERS -->
+  <div class="impact-strip">
+    <div class="impact-inner">
+      <div class="impact-item"><span class="impact-n">29</span><span class="impact-l">Countries with<br>verified support</span></div>
+      <div class="impact-divider"></div>
+      <div class="impact-item"><span class="impact-n">23</span><span class="impact-l">Peer-reviewed<br>research studies</span></div>
+      <div class="impact-divider"></div>
+      <div class="impact-item"><span class="impact-n">44</span><span class="impact-l">Pregnancy losses<br>every minute</span></div>
+      <div class="impact-divider"></div>
+      <div class="impact-item"><span class="impact-n">10+</span><span class="impact-l">Languages in<br>information cards</span></div>
+    </div>
+  </div>
+
+  <!-- FOR PARENTS: FIRST DAYS -->
+  <section class="hm-sec" aria-labelledby="hm-days-h">
+    <div class="hm-wrap">
+      <span class="hm-eye">For parents</span>
+      <h2 class="hm-h2" id="hm-days-h">Guidance for the first days, and the years after</h2>
+      <p class="hm-intro">Practical, honest information to read at your own pace, or to share with the people around you.</p>
+      <div class="hm-guide-grid">
+        <button class="hm-guide" onclick="showPage('support');gsOpenSub('guidance')"><span class="hm-n">01</span><span class="hm-gt">What to expect and how to cope</span><span class="hm-gd">The first hours, time with your baby, and the decisions you may face.</span></button>
+        <button class="hm-guide" onclick="showPage('support');gsOpenSub('letters')"><span class="hm-n">02</span><span class="hm-gt">Finding the right words</span><span class="hm-gd">Letter templates for when words are hard to find.</span></button>
+        <button class="hm-guide" onclick="showPage('support');gsOpenSub('words')"><span class="hm-n">03</span><span class="hm-gt">What to say, and what not to</span><span class="hm-gd">For family, friends and colleagues who want to help.</span></button>
+        <button class="hm-guide" onclick="showPage('support');gsOpenSub('info')"><span class="hm-n">04</span><span class="hm-gt">Information cards in your language</span><span class="hm-gd">Cards from Steunpunt NOVA in more than ten languages.</span></button>
+        <button class="hm-guide" onclick="showPage('support');gsOpenSub('recovery')"><span class="hm-n">05</span><span class="hm-gt">Your body after loss</span><span class="hm-gd">What to expect physically, and how to care for yourself.</span></button>
+        <button class="hm-guide" onclick="showPage('support');gsOpenSub('partners')"><span class="hm-n">06</span><span class="hm-gt">For partners and fathers</span><span class="hm-gd">Grief that is often quieter, and just as real.</span></button>
+      </div>
+      <div class="hm-more-row">
+        <button class="hm-tile" onclick="showPage('garden')"><span class="hm-tile-k">Memorial garden</span><span>Plant a flower in your baby&rsquo;s name.</span></button>
+        <button class="hm-tile" onclick="openJournalArticle('seedletters')"><span class="hm-tile-k">Journal</span><span>Seed letters: words that grow into flowers.</span></button>
+        <button class="hm-tile" onclick="showPage('research')"><span class="hm-tile-k">Research</span><span>23 studies, explained in plain language.</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- WITH HOSPITALS -->
+  <section class="hm-sec hm-hosp" id="hm-hospitals" aria-labelledby="hm-hosp-h">
+    <div class="hm-wrap hm-hosp-grid">
+      <div>
+        <span class="hm-eye">With hospitals</span>
+        <h2 class="hm-h2" id="hm-hosp-h">The hours in hospital shape the years that follow</h2>
+        <p class="hm-p">How parents are cared for when their baby dies stays with them for a lifetime. Whether they had time with their baby, whether someone explained what was happening, whether they left with a photo, a name and a number to call: these moments shape how they grieve, often for decades.</p>
+        <p class="hm-p">The hospital is the one place every family passes through. That is why MIMATIS works with maternity units, midwives and bereavement teams. It is the best chance to make a difference.</p>
+      </div>
+      <div class="hm-hosp-card">
+        <h3>What we offer hospitals</h3>
+        <ul class="hm-list">
+          <li>A short guidance card for maternity staff, free to download and print</li>
+          <li>Information for parents in their own language, wherever they come from</li>
+          <li>What parents tell us about their care, shared to help teams improve</li>
+          <li>Seed letters and memory items that teams can give to families</li>
+        </ul>
+        <button class="btn-ink hm-btn" onclick="downloadHospitalCard()">Download the staff guidance card (PDF)</button>
+        <p class="hm-mail-lbl">Talk to us about your hospital</p>
+        <a class="hm-mail" href="mailto:contact@mimatis.org?subject=Working%20with%20our%20hospital">contact@mimatis.org</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WITH COMPANIES -->
+  <section class="hm-sec hm-comp" id="hm-companies" aria-labelledby="hm-comp-h">
+    <img class="hm-star" src="/assets/home-star.jpg" alt="" aria-hidden="true" loading="lazy">
+    <div class="hm-wrap hm-comp-inner">
+      <span class="hm-eye hm-eye-w">With companies</span>
+      <h2 class="hm-h2 hm-w" id="hm-comp-h">Partner with MIMATIS</h2>
+      <p class="hm-p hm-w hm-comp-lead">Companies can make a real difference for families after pregnancy and baby loss: as partners, as sponsors, and as workplaces that look after their own people.</p>
+      <div class="hm-comp-grid">
+        <div class="hm-comp-card"><h3>Sponsor a language</h3><p>Help translate MIMATIS guidance into another language, so more parents can read it in their own.</p></div>
+        <div class="hm-comp-card"><h3>Bring comfort to hospitals</h3><p>Fund seed letters and memory items that maternity teams can give to families.</p></div>
+        <div class="hm-comp-card"><h3>Support your own teams</h3><p>Guidance and talks for managers and HR on pregnancy loss at work.</p></div>
+        <div class="hm-comp-card"><h3>Campaigns and events</h3><p>Mark 15 October with your staff or customers, or create an event together.</p></div>
+      </div>
+      <div class="hm-comp-mail">
+        <p class="hm-w">Write to us with an idea, or simply to start a conversation.</p>
+        <a class="hm-mail hm-mail-w" href="mailto:contact@mimatis.org?subject=Partnership%20with%20MIMATIS">contact@mimatis.org</a>
+        <p class="hm-small hm-w">Asociaci&oacute;n MIMATIS is a registered non-profit association in Spain, no. 633.864.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARENESS -->
+  <section class="hm-sec hm-aware" aria-labelledby="hm-aware-h">
+    <div class="hm-wrap hm-aware-grid">
+      <img class="hm-poster" src="/assets/home-loss-could-be.jpg" alt="Pregnancy and baby loss could be: chemical pregnancy, early miscarriage, ectopic pregnancy, molar pregnancy, late miscarriage, termination for medical reasons, stillbirth, neonatal loss, SIDS." loading="lazy">
+      <div>
+        <span class="hm-eye">Awareness</span>
+        <h2 class="hm-h2" id="hm-aware-h">More common than most people think</h2>
+        <p class="hm-p">Pregnancy and baby loss takes many forms, at every stage of pregnancy and after birth. Talking about it openly means more parents receive good care, and more babies are remembered.</p>
+        <div class="hm-facts">
+          <div class="hm-fact"><span class="hm-fn">1 in 4&ndash;5</span><p>pregnancies ends in miscarriage</p></div>
+          <div class="hm-fact"><span class="hm-fn">2 million</span><p>babies are stillborn every year, one every 16 seconds</p></div>
+          <div class="hm-fact"><span class="hm-fn">Many</span><p>stillbirths could be prevented with good care during pregnancy and birth</p></div>
+          <div class="hm-fact"><span class="hm-fn">30&ndash;60%</span><p>of bereaved parents meet the criteria for post-traumatic stress</p></div>
+        </div>
+        <p class="hm-src">Sources: WHO, UNICEF, The Lancet, ACOG, MDPI scoping review. <button class="hm-inline" onclick="showPage('research')">See the research &rarr;</button></p>
+      </div>
+    </div>
+  </section>
+
   <!-- WHY MIMATIS EXISTS -->
   <div class="why-section">
     <div class="why-inner">
@@ -1429,26 +1628,6 @@ footer{background:var(--green-dark);padding:3rem 3rem}
         <p class="why-body">Language, geography, and mobility are among the most overlooked determinants of bereavement care. As Europe&rsquo;s population becomes increasingly mobile &mdash; with millions of parents raising families in countries that are not their own &mdash; the assumption that local, monolingual resources are sufficient is no longer valid.</p>
         <p class="why-body">MIMATIS was built to solve this. A digital-first platform with no geographic restriction &mdash; available to every bereaved parent, wherever they are, in any language, at any hour.</p>
         <button class="why-cta" onclick="showPage('story')">Read our story &rarr;</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- WHAT MIMATIS OFFERS -->
-  <div class="home-offers-section">
-    <div class="home-offers-inner">
-      <div class="home-offers-left">
-        <span class="home-offers-eye">What MIMATIS provides</span>
-        <h2 class="home-offers-title">Everything in one place &mdash;<br><em>immediately</em></h2>
-        <p class="home-offers-sub">MIMATIS brings together verified support resources, peer-reviewed research, compassionate guidance, and a permanent memorial garden &mdash; all in one digital experience, available at any hour.</p>
-        <button class="home-offers-link" onclick="showPage('help')">Find support in your country &rarr;</button>
-      </div>
-      <div class="home-offers-grid">
-        <div class="home-offer-card"><span class="hoc-num">01</span><span class="hoc-title">Verified support resources</span><span class="hoc-body">Helplines, charities, hospital bereavement teams, and funeral support &mdash; verified and curated.</span></div>
-        <div class="home-offer-card"><span class="hoc-num">02</span><span class="hoc-title">Research library</span><span class="hoc-body">23 peer-reviewed studies with open-access links &mdash; translated into human language.</span></div>
-        <div class="home-offer-card"><span class="hoc-num">03</span><span class="hoc-title">Compassionate guidance</span><span class="hoc-body">From the first hours after loss to the years that follow &mdash; practical, honest, warm.</span></div>
-        <div class="home-offer-card"><span class="hoc-num">04</span><span class="hoc-title">Letter templates</span><span class="hoc-body">Nine ready-to-use templates for when words feel impossible to find.</span></div>
-        <div class="home-offer-card"><span class="hoc-num">05</span><span class="hoc-title">Memorial garden</span><span class="hoc-body">Plant a flower in your baby&rsquo;s name. It stays here, always.</span></div>
-        <div class="home-offer-card"><span class="hoc-num">06</span><span class="hoc-title">For partners &amp; families</span><span class="hoc-body">Guidance for fathers, partners, grandparents, and siblings &mdash; the often invisible grievers.</span></div>
       </div>
     </div>
   </div>
@@ -1468,54 +1647,11 @@ footer{background:var(--green-dark);padding:3rem 3rem}
     </div>
   </div>
 
-  <!-- STAT CARDS -->
-  <div class="stat-cards-section">
-    <div class="stat-cards-inner">
-      <div class="stat-cards-header">
-        <span class="stat-cards-title">What the research shows</span>
-        <div class="stat-cards-line"></div>
-      </div>
-      <div class="stat-group">
-        <p class="stat-group-label">Stillbirth</p>
-        <div class="stat-cards-grid">
-          <div class="stat-card"><div class="stat-icon si-rose"><i class="ti ti-clock" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat">Nearly <em>2 million</em> babies are stillborn every year &mdash; one every <em>16 seconds</em></p><p class="stat-card-src">WHO &middot; UNICEF</p></div></div>
-          <div class="stat-card"><div class="stat-icon si-rose"><i class="ti ti-heart-broken" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat">Over <em>40%</em> of all stillbirths occur during labour &mdash; losses that could be avoided with improved care</p><p class="stat-card-src">WHO</p></div></div>
-          <div class="stat-card"><div class="stat-icon si-rose"><i class="ti ti-world" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat">Stillbirth rates vary from <em>2.9 per 1,000</em> births in western Europe to <em>22.8</em> in west and central Africa</p><p class="stat-card-src">The Lancet &middot; 2021</p></div></div>
-          <div class="stat-card"><div class="stat-icon si-rose"><i class="ti ti-shield-check" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat">The majority of stillbirths could have been avoided with high-quality care during pregnancy and birth</p><p class="stat-card-src">WHO &middot; UNICEF</p></div></div>
-        </div>
-      </div>
-      <div class="stat-group">
-        <p class="stat-group-label">Miscarriage</p>
-        <div class="stat-cards-grid">
-          <div class="stat-card"><div class="stat-icon si-blue"><i class="ti ti-calendar-stats" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat">An estimated <em>23 million</em> miscarriages occur every year &mdash; <em>44</em> pregnancy losses every minute</p><p class="stat-card-src">The Lancet &middot; 2021</p></div></div>
-          <div class="stat-card"><div class="stat-icon si-blue"><i class="ti ti-user-heart" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat"><em>1 in every 4 to 5</em> pregnancies results in miscarriage</p><p class="stat-card-src">ACOG &middot; Texas Children&rsquo;s Hospital</p></div></div>
-          <div class="stat-card"><div class="stat-icon si-blue"><i class="ti ti-dna" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat">Around <em>50%</em> of first trimester miscarriages are caused by chromosomal abnormalities &mdash; not by anything the mother did</p><p class="stat-card-src">NHS &middot; Newcastle Hospitals</p></div></div>
-        </div>
-      </div>
-      <div class="stat-group" style="margin-bottom:0">
-        <p class="stat-group-label">Grief &amp; mental health</p>
-        <div class="stat-cards-grid">
-          <div class="stat-card"><div class="stat-icon si-sage"><i class="ti ti-brain" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat">Between <em>30 and 60%</em> of bereaved parents meet the clinical criteria for PTSD following pregnancy or infant loss</p><p class="stat-card-src">MDPI &middot; Peer-reviewed scoping review</p></div></div>
-          <div class="stat-card"><div class="stat-icon si-sage"><i class="ti ti-mood-sad" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat">Parents who experience stillbirth have a considerably higher risk of depression, anxiety and PTSD &mdash; a difference that can remain <em>years</em> later</p><p class="stat-card-src">BMC Pregnancy &amp; Childbirth &middot; 2021</p></div></div>
-          <div class="stat-card"><div class="stat-icon si-sage"><i class="ti ti-alert-circle" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat"><em>4 in 10</em> people report symptoms of PTSD in the three months following a miscarriage or ectopic pregnancy</p><p class="stat-card-src">Imperial College London</p></div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- INFO STRIP -->
-  <div class="info-strip">
-    <div class="info-strip-inner">
-      <p class="info-strip-title">Multilingual information cards</p>
-      <p class="info-strip-body">Compassionate guidance in over ten languages, developed by Steunpunt NOVA &mdash; a Dutch specialist baby loss centre.</p>
-      <div class="info-strip-btns">
-        <a href="https://steunpuntnova.nl/en/" target="_blank" rel="noopener" class="btn-rose-outline">View Cards</a>
-        <a href="https://steunpuntnova.nl/en/caregivers/videos/" target="_blank" rel="noopener" class="btn-rose-outline">Support Videos</a>
-      </div>
-    </div>
-  </div>
-
 </div>
+<script>
+function hmGo(){var v=document.getElementById('hm-country').value;if(v){window.location.href='/'+v;}else{showPage('help');}}
+function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({behavior:'smooth',block:'start'});}}
+</script>
 
 
 <div id="pg-help" class="pg" aria-label="Find Stillbirth and Baby Loss Support by Country">
@@ -1627,6 +1763,41 @@ footer{background:var(--green-dark);padding:3rem 3rem}
     <span class="sec-eye">Evidence &amp; Knowledge</span>
     <h2 class="sec-title">Research <em>Library</em></h2>
     <p class="sec-body" style="margin-bottom:2.75rem">Curated academic studies on miscarriage, stillbirth, neonatal death, prevention, and grief &mdash; including European research. Click any study to read the full paper.</p>
+    <!-- STAT CARDS -->
+  <div class="stat-cards-section">
+    <div class="stat-cards-inner">
+      <div class="stat-cards-header">
+        <span class="stat-cards-title">What the research shows</span>
+        <div class="stat-cards-line"></div>
+      </div>
+      <div class="stat-group">
+        <p class="stat-group-label">Stillbirth</p>
+        <div class="stat-cards-grid">
+          <div class="stat-card"><div class="stat-icon si-rose"><i class="ti ti-clock" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat">Nearly <em>2 million</em> babies are stillborn every year &mdash; one every <em>16 seconds</em></p><p class="stat-card-src">WHO &middot; UNICEF</p></div></div>
+          <div class="stat-card"><div class="stat-icon si-rose"><i class="ti ti-heart-broken" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat">Over <em>40%</em> of all stillbirths occur during labour &mdash; losses that could be avoided with improved care</p><p class="stat-card-src">WHO</p></div></div>
+          <div class="stat-card"><div class="stat-icon si-rose"><i class="ti ti-world" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat">Stillbirth rates vary from <em>2.9 per 1,000</em> births in western Europe to <em>22.8</em> in west and central Africa</p><p class="stat-card-src">The Lancet &middot; 2021</p></div></div>
+          <div class="stat-card"><div class="stat-icon si-rose"><i class="ti ti-shield-check" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat">The majority of stillbirths could have been avoided with high-quality care during pregnancy and birth</p><p class="stat-card-src">WHO &middot; UNICEF</p></div></div>
+        </div>
+      </div>
+      <div class="stat-group">
+        <p class="stat-group-label">Miscarriage</p>
+        <div class="stat-cards-grid">
+          <div class="stat-card"><div class="stat-icon si-blue"><i class="ti ti-calendar-stats" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat">An estimated <em>23 million</em> miscarriages occur every year &mdash; <em>44</em> pregnancy losses every minute</p><p class="stat-card-src">The Lancet &middot; 2021</p></div></div>
+          <div class="stat-card"><div class="stat-icon si-blue"><i class="ti ti-user-heart" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat"><em>1 in every 4 to 5</em> pregnancies results in miscarriage</p><p class="stat-card-src">ACOG &middot; Texas Children&rsquo;s Hospital</p></div></div>
+          <div class="stat-card"><div class="stat-icon si-blue"><i class="ti ti-dna" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat">Around <em>50%</em> of first trimester miscarriages are caused by chromosomal abnormalities &mdash; not by anything the mother did</p><p class="stat-card-src">NHS &middot; Newcastle Hospitals</p></div></div>
+        </div>
+      </div>
+      <div class="stat-group" style="margin-bottom:0">
+        <p class="stat-group-label">Grief &amp; mental health</p>
+        <div class="stat-cards-grid">
+          <div class="stat-card"><div class="stat-icon si-sage"><i class="ti ti-brain" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat">Between <em>30 and 60%</em> of bereaved parents meet the clinical criteria for PTSD following pregnancy or infant loss</p><p class="stat-card-src">MDPI &middot; Peer-reviewed scoping review</p></div></div>
+          <div class="stat-card"><div class="stat-icon si-sage"><i class="ti ti-mood-sad" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat">Parents who experience stillbirth have a considerably higher risk of depression, anxiety and PTSD &mdash; a difference that can remain <em>years</em> later</p><p class="stat-card-src">BMC Pregnancy &amp; Childbirth &middot; 2021</p></div></div>
+          <div class="stat-card"><div class="stat-icon si-sage"><i class="ti ti-alert-circle" aria-hidden="true"></i></div><div class="stat-card-text"><p class="stat-card-stat"><em>4 in 10</em> people report symptoms of PTSD in the three months following a miscarriage or ectopic pregnancy</p><p class="stat-card-src">Imperial College London</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <div class="frow">
       <button class="fbtn active" data-filt="all">All Studies</button>
       <button class="fbtn" data-filt="sb">Stillbirth</button>
@@ -1971,6 +2142,38 @@ p></div>
     </div>
   </div>
 
+
+  <!-- PHYSICAL RECOVERY SUBVIEW -->
+  <div class="gs-sub-view" id="gss-recovery">
+    <div class="gs-inner-nav">
+      <button class="gs-back" id="gs-back-recovery">Back</button>
+      <span class="gs-bc-sep">/</span>
+      <span class="gs-bc-cur">Your body after loss</span>
+    </div>
+    <div class="gs-inner-body">
+      <p style="font-size:.8rem;color:var(--soft);line-height:1.85;max-width:560px;margin-bottom:.5rem;border-left:2px solid var(--border);padding-left:1rem;font-style:italic">You have just given birth. Your body does not know what your heart knows. This guide is for mothers after a late pregnancy loss or neonatal death — covering what to expect physically, and how to care for yourself when caring for yourself feels impossible.</p>
+      <p style="font-size:.75rem;color:var(--soft);margin-bottom:2.5rem;padding-left:1.25rem">If you experienced an early miscarriage, some of this may still be relevant — but please speak with your GP or midwife about what applies to your situation.</p>
+      <div class="gs-recovery-grid" id="gs-recovery-list"></div>
+      <div style="background:var(--green-light);border:0.5px solid rgba(29,158,117,.2);padding:1.5rem 1.75rem;margin-top:2.5rem">
+        <span style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:.5rem">Always remember</span>
+        <p style="font-size:.85rem;color:var(--green-dark);line-height:1.85">If you are ever unsure whether something you are experiencing is normal, contact your midwife or GP. You are still a patient and you are entitled to full postnatal care, regardless of whether your baby survived.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOR PARTNERS SUBVIEW -->
+  <div class="gs-sub-view" id="gss-partners">
+    <div class="gs-inner-nav">
+      <button class="gs-back" id="gs-back-partners">Back</button>
+      <span class="gs-bc-sep">/</span>
+      <span class="gs-bc-cur">For partners &amp; fathers</span>
+    </div>
+    <div class="gs-inner-body">
+      <p style="font-size:.8rem;color:var(--soft);line-height:1.85;max-width:560px;margin-bottom:2.5rem;border-left:2px solid var(--border);padding-left:1rem;font-style:italic">Most bereavement resources are written for mothers. This page is written for you &mdash; the partner, the father, the person who is also grieving, who may be holding someone else together, and who may have nowhere to put your own pain.</p>
+      <div class="gs-step-list" id="gs-partners-list"></div>
+    </div>
+  </div>
+
 </div>
 
 
@@ -2104,38 +2307,6 @@ p></div>
         a.click();
       }
       </script>
-  <!-- PHYSICAL RECOVERY SUBVIEW -->
-  <div class="gs-sub-view" id="gss-recovery">
-    <div class="gs-inner-nav">
-      <button class="gs-back" id="gs-back-recovery">Back</button>
-      <span class="gs-bc-sep">/</span>
-      <span class="gs-bc-cur">Your body after loss</span>
-    </div>
-    <div class="gs-inner-body">
-      <p style="font-size:.8rem;color:var(--soft);line-height:1.85;max-width:560px;margin-bottom:.5rem;border-left:2px solid var(--border);padding-left:1rem;font-style:italic">You have just given birth. Your body does not know what your heart knows. This guide is for mothers after a late pregnancy loss or neonatal death — covering what to expect physically, and how to care for yourself when caring for yourself feels impossible.</p>
-      <p style="font-size:.75rem;color:var(--soft);margin-bottom:2.5rem;padding-left:1.25rem">If you experienced an early miscarriage, some of this may still be relevant — but please speak with your GP or midwife about what applies to your situation.</p>
-      <div class="gs-recovery-grid" id="gs-recovery-list"></div>
-      <div style="background:var(--green-light);border:0.5px solid rgba(29,158,117,.2);padding:1.5rem 1.75rem;margin-top:2.5rem">
-        <span style="font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:.5rem">Always remember</span>
-        <p style="font-size:.85rem;color:var(--green-dark);line-height:1.85">If you are ever unsure whether something you are experiencing is normal, contact your midwife or GP. You are still a patient and you are entitled to full postnatal care, regardless of whether your baby survived.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- FOR PARTNERS SUBVIEW -->
-  <div class="gs-sub-view" id="gss-partners">
-    <div class="gs-inner-nav">
-      <button class="gs-back" id="gs-back-partners">Back</button>
-      <span class="gs-bc-sep">/</span>
-      <span class="gs-bc-cur">For partners &amp; fathers</span>
-    </div>
-    <div class="gs-inner-body">
-      <p style="font-size:.8rem;color:var(--soft);line-height:1.85;max-width:560px;margin-bottom:2.5rem;border-left:2px solid var(--border);padding-left:1rem;font-style:italic">Most bereavement resources are written for mothers. This page is written for you &mdash; the partner, the father, the person who is also grieving, who may be holding someone else together, and who may have nowhere to put your own pain.</p>
-      <div class="gs-step-list" id="gs-partners-list"></div>
-    </div>
-  </div>
-
-
 <!-- JOURNAL PAGE -->
 <div id="pg-journal" class="pg">
 
