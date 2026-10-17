@@ -1364,6 +1364,11 @@ footer{background:var(--green-dark);padding:3rem 3rem}
 .gd-q-src{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:#fff;opacity:.85}
 @media(max-width:820px){.gd-seed-card{grid-template-columns:1fr}.gd-seed-card img{min-height:260px;max-height:340px}}
 @media(max-width:700px){.gd-hero{min-height:340px}.gd-hero-in{padding:5rem 16px 2.25rem}.gd-wrap{padding:0 16px}.gd-main{padding:32px 0 56px}#pg-garden .gsky{height:340px;border-radius:4px}.gd-seed{padding:48px 0}.gd-seed-text{padding:1.8rem 1.4rem}.gd-quote{min-height:340px}}
+#pg-garden .ftip{display:none}
+#pg-garden .flower{bottom:26px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;width:92px}
+#pg-garden .fn{background:none;padding:0;margin-top:5px;max-width:90px;font-family:'Inter',sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.01em;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.75),0 0 10px rgba(0,0,0,.35);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.3}
+#pg-garden .fy{font-size:.62rem;letter-spacing:.12em;color:rgba(255,255,255,.85);text-shadow:0 1px 3px rgba(0,0,0,.7);line-height:1.2;margin-top:1px}
+@media(max-width:700px){#pg-garden .flower{width:80px}#pg-garden .fn{font-size:.74rem;max-width:78px}}
 /* ── end Garden redesign ── */
 </style>
 <script type="application/ld+json">
@@ -3993,13 +3998,37 @@ function getSB(){
 }
 let fc=0;
 
-function addFlower(name,emoji,xp,sh,canvas){
+function gEsc(t){return String(t==null?'':t).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function addFlower(name,emoji,xp,sh,canvas,year){
   var el=document.createElement('div');
   el.className='flower';
   el.style.left=xp+'%';
-  el.innerHTML='<div class="ftip">'+name+'</div><span class="fh">'+emoji+'</span><div class="fstem" style="height:'+sh+'px"></div><div class="fn">'+name+'</div>';
+  el.title=year?(name+' \u00b7 '+year):name;
+  el.innerHTML='<span class="fh">'+String(emoji||'').replace(/[<>"']/g,'')+'</span><div class="fstem" style="height:'+sh+'px"></div><div class="fn">'+gEsc(name)+'</div>'+'<div class="fy">'+(year?gEsc(year):'&nbsp;')+'</div>';
   canvas.insertBefore(el,canvas.querySelector('.gnd2'));
 }
+function layoutGarden(){
+  var canvas=document.getElementById('gc');
+  if(!canvas)return;
+  var fl=canvas.querySelectorAll('.flower');
+  var w=canvas.clientWidth||900;
+  var per=Math.max(4,Math.floor(w/96));
+  var rows=Math.ceil(fl.length/per);
+  var tallest=0;
+  for(var k=0;k<fl.length;k++){tallest=Math.max(tallest,fl[k].offsetHeight);}
+  var rowH=Math.max(80,tallest+14);
+  for(var i=0;i<fl.length;i++){
+    var row=Math.floor(i/per), col=i%per;
+    var n=(row===rows-1)?(fl.length-row*per):per;
+    var x=((col+0.5)/n)*100+((row%2===1&&n===per)?(25/n):0);
+    x=Math.min(95,Math.max(5,x));
+    fl[i].style.left=x+'%';
+    fl[i].style.bottom=(26+row*rowH)+'px';
+    fl[i].style.zIndex=String(100-row);
+  }
+  canvas.style.height=Math.max(window.innerWidth<700?340:400, 26+rows*rowH+40)+'px';
+}
+window.addEventListener('resize',function(){clearTimeout(window._gLT);window._gLT=setTimeout(layoutGarden,150);});
 
 async function initGarden(){
   var canvas=document.getElementById('gc');
@@ -4010,9 +4039,10 @@ async function initGarden(){
     fc=rows.length;
     rows.forEach(function(row,i){
       var xp=4+(i%30)*3.1;
-      var sh=28+(i%4)*8;
-      addFlower(row.baby_name,row.flower_emoji,xp,sh,canvas);
+      var sh=24+(i%3)*7;
+      addFlower(row.baby_name,row.flower_emoji,xp,sh,canvas,row.year);
     });
+    layoutGarden();
     var cel=document.getElementById('fc');
     if(cel){
       cel.innerHTML=fc>0
@@ -4030,6 +4060,7 @@ async function initGarden(){
       {n:'Aria',f:'&#127804;',x:78,s:52},{n:'Belle',f:'&#127800;',x:88,s:56}
     ];
     fallback.forEach(function(s){addFlower(s.n,s.f,s.x,s.s,canvas);});
+    layoutGarden();
   }
 }
 
@@ -4051,7 +4082,8 @@ async function plantFlower(){
     console.log('Insert error:',e);
   }
   var canvas=document.getElementById('gc');
-  addFlower(name,emoji,4+Math.random()*90,26+Math.random()*34,canvas);
+  addFlower(name,emoji,50,24+Math.floor(Math.random()*15),canvas,year);
+  layoutGarden();
   fc++;
   var cel=document.getElementById('fc');
   if(cel)cel.innerHTML='&#127800;&thinsp; '+fc+' flowers have been planted by parents around the world';
