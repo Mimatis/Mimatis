@@ -1448,7 +1448,7 @@ footer{background:var(--green-dark);padding:3rem 3rem}
     <button onclick="showPage('research')" data-page="research">Research</button>
     
     
-    <button onclick="window.open('mimatis_books.html','_blank')" data-page="books">Books &amp; Remembrance</button>
+    <button onclick="window.location.href='/mimatis_books'" data-page="books">Books &amp; Remembrance</button>
     <button onclick="showPage('story')" data-page="story">Who We Are</button>
     <button onclick="showPage('journal')" data-page="journal">Journal</button>
     <button onclick="showPage('action')" data-page="action">Take Action</button>
@@ -1475,7 +1475,7 @@ footer{background:var(--green-dark);padding:3rem 3rem}
   <button onclick="showPage('research');closeMob()">Research</button>
   
   
-  <button onclick="window.open('mimatis_books.html','_blank');closeMob()">Books &amp; Remembrance</button>
+  <button onclick="window.location.href='/mimatis_books'">Books &amp; Remembrance</button>
   <button onclick="showPage('story');closeMob()">Who We Are</button>
   <button onclick="showPage('journal');closeMob()">Journal</button>
   <button onclick="showPage('action');closeMob()">Take Action</button>
@@ -3431,7 +3431,7 @@ p></div>
       <button class="foot-link" onclick="showPage('garden')">Garden</button>
       <button class="foot-link" onclick="showPage('research')">Research</button>
       
-      <button class="foot-link" onclick="showPage('books')">Books</button>
+      <a class="foot-link" href="/mimatis_books">Books &amp; Remembrance</a>
       <button class="foot-link" onclick="showPage('story')">Who We Are</button>
       <button class="foot-link" onclick="showPage('journal')">Journal</button>
       <button class="foot-link" onclick="showPage('support')">Guidance &amp; Support</button>
@@ -3705,6 +3705,7 @@ function applyPageMeta(id){
   if(md)md.setAttribute('content',m.d);
 }
 function showPage(id){
+  if(id==='books'){window.location.href='/mimatis_books';return;}
   if(id==='collab')id='action'; // Collaborate page retired; old links land on Take Action
   applyPageMeta(id);
   document.querySelectorAll('.pg').forEach(function(p){p.classList.remove('active');});
