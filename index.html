@@ -1220,7 +1220,8 @@ footer{background:var(--green-dark);padding:3rem 3rem}
 .jn-tabs .jtab{font-size:.66rem;letter-spacing:.08em;padding:.45rem .9rem;border:1px solid var(--border);border-radius:3px;color:var(--mid);background:#fff}
 .jn-tabs .jtab.active,.jn-tabs .jtab:hover{background:var(--green-dark);border-color:var(--green-dark);color:#fff}
 .jn-lead,.jn-card{cursor:pointer;background:#fff}
-.jn-lead:focus-visible,.jn-card:focus-visible{outline:2px solid var(--green);outline-offset:4px}
+.jn-lead:focus-within,.jn-card:focus-within{outline:2px solid var(--green);outline-offset:4px}
+.jn-more:focus{outline:none}
 .jn-lead{display:grid;grid-template-columns:1.25fr 1fr;gap:2.5rem;align-items:center;padding-bottom:2.75rem;margin-bottom:2.75rem;border-bottom:1px solid var(--border)}
 .jn-img{position:relative;overflow:hidden;border-radius:4px;background:var(--green-light);color:var(--green);aspect-ratio:16/10;display:flex;align-items:center;justify-content:center}
 .jn-lead .jn-img{aspect-ratio:4/3}
@@ -1601,6 +1602,17 @@ a.jn-more{text-decoration:none}
   ]
 }
 </script>
+<style>
+#cc-bar{position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--border);padding:1.1rem 1.25rem;display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+#cc-bar[hidden]{display:none}
+#cc-bar p{font-size:.8rem;line-height:1.7;color:var(--mid);flex:1 1 320px;margin:0}
+#cc-bar a{color:var(--green-dark)}
+#cc-bar .cc-btns{display:flex;gap:.6rem}
+#cc-bar button{font-family:'Montserrat',sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:.65rem 1.1rem;border-radius:3px;cursor:pointer;border:1px solid var(--green)}
+#cc-bar .cc-yes{background:var(--green);color:#fff}
+#cc-bar .cc-no{background:#fff;color:var(--green-dark)}
+</style>
+<style>a.gs-card,a.gs-nova-card{display:block;color:inherit;text-decoration:none;text-align:left;line-height:normal}a.gs-card:focus-visible,a.gs-nova-card:focus-visible{outline:2px solid var(--green);outline-offset:-2px}</style>
 </head>
 <body>
 
@@ -2171,48 +2183,48 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
     </div>
 
     <div class="gs-cards-grid">
-      <button class="gs-card" id="gcard-guidance">
+      <a class="gs-card" id="gcard-guidance" href="/guidance/what-to-expect" onclick="event.preventDefault()">
         <span class="gs-card-num">01</span>
         <span class="gs-card-eye">Practical &amp; emotional</span>
         <h3 class="gs-card-title">What to expect <em>&amp; how to cope</em></h3>
         <p class="gs-card-desc">A gentle seven-step guide through the first days, practical decisions, grief over time, and supporting a partner.</p>
         <span class="gs-card-arrow">Read the guide</span>
-      </button>
-      <button class="gs-card" id="gcard-letters">
+      </a>
+      <a class="gs-card" id="gcard-letters" href="/guidance/letter-templates" onclick="event.preventDefault()">
         <span class="gs-card-num">02</span>
         <span class="gs-card-eye">Letter templates</span>
         <h3 class="gs-card-title">Finding the <em>right words</em></h3>
         <p class="gs-card-desc">Nine ready-to-use letter templates &mdash; for friends, family, your employer, social media, and more.</p>
         <span class="gs-card-arrow">Open templates</span>
-      </button>
-      <button class="gs-card" id="gcard-words">
+      </a>
+      <a class="gs-card" id="gcard-words" href="/guidance/what-to-say" onclick="event.preventDefault()">
         <span class="gs-card-num">03</span>
         <span class="gs-card-eye">For friends &amp; family</span>
         <h3 class="gs-card-title">What to say &mdash; and what <em>not</em> to say</h3>
         <p class="gs-card-desc">A practical guide for the people who love you &mdash; what helps, what hurts, and how to simply be present.</p>
         <span class="gs-card-arrow">Read the guide</span>
-      </button>
-      <button class="gs-card" id="gcard-info">
+      </a>
+      <a class="gs-card" id="gcard-info" href="/#support" onclick="event.preventDefault()">
         <span class="gs-card-num">04</span>
         <span class="gs-card-eye">Multilingual &middot; Steunpunt NOVA</span>
         <h3 class="gs-card-title">Information cards <em>in your language</em></h3>
         <p class="gs-card-desc">Compassionate guidance in 10+ languages, developed by Steunpunt NOVA &mdash; a Dutch specialist baby loss centre.</p>
         <span class="gs-card-arrow">View cards</span>
-      </button>
-      <button class="gs-card" id="gcard-recovery">
+      </a>
+      <a class="gs-card" id="gcard-recovery" href="/guidance/your-body-after-loss" onclick="event.preventDefault()">
         <span class="gs-card-num">05</span>
         <span class="gs-card-eye">Physical &amp; emotional</span>
         <h3 class="gs-card-title">Your body <em>after loss</em></h3>
         <p class="gs-card-desc">What to expect physically after a late pregnancy loss or neonatal death — and how to care for yourself when care feels impossible.</p>
         <span class="gs-card-arrow">Read the guide</span>
-      </button>
-      <button class="gs-card" id="gcard-partners">
+      </a>
+      <a class="gs-card" id="gcard-partners" href="/guidance/partners-and-fathers" onclick="event.preventDefault()">
         <span class="gs-card-num">06</span>
         <span class="gs-card-eye">For partners &amp; fathers</span>
         <h3 class="gs-card-title">You are <em>grieving too</em></h3>
         <p class="gs-card-desc">Grief looks different for every person. A guide written specifically for partners and fathers — who are often the forgotten grievers.</p>
         <span class="gs-card-arrow">Read the guide</span>
-      </button>
+      </a>
     </div>
   </div>
 
@@ -2279,7 +2291,7 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
     </div>
     <div class="gs-inner-body">
       <p style="font-size:.8rem;color:var(--soft);line-height:1.85;max-width:520px;margin-bottom:2.25rem;border-left:2px solid var(--bdr);padding-left:1rem;font-style:italic">These cards were developed by Steunpunt NOVA &mdash; a specialist Dutch support centre for parents after baby loss. They offer clear, compassionate guidance in multiple languages so that every parent can access support in their own language.</p>
-      <button class="gs-nova-card" onclick="window.open('https://steunpuntnova.nl/en/','_blank')">
+      <a class="gs-nova-card" href="https://steunpuntnova.nl/en/" target="_blank" rel="noopener">
         <span class="gs-nova-eye">Information cards &middot; Steunpunt NOVA</span>
         <div class="gs-nova-title">Multilingual information cards</div>
         <p class="gs-nova-desc">A comprehensive collection of cards covering what to expect after the loss of a baby, practical guidance, and emotional support resources.</p>
@@ -2290,13 +2302,13 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
           <span class="gs-lang-pill">Tigrinya</span><span class="gs-lang-pill">French</span><span class="gs-lang-pill">German</span>
           <span class="gs-lang-pill">Spanish</span><span class="gs-lang-pill">+ more</span>
         </div>
-      </button>
-      <button class="gs-nova-card" onclick="window.open('https://steunpuntnova.nl/en/caregivers/videos/','_blank')">
+      </a>
+      <a class="gs-nova-card" href="https://steunpuntnova.nl/en/caregivers/videos/" target="_blank" rel="noopener">
         <span class="gs-nova-eye">Support videos &middot; For parents &amp; caregivers</span>
         <div class="gs-nova-title">Video library for parents &amp; healthcare professionals</div>
         <p class="gs-nova-desc">Practical and emotional guidance for bereaved parents, as well as for healthcare professionals and caregivers who support families after baby loss.</p>
         <span class="gs-nova-link">Watch support videos</span>
-      </button>
+      </a>
     </div>
   </div>
 
@@ -2497,125 +2509,125 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
 <button class="jtab" onclick="filterJournal('research',this)">Research</button>
 <button class="jtab" onclick="filterJournal('film',this)">Film &amp; music</button></div>
       </header>
-      <article class="jn-lead" data-pillar="stories" onclick="openJournalArticle('leo')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+      <article class="jn-lead" data-pillar="stories" onclick="openJournalArticle('leo')">
           <div class="jn-img"><img src="/assets/journal-gintare-thumb.jpg" alt="Gintar&#279; sitting on a striped sofa, photographed in black and white" loading="lazy"></div>
           <div class="jn-body">
             <span class="jn-cat">Parents&rsquo; stories</span>
             <h3 class="jn-title">Leo, and what I wish <em>had been different</em></h3>
             <p class="jn-exc">At 26 weeks, Gintar&#279; learned in a Vilnius hospital that her son would not survive. She tells what happened in the weeks that followed, and what she believes hospitals could change for mothers in her situation.</p>
             <span class="jn-meta">19 Oct 2026 &middot; 8 min read</span>
-            <a class="jn-more" href="/journal/leo-what-i-wish-had-been-different" onclick="event.preventDefault()">Read her story &rarr;</a>
+            <a class="jn-more" href="/journal/leo-what-i-wish-had-been-different" onclick="event.preventDefault();event.stopPropagation();openJournalArticle('leo')">Read her story &rarr;</a>
           </div>
         </article>
       <div class="jn-grid">
-        <article class="jn-card" data-pillar="film" onclick="window.open('https://youtube.com/shorts/rfvITWt9Z4A','_blank','noopener')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+        <article class="jn-card" data-pillar="film" onclick="window.open('https://youtube.com/shorts/rfvITWt9Z4A','_blank','noopener')">
           <div class="jn-img jn-video"><img src="https://img.youtube.com/vi/rfvITWt9Z4A/hqdefault.jpg" alt="A space to pause: gentle music by MIMATIS" loading="lazy"></div>
           <div class="jn-body">
             <span class="jn-cat">Music</span>
             <h3 class="jn-title">A space to <em>pause</em></h3>
             <p class="jn-exc">If today feels overwhelming, let this gentle music be a little space to pause, breathe, and simply be. Created by MIMATIS for parents navigating loss, grief and anxiety.</p>
             <span class="jn-meta">Music &middot; YouTube</span>
-            <span class="jn-more">Listen on YouTube &#8599;</span>
+            <a class="jn-more" href="https://youtube.com/shorts/rfvITWt9Z4A" target="_blank" rel="noopener" onclick="event.stopPropagation()">Listen on YouTube &#8599;</a>
           </div>
         </article>
-        <article class="jn-card" data-pillar="research" onclick="openJournalArticle('noteveryloss')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+        <article class="jn-card" data-pillar="research" onclick="openJournalArticle('noteveryloss')">
           <div class="jn-img"><img src="/assets/journal-not-every-loss-thumb.jpg" alt="Not every loss is the same" loading="lazy"></div>
           <div class="jn-body">
             <span class="jn-cat">Awareness</span>
             <h3 class="jn-title">Not every loss is the same. <em>Do we know what we mean?</em></h3>
             <p class="jn-exc">&ldquo;Pregnancy loss&rdquo; covers many different experiences, and most people could not say what a stillbirth is. An essay on the words we use, what surveys show, and why speaking more clearly matters.</p>
             <span class="jn-meta">17 Oct 2026 &middot; 6 min read</span>
-            <a class="jn-more" href="/journal/not-every-loss-is-the-same" onclick="event.preventDefault()">Read the article &rarr;</a>
+            <a class="jn-more" href="/journal/not-every-loss-is-the-same" onclick="event.preventDefault();event.stopPropagation();openJournalArticle('noteveryloss')">Read the article &rarr;</a>
           </div>
         </article>
-        <article class="jn-card" data-pillar="art" onclick="openJournalArticle('seedletters')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+        <article class="jn-card" data-pillar="art" onclick="openJournalArticle('seedletters')">
           <div class="jn-img"><img src="/assets/journal-seed-letter-envelope.jpg" alt="A green envelope holding a MIMATIS seed letter, resting on leaves" loading="lazy"></div>
           <div class="jn-body">
             <span class="jn-cat">Art &amp; Memory</span>
             <h3 class="jn-title">Seed letters: words that <em>grow into flowers</em></h3>
             <p class="jn-exc">Write to your baby on paper filled with poppy seeds, plant it, and watch the words become flowers. A ritual for the first weeks, for the years that follow, and for brothers and sisters.</p>
             <span class="jn-meta">16 Oct 2026 &middot; 4 min read</span>
-            <a class="jn-more" href="/journal/seed-letters" onclick="event.preventDefault()">Read the article &rarr;</a>
+            <a class="jn-more" href="/journal/seed-letters" onclick="event.preventDefault();event.stopPropagation();openJournalArticle('seedletters')">Read the article &rarr;</a>
           </div>
         </article>
-        <article class="jn-card" data-pillar="borders" onclick="openJournalArticle('october15')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+        <article class="jn-card" data-pillar="borders" onclick="openJournalArticle('october15')">
           <div class="jn-img"><img src="/assets/journal-15-october-thumb.jpg" alt="15 October, Pregnancy and Infant Loss Remembrance Day poster" loading="lazy"></div>
           <div class="jn-body">
             <span class="jn-cat">Across Borders, Across Grief</span>
             <h3 class="jn-title">15 October: how Europe <em>remembers</em></h3>
             <p class="jn-exc">From a conference on perinatal grief at Hospital de Sant Pau in Barcelona to the Wave of Light at 7&nbsp;pm: how the remembrance day was marked across Europe in 2026.</p>
             <span class="jn-meta">16 Oct 2026 &middot; 4 min read</span>
-            <a class="jn-more" href="/journal/15-october-how-europe-remembers" onclick="event.preventDefault()">Read the article &rarr;</a>
+            <a class="jn-more" href="/journal/15-october-how-europe-remembers" onclick="event.preventDefault();event.stopPropagation();openJournalArticle('october15')">Read the article &rarr;</a>
           </div>
         </article>
-<article class="jn-card" data-pillar="film" onclick="window.open('https://youtu.be/K3LmoFEKDIQ','_blank','noopener')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+<article class="jn-card" data-pillar="film" onclick="window.open('https://youtu.be/K3LmoFEKDIQ','_blank','noopener')">
           <div class="jn-img jn-video"><img src="https://img.youtube.com/vi/K3LmoFEKDIQ/mqdefault.jpg" alt="Sounds of Stillness — a short film about stillbirth and grief" loading="lazy"></div>
           <div class="jn-body">
             <span class="jn-cat">Short Film</span>
             <h3 class="jn-title">Sounds of Stillness</h3>
             <p class="jn-exc">An experimental short documentary about stillbirth and silent grief — released on Mother’s Day, and filmed on Mother’s Day two years earlier.</p>
             <span class="jn-meta">Short film &middot; YouTube</span>
-            <span class="jn-more">Watch the film &#8599;</span>
+            <a class="jn-more" href="https://youtu.be/K3LmoFEKDIQ" target="_blank" rel="noopener" onclick="event.stopPropagation()">Watch the film &#8599;</a>
           </div>
         </article>
-<article class="jn-card" data-pillar="history" onclick="window.open('https://mamoszurnalas.lt/viktorija-isgyvenau-vaiko-gimima-zinodama-kad-jis-jau-mires/','_blank','noopener')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+<article class="jn-card" data-pillar="history" onclick="window.open('https://mamoszurnalas.lt/viktorija-isgyvenau-vaiko-gimima-zinodama-kad-jis-jau-mires/','_blank','noopener')">
           <div class="jn-img"><img src="/assets/journal-mamos-zurnalas.jpg" alt="Victoria with her baby — Mamos žurnalas feature" loading="lazy"></div>
           <div class="jn-body">
             <span class="jn-cat">In the Press</span>
             <h3 class="jn-title">&ldquo;I lived through my child&rsquo;s birth, knowing they had already died&rdquo;</h3>
             <p class="jn-exc">Victoria&rsquo;s own story, featured in the Lithuanian magazine Mamos &#382;urnalas &mdash; losing her daughter Maya, and the path that led her to build MIMATIS.</p>
             <span class="jn-meta">Mamos &#382;urnalas &middot; In Lithuanian</span>
-            <span class="jn-more">Read the feature &#8599;</span>
+            <a class="jn-more" href="https://mamoszurnalas.lt/viktorija-isgyvenau-vaiko-gimima-zinodama-kad-jis-jau-mires/" target="_blank" rel="noopener" onclick="event.stopPropagation()">Read the feature &#8599;</a>
           </div>
         </article>
-<article class="jn-card" data-pillar="history" onclick="openJournalArticle('cslewis')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+<article class="jn-card" data-pillar="history" onclick="openJournalArticle('cslewis')">
           <div class="jn-img"><img src="/assets/journal-baby-heart.jpg" alt="A heart-shaped biscuit iced with the word Baby" loading="lazy"></div>
           <div class="jn-body">
             <span class="jn-cat">History &amp; Literature</span>
             <h3 class="jn-title">&ldquo;No one ever told me grief felt so like <em>fear.&rdquo;</em></h3>
             <p class="jn-exc">After losing his wife Joy, C.S. Lewis wrote one of the most honest accounts of grief ever published. What he described mirrors what bereaved parents feel today.</p>
             <span class="jn-meta">3 min read</span>
-            <a class="jn-more" href="/journal/cs-lewis-a-grief-observed" onclick="event.preventDefault()">Read the article &rarr;</a>
+            <a class="jn-more" href="/journal/cs-lewis-a-grief-observed" onclick="event.preventDefault();event.stopPropagation();openJournalArticle('cslewis')">Read the article &rarr;</a>
           </div>
         </article>
-<article class="jn-card" data-pillar="history" onclick="openJournalArticle('darwin')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+<article class="jn-card" data-pillar="history" onclick="openJournalArticle('darwin')">
           <div class="jn-img"><img src="/assets/journal-angel.jpg" alt="A small porcelain angel beside candlelight" loading="lazy"></div>
           <div class="jn-body">
             <span class="jn-cat">Stories of Meaning</span>
             <h3 class="jn-title">Charles Darwin lost his daughter Annie at <em>ten years old</em></h3>
             <p class="jn-exc">What his private letters reveal about grief, love, and the limits of reason &mdash; and how loss shaped one of history&rsquo;s greatest minds.</p>
             <span class="jn-meta">3 min read</span>
-            <a class="jn-more" href="/journal/charles-darwin-and-annie" onclick="event.preventDefault()">Read the article &rarr;</a>
+            <a class="jn-more" href="/journal/charles-darwin-and-annie" onclick="event.preventDefault();event.stopPropagation();openJournalArticle('darwin')">Read the article &rarr;</a>
           </div>
         </article>
-<article class="jn-card" data-pillar="art" onclick="openJournalArticle('memoryboxes')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+<article class="jn-card" data-pillar="art" onclick="openJournalArticle('memoryboxes')">
           <div class="jn-img"><img src="/assets/journal-memorial-tree.jpg" alt="Dummies and handwritten notes tied to a memorial tree" loading="lazy"></div>
           <div class="jn-body">
             <span class="jn-cat">Healing Through Art</span>
             <h3 class="jn-title">Memory boxes &mdash; what to put in them, and <em>why they help</em></h3>
             <p class="jn-exc">A memory box is not about preserving grief. It is about acknowledging that your baby existed and that their existence mattered.</p>
             <span class="jn-meta">3 min read</span>
-            <a class="jn-more" href="/journal/memory-boxes" onclick="event.preventDefault()">Read the article &rarr;</a>
+            <a class="jn-more" href="/journal/memory-boxes" onclick="event.preventDefault();event.stopPropagation();openJournalArticle('memoryboxes')">Read the article &rarr;</a>
           </div>
         </article>
-<article class="jn-card" data-pillar="nature" onclick="openJournalArticle('water')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+<article class="jn-card" data-pillar="nature" onclick="openJournalArticle('water')">
           <div class="jn-img"><svg viewBox="0 0 200 128" fill="none" aria-hidden="true"><path d="M50 54c8-6 17-6 25 0s17 6 25 0 17-6 25 0 17 6 25 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M50 70c8-6 17-6 25 0s17 6 25 0 17-6 25 0 17 6 25 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity=".7"/><path d="M50 86c8-6 17-6 25 0s17 6 25 0 17-6 25 0 17 6 25 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" opacity=".45"/></svg></div>
           <div class="jn-body">
             <span class="jn-cat">Nature &amp; Grief</span>
             <h3 class="jn-title">Why grieving people seek <em>water</em></h3>
             <p class="jn-exc">Rivers, oceans, lakes. Research on the nervous system is beginning to explain why so many bereaved parents are drawn to water after loss.</p>
             <span class="jn-meta">4 min read</span>
-            <a class="jn-more" href="/journal/why-grieving-people-seek-water" onclick="event.preventDefault()">Read the article &rarr;</a>
+            <a class="jn-more" href="/journal/why-grieving-people-seek-water" onclick="event.preventDefault();event.stopPropagation();openJournalArticle('water')">Read the article &rarr;</a>
           </div>
         </article>
-<article class="jn-card" data-pillar="research" onclick="openJournalArticle('ptsd')" tabindex="0" role="link" onkeydown="if(event.key==='Enter')this.click()">
+<article class="jn-card" data-pillar="research" onclick="openJournalArticle('ptsd')">
           <div class="jn-img"><svg viewBox="0 0 200 128" fill="none" aria-hidden="true"><path d="M100 94S68 75 68 53c0-10 8-17 17-17 7 0 12 4 15 9 3-5 8-9 15-9 9 0 17 7 17 17 0 22-32 41-32 41z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M72 62h13l5-11 7 20 5-9h24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           <div class="jn-body">
             <span class="jn-cat">New Research</span>
             <h3 class="jn-title">When grief lives in the body &mdash; <em>what the science says</em></h3>
             <p class="jn-exc">Between 30 and 60% of bereaved parents meet clinical criteria for PTSD. New research shows exactly why grief manifests physically.</p>
             <span class="jn-meta">2 min read</span>
-            <a class="jn-more" href="/journal/grief-in-the-body" onclick="event.preventDefault()">Read the article &rarr;</a>
+            <a class="jn-more" href="/journal/grief-in-the-body" onclick="event.preventDefault();event.stopPropagation();openJournalArticle('ptsd')">Read the article &rarr;</a>
           </div>
         </article>
       </div>
@@ -4868,16 +4880,6 @@ document.addEventListener('click', function(e) {
   <p>MIMATIS would like to use Google cookies to count visits and newsletter sign-ups, so we know whether our free advertising reaches parents who need help. Nothing is measured unless you accept. <a href="#privacy" onclick="showPage('privacy');return false;">Privacy policy</a></p>
   <div class="cc-btns"><button type="button" class="cc-no" onclick="mimatisConsent(false)">Decline</button><button type="button" class="cc-yes" onclick="mimatisConsent(true)">Accept</button></div>
 </div>
-<style>
-#cc-bar{position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--border);padding:1.1rem 1.25rem;display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
-#cc-bar[hidden]{display:none}
-#cc-bar p{font-size:.8rem;line-height:1.7;color:var(--mid);flex:1 1 320px;margin:0}
-#cc-bar a{color:var(--green-dark)}
-#cc-bar .cc-btns{display:flex;gap:.6rem}
-#cc-bar button{font-family:'Montserrat',sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:.65rem 1.1rem;border-radius:3px;cursor:pointer;border:1px solid var(--green)}
-#cc-bar .cc-yes{background:var(--green);color:#fff}
-#cc-bar .cc-no{background:#fff;color:var(--green-dark)}
-</style>
 <script>
 var MIMATIS_GTAG_ID = '';
 var MIMATIS_CONVERSIONS = { newsletter: '', garden: '' };
