@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory boxes — what to put in them, and why they help | MIMATIS Journal</title>
+<meta name="description" content="A memory box is not about preserving grief. It is about acknowledging that your baby existed and that their existence mattered.">
+<link rel="canonical" href="https://www.mimatis.org/journal/memory-boxes">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="MIMATIS">
+<meta property="og:title" content="Memory boxes — what to put in them, and why they help | MIMATIS Journal">
+<meta property="og:description" content="A memory box is not about preserving grief. It is about acknowledging that your baby existed and that their existence mattered.">
+<meta property="og:url" content="https://www.mimatis.org/journal/memory-boxes">
+<meta property="og:image" content="https://www.mimatis.org/assets/journal-memorial-tree.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;1,400&family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* MIMATIS brand greens */
+  --green:#0097B2;
+  --green-dark:#00708A;
+  --green-light:#E0F4F8;
+  /* warm blush — Pink Elephants inspired secondary */
+  --blush:#E2A9F1;
+  --blush-light:#F6EAFB;
+  --blush-dark:#B06FD0;
+  /* sage — for gentle section backgrounds */
+  --sage:#E3F5F8;
+  --sage-mid:#BFE6EE;
+  /* page & surface */
+  --off:#FFFFFF;
+  --white:#ffffff;
+  --cream:#FFFFFF;
+  /* text */
+  --ink:#1E1E1E;
+  --mid:#2B2B29;
+  --soft:#5C5C58;
+  --border:#E8E4DF;
+  /* legacy aliases */
+  --rose:#0097B2;
+  --rd:#00708A;
+  --rp:#E0F4F8;
+  --bdr:rgba(30,30,30,0.08);
+  --ghost:#C8C2BB;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:#fff;color:var(--ink);font-family:'Montserrat',sans-serif;font-weight:400;line-height:1.85;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto}
+a{color:var(--green)}
+.sn{border-bottom:1px solid var(--border);padding:0 clamp(16px,5vw,3rem);min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.sn .wm{font-family:'Inter',sans-serif;font-size:1.05rem;letter-spacing:.22em;text-transform:uppercase;color:var(--green-dark);text-decoration:none}
+.sn nav{display:flex;gap:1.25rem;flex-wrap:wrap;padding:.6rem 0}
+.sn nav a{font-size:.78rem;color:var(--mid);text-decoration:none}
+.sn nav a:hover,.sn nav a[aria-current]{color:var(--green-dark)}
+.crumb{max-width:860px;margin:0 auto;padding:1.25rem clamp(16px,5vw,3rem) 0;font-size:.68rem;letter-spacing:.08em;color:var(--soft)}
+.crumb a{color:var(--soft);text-decoration:none}.crumb a:hover{color:var(--green-dark)}
+.sf{border-top:1px solid var(--border);margin-top:3rem;padding:2.5rem clamp(16px,5vw,3rem);font-size:.75rem;color:var(--soft)}
+.sf-in{max-width:960px;margin:0 auto;display:flex;flex-direction:column;gap:1rem}
+.sf-links{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem}
+.sf a{color:var(--mid);text-decoration:none}.sf a:hover{color:var(--green-dark)}
+.help-note{max-width:680px;margin:0 auto 2rem;padding:0 clamp(16px,5vw,3rem);font-size:.82rem;color:var(--soft)}
+/* generic content pages */
+.cp{max-width:760px;margin:0 auto;padding:2.5rem clamp(16px,5vw,3rem) 2rem}
+.cp-eye{font-size:.62rem;letter-spacing:.25em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:1rem}
+.cp h1{font-family:'Inter',sans-serif;font-size:clamp(1.8rem,4vw,2.6rem);font-weight:400;line-height:1.15;margin-bottom:1rem;letter-spacing:-.01em}
+.cp h1 em,.cp h2 em{font-style:italic;color:var(--green-dark)}
+.cp .lead{font-size:1.02rem;color:var(--mid);line-height:1.85;margin-bottom:2rem}
+.cp h2{font-family:'Inter',sans-serif;font-size:1.35rem;font-weight:400;margin:2.75rem 0 1rem;line-height:1.3}
+.cp h3{font-family:'Inter',sans-serif;font-size:1.08rem;font-weight:400;margin:1.75rem 0 .6rem;line-height:1.35;color:var(--ink)}
+.cp p{font-size:1rem;color:var(--mid);line-height:1.9;margin-bottom:1.1rem}
+.cp ul{margin:0 0 1.4rem 0;padding:0;list-style:none}
+.cp li{position:relative;padding-left:1.1rem;margin-bottom:.5rem;color:var(--mid);font-size:.98rem;line-height:1.8}
+.cp li::before{content:'';position:absolute;left:0;top:.75em;width:5px;height:5px;border-radius:50%;background:var(--green)}
+.cp strong{font-weight:500;color:var(--ink)}
+.step{display:grid;grid-template-columns:3rem 1fr;gap:1rem;padding:1.6rem 0;border-top:1px solid var(--border)}
+.step-n{font-family:'Inter',sans-serif;font-size:1.3rem;color:var(--green)}
+.step h2,.step h3{margin:0 0 .5rem}
+.box{background:var(--green-light);padding:1.4rem 1.6rem;margin:2rem 0}
+.box p{color:var(--green-dark);margin:0}
+.box .k{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:.4rem}
+.note{font-size:.88rem;color:var(--soft);border-left:2px solid var(--green);padding-left:1rem;margin:.6rem 0 0}
+.letter{border-top:1px solid var(--border);padding:1.8rem 0}
+.letter .sit{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green)}
+.letter pre{white-space:pre-wrap;font-family:'Montserrat',sans-serif;font-size:.95rem;line-height:1.85;color:var(--mid);background:#FAFAF8;border:1px solid var(--border);padding:1.25rem 1.4rem;margin-top:.8rem}
+.say{border-top:1px solid var(--border);padding:1.3rem 0}
+.say .q{font-family:'Inter',sans-serif;font-size:1.05rem;color:var(--ink);margin-bottom:.4rem}
+.say .alt{font-size:.92rem;color:var(--green-dark);margin:0}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);margin:1.5rem 0}
+.card{background:#fff;padding:1.4rem;text-decoration:none;display:block}
+.card .n{font-family:'Inter',sans-serif;color:var(--green);font-size:.9rem}
+.card h3{margin:.4rem 0 .4rem;font-size:1.02rem}
+.card p{font-size:.85rem;margin:0;color:var(--mid);line-height:1.7}
+.card:hover h3{color:var(--green-dark)}
+.study{border-top:1px solid var(--border);padding:1.4rem 0}
+.study .meta{font-size:.68rem;letter-spacing:.08em;color:var(--soft);text-transform:uppercase}
+.study h3{margin:.35rem 0 .5rem}
+.study h3 a{color:var(--ink);text-decoration:none}.study h3 a:hover{color:var(--green-dark)}
+.study p{font-size:.92rem}
+@media(max-width:640px){.step{grid-template-columns:2.2rem 1fr}}
+
+.collab-bottom-item-label{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green-light);display:block;margin-bottom:.2rem;flex-shrink:0;width:80px;padding-top:2px}
+.collab-bottom-item-val{font-size:.85rem;color:rgba(255,255,255,.75);line-height:1.5}
+.collab-bottom-item-val a{color:var(--green-light);text-decoration:none}
+.collab-bottom-item-val a:hover{color:#fff}
+/* ARTICLE PAGES */
+.article-page{max-width:100%}
+.article-hero{max-width:860px;margin:0 auto;padding:3rem 3rem 2.5rem}
+.article-pillar{font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;display:inline-block;padding:4px 10px;margin-bottom:1.5rem;font-weight:400}
+.ap-history{background:var(--green-light);color:var(--green-dark)}
+.ap-art{background:#faeeda;color:#854F0B}
+.ap-nature{background:#EAF3DE;color:#3B6D11}
+.ap-research{background:#e6f1fb;color:#185FA5}
+.article-title{font-family:'Inter',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:400;line-height:1.1;color:var(--ink);margin-bottom:1.1rem;letter-spacing:-.02em}
+.article-title em{font-style:italic;color:var(--green-dark)}
+.article-subtitle{font-size:1rem;color:var(--mid);line-height:1.8;max-width:580px;margin-bottom:1.75rem;font-weight:400}
+.article-meta{display:flex;align-items:center;gap:.85rem;font-size:.7rem;color:var(--soft);letter-spacing:.04em;padding-top:1.25rem;border-top:0.5px solid var(--border);flex-wrap:wrap}
+.ameta-dot{width:3px;height:3px;border-radius:50%;background:var(--border)}
+.article-back{display:inline-flex;align-items:center;gap:.4rem;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--green);background:none;border:none;cursor:pointer;font-family:'Montserrat',sans-serif;margin-bottom:1.5rem;padding:0;transition:color .15s}
+.article-back:hover{color:var(--green-dark)}
+.article-back::before{content:'←';font-size:.8rem}
+.illustration-wrap{background:var(--white);border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);margin:0 0 3rem}
+.illustration-wrap svg{max-width:100%;display:block}
+.article-body{max-width:680px;margin:0 auto;padding:0 3rem 5rem}
+.article-body p{font-size:1.05rem;color:var(--mid);line-height:1.95;margin-bottom:1.75rem;font-weight:400}
+.article-body p:first-child::first-letter{font-family:'Inter',sans-serif;font-size:3.5rem;font-weight:400;line-height:.85;float:left;margin:0 .08rem -.12rem 0;color:var(--ink)}
+.article-body h2{font-family:'Inter',sans-serif;font-size:1.35rem;font-weight:400;color:var(--ink);margin:2.5rem 0 1rem;line-height:1.3}
+.article-body h2 em{font-style:italic;color:var(--green-dark)}
+.pull-quote{border-top:2px solid var(--green-dark);border-bottom:0.5px solid var(--border);padding:1.5rem 0;margin:2.5rem 0;text-align:center}
+.pull-quote p{font-family:'Inter',sans-serif;font-size:1.15rem;font-style:italic;font-weight:400;color:var(--ink);line-height:1.65;max-width:520px;margin:0 auto}
+.item-card{padding:1.25rem 1.5rem;border-right:0.5px solid var(--border);border-bottom:0.5px solid var(--border)}
+.item-card:nth-child(2n){border-right:none}
+.item-card:nth-last-child(-n+2){border-bottom:none}
+.item-num{font-family:'Inter',sans-serif;font-size:.8rem;color:var(--green-light);display:block;margin-bottom:.3rem}
+.item-name{font-size:.88rem;font-weight:400;color:var(--ink);display:block;margin-bottom:.3rem}
+.item-desc{font-size:.78rem;color:var(--soft);line-height:1.65}
+.article-source{background:var(--green-light);border-left:3px solid var(--green);padding:1.25rem 1.5rem;margin-top:2.5rem}
+.article-source .source-label{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:.4rem}
+.article-source .source-text{font-size:.85rem;color:var(--green-dark);line-height:1.75}
+.article-footer-bar{max-width:680px;margin:0 auto;padding:0 3rem 4rem}
+.afooter-rule{height:0.5px;background:var(--border);margin-bottom:1.5rem}
+@media(max-width:640px){
+  .article-hero{padding:2rem 1.25rem 1.5rem}
+  .article-body{padding:0 1.25rem 4rem}
+  .article-footer-bar{padding:0 1.25rem 3rem}
+  .item-card{border-right:none!important}}
+.article-body p{font-size:1.02rem!important;line-height:1.95!important;margin-bottom:1.6rem!important}
+.article-footer{max-width:680px;margin:0 auto;padding:1rem 3rem 4rem;text-align:center}
+.article-footer .footer-rule{height:1px;background:var(--border);margin-bottom:1.5rem}
+.article-footer .footer-back{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--green-dark);text-decoration:none}
+.article-footer .footer-back:hover{text-decoration:underline}
+@media(max-width:700px){.article-footer{padding:1rem 16px 3rem}}
+.meta-dot{width:3px;height:3px;border-radius:50%;background:var(--border)}
+.article-body ul,.article-body ol{margin:0 0 1.6rem 0;padding:0;list-style:none}
+.article-body li{position:relative;padding-left:1.15rem;margin-bottom:.65rem;font-size:1rem;color:var(--mid);line-height:1.85}
+.article-body li::before{content:'';position:absolute;left:0;top:.78em;width:5px;height:5px;border-radius:50%;background:var(--green)}
+.article-body a{color:var(--green-dark)}
+.items-grid{display:grid;grid-template-columns:1fr 1fr;border:0.5px solid var(--border);margin:1.5rem 0 2.5rem}
+@media(max-width:640px){.items-grid{grid-template-columns:1fr}.illustration-wrap{margin-bottom:2rem}}
+.article-end{max-width:680px;margin:0 auto;padding:0 clamp(16px,5vw,3rem) 1rem;border-top:1px solid var(--border);padding-top:1.5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+.article-end a{color:var(--green-dark);text-decoration:none}
+.more{max-width:860px;margin:2.5rem auto 0;padding:0 clamp(16px,5vw,3rem)}
+.more h2{font-family:'Inter',sans-serif;font-weight:400;font-size:1.15rem;margin-bottom:1rem}
+
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mimatis.org/"}, {"@type": "ListItem", "position": 2, "name": "Journal", "item": "https://www.mimatis.org/journal"}, {"@type": "ListItem", "position": 3, "name": "Memory boxes — what to put in them, and why they help", "item": "https://www.mimatis.org/journal/memory-boxes"}]}, {"@type": "Article", "headline": "Memory boxes — what to put in them, and why they help", "description": "A memory box is not about preserving grief. It is about acknowledging that your baby existed and that their existence mattered.", "mainEntityOfPage": "https://www.mimatis.org/journal/memory-boxes", "author": {"@type": "NGO", "@id": "https://www.mimatis.org/#organization", "name": "MIMATIS", "url": "https://www.mimatis.org"}, "publisher": {"@type": "NGO", "@id": "https://www.mimatis.org/#organization", "name": "MIMATIS", "url": "https://www.mimatis.org"}, "articleSection": "Healing Through Art", "inLanguage": "en", "image": "https://www.mimatis.org/assets/journal-memorial-tree.jpg"}]}</script>
+</head>
+<body>
+<header class="sn"><a class="wm" href="/">MIMATIS</a><nav aria-label="Main"><a href="/#help">Find help</a><a href="/guidance">Guidance</a><a href="/journal" aria-current="page">Journal</a><a href="/research">Research</a><a href="/about">Who we are</a></nav></header>
+<div class="crumb"><a href="/">Home</a> &rsaquo; <a href="/journal">Journal</a> &rsaquo; Memory boxes — what to put in them, and why they help</div>
+<main>
+<div class="article-page"><div class="article-hero">
+<span class="article-pillar">Healing Through Art</span>
+<h1 class="article-title">Memory boxes — what to put<br/>in them, and <em>why they help</em></h1>
+<p class="article-subtitle">A memory box is not about preserving grief. It is about acknowledging that your baby existed and that their existence mattered.</p>
+<div class="article-meta">
+<span>Healing Through Art</span>
+<span class="meta-dot"></span>
+<span>Remembrance</span>
+<span class="meta-dot"></span>
+<span>MIMATIS Journal</span>
+</div>
+</div>
+<div class="illustration-wrap">
+<svg style="width:100%;display:block" viewbox="0 0 820 320" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#F1EFE8" height="320" width="820"></rect>
+<!-- Main box open -->
+<rect fill="#fff" height="120" rx="4" stroke="#E0DDD5" stroke-width="1.5" width="260" x="280" y="160"></rect>
+<!-- Box lid open -->
+<path d="M280 160 Q410 100 540 160" fill="none" stroke="#E0DDD5" stroke-width="1.5"></path>
+<path d="M280 160 Q410 110 540 160" fill="#fff" stroke="#E0DDD5" stroke-width="1"></path>
+<!-- Inside box items -->
+<!-- Small photo -->
+<rect fill="#E0F4F8" height="36" opacity=".7" rx="2" stroke="#0097B2" stroke-width=".8" width="45" x="305" y="185"></rect>
+<rect fill="#0097B2" height="24" opacity=".15" rx="1" width="37" x="309" y="189"></rect>
+<!-- Pressed flower -->
+<ellipse cx="390" cy="210" fill="#0097B2" opacity=".2" rx="12" ry="8" transform="rotate(-15 390 210)"></ellipse>
+<ellipse cx="385" cy="205" fill="#0097B2" opacity=".15" rx="9" ry="6" transform="rotate(25 385 205)"></ellipse>
+<ellipse cx="396" cy="207" fill="#0097B2" opacity=".18" rx="8" ry="5" transform="rotate(-40 396 207)"></ellipse>
+<line opacity=".4" stroke="#3B6D11" stroke-width=".8" x1="390" x2="390" y1="218" y2="235"></line>
+<!-- Footprint -->
+<ellipse cx="450" cy="198" fill="#E0DDD5" opacity=".8" rx="10" ry="14"></ellipse>
+<ellipse cx="444" cy="187" fill="#E0DDD5" opacity=".6" rx="4" ry="3"></ellipse>
+<ellipse cx="452" cy="185" fill="#E0DDD5" opacity=".6" rx="4" ry="3"></ellipse>
+<ellipse cx="459" cy="187" fill="#E0DDD5" opacity=".6" rx="3.5" ry="3"></ellipse>
+<ellipse cx="464" cy="191" fill="#E0DDD5" opacity=".6" rx="3" ry="2.5"></ellipse>
+<!-- Lock/clasp -->
+<rect fill="#E0DDD5" height="4" rx="2" width="20" x="400" y="275"></rect>
+<!-- Small lock -->
+<rect fill="#E0DDD5" height="5" rx="1" width="6" x="407" y="270"></rect>
+<!-- Flowers scattered -->
+<circle cx="160" cy="140" fill="none" opacity=".2" r="18" stroke="#0097B2" stroke-width=".8"></circle>
+<circle cx="160" cy="140" fill="#0097B2" opacity=".12" r="8"></circle>
+<circle cx="178" cy="130" fill="none" opacity=".15" r="10" stroke="#0097B2" stroke-width=".8"></circle>
+<circle cx="660" cy="150" fill="none" opacity=".2" r="15" stroke="#0097B2" stroke-width=".8"></circle>
+<circle cx="660" cy="150" fill="#0097B2" opacity=".1" r="6"></circle>
+<!-- Label -->
+<text fill="#5C5C58" font-family="Montserrat,sans-serif" font-size="10" letter-spacing="2" text-anchor="middle" x="410" y="300">MEMORY  ·  REMEMBRANCE  ·  CONNECTION</text>
+</svg>
+</div>
+<div class="article-body">
+<p>When a baby dies, there is very little that can be held. The pregnancy was real. The baby was real. But in the days after a loss, there is so often an absence of tangible things — a room that was being prepared but was never used, a name that was chosen but rarely spoken aloud.</p>
+<p>A memory box changes that. It gives grief something to hold.</p>
+<h2>What a memory box <em>actually is</em></h2>
+<p>A memory box is a container — usually a small wooden or cardboard box — in which parents keep objects connected to their baby. It might be given to them by a hospital bereavement team. It might be something they put together themselves. The contents vary entirely, because the point is not the objects themselves but what they represent: acknowledgement that this baby was here, that they mattered, and that their parents remember them.</p>
+<p>Many hospitals in the UK, Netherlands, Ireland, and Australia now provide memory boxes as a standard part of bereavement care. Organisations like Sands UK, NILMDTS (Now I Lay Me Down to Sleep), and Steunpunt NOVA in the Netherlands provide boxes, professional photography, and support to help families create these keepsakes. But a memory box does not need to come from anywhere official. It can be assembled quietly, over time, by parents who are finding their way through.</p>
+<div class="pull-quote">
+<p>A memory box is not about preserving grief. It is about acknowledging that your baby existed — and that their existence mattered.</p>
+</div>
+<h2>What parents put inside them</h2>
+<p>There are no rules. These are some of the things parents most commonly include — not as a checklist, but as a gentle guide for those who are not sure where to begin.</p>
+<div class="items-grid">
+<div class="item-card"><span class="item-num">01</span><span class="item-name">Photographs</span><span class="item-desc">Many parents treasure photographs taken in the hospital, including professional bereavement photography if it was available. These are often the only images that will ever exist of their baby.</span></div>
+<div class="item-card"><span class="item-num">02</span><span class="item-name">Handprints or footprints</span><span class="item-desc">Most hospital bereavement teams can help take ink or clay prints. These become profoundly precious over time — evidence of how small, how real, how present.</span></div>
+<div class="item-card"><span class="item-num">03</span><span class="item-name">A lock of hair</span><span class="item-desc">If the baby had hair, many parents ask for a small lock to be taken and kept. This is a request most bereavement teams are very familiar with and will help with gently.</span></div>
+<div class="item-card"><span class="item-num">04</span><span class="item-name">Hospital tags and records</span><span class="item-desc">The name tag, the hospital wristband, the record of weight and length. These small official records are among the few documents that confirm, in formal terms, that the baby existed.</span></div>
+<div class="item-card"><span class="item-num">05</span><span class="item-name">A blanket or garment</span><span class="item-desc">Something the baby wore or was wrapped in. The smell fades eventually, but the object remains — something that touched them, that held them.</span></div>
+<div class="item-card"><span class="item-num">06</span><span class="item-name">Letters or cards</span><span class="item-desc">Letters written to the baby, cards from family and friends, anything that records the love that surrounded them — before and after their birth.</span></div>
+</div>
+<h2>Why memory boxes help — <em>what the research shows</em></h2>
+<p>Research in perinatal bereavement consistently shows that tangible connection to a baby who has died supports long-term grief outcomes. A 2021 review published in BMC Pregnancy and Childbirth found that parents who received structured bereavement support — including the opportunity to see, hold, and create keepsakes for their baby — reported better long-term psychological wellbeing compared to those who did not.</p>
+<p>The evidence suggests that the act of acknowledgement — the hospital offering a memory box, a midwife asking if the parent would like photographs, a family member sitting with them as they carefully place objects inside — communicates something that words cannot always reach: your baby was real, your loss is real, and you are not grieving alone.</p>
+<h2>When you cannot make one straight away</h2>
+<p>Not every parent is ready to think about a memory box in the first days. Some find that the hospital provided one before they were able to receive it properly. Some find that they created one instinctively without knowing that was what it was called.</p>
+<p>There is no correct time. A memory box can be started the day after a loss or a year later. Objects can be added over time — a pressed flower from the garden on an anniversary, a letter written on what would have been a birthday. A memory box is not a finished object. It is a living one.</p>
+<div class="article-source">
+<span class="source-label">Sources and further reading</span>
+<p class="source-text">Research on bereavement memory-making referenced in this article is available in the MIMATIS research library at mimatis.org. Information on professional bereavement photography is available through NILMDTS (nilmdts.org) and Tommy's (tommys.org). Memory boxes and bereavement support are listed by country in the MIMATIS Find Help directory at mimatis.org.</p>
+</div>
+</div>
+</div>
+<div class="article-end"><a href="/journal">&larr; All Journal articles</a><a href="/guidance">Guidance &amp; support</a><a href="/#help">Find help in your country</a></div>
+<div class="more"><h2>More from the Journal</h2><div class="cards"><a class="card" href="/journal/leo-what-i-wish-had-been-different"><span class="n">Parents’ stories</span><h3>Leo, and what I wish <em>had been different</em></h3><p>At 26 weeks, Gintarė learned in a Vilnius hospital that her son would not survive. She tells what happened in the weeks that followed, and what she believes hospitals could change for mothers in her situation.</p></a><a class="card" href="/journal/not-every-loss-is-the-same"><span class="n">Awareness</span><h3>Not every loss is the same. <em>Do we know what we mean?</em></h3><p>“Pregnancy loss” covers many different experiences, and most people could not say what a stillbirth is. An essay on the words we use, what surveys show, and why speaking more clearly matters.</p></a><a class="card" href="/journal/seed-letters"><span class="n">Art &amp; Memory</span><h3>Seed letters: words that <em>grow into flowers</em></h3><p>Write to your baby on paper filled with poppy seeds, plant it, and watch the words become flowers. A ritual for the first weeks, for the years that follow, and for brothers and sisters.</p></a></div></div>
+</main>
+<footer class="sf"><div class="sf-in">
+<div class="sf-links"><a href="/">Home</a><a href="/#help">Find help in your country</a><a href="/guidance">Guidance &amp; support</a><a href="/journal">Journal</a><a href="/research">Research</a><a href="/#garden">Memorial garden</a><a href="/mimatis_books">Books</a><a href="/about">Who we are</a><a href="/#action">Take action</a></div>
+<div>Asociaci&oacute;n MIMATIS &middot; Registered non-profit association in Spain, no. 633.864 &middot; <a href="mailto:contact@mimatis.org">contact@mimatis.org</a></div>
+<div>MIMATIS does not provide medical advice. If you are in crisis, please contact your local emergency number or a helpline in <a href="/#help">your country</a>.</div>
+</div></footer>
+</body>
+</html>
