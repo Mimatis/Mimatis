@@ -1602,17 +1602,8 @@ a.jn-more{text-decoration:none}
   ]
 }
 </script>
-<style>
-#cc-bar{position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--border);padding:1.1rem 1.25rem;display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
-#cc-bar[hidden]{display:none}
-#cc-bar p{font-size:.8rem;line-height:1.7;color:var(--mid);flex:1 1 320px;margin:0}
-#cc-bar a{color:var(--green-dark)}
-#cc-bar .cc-btns{display:flex;gap:.6rem}
-#cc-bar button{font-family:'Montserrat',sans-serif;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:.65rem 1.1rem;border-radius:3px;cursor:pointer;border:1px solid var(--green)}
-#cc-bar .cc-yes{background:var(--green);color:#fff}
-#cc-bar .cc-no{background:#fff;color:var(--green-dark)}
-</style>
 <style>a.gs-card,a.gs-nova-card{display:block;color:inherit;text-decoration:none;text-align:left;line-height:normal}a.gs-card:focus-visible,a.gs-nova-card:focus-visible{outline:2px solid var(--green);outline-offset:-2px}</style>
+<script src="/consent.js" defer></script>
 </head>
 <body>
 
@@ -4872,58 +4863,7 @@ document.addEventListener('click', function(e) {
 });
 </script>
 
-<!-- COOKIE CONSENT + GOOGLE TAG
-     Nothing loads and no notice appears while MIMATIS_GTAG_ID is empty.
-     To switch on: set MIMATIS_GTAG_ID (e.g. 'AW-123456789' or 'G-XXXXXXX') and, for Ads conversions,
-     the labels in MIMATIS_CONVERSIONS (e.g. 'AW-123456789/AbCdEf'). -->
-<div id="cc-bar" role="dialog" aria-live="polite" aria-label="Cookie choice" hidden>
-  <p>MIMATIS would like to use Google cookies to count visits and newsletter sign-ups, so we know whether our free advertising reaches parents who need help. Nothing is measured unless you accept. <a href="#privacy" onclick="showPage('privacy');return false;">Privacy policy</a></p>
-  <div class="cc-btns"><button type="button" class="cc-no" onclick="mimatisConsent(false)">Decline</button><button type="button" class="cc-yes" onclick="mimatisConsent(true)">Accept</button></div>
+
 </div>
-<script>
-var MIMATIS_GTAG_ID = '';
-var MIMATIS_CONVERSIONS = { newsletter: '', garden: '' };
-(function(){
-  var KEY = 'mimatis_consent';
-  var loaded = false;
-  function read(){ try { return localStorage.getItem(KEY); } catch(e) { return null; } }
-  function save(v){ try { localStorage.setItem(KEY, v); } catch(e) {} }
-  function bar(show){ var b = document.getElementById('cc-bar'); if (b) b.hidden = !show; }
-  function load(){
-    if (loaded || !MIMATIS_GTAG_ID) return;
-    loaded = true;
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function(){ dataLayer.push(arguments); };
-    gtag('consent', 'default', { ad_storage:'granted', analytics_storage:'granted', ad_user_data:'granted', ad_personalization:'denied' });
-    gtag('js', new Date());
-    gtag('config', MIMATIS_GTAG_ID);
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(MIMATIS_GTAG_ID);
-    document.head.appendChild(s);
-  }
-  window.mimatisConsent = function(yes){
-    save(yes ? 'granted' : 'denied');
-    bar(false);
-    if (yes) load();
-    else if (loaded) { location.reload(); }
-  };
-  window.mimatisCookieSettings = function(){ bar(true); };
-  window.mimatisTrack = function(name){
-    if (!loaded || typeof window.gtag !== 'function') return;
-    try {
-      gtag('event', name === 'newsletter' ? 'sign_up' : 'plant_flower', { method: name });
-      var label = MIMATIS_CONVERSIONS[name];
-      if (label) gtag('event', 'conversion', { send_to: label });
-    } catch(e) {}
-  };
-  if (!MIMATIS_GTAG_ID) return;
-  var link = document.getElementById('cookie-settings-link');
-  if (link) link.style.display = '';
-  var c = read();
-  if (c === 'granted') load();
-  else if (c !== 'denied') bar(true);
-})();
-</script>
 </body>
 </html>
