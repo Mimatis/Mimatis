@@ -52,10 +52,11 @@ dk:{name:'Denmark',flag:'DK',cards:[
     {tag:'Hospital',name:'Rigshospitalet Neonatology',desc:"Denmark's national hospital with specialist bereavement support for families after neonatal loss.",link:'https://www.rigshospitalet.dk'},
   ],funeral:[]},
 ee:{name:'Estonia',flag:'EE',cards:[
-    {tag:'Organisation',name:'Eesti Ammaemandate Uhing',desc:'Estonian Midwives Association — guidance and referrals for parents after perinatal loss.',link:'https://www.eay.ee'},
-    {tag:'Hospital',name:'Ida-Tallinna Keskhaigla',desc:'East Tallinn Central Hospital — perinatal bereavement support available via maternity ward.',link:'https://www.itk.ee'},
-    {tag:'Hospital',name:'Tartu Ulikooli Kliinikum',desc:"University Hospital of Tartu with perinatal support.",link:'https://www.kliinikum.ee'},
-    {tag:'Helpline',name:'Eluliin',desc:'Estonian emotional support helpline: 655 8088.',link:'https://www.eluliin.ee'},
+    {tag:'Free counselling',name:'Pregnancy crisis counselling — Ida-Tallinna Keskhaigla',desc:'Free counselling after miscarriage or the death of a child, no referral needed, in Estonian and Russian: 666 1900.',link:'https://www.itk.ee/en/patient/clinics/womens-clinic/sunnitusmaja-perinataalkeskus/pregnancy-crisis-counselling'},
+    {tag:'Hospital',name:'Ida-Tallinna Keskhaigla',desc:'East Tallinn Central Hospital. Leaflet on stillbirth in Estonian, English and Russian. Social worker: 620 7394.',link:'https://www.itk.ee/print/pdf/node/5059'},
+    {tag:'Hospital',name:'Tartu Ülikooli Kliinikum — Women’s Clinic',desc:'Tartu University Hospital. On-duty midwife 731 9923; reception 731 9100 on weekdays.',link:'https://kliinikum.ee/naistekliinik/en/emergency-care'},
+    {tag:'Helpline',name:'Emotional support line 116 123',desc:'Every day 10:00–24:00, in Estonian, Russian and English. Free.',link:'https://sotsiaalkindlustusamet.ee/en/child-and-adult-need-help/mental-health-crisis/emotional-support-helpline-116-123'},
+    {tag:'Helpline 24/7',name:'Crisis line 116 006',desc:'24 hours, in Estonian, Russian and English. Chat at palunabi.ee.',link:'https://sotsiaalkindlustusamet.ee/en/child-and-adult-need-help/support-victims/victim-support-crisis-helpline'},
   ],funeral:[]},
 fi:{name:'Finland',flag:'FI',cards:[
     {tag:'Association',name:'KAPY ry — Lapsikuolemaperheet',desc:"Finland's leading child loss association. Peer support, groups, and bereavement resources after stillbirth and neonatal death. Email: tuki@kapy.fi",link:'https://kapy.fi/child-death-families-kapy-ry/'},
