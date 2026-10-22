@@ -61,6 +61,7 @@ body{font-family:'Montserrat',sans-serif;background:var(--off);color:var(--ink);
 .nav-links{display:flex;gap:1.75rem;align-items:center}
 .nav-links button{font-size:.63rem;letter-spacing:.15em;text-transform:uppercase;color:var(--mid);text-decoration:none;transition:color .2s;white-space:nowrap;background:none;border:none;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:400;padding:0}
 .nav-links button:hover{color:var(--green-dark)}
+.nav-ig{display:inline-flex;color:var(--mid);transition:color .2s}.nav-ig:hover{color:var(--green-dark)}
 .nav-links button.active{color:var(--ink);border-bottom:2px solid var(--green);padding-bottom:2px}
 .hbg{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
 .hbg span{display:block;width:22px;height:1.5px;background:var(--green-dark);transition:all .3s}
@@ -1662,6 +1663,7 @@ a.jn-more{text-decoration:none}
       </div>
     </div>
     
+    <a class="nav-ig" href="https://www.instagram.com/mimatis.community/" target="_blank" rel="noopener" aria-label="MIMATIS on Instagram" title="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
   </div>
   <button class="hbg" id="hbg" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
@@ -1680,6 +1682,7 @@ a.jn-more{text-decoration:none}
     
   <button onclick="showPage('privacy');closeMob()">Privacy Policy</button>
   <button onclick="showPage('legal');closeMob()">Legal Notice</button>
+  <button onclick="window.open('https://www.instagram.com/mimatis.community/','_blank','noopener')">Instagram</button>
 </div>
 
 <!-- ═══ HOME ═══ -->
