@@ -77,7 +77,7 @@
     b.setAttribute('aria-label', 'Cookie choice');
     b.hidden = true;
     b.innerHTML =
-      '<p>MIMATIS would like to use Google cookies to count visits and newsletter sign-ups, so we know whether our work reaches parents who need help. Nothing is measured unless you accept. <a href="/#privacy" id="cc-privacy">Privacy policy</a></p>' +
+      '<p>MIMATIS would like to use Google cookies to count visits and sign-ups, so we know whether our work reaches parents who need help. Nothing is measured unless you accept. <a href="/#privacy" id="cc-privacy">Privacy policy</a></p>' +
       '<div class="cc-btns"><button type="button" class="cc-no">Decline</button><button type="button" class="cc-yes">Accept</button></div>';
     document.body.appendChild(b);
     b.querySelector('.cc-no').addEventListener('click', function () { window.mimatisConsent(false); });
