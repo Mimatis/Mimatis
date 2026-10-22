@@ -31,11 +31,17 @@
   window.mimatisTrack = function (name) {
     if (!loaded || typeof window.gtag !== 'function') return;
     try {
+      if (name === 'instagram') { window.gtag('event', 'instagram_click', { link_url: 'instagram.com/mimatis.community' }); return; }
       window.gtag('event', name === 'newsletter' ? 'sign_up' : 'plant_flower', { method: name });
       var label = CONVERSIONS[name];
       if (label) window.gtag('event', 'conversion', { send_to: label });
     } catch (e) {}
   };
+
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href*="instagram.com/mimatis.community"]') : null;
+    if (a) window.mimatisTrack('instagram');
+  });
 
   if (!live) {
     window.mimatisCookieSettings = function () {};
