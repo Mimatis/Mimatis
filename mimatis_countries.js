@@ -208,13 +208,14 @@ uk:{name:'United Kingdom',flag:'GB',cards:[
   ]
 },
 us:{name:'United States',flag:'US',cards:[
-    {tag:'Foundation',name:'Star Legacy Foundation',desc:'US non-profit dedicated to stillbirth research, awareness, and support. Provides a national support network, online resources, and virtual support groups for bereaved parents.',link:'https://starlegacyfoundation.org'},
-    {tag:'Charity',name:'SHARE Pregnancy & Infant Loss Support',desc:'US national organisation providing support for those touched by the tragic death of a baby through miscarriage, stillbirth, or infant death. Also offers Spanish-language support.',link:'https://nationalshare.org'},
-    {tag:'Support',name:'Postpartum Support International',desc:'US organisation providing perinatal mental health support including for pregnancy loss. Helpline: 1-800-944-4773.',link:'https://www.postpartum.net'},
-    {tag:'Charity',name:'NILMDTS (Now I Lay Me Down to Sleep)',desc:'US organisation providing free professional remembrance photography for families experiencing the loss of a baby during pregnancy or shortly after birth.',link:'https://www.nowilaymedowntosleep.org'},
-    {tag:'Crisis',name:'PSI Helpline',desc:'Postpartum Support International helpline for perinatal loss. Tel: 1-800-944-4773. Leave a message and a trained volunteer will call back.',link:'https://www.postpartum.net'}
+    {tag:'Foundation',name:'Star Legacy Foundation',desc:'US non-profit for stillbirth research, awareness and support — free family support, live online groups for bereaved parents, and guides on certificates of stillbirth, taxes and lactation after a loss.',link:'https://starlegacyfoundation.org'},
+    {tag:'Charity',name:'SHARE Pregnancy & Infant Loss Support',desc:'National support after miscarriage, stillbirth and infant death — groups, chapters across the US, a phone line (1-800-821-6819) and a Spanish-language program.',link:'https://nationalshare.org'},
+    {tag:'Helpline',name:'Postpartum Support International',desc:'Perinatal mental health support including after pregnancy loss. HelpLine 1-800-944-4773 (call or text, English and Spanish) and more than 50 free online groups.',link:'https://www.postpartum.net'},
+    {tag:'Photography',name:'Now I Lay Me Down To Sleep',desc:'Free professional remembrance portraits for families who lose a baby, also for losses in the past. Find a photographer or call 720-283-3339.',link:'https://www.nowilaymedowntosleep.org'},
+    {tag:'Peer Support',name:'The Compassionate Friends',desc:'Support for families after the death of a child at any age — more than 500 chapters in all 50 states, and online groups. 877-969-0010.',link:'https://www.compassionatefriends.org'},
+    {tag:'Helpline 24/7',name:'988 Suicide & Crisis Lifeline',desc:'Free, confidential, 24/7. Call or text 988. National Maternal Mental Health Hotline: 1-833-852-6262.',link:'https://988lifeline.org'}
   ],funeral:[
-    {tag:'Funeral',name:'CDC — What to do after a stillbirth',desc:'The US Centers for Disease Control and Prevention provides guidance for parents after stillbirth, including information on certificates of birth resulting in stillbirth by state.',link:'https://www.cdc.gov/reproductive-health/pregnancy-loss/stillbirth'}
+    {tag:'Funeral Rights',name:'FTC Funeral Rule',desc:'You can ask any funeral home for a written itemised price list and for prices by phone. No state law requires routine embalming.',link:'https://consumer.ftc.gov/articles/ftc-funeral-rule'}
   ]
 }
 }
