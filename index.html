@@ -2033,6 +2033,7 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
     <span class="sec-eye">Recommended Reading &amp; Memorial Art</span>
     <h2 class="sec-title">Books &amp; <em>Remembrance</em></h2>
     <p class="sec-body" style="margin-bottom:3rem">When a baby has died, it can be helpful and comforting to read books written by others who have walked the same path. Literature on loss offers recognition, understanding, and the quiet reassurance that you are not alone in your experience. Below you will find a careful selection of books, as well as a memorial art service. The loss of a baby is also deeply felt by siblings and other young children in the family. Books written for children can help them give voice to their grief and find meaning in the loss together.</p>
+    <p class="sec-body" style="font-size:.8rem;color:var(--soft);margin:-2rem 0 2.5rem">Disclosure: the &ldquo;Buy on Amazon&rdquo; links below are affiliate links. If you buy through them, MIMATIS receives a small commission at no extra cost to you. It helps keep this site free.</p>
     <div class="resources-grid">
       <div class="res-card">
         <span class="res-type">Book &middot; Memoir</span>
@@ -4152,6 +4153,7 @@ function buildCountryGrid(selId,resId,tId,sId,cardsId,funeralId,fcardsId){
     var b=document.createElement('button');
     b.className='cb';b.textContent=c.name;
     b.addEventListener('click',function(){
+      if(window.mimatisTrack)window.mimatisTrack('country_select',{country:k});
       window.location.href='/'+(keyToSlug[k]||k);
     });
     w.appendChild(b);

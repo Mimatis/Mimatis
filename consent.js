@@ -2,7 +2,7 @@
    Nothing from Google loads, and no cookie is set, until the visitor clicks "Accept".
    Runs only on the live site (mimatis.org); add ?cc=1 to a URL to test it elsewhere.
    Conversions: window.mimatisTrack('newsletter' | 'garden') sends GA4 events
-   sign_up / plant_flower. For Google Ads conversion labels, fill CONVERSIONS. */
+   sign_up / plant_flower. Journey events: country_select, helpline_click, resource_click. For Google Ads conversion labels, fill CONVERSIONS. */
 (function () {
   var ID = 'G-1F4W2655FX';
   var CONVERSIONS = { newsletter: '', garden: '' };
@@ -28,9 +28,15 @@
     document.head.appendChild(s);
   }
 
-  window.mimatisTrack = function (name) {
+  window.mimatisTrack = function (name, params) {
     if (!loaded || typeof window.gtag !== 'function') return;
     try {
+      if (name === 'country_select' || name === 'helpline_click' || name === 'resource_click') {
+        var p = params || {};
+        p.transport_type = 'beacon';
+        window.gtag('event', name, p);
+        return;
+      }
       if (name === 'instagram') { window.gtag('event', 'instagram_click', { link_url: 'instagram.com/mimatis.community' }); return; }
       window.gtag('event', name === 'newsletter' ? 'sign_up' : 'plant_flower', { method: name });
       var label = CONVERSIONS[name];
@@ -39,8 +45,20 @@
   };
 
   document.addEventListener('click', function (e) {
-    var a = e.target.closest ? e.target.closest('a[href*="instagram.com/mimatis.community"]') : null;
-    if (a) window.mimatisTrack('instagram');
+    var t = e.target.closest ? e.target : null;
+    if (!t) return;
+    var a = t.closest('a[href*="instagram.com/mimatis.community"]');
+    if (a) { window.mimatisTrack('instagram'); return; }
+    // Crisis and support journey: phone and resource links (country pages and main site)
+    var l = t.closest('a[href]');
+    if (!l) return;
+    var h = l.getAttribute('href') || '';
+    var page = location.pathname.replace(/^\/|\/$/g, '') || 'home';
+    if (h.indexOf('tel:') === 0) {
+      window.mimatisTrack('helpline_click', { page: page, in_crisis_box: !!l.closest('.crisis') });
+    } else if (/^https?:/.test(h) && l.closest('.org, .funeral, .fh')) {
+      window.mimatisTrack('resource_click', { page: page, link_domain: l.hostname });
+    }
   });
 
   if (!live) {
