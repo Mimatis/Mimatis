@@ -1,0 +1,16 @@
+# Language roots go to the country page in that language (there is no language homepage yet)
+/fr /fr/france 301
+/fr/ /fr/france 301
+/es /es/espana 301
+/es/ /es/espana 301
+/de /de/deutschland 301
+/de/ /de/deutschland 301
+/it /it/italia 301
+/it/ /it/italia 301
+/et /et/eesti 301
+/et/ /et/eesti 301
+/lt /lt/lietuva 301
+/lt/ /lt/lietuva 301
+# Trailing slash: /france/ -> /france
+/:slug/ /:slug 301
+/:dir/:slug/ /:dir/:slug 301
