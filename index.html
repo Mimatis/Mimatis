@@ -1517,6 +1517,60 @@ a.jn-more{text-decoration:none}
 .hm-partners-logos a:hover{opacity:1}
 .hm-partners-logos img{display:block;width:auto;height:auto;max-width:150px;max-height:62px}
 @media(max-width:780px){.hm-partners-logos{gap:1.25rem 2rem}.hm-partners-logos img{max-width:120px;max-height:50px}}
+
+/* ── Oct 2026: Instagram in hero, Friends with flower photo, Share your story ── */
+#pg-home .hm-ig{display:inline-flex;align-items:center;gap:.6rem;margin-top:1rem;padding:.6rem 1rem .6rem .85rem;background:rgba(255,255,255,.82);border:1px solid rgba(0,112,138,.18);border-radius:999px;color:var(--green-dark);text-decoration:none;font-size:.88rem;line-height:1.2;backdrop-filter:blur(2px);transition:background .2s,border-color .2s}
+#pg-home .hm-ig:hover{background:#fff;border-color:var(--green)}
+#pg-home .hm-ig:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+#pg-home .hm-ig-t{color:var(--ink)}
+#pg-home .hm-ig-h{color:var(--green-dark);font-weight:500}
+#pg-home .hm-ig span{white-space:nowrap}
+@media(max-width:420px){#pg-home .hm-ig{font-size:.8rem;gap:.45rem;padding:.55rem .85rem .55rem .7rem;max-width:100%}}
+.newsletter-section.fr-section{background:#F7F3F8;border-top:0;padding:4.5rem 3rem}
+.fr-card{max-width:1040px;margin:0 auto;display:grid;grid-template-columns:5fr 6fr;background:#fff;border:1px solid var(--border);overflow:hidden}
+.fr-photo{position:relative;min-height:460px;background:#3d82b5}
+.fr-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% 45%;display:block}
+.fr-photo-q{position:absolute;left:1.75rem;bottom:1.6rem;right:1.5rem;font-family:'Inter',sans-serif;font-size:1.35rem;line-height:1.3;color:#fff;text-shadow:0 1px 14px rgba(0,40,70,.45)}
+.fr-photo-q em{font-style:italic}
+.fr-body{padding:3rem 3rem 2.6rem}
+.fr-title{font-family:'Inter',sans-serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:400;line-height:1.12;color:var(--ink);margin-bottom:1.1rem}
+.fr-title em{font-style:italic;color:var(--green-dark)}
+.fr-text{font-size:.95rem;color:var(--mid);line-height:1.8;margin-bottom:.9rem}
+.fr-lbl{display:block;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--soft);margin:1.4rem 0 .45rem}
+.fr-section .nl-input-row{border:1px solid rgba(0,112,138,.35);border-radius:3px}
+.fr-section .nl-input{font-size:.95rem}
+.fr-section .nl-btn{border-radius:0}
+.fr-section .nl-privacy,.fr-section .nl-privacy button{color:var(--soft);font-size:.7rem}
+@media(max-width:820px){.newsletter-section.fr-section{padding:2.5rem 16px}.fr-card{grid-template-columns:1fr}.fr-photo{min-height:240px}.fr-photo img{object-position:20% 40%}.fr-body{padding:2rem 1.4rem}.fr-section .nl-input-row{flex-direction:column}.fr-section .nl-btn{padding:.95rem}}
+.gd-story{position:relative;overflow:hidden;padding:96px 0 104px;background:radial-gradient(ellipse 60% 50% at 18% 20%,rgba(226,169,241,.20),transparent 70%),radial-gradient(ellipse 55% 45% at 85% 80%,rgba(0,151,178,.22),transparent 70%),linear-gradient(180deg,#0A1330 0%,#121C44 55%,#1B2554 100%);color:#fff}
+.st-sky{position:absolute;inset:0;pointer-events:none}
+.st-star{position:absolute;border-radius:50%;background:#fff;animation:stTw 4s ease-in-out infinite}
+@keyframes stTw{0%,100%{opacity:var(--o,.7)}50%{opacity:.15}}
+.st-new{position:absolute;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 12px 4px rgba(246,234,251,.9),0 0 30px 10px rgba(226,169,241,.45);animation:stRise 2.6s ease-out forwards}
+@keyframes stRise{0%{opacity:0;transform:translateY(60px) scale(.4)}60%{opacity:1}100%{opacity:1;transform:translateY(0) scale(1)}}
+@media(prefers-reduced-motion:reduce){.st-star,.st-new{animation:none}}
+.st-in{position:relative;max-width:720px;margin:0 auto;padding:0 3rem;text-align:center}
+.st-eye{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:#E9C9F4;display:block;margin-bottom:1rem}
+.st-h2{font-family:'Inter',sans-serif;font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:400;line-height:1.18;color:#fff;margin-bottom:1rem}
+.st-h2 em{font-style:italic;color:#F6EAFB}
+.st-lead{font-size:1rem;line-height:1.8;color:rgba(255,255,255,.88);margin:0 auto 2.4rem;max-width:36rem}
+.st-window{text-align:left;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22);border-radius:6px;padding:1.9rem 1.9rem 1.6rem;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);box-shadow:0 0 0 6px rgba(255,255,255,.03)}
+.st-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.st-f{margin-bottom:1rem}
+.st-f label{display:block;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.85);margin-bottom:.4rem}
+.st-f label span{text-transform:none;letter-spacing:0;color:rgba(255,255,255,.6)}
+.st-f input,.st-f textarea{width:100%;background:rgba(255,255,255,.95);border:1px solid transparent;border-radius:3px;padding:.75rem .9rem;font-family:'Montserrat',sans-serif;font-size:.95rem;color:var(--ink);line-height:1.6}
+.st-f textarea{resize:vertical;min-height:170px}
+.st-f input:focus,.st-f textarea:focus{outline:2px solid #E2A9F1;outline-offset:1px}
+.st-consent{display:flex;gap:.65rem;align-items:flex-start;font-size:.82rem;line-height:1.6;color:rgba(255,255,255,.9);cursor:pointer;margin:.3rem 0 1rem}
+.st-consent input{margin-top:.25rem;width:17px;height:17px;flex-shrink:0;accent-color:#E2A9F1;cursor:pointer}
+.st-msg{display:none;font-size:.85rem;line-height:1.6;color:#F6EAFB;background:rgba(255,255,255,.08);border-left:2px solid #E2A9F1;padding:.6rem .85rem;margin-bottom:1rem}
+.st-btn{display:block;width:100%;background:#E2A9F1;color:#1B2554;border:0;border-radius:3px;padding:1rem;font-family:'Montserrat',sans-serif;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;cursor:pointer;transition:background .2s}
+.st-btn:hover{background:#F0CDF8}
+.st-btn:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.st-note{font-size:.75rem;line-height:1.6;color:rgba(255,255,255,.7);margin-top:.9rem;text-align:center}
+.st-note a{color:#F6EAFB}
+@media(max-width:700px){.gd-story{padding:64px 0 72px}.st-in{padding:0 16px}.st-row{grid-template-columns:1fr;gap:0}.st-window{padding:1.4rem 1.1rem 1.2rem}}
 </style>
 <script type="application/ld+json">
 {
@@ -1713,6 +1767,7 @@ a.jn-more{text-decoration:none}
         </div>
         <p class="hm-find-more"><button onclick="showPage('help')">All 29 countries</button><span>&middot;</span><button onclick="showPage('support')">Guidance for the first days</button><span>&middot;</span><button onclick="showPage('garden')">Memorial garden</button></p>
       </div>
+      <a class="hm-ig" href="https://www.instagram.com/mimatis.community/" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg><span class="hm-ig-t">Follow us on Instagram</span><span class="hm-ig-h">@mimatis.community</span></a>
     </div>
   </div>
 
@@ -1996,6 +2051,27 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
       <button class="pf-btn" id="plant-btn">Plant</button>
     </div>
       <p class="gd-note">Each flower stays in the garden. We keep only the name, the flower and the year, with no email or other personal details.</p>
+    </div>
+  </section>
+
+  <section class="gd-story" id="story" aria-labelledby="story-h">
+    <div class="st-sky" id="st-sky" aria-hidden="true"></div>
+    <div class="st-in">
+      <span class="st-eye">Share your story</span>
+      <h2 class="st-h2" id="story-h">Every story is a light <em>for another parent</em></h2>
+      <p class="st-lead">Tell us about your baby, about your loss, or about what helped you. We read every story. With your permission, some may be shared in our Journal, so that other parents feel less alone.</p>
+      <form class="st-window" id="st-form" novalidate>
+        <div class="st-row">
+          <div class="st-f"><label for="st-name">Your name <span>(optional)</span></label><input id="st-name" type="text" maxlength="80" autocomplete="name"></div>
+          <div class="st-f"><label for="st-country">Country <span>(optional)</span></label><input id="st-country" type="text" maxlength="60" autocomplete="country-name"></div>
+        </div>
+        <div class="st-f"><label for="st-baby">Your baby&rsquo;s name <span>(optional)</span></label><input id="st-baby" type="text" maxlength="60"></div>
+        <div class="st-f"><label for="st-text">Your story</label><textarea id="st-text" rows="8" maxlength="6000" placeholder="Write as much or as little as you wish."></textarea></div>
+        <label class="st-consent"><input type="checkbox" id="st-ok"><span>I would like to send my story to MIMATIS. I understand that nothing will be published without asking me first.</span></label>
+        <p class="st-msg" id="st-msg" role="status"></p>
+        <button type="submit" class="st-btn">Send your story</button>
+        <p class="st-note">Your story opens in your own email app, addressed to <a href="mailto:contact@mimatis.org?subject=My%20story">contact@mimatis.org</a>, so you can read it once more before you send it.</p>
+      </form>
     </div>
   </section>
 
@@ -3662,7 +3738,7 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
 
       <div>
         <h3 style="font-family:'Inter',sans-serif;font-size:1.1rem;font-weight:400;color:var(--ink);margin-bottom:.75rem">2. What data we collect</h3>
-        <p style="font-size:.87rem;color:var(--mid);line-height:1.85;margin-bottom:.75rem">We collect personal data only when you choose to give it to us:</p><div style="border:1px solid var(--bdr);overflow-x:auto"><div style="min-width:520px"><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;background:var(--off);padding:.75rem 1.25rem;border-bottom:1px solid var(--bdr)"><span style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--soft)">Data</span><span style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--soft)">Purpose</span><span style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--soft)">Legal basis</span></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;padding:.85rem 1.25rem;border-bottom:1px solid var(--bdr)"><span style="font-size:.82rem;color:var(--mid)">Memorial Garden: your baby&rsquo;s first name, the flower you choose and, if you wish, a year</span><span style="font-size:.82rem;color:var(--mid)">To show a flower in the Memorial Garden</span><span style="font-size:.82rem;color:var(--mid)">Consent (you choose to plant a flower)</span></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;padding:.85rem 1.25rem;border-bottom:1px solid var(--bdr)"><span style="font-size:.82rem;color:var(--mid)">Friends of MIMATIS: your email address</span><span style="font-size:.82rem;color:var(--mid)">To write to you a few times a year about the work of MIMATIS and ways to support it</span><span style="font-size:.82rem;color:var(--mid)">Consent (you tick the box and choose to join)</span></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;padding:.85rem 1.25rem"><span style="font-size:.82rem;color:var(--mid)">Emails you send us: your email address and what you write</span><span style="font-size:.82rem;color:var(--mid)">To reply to you</span><span style="font-size:.82rem;color:var(--mid)">Consent and our legitimate interest in answering messages</span></div></div></div><p style="font-size:.82rem;color:var(--soft);margin-top:1rem">We do not sell or share your data with anyone for their own purposes. We do not ask for your name when you plant a flower, so a flower cannot be linked to you.</p>
+        <p style="font-size:.87rem;color:var(--mid);line-height:1.85;margin-bottom:.75rem">We collect personal data only when you choose to give it to us:</p><div style="border:1px solid var(--bdr);overflow-x:auto"><div style="min-width:520px"><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;background:var(--off);padding:.75rem 1.25rem;border-bottom:1px solid var(--bdr)"><span style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--soft)">Data</span><span style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--soft)">Purpose</span><span style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--soft)">Legal basis</span></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;padding:.85rem 1.25rem;border-bottom:1px solid var(--bdr)"><span style="font-size:.82rem;color:var(--mid)">Memorial Garden: your baby&rsquo;s first name, the flower you choose and, if you wish, a year</span><span style="font-size:.82rem;color:var(--mid)">To show a flower in the Memorial Garden</span><span style="font-size:.82rem;color:var(--mid)">Consent (you choose to plant a flower)</span></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;padding:.85rem 1.25rem;border-bottom:1px solid var(--bdr)"><span style="font-size:.82rem;color:var(--mid)">Friends of MIMATIS: your email address</span><span style="font-size:.82rem;color:var(--mid)">To write to you a few times a year about the work of MIMATIS and ways to support it</span><span style="font-size:.82rem;color:var(--mid)">Consent (you tick the box and choose to join)</span></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;padding:.85rem 1.25rem"><span style="font-size:.82rem;color:var(--mid)">Emails you send us, including stories shared from the Memorial Garden page: your email address and what you write</span><span style="font-size:.82rem;color:var(--mid)">To reply to you. We publish a story only with your written permission</span><span style="font-size:.82rem;color:var(--mid)">Consent and our legitimate interest in answering messages</span></div></div></div><p style="font-size:.82rem;color:var(--soft);margin-top:1rem">We do not sell or share your data with anyone for their own purposes. We do not ask for your name when you plant a flower, so a flower cannot be linked to you.</p>
       </div>
 
       <div>
@@ -3787,26 +3863,29 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
 
 
 
-<section class="newsletter-section" id="friends" aria-label="Friends of MIMATIS">
-  <div class="newsletter-inner">
-    <div class="newsletter-text">
-      <span class="newsletter-eye">Friends of MIMATIS</span>
-      <h2 class="newsletter-title">Become a<br><em>Friend of MIMATIS</em></h2>
-      <p class="newsletter-body">A few times a year, we will write to tell you what your support makes possible: new country guides, our work with hospitals, and the first chance to help when we open donations. For parents, families, professionals and anyone who wants to stand with us.</p>
+<section class="newsletter-section fr-section" id="friends" aria-label="Friends of MIMATIS">
+  <div class="fr-card">
+    <div class="fr-photo">
+      <img src="/assets/friends-flower.jpg" alt="A soft pink flower against a blue sky" loading="lazy" width="900" height="1273">
+      <p class="fr-photo-q">Small things,<br><em>quietly growing.</em></p>
     </div>
-    <div class="newsletter-form">
-      <p class="newsletter-note">A few emails a year. Leave any time.</p>
+    <div class="fr-body">
+      <span class="newsletter-eye">Friends of MIMATIS</span>
+      <h2 class="fr-title">Grow <em>with us</em></h2>
+      <p class="fr-text">MIMATIS began with one family and one wish: that no parent should have to search for help alone. Every country guide, every hospital project and every parent who finds support grows from people who care.</p>
+      <p class="fr-text">Become a Friend of MIMATIS. We will write a few times a year to share what your support makes possible, and you will be the first to know when you can help us do more.</p>
       <div id="nl-form-wrap">
+        <label class="fr-lbl" for="nl-email">Your email</label>
         <div class="nl-input-row">
-          <input class="nl-input" id="nl-email" type="email" autocomplete="email" placeholder="Your email address" aria-label="Email address">
-          <button class="nl-btn" id="nl-submit">Join</button>
+          <input class="nl-input" id="nl-email" type="email" autocomplete="email" placeholder="name@example.com">
+          <button class="nl-btn" id="nl-submit">Become a Friend</button>
         </div>
         <label class="nl-consent"><input type="checkbox" id="nl-consent"><span>I would like to receive emails from Asociaci&oacute;n MIMATIS about its work.</span></label>
         <p class="nl-msg" id="nl-msg" role="alert"></p>
-        <p class="nl-privacy">Asociaci&oacute;n MIMATIS uses your email only to write to you as a Friend. It is stored in the EU and never shared or sold. To leave, reply to any of our emails or write to contact@mimatis.org. More in our <button onclick="showPage('privacy')">Privacy Policy</button>.</p>
+        <p class="nl-privacy">A few emails a year. Asociaci&oacute;n MIMATIS uses your email only to write to you as a Friend. It is stored in the EU and never shared or sold. To leave, reply to any of our emails or write to contact@mimatis.org. More in our <button onclick="showPage('privacy')">Privacy Policy</button>.</p>
       </div>
       <div class="nl-success" id="nl-success">
-        <p>Thank you for becoming a Friend of MIMATIS.</p>
+        <p>Thank you. You are now a Friend of MIMATIS.</p>
         <span>We will write a few times a year, nothing more.</span>
       </div>
     </div>
@@ -4077,7 +4156,7 @@ const countryOrder=['au','at','be','hr','cy','cz','dk','ee','fi','fr','de','gr',
 var PAGE_META={
   home:{t:'MIMATIS \u2014 Free Baby Loss Support in 29 Countries | Stillbirth, Miscarriage & Neonatal Loss',d:'MIMATIS is a free support platform for parents after miscarriage, stillbirth or neonatal loss. Verified resources in 29 countries, peer-reviewed research, memorial garden and compassionate guidance. Always free.'},
   help:{t:'Find Help \u2014 Verified Baby Loss Support in 29 Countries | MIMATIS',d:'Verified bereavement organisations, helplines and funeral support for parents after miscarriage, stillbirth or neonatal loss \u2014 country by country, across 29 countries.'},
-  garden:{t:'Memorial Garden | MIMATIS',d:'A quiet place to plant a flower in memory of your baby. Each flower in the MIMATIS memorial garden carries a name and stays there, always.'},
+  garden:{t:'Memorial Garden | MIMATIS',d:'A quiet place to plant a flower in memory of your baby, and to share your story with us. Each flower in the MIMATIS memorial garden carries a name and stays there, always.'},
   research:{t:'Research on baby loss, explained for parents | MIMATIS',d:'Why did my baby die? Will it happen again? Answers to parents\u2019 questions after miscarriage, stillbirth and neonatal loss, with links to every study.'},
   support:{t:'Guidance & Support After Baby Loss | MIMATIS',d:'Gentle, practical guidance for the days after loss \u2014 what to expect, the decisions you may face, finding the right words, and how to begin to remember.'},
   books:{t:'Books & Remembrance | MIMATIS',d:'Carefully chosen books and remembrance art for grieving parents after miscarriage, stillbirth or neonatal loss.'},
@@ -4869,7 +4948,7 @@ function nlSubscribe(){
   if(btn){btn.disabled=true;btn.textContent='One moment\u2026';}
   getSB().from('newsletter_subscribers').insert([{email:v}]).then(function(r){
     if(r.error && r.error.code!=='23505'){
-      if(btn){btn.disabled=false;btn.textContent='Join';}
+      if(btn){btn.disabled=false;btn.textContent='Become a Friend';}
       if(msg){msg.textContent='Something went wrong \u2014 please try again in a moment.';msg.style.display='block';}
       return;
     }
@@ -4885,6 +4964,43 @@ function nlSubscribe(){
   var i=document.getElementById('nl-email');
   if(b)b.addEventListener('click',nlSubscribe);
   if(i)i.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();nlSubscribe();}});
+})();
+
+
+// ── SHARE YOUR STORY (garden page): stars + mailto to contact@mimatis.org ──
+(function(){
+  var sky=document.getElementById('st-sky');
+  if(sky&&!sky.childNodes.length){
+    var n=window.innerWidth<700?55:110,frag=document.createDocumentFragment();
+    for(var i=0;i<n;i++){
+      var s=document.createElement('span');s.className='st-star';
+      var z=Math.random()<.85?1+Math.random()*1.2:2.2+Math.random()*1.3;
+      s.style.width=s.style.height=z.toFixed(1)+'px';
+      s.style.left=(Math.random()*100).toFixed(2)+'%';s.style.top=(Math.random()*100).toFixed(2)+'%';
+      s.style.setProperty('--o',(.35+Math.random()*.6).toFixed(2));
+      s.style.animationDelay=(Math.random()*4).toFixed(2)+'s';s.style.animationDuration=(3+Math.random()*4).toFixed(2)+'s';
+      frag.appendChild(s);
+    }
+    sky.appendChild(frag);
+  }
+  var f=document.getElementById('st-form');if(!f)return;
+  function say(t){var m=document.getElementById('st-msg');m.textContent=t;m.style.display='block';}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=function(k){return document.getElementById(k).value.trim();};
+    if(!v('st-text')){say('Please write your story before sending.');document.getElementById('st-text').focus();return;}
+    if(!document.getElementById('st-ok').checked){say('Please tick the box to confirm you would like to send your story.');return;}
+    var body='';
+    if(v('st-name'))body+='Name: '+v('st-name')+'\n';
+    if(v('st-country'))body+='Country: '+v('st-country')+'\n';
+    if(v('st-baby'))body+="Baby's name: "+v('st-baby')+'\n';
+    body+=(body?'\n':'')+v('st-text')+'\n\n(Sent from the Memorial Garden page. Please ask me before publishing anything.)';
+    var subj='My story'+(v('st-baby')?' – '+v('st-baby'):'');
+    try{if(navigator.clipboard)navigator.clipboard.writeText(body).catch(function(){});}catch(err){}
+    window.location.href='mailto:contact@mimatis.org?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+    if(sky){var st=document.createElement('span');st.className='st-new';st.style.left=(15+Math.random()*70)+'%';st.style.top=(8+Math.random()*18)+'%';sky.appendChild(st);}
+    say('Thank you. Your email app should now open with your story. If nothing opens, your story has been copied: paste it into an email to contact@mimatis.org.');
+  });
 })();
 
 // ── SUPPORT DROPDOWN ──
