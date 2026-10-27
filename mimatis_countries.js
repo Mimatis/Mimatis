@@ -142,12 +142,13 @@ mt:{name:'Malta',flag:'MT',cards:[
   ],funeral:[]
 },
 nl:{name:'Netherlands',flag:'NL',cards:[
-    {tag:'Association',name:'IMA Afscheidszorg',desc:'Professional bereavement care organisation providing compassionate farewell services for babies who are stillborn or die in the neonatal period. Available across the Netherlands.',link:'https://www.ima-afscheidszorg.nl'},
-    {tag:'Association',name:'Steunpunt NOVA',desc:'Dutch specialist centre for parents after baby loss. Provides multilingual information cards, support resources, and guidance in Dutch, English, Arabic, Turkish, Polish, and more.',link:'https://steunpuntnova.nl'},
-    {tag:'Support',name:'NVOG — Nederlandse Vereniging voor Obstetrie en Gynaecologie',desc:'The Dutch professional body for obstetrics and gynaecology — publishes guidelines on bereavement care after stillbirth and miscarriage.',link:'https://www.nvog.nl'},
-    {tag:'Crisis',name:'113 Zelfmoordpreventie',desc:'Netherlands national crisis and emotional support line. Free, 24 hours. Tel: 0800 0113.',link:'https://www.113.nl'}
+    {tag:'Information',name:'Steunpunt NOVA',desc:'Independent national support point for parents who lose a baby during pregnancy or around birth, with information about the funeral and aftercare.',link:'https://steunpuntnova.nl'},
+    {tag:'Knowledge centre',name:'Stille Levens',desc:'Knowledge centre on the death of babies, with information about saying goodbye to your child.',link:'https://www.stillelevens.nl'},
+    {tag:'Peer support',name:'Stichting Lieve Engeltjes',desc:'Peer support for parents of a stillborn baby or a baby who died.',link:'https://lieve-engeltjes.nl'},
+    {tag:'Photography',name:'Stichting Make a Memory',desc:'Free professional photographs of your baby, from 23 weeks of pregnancy. Ask the nurses, or contact them yourself.',link:'https://www.makeamemory.nl'},
+    {tag:'Crisis',name:'113 Zelfmoordpreventie',desc:'Suicide prevention line, free, 24 hours. Tel: 113 or 0800-0113. Chat at 113.nl.',link:'https://www.113.nl'}
   ],funeral:[
-    {tag:'Funeral',name:'Uitvaartverzorging na zwangerschapsverlies',desc:'In the Netherlands, babies born after 24 weeks who are stillborn must be registered. IMA Afscheidszorg and most hospitals can guide families through farewell and burial options.',link:'https://www.ima-afscheidszorg.nl'}
+    {tag:'Funeral',name:'Burial or cremation (uitvaart)',desc:'From 24 weeks, the birth is reported to the municipality and a burial or cremation takes place within 6 working days. Before 24 weeks it is not required, but possible. A funeral director and a coffin are optional. Full guide: mimatis.org/netherlands',link:'https://www.mimatis.org/netherlands'}
   ]
 },
 pl:{name:'Poland',flag:'PL',cards:[
