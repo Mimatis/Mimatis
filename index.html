@@ -1562,9 +1562,13 @@ a.jn-more{text-decoration:none}
 .st-f input,.st-f textarea{width:100%;background:rgba(255,255,255,.95);border:1px solid transparent;border-radius:3px;padding:.75rem .9rem;font-family:'Montserrat',sans-serif;font-size:.95rem;color:var(--ink);line-height:1.6}
 .st-f textarea{resize:vertical;min-height:170px}
 .st-f input:focus,.st-f textarea:focus{outline:2px solid #E2A9F1;outline-offset:1px}
-.st-consent{display:flex;gap:.65rem;align-items:flex-start;font-size:.82rem;line-height:1.6;color:rgba(255,255,255,.9);cursor:pointer;margin:.3rem 0 1rem}
-.st-consent input{margin-top:.25rem;width:17px;height:17px;flex-shrink:0;accent-color:#E2A9F1;cursor:pointer}
+.st-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
 .st-msg{display:none;font-size:.85rem;line-height:1.6;color:#F6EAFB;background:rgba(255,255,255,.08);border-left:2px solid #E2A9F1;padding:.6rem .85rem;margin-bottom:1rem}
+.st-msg a{color:#fff}
+.st-btn[disabled]{opacity:.7;cursor:default}
+.st-done{text-align:center;padding:1.5rem .5rem}
+.st-done p{font-family:'Inter',sans-serif;font-size:1.3rem;line-height:1.4;color:#fff;margin-bottom:.5rem}
+.st-done span{font-size:.9rem;color:rgba(255,255,255,.8)}
 .st-btn{display:block;width:100%;background:#E2A9F1;color:#1B2554;border:0;border-radius:3px;padding:1rem;font-family:'Montserrat',sans-serif;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;cursor:pointer;transition:background .2s}
 .st-btn:hover{background:#F0CDF8}
 .st-btn:focus-visible{outline:2px solid #fff;outline-offset:2px}
@@ -2054,27 +2058,6 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
     </div>
   </section>
 
-  <section class="gd-story" id="story" aria-labelledby="story-h">
-    <div class="st-sky" id="st-sky" aria-hidden="true"></div>
-    <div class="st-in">
-      <span class="st-eye">Share your story</span>
-      <h2 class="st-h2" id="story-h">Every story is a light <em>for another parent</em></h2>
-      <p class="st-lead">Tell us about your baby, about your loss, or about what helped you. We read every story. With your permission, some may be shared in our Journal, so that other parents feel less alone.</p>
-      <form class="st-window" id="st-form" novalidate>
-        <div class="st-row">
-          <div class="st-f"><label for="st-name">Your name <span>(optional)</span></label><input id="st-name" type="text" maxlength="80" autocomplete="name"></div>
-          <div class="st-f"><label for="st-country">Country <span>(optional)</span></label><input id="st-country" type="text" maxlength="60" autocomplete="country-name"></div>
-        </div>
-        <div class="st-f"><label for="st-baby">Your baby&rsquo;s name <span>(optional)</span></label><input id="st-baby" type="text" maxlength="60"></div>
-        <div class="st-f"><label for="st-text">Your story</label><textarea id="st-text" rows="8" maxlength="6000" placeholder="Write as much or as little as you wish."></textarea></div>
-        <label class="st-consent"><input type="checkbox" id="st-ok"><span>I would like to send my story to MIMATIS. I understand that nothing will be published without asking me first.</span></label>
-        <p class="st-msg" id="st-msg" role="status"></p>
-        <button type="submit" class="st-btn">Send your story</button>
-        <p class="st-note">Your story opens in your own email app, addressed to <a href="mailto:contact@mimatis.org?subject=My%20story">contact@mimatis.org</a>, so you can read it once more before you send it.</p>
-      </form>
-    </div>
-  </section>
-
   <section class="gd-seed">
     <div class="gd-wrap">
       <div class="gd-seed-card">
@@ -2096,6 +2079,31 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
     <p class="gd-q">To write is to remember.<br>To plant is to <em>continue.</em></p>
     <p class="gd-q-src">From the MIMATIS seed letters</p>
   </section>
+
+  <section class="gd-story" id="story" aria-labelledby="story-h">
+    <div class="st-sky" id="st-sky" aria-hidden="true"></div>
+    <div class="st-in">
+      <span class="st-eye">Share your story</span>
+      <h2 class="st-h2" id="story-h">Every story is a light <em>for another parent</em></h2>
+      <p class="st-lead">Tell us about your baby, about your loss, or about what helped you. We read every story. With your permission, some may be shared in our Journal, so that other parents feel less alone.</p>
+      <form class="st-window" id="st-form" novalidate>
+        <div class="st-row">
+          <div class="st-f"><label for="st-name">Your name <span>(optional)</span></label><input id="st-name" type="text" maxlength="80" autocomplete="name"></div>
+          <div class="st-f"><label for="st-email">Your email <span>(so we can reply)</span></label><input id="st-email" type="email" maxlength="120" autocomplete="email"></div>
+        </div>
+        <div class="st-row">
+          <div class="st-f"><label for="st-baby">Your baby&rsquo;s name <span>(optional)</span></label><input id="st-baby" type="text" maxlength="60"></div>
+          <div class="st-f"><label for="st-country">Country <span>(optional)</span></label><input id="st-country" type="text" maxlength="60" autocomplete="country-name"></div>
+        </div>
+        <div class="st-f"><label for="st-text">Your story</label><textarea id="st-text" rows="8" maxlength="8000" placeholder="Write as much or as little as you wish."></textarea></div>
+        <input type="text" id="st-hp" tabindex="-1" autocomplete="off" aria-hidden="true" class="st-hp">
+        <p class="st-msg" id="st-msg" role="status"></p>
+        <button type="submit" class="st-btn" id="st-send">Send your story</button>
+        <p class="st-note">Your story comes straight to us at contact@mimatis.org. We read every story, and we never publish anything without asking you first.</p>
+      </form>
+    </div>
+  </section>
+
 </div>
 
 <!-- ═══ RESEARCH ═══ -->
@@ -3758,7 +3766,7 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
 
       <div>
         <h3 style="font-family:'Inter',sans-serif;font-size:1.1rem;font-weight:400;color:var(--ink);margin-bottom:.75rem">6. Services we use</h3>
-        <div style="display:flex;flex-direction:column;gap:.5rem"><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">Cloudflare</strong> &mdash; website hosting and security. <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener" style="color:var(--green-dark);text-decoration:none">cloudflare.com/privacypolicy</a></p></div><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">Supabase</strong> &mdash; database for the Memorial Garden and Friends of MIMATIS (EU servers). <a href="https://supabase.com/privacy" target="_blank" rel="noopener" style="color:var(--green-dark);text-decoration:none">supabase.com/privacy</a></p></div><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">Google Fonts</strong> &mdash; loads the fonts used on the site; Google may record that a font was requested. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--green-dark);text-decoration:none">policies.google.com/privacy</a></p></div><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">YouTube</strong> &mdash; some Journal entries show a preview image loaded from YouTube; videos open on YouTube itself.</p></div><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">Google Ads and Google Analytics</strong> &mdash; only if you accept them in the cookie notice (see section 3). <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener" style="color:var(--green-dark);text-decoration:none">How Google uses data</a></p></div></div>
+        <div style="display:flex;flex-direction:column;gap:.5rem"><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">FormSubmit</strong> &mdash; delivers stories sent from the Memorial Garden page to our inbox. It passes the message on and does not use it for anything else. <a href="https://formsubmit.co/" target="_blank" rel="noopener" style="color:var(--green-dark);text-decoration:none">formsubmit.co</a></p></div><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">Cloudflare</strong> &mdash; website hosting and security. <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener" style="color:var(--green-dark);text-decoration:none">cloudflare.com/privacypolicy</a></p></div><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">Supabase</strong> &mdash; database for the Memorial Garden and Friends of MIMATIS (EU servers). <a href="https://supabase.com/privacy" target="_blank" rel="noopener" style="color:var(--green-dark);text-decoration:none">supabase.com/privacy</a></p></div><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">Google Fonts</strong> &mdash; loads the fonts used on the site; Google may record that a font was requested. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--green-dark);text-decoration:none">policies.google.com/privacy</a></p></div><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">YouTube</strong> &mdash; some Journal entries show a preview image loaded from YouTube; videos open on YouTube itself.</p></div><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">Google Ads and Google Analytics</strong> &mdash; only if you accept them in the cookie notice (see section 3). <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener" style="color:var(--green-dark);text-decoration:none">How Google uses data</a></p></div></div>
       </div>
 
       <div>
@@ -4967,7 +4975,8 @@ function nlSubscribe(){
 })();
 
 
-// ── SHARE YOUR STORY (garden page): stars + mailto to contact@mimatis.org ──
+// ── SHARE YOUR STORY (garden page): stars + sends to contact@mimatis.org via FormSubmit (first use needs activation from the inbox) ──
+var STORY_ENDPOINT='https://formsubmit.co/ajax/contact@mimatis.org';
 (function(){
   var sky=document.getElementById('st-sky');
   if(sky&&!sky.childNodes.length){
@@ -4987,19 +4996,30 @@ function nlSubscribe(){
   function say(t){var m=document.getElementById('st-msg');m.textContent=t;m.style.display='block';}
   f.addEventListener('submit',function(e){
     e.preventDefault();
-    var v=function(k){return document.getElementById(k).value.trim();};
+    var v=function(k){var el=document.getElementById(k);return el?el.value.trim():'';};
+    if(v('st-hp'))return;
     if(!v('st-text')){say('Please write your story before sending.');document.getElementById('st-text').focus();return;}
-    if(!document.getElementById('st-ok').checked){say('Please tick the box to confirm you would like to send your story.');return;}
-    var body='';
-    if(v('st-name'))body+='Name: '+v('st-name')+'\n';
-    if(v('st-country'))body+='Country: '+v('st-country')+'\n';
-    if(v('st-baby'))body+="Baby's name: "+v('st-baby')+'\n';
-    body+=(body?'\n':'')+v('st-text')+'\n\n(Sent from the Memorial Garden page. Please ask me before publishing anything.)';
-    var subj='My story'+(v('st-baby')?' – '+v('st-baby'):'');
-    try{if(navigator.clipboard)navigator.clipboard.writeText(body).catch(function(){});}catch(err){}
-    window.location.href='mailto:contact@mimatis.org?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
-    if(sky){var st=document.createElement('span');st.className='st-new';st.style.left=(15+Math.random()*70)+'%';st.style.top=(8+Math.random()*18)+'%';sky.appendChild(st);}
-    say('Thank you. Your email app should now open with your story. If nothing opens, your story has been copied: paste it into an email to contact@mimatis.org.');
+    var em=v('st-email');
+    if(em&&!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)){say('Please check your email address, or leave it empty.');return;}
+    var subj='My story'+(v('st-baby')?' – '+v('st-baby'):'')+' (MIMATIS garden page)';
+    var btn=document.getElementById('st-send');btn.disabled=true;btn.textContent='Sending…';
+    var data={_subject:subj,_template:'table',_captcha:'false',Name:v('st-name')||'(not given)',Email:em||'(not given)',"Baby's name":v('st-baby')||'(not given)',Country:v('st-country')||'(not given)',Story:v('st-text')};
+    if(em)data._replyto=em;
+    function fallback(){
+      btn.disabled=false;btn.textContent='Send your story';
+      var body=(v('st-name')?'Name: '+v('st-name')+'\n':'')+(v('st-baby')?"Baby's name: "+v('st-baby')+'\n':'')+(v('st-country')?'Country: '+v('st-country')+'\n':'')+'\n'+v('st-text');
+      var m=document.getElementById('st-msg');
+      m.innerHTML='Sorry, your story could not be sent just now. <a href="mailto:contact@mimatis.org?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body)+'">Send it by email instead</a>, or try again in a moment.';
+      m.style.display='block';
+    }
+    fetch(STORY_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+      .then(function(r){return r.json().catch(function(){return {};}).then(function(j){return r.ok&&String(j.success)==='true';});})
+      .then(function(ok){
+        if(!ok){fallback();return;}
+        if(sky){var st=document.createElement('span');st.className='st-new';st.style.left=(15+Math.random()*70)+'%';st.style.top=(8+Math.random()*18)+'%';sky.appendChild(st);}
+        f.innerHTML='<div class="st-done"><p>Thank you for sharing your story.</p><span>It has reached us, and we will read it with care.'+(em?' We will write back to you.':'')+'</span></div>';
+      })
+      .catch(fallback);
   });
 })();
 
