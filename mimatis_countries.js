@@ -128,11 +128,12 @@ lt:{name:'Lithuania',flag:'LT',cards:[
   ]
 },
 lu:{name:'Luxembourg',flag:'LU',cards:[
-    {tag:'Government',name:'Ministère de la Santé',desc:'Luxembourg Ministry of Health — can direct bereaved parents to relevant support services and bereavement resources in the country.',link:'https://sante.public.lu'},
-    {tag:'Support',name:'Ligue Médico-Sociale',desc:'Luxembourg social and medical support league offering counselling and support services for families in crisis, including pregnancy loss.',link:'https://www.lms.lu'},
-    {tag:'Crisis',name:'SOS Détresse',desc:'Luxembourg crisis and emotional support line. Free, confidential. Tel: 454545. Available in French, German, Luxembourgish and English.',link:'https://www.454545.lu'}
+    {tag:'Parents',name:'Eidel Äerm (Initiativ Liewensufank)',desc:'A self-help group for parents whose baby died in pregnancy, at birth or after birth, meeting in Itzig. Tel: 36 05 98.',link:'https://www.liewensufank.lu'},
+    {tag:'Parents',name:'Weesen-Elteren (Croix-Rouge)',desc:'A discussion group in Luxembourg City for parents who have lost a child. Tel: 691 90 13 21.',link:'https://www.hopitauxschuman.lu/de/ich-bin-ein-patient-werdende-eltern/mein-klinikaufenthalt/im-todesfall/im-todesfall/'},
+    {tag:'Grief counselling',name:'Omega 90',desc:'Grief counselling for individuals, couples, families, children and young people. Tel: 29 77 89 1.',link:'https://www.omega90.lu'},
+    {tag:'Helpline',name:'SOS Détresse',desc:'Emotional support: 45 45 45, daily 11:00-23:00 (until 03:00 on Friday and Saturday nights).',link:'https://www.454545.lu'}
   ],funeral:[
-    {tag:'Funeral',name:'État Civil (Civil Registry)',desc:'Stillbirths in Luxembourg must be registered at the État Civil. The hospital will provide guidance. Contact your local commune for burial arrangements.',link:'https://guichet.public.lu'}
+    {tag:'Funeral',name:'Acte d\'enfant sans vie and funeral',desc:'From 22 weeks, an acte d\'enfant sans vie records your baby\'s name; the CNS pays part of the funeral costs. Full guide in English, French and German: mimatis.org/luxembourg',link:'https://www.mimatis.org/luxembourg'}
   ]
 },
 mt:{name:'Malta',flag:'MT',cards:[
