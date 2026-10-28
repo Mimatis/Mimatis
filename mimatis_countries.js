@@ -59,11 +59,12 @@ ee:{name:'Estonia',flag:'EE',cards:[
     {tag:'Helpline 24/7',name:'Crisis line 116 006',desc:'24 hours, in Estonian, Russian and English. Chat at palunabi.ee.',link:'https://sotsiaalkindlustusamet.ee/en/child-and-adult-need-help/support-victims/victim-support-crisis-helpline'},
   ],funeral:[]},
 fi:{name:'Finland',flag:'FI',cards:[
-    {tag:'Association',name:'KAPY ry — Lapsikuolemaperheet',desc:"Finland's leading child loss association. Peer support, groups, and bereavement resources after stillbirth and neonatal death. Email: tuki@kapy.fi",link:'https://kapy.fi/child-death-families-kapy-ry/'},
-    {tag:'Online Support',name:'KAPY Online Peer Groups',desc:'Closed online peer support groups in Finnish — facilitated by trained volunteer parents who have experienced loss themselves.',link:'https://kapy.fi/surevalle/etatuki/'},
-    {tag:'Helpline 24/7',name:'MIELI Kriisipuhelin',desc:'Finnish crisis helpline: 09 2525 0111 (free, 24/7).',link:'https://mieli.fi/apua-ja-tukea/kriisipuhelin/'},
-    {tag:'Association',name:'Suomen Mielenterveysseura',desc:'Finnish Mental Health Association — grief counselling and referrals for bereaved families.',link:'https://www.mielenterveysseura.fi'},
-  ],funeral:[]},
+    {tag:'Parents',name:'Käpy ry — Lapsikuolemaperheet',desc:'Peer support and free brochures for families whose child died in late pregnancy, as a baby or later. Email: tuki@kapy.fi. Text or WhatsApp: +358 45 325 9595.',link:'https://kapy.fi/child-death-families-kapy-ry/'},
+    {tag:'Helpline 24/7',name:'MIELI Kriisipuhelin',desc:'Finnish crisis line, day and night: 09 2525 0111. Children and young people: 116 111.',link:'https://mieli.fi/apua-ja-tukea/kriisipuhelin/'}
+  ],funeral:[
+    {tag:'Funeral',name:'Burial at any stage',desc:'From 22 weeks your baby is buried or cremated with a permit from the hospital; from 12 weeks the hospital and parish arrange a burial if you do not. Full guide in English and Finnish: mimatis.org/finland',link:'https://www.mimatis.org/finland'}
+  ]
+},
 fr:{name:'France',flag:'FR',cards:[
     {tag:'Association',name:'AGAPA',desc:'Listening and support after pregnancy loss or the death of a baby, with trained volunteer listeners and support groups. Tel: 01 40 45 06 36.',link:'https://www.agapa.fr'},
     {tag:'Association',name:'SPAMA',desc:'Support for parents after perinatal death and after a serious prenatal diagnosis. Listening line on weekday mornings: 07 87 85 37 81.',link:'https://www.spama.asso.fr'},
