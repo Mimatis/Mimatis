@@ -43,10 +43,13 @@ hr:{name:'Croatia',flag:'HR',cards:[
   ]
 },
 cy:{name:'Cyprus',flag:'CY',cards:[
-    {tag:'Helpline',name:'Cyprus Mental Health Line',desc:'Mental health support: 1480 (available in Greek and English).',link:'https://www.moh.gov.cy'},
-    {tag:'Hospital',name:'Nicosia General Hospital',desc:"Cyprus's main hospital — ask for bereavement support via the maternity department.",link:'https://www.moh.gov.cy'},
-    {tag:'Global Support',name:'Saying Goodbye',desc:'Global baby loss support organisation with resources in multiple languages.',link:'https://www.sayinggoodbye.org'},
-  ],funeral:[]},
+    {tag:'Perinatal charity',name:'Birth Forward',desc:'A Cypriot charity for pregnancy, birth and early parenthood, with a directory of support after pregnancy loss.',link:'https://www.birthforward.com/directory-tag/pregnancy-loss/'},
+    {tag:'Helpline',name:'Cyprus Samaritans',desc:'Confidential emotional support in Greek and English, daily 16:00 to midnight: 8000 7773 (free).',link:'https://www.cyprussamaritans.org'},
+    {tag:'Children',name:'116 111',desc:'Free line for children and teenagers, weekdays 12:00-20:00, Saturday 09:30-14:00.',link:'https://www.therapyroute.com/article/suicide-hotlines-and-crisis-lines-in-cyprus-by-therapyroute'}
+  ],funeral:[
+    {tag:'Funeral',name:'Burial in agreement with the church',desc:'Stillborn babies can be buried in a cemetery in agreement with the church; ask the hospital and your parish priest. Full guide in English and Greek: mimatis.org/cyprus',link:'https://www.mimatis.org/cyprus'}
+  ]
+},
 cz:{name:'Czech Republic',flag:'CZ',cards:[
     {tag:'Information',name:'Perinatální ztráta',desc:'Practical information for parents after the loss of a baby, from the Czech Union of Midwives, supported by the Ministry of Health.',link:'https://www.perinatalniztrata.cz'},
     {tag:'Parents',name:'Dítě v srdci',desc:'Support and information for parents after the death of a baby.',link:'https://ditevsrdci.cz'},
