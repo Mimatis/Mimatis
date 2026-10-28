@@ -40,11 +40,14 @@ cy:{name:'Cyprus',flag:'CY',cards:[
     {tag:'Global Support',name:'Saying Goodbye',desc:'Global baby loss support organisation with resources in multiple languages.',link:'https://www.sayinggoodbye.org'},
   ],funeral:[]},
 cz:{name:'Czech Republic',flag:'CZ',cards:[
-    {tag:'Association',name:'Dlouha Cesta',desc:'Leading Czech association for parents after perinatal loss — peer support, counselling referrals, and practical guides.',link:'https://www.dlouhacesta.cz'},
-    {tag:'Community',name:'Prazdna Kolebka',desc:'Czech online community for parents after miscarriage and stillbirth.',link:'https://www.prazdnakolebka.cz'},
-    {tag:'Helpline 24/7',name:'Linka bezpeci',desc:'Free emotional support: 116 111 (24/7).',link:'https://www.linkabezpeci.cz'},
-    {tag:'Hospital',name:'FN Motol Prague',desc:"Czech Republic's main maternity and children's hospital with perinatal bereavement support.",link:'https://www.fnmotol.cz'},
-  ],funeral:[]},
+    {tag:'Information',name:'Perinatální ztráta',desc:'Practical information for parents after the loss of a baby, from the Czech Union of Midwives, supported by the Ministry of Health.',link:'https://www.perinatalniztrata.cz'},
+    {tag:'Parents',name:'Dítě v srdci',desc:'Support and information for parents after the death of a baby.',link:'https://ditevsrdci.cz'},
+    {tag:'Bereaved parents',name:'Dlouhá cesta',desc:'Support for parents who have lost a child, by phone and in groups. Tel: 721 288 215.',link:'https://www.dlouhacesta.cz'},
+    {tag:'Crisis',name:'Linka první psychické pomoci',desc:'Psychological first aid for adults in crisis. Tel: 116 123, free, day and night.',link:'https://cnn.iprima.cz/prehledne-kam-se-obratit-kdyz-me-trapi-sebevrazedne-myslenky-a-kde-pomohou-pozustalym-411624'}
+  ],funeral:[
+    {tag:'Funeral',name:'The 96-hour decision and pohřebné',desc:'Families have 96 hours from being told to decide on a funeral, also after a miscarriage; otherwise the baby is cremated into a shared grave. The funeral grant is 5,000 CZK. Full guide: mimatis.org/czech-republic',link:'https://www.mimatis.org/czech-republic'}
+  ]
+},
 dk:{name:'Denmark',flag:'DK',cards:[
     {tag:'Association',name:'Landsforeningen Spaedbarnsdod',desc:'Danish national association for parents after perinatal and infant loss — peer support and practical information.',link:'https://www.spaedbarnsdoed.dk'},
     {tag:'Association',name:'SANDS Denmark',desc:'Danish support for families after stillbirth and neonatal death — affiliated with the international Sands network.',link:'https://www.sands.dk'},
