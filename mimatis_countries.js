@@ -195,9 +195,13 @@ ro:{name:'Romania',flag:'RO',cards:[
   ]
 },
 sk:{name:'Slovakia',flag:'SK',cards:[
-    {tag:'Support',name:'Liga za duševné zdravie',desc:'Slovak mental health league offering counselling and bereavement support services for families after loss.',link:'https://dusevnezdravie.sk'},
-    {tag:'Crisis',name:'Linka dôvery (Crisis Line)',desc:'Slovakia national crisis and emotional support helpline. Tel: 0800 500 333. Free, 24 hours.',link:'https://www.linkadovery.sk'}
-  ],funeral:[]
+    {tag:'Parents',name:'OZ Tanana',desc:'Support after the loss of a baby in pregnancy, at birth or soon after: online psychological support, a self-help group and a memory package.',link:'https://www.tanana.sk'},
+    {tag:'Counselling',name:'Poradňa ALEXIS',desc:'Social, psychological and legal counselling after the loss of a child in pregnancy or around birth. Tel: 0911 350 200.',link:'https://www.alexisporadna.sk'},
+    {tag:'Parents',name:'OZ Malíček',desc:'Support for parents with empty arms, including memory frames in Slovak perinatal centres.',link:'https://malicek.sk'},
+    {tag:'Crisis 24/7',name:'IPčko crisis line',desc:'Free, anonymous crisis line, day and night: 0800 500 333. Linka dôvery Nezábudka: 0800 800 566.',link:'https://www.ipcko.sk'}
+  ],funeral:[
+    {tag:'Funeral',name:'Burial after any loss',desc:'A stillborn baby (from 1,000 g) is buried; after a miscarriage you can ask the hospital in writing to release your baby for burial. Full guide in English and Slovak: mimatis.org/slovakia',link:'https://www.mimatis.org/slovakia'}
+  ]
 },
 si:{name:'Slovenia',flag:'SI',cards:[
     {tag:'Hospital',name:'UKC Ljubljana — Gynecology and Obstetrics',desc:'Slovenia\'s main university hospital with a specialist obstetrics department providing bereavement support after pregnancy and infant loss.',link:'https://www.ukclj.si'},
