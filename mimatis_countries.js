@@ -53,11 +53,13 @@ cz:{name:'Czech Republic',flag:'CZ',cards:[
   ]
 },
 dk:{name:'Denmark',flag:'DK',cards:[
-    {tag:'Association',name:'Landsforeningen Spaedbarnsdod',desc:'Danish national association for parents after perinatal and infant loss — peer support and practical information.',link:'https://www.spaedbarnsdoed.dk'},
-    {tag:'Association',name:'SANDS Denmark',desc:'Danish support for families after stillbirth and neonatal death — affiliated with the international Sands network.',link:'https://www.sands.dk'},
-    {tag:'Helpline 24/7',name:'Livslinien',desc:'Danish emotional support: 70 201 201 (free, 24/7).',link:'https://www.livslinien.dk'},
-    {tag:'Hospital',name:'Rigshospitalet Neonatology',desc:"Denmark's national hospital with specialist bereavement support for families after neonatal loss.",link:'https://www.rigshospitalet.dk'},
-  ],funeral:[]},
+    {tag:'Free therapy',name:'Familier & Sorg',desc:'Free, specialised therapy within 48 hours for parents who lose a child, plus grief groups and contact with other parents. Tel: 39 61 24 51.',link:'https://familierogsorg.dk/foraeldre/'},
+    {tag:'Leave',name:'Sorgorlov (borger.dk)',desc:'Each parent can take up to 26 weeks of bereavement leave with benefits after a stillbirth from 22 weeks or the death of a child.',link:'https://www.borger.dk/familie-og-boern/Barsel-oversigt/sorgorlov'},
+    {tag:'Helpline',name:'Livslinien',desc:'Anonymous phone counselling if you have thoughts of suicide: 70 201 201. Children: BørneTelefonen 116 111.',link:'https://www.livslinien.dk'}
+  ],funeral:[
+    {tag:'Funeral',name:'Burial or cremation',desc:'From 22 weeks your baby is buried or cremated; before that, many hospitals let you choose. Full guide in English and Danish: mimatis.org/denmark',link:'https://www.mimatis.org/denmark'}
+  ]
+},
 ee:{name:'Estonia',flag:'EE',cards:[
     {tag:'Free counselling',name:'Pregnancy crisis counselling — Ida-Tallinna Keskhaigla',desc:'Free counselling after miscarriage or the death of a child, no referral needed, in Estonian and Russian: 666 1900.',link:'https://www.itk.ee/en/patient/clinics/womens-clinic/sunnitusmaja-perinataalkeskus/pregnancy-crisis-counselling'},
     {tag:'Hospital',name:'Ida-Tallinna Keskhaigla',desc:'East Tallinn Central Hospital. Leaflet on stillbirth in Estonian, English and Russian. Social worker: 620 7394.',link:'https://www.itk.ee/print/pdf/node/5059'},
