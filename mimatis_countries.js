@@ -177,9 +177,13 @@ sk:{name:'Slovakia',flag:'SK',cards:[
   ],funeral:[]
 },
 si:{name:'Slovenia',flag:'SI',cards:[
-    {tag:'Hospital',name:'UKC Ljubljana — Gynecology and Obstetrics',desc:'Slovenia\'s main university hospital with a specialist obstetrics department providing bereavement support after pregnancy and infant loss.',link:'https://www.ukclj.si'},
-    {tag:'Crisis',name:'TOM Telefon (Crisis Line)',desc:'Slovenia crisis line for emotional support. Tel: 116 111 (for young people) or 01 520 99 00. Available daily.',link:'https://www.tomtelefon.si'}
-  ],funeral:[]
+    {tag:'Parents',name:'Društvo Solzice',desc:'A society for parents whose child died in pregnancy or soon after birth: meetings, help with formal matters and burials, and a yearly remembrance.',link:'https://www.bibaleze.si/novice/ko-se-nosecnost-prezgodaj-konca-kam-po-pomoc.html'},
+    {tag:'Helpline 24/7',name:'Samarijan in Sopotnik',desc:'Someone to talk to, free, day and night: 116 123.',link:'https://www.therapyroute.com/article/suicide-hotlines-and-crisis-lines-in-slovenia-by-therapyroute'},
+    {tag:'Night line',name:'Klic v duševni stiski',desc:'University Psychiatric Clinic Ljubljana, every night 19:00-07:00: 01 520 99 00.',link:'https://www.therapyroute.com/article/suicide-hotlines-and-crisis-lines-in-slovenia-by-therapyroute'},
+    {tag:'Children',name:'TOM telefon',desc:'For children and young people: 116 111, daily 12:00-20:00.',link:'https://www.tomtelefon.si'}
+  ],funeral:[
+    {tag:'Funeral',name:'Burial at any stage',desc:'You can bury or cremate your baby at any stage of pregnancy, if you wish. Full guide in English and Slovene: mimatis.org/slovenia',link:'https://www.mimatis.org/slovenia'}
+  ]
 },
 es:{name:'Spain',flag:'ES',cards:[
     {tag:'Association',name:'Umamanita',desc:"Spain's leading charity for parents after miscarriage, stillbirth, and neonatal death. Resources, research, advocacy, and peer support in Spanish. Also offers English-language support for international residents and visitors.",link:'https://www.umamanita.es'},
