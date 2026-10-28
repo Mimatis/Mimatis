@@ -152,11 +152,12 @@ nl:{name:'Netherlands',flag:'NL',cards:[
   ]
 },
 pl:{name:'Poland',flag:'PL',cards:[
-    {tag:'Foundation',name:'Fundacja Pokonać Niemoc',desc:'Polish foundation providing support for families after the loss of a child, including stillbirth and neonatal death. Offers psychological support and peer community.',link:'https://pokonanmiemoc.pl'},
-    {tag:'Support',name:'Stowarzyszenie Rodziców po Stracie',desc:'Polish association for bereaved parents after pregnancy and infant loss — providing peer support, information, and advocacy.',link:'https://www.postracie.pl'},
-    {tag:'Crisis',name:'Telefon Zaufania dla Dorosłych',desc:'Poland national emotional support line. Free, 24 hours. Tel: 116 123.',link:'https://116123.pl'}
+    {tag:'Grief support',name:'Fundacja Nagle Sami',desc:'Support for people in mourning, including after a miscarriage: support groups, psychological help and a free helpline, 800 108 108 (Monday to Friday, 2 pm to 8 pm).',link:'https://naglesami.org.pl'},
+    {tag:'Information',name:'Poroniłam.pl',desc:'Information on your rights after a miscarriage, written with doctors, midwives and psychologists, and a large online support group.',link:'https://www.poronilam.pl'},
+    {tag:'Rights',name:'Fundacja Matecznik',desc:'Clear information on your rights after a miscarriage or the loss of a baby.',link:'https://fundacjamatecznik.pl/mamyprawapoporonieniu/'},
+    {tag:'Crisis',name:'116 123 and 800 70 2222',desc:'Free crisis helplines for adults, 24 hours a day.',link:'https://warszawa19115.pl/-/telefony-zaufania-przydatne-infolinie'}
   ],funeral:[
-    {tag:'Funeral',name:'Urząd Stanu Cywilnego (Civil Registry)',desc:'In Poland, stillbirths after 22 weeks must be registered. The hospital will assist with documentation. Contact your local USC for guidance on burial arrangements.',link:'https://www.gov.pl'}
+    {tag:'Funeral',name:'Burial and funeral allowance (pochówek, zasiłek pogrzebowy)',desc:'Parents may bury their baby at any stage of pregnancy. The ZUS funeral allowance is 7,000 zł since 1 January 2026, and since August 2025 it no longer depends on the weeks of pregnancy or the baby\'s sex. Full guide: mimatis.org/poland',link:'https://www.mimatis.org/poland'}
   ]
 },
 pt:{name:'Portugal',flag:'PT',cards:[
