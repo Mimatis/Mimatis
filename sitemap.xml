@@ -3,21 +3,28 @@
   <url><loc>https://www.mimatis.org/</loc><lastmod>2026-10-19</lastmod></url>
   <url><loc>https://www.mimatis.org/australia</loc><lastmod>2026-10-27</lastmod></url>
   <url><loc>https://www.mimatis.org/austria</loc><lastmod>2026-10-16</lastmod></url>
-  <url><loc>https://www.mimatis.org/belgium</loc><lastmod>2026-07-02</lastmod></url>
+  <url><loc>https://www.mimatis.org/belgium</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.mimatis.org/fr/belgique</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.mimatis.org/nl/belgie</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://www.mimatis.org/croatia</loc><lastmod>2026-07-02</lastmod></url>
   <url><loc>https://www.mimatis.org/cyprus</loc><lastmod>2026-07-02</lastmod></url>
-  <url><loc>https://www.mimatis.org/czech-republic</loc><lastmod>2026-07-02</lastmod></url>
-  <url><loc>https://www.mimatis.org/denmark</loc><lastmod>2026-07-02</lastmod></url>
+  <url><loc>https://www.mimatis.org/czech-republic</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.mimatis.org/denmark</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.mimatis.org/da/danmark</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.mimatis.org/cs/cesko</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://www.mimatis.org/estonia</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.mimatis.org/et/eesti</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://www.mimatis.org/finland</loc><lastmod>2026-07-02</lastmod></url>
+  <url><loc>https://www.mimatis.org/finland</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.mimatis.org/fi/suomi</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://www.mimatis.org/france</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://www.mimatis.org/fr/france</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://www.mimatis.org/germany</loc><lastmod>2026-10-23</lastmod></url>
   <url><loc>https://www.mimatis.org/de/deutschland</loc><lastmod>2026-10-23</lastmod></url>
-  <url><loc>https://www.mimatis.org/greece</loc><lastmod>2026-07-02</lastmod></url>
-  <url><loc>https://www.mimatis.org/hungary</loc><lastmod>2026-07-02</lastmod></url>
+  <url><loc>https://www.mimatis.org/greece</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.mimatis.org/hungary</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://www.mimatis.org/ireland</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.mimatis.org/hu/magyarorszag</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.mimatis.org/el/ellada</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://www.mimatis.org/italy</loc><lastmod>2026-10-19</lastmod></url>
   <url><loc>https://www.mimatis.org/it/italia</loc><lastmod>2026-10-19</lastmod></url>
   <url><loc>https://www.mimatis.org/latvia</loc><lastmod>2026-07-02</lastmod></url>
@@ -28,9 +35,12 @@
   <url><loc>https://www.mimatis.org/netherlands</loc><lastmod>2026-10-27</lastmod></url>
   <url><loc>https://www.mimatis.org/poland</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://www.mimatis.org/pl/polska</loc><lastmod>2026-10-28</lastmod></url>
-  <url><loc>https://www.mimatis.org/portugal</loc><lastmod>2026-07-02</lastmod></url>
-  <url><loc>https://www.mimatis.org/romania</loc><lastmod>2026-07-02</lastmod></url>
-  <url><loc>https://www.mimatis.org/slovakia</loc><lastmod>2026-07-02</lastmod></url>
+  <url><loc>https://www.mimatis.org/portugal</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.mimatis.org/romania</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.mimatis.org/slovakia</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.mimatis.org/sk/slovensko</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.mimatis.org/pt/portugal</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.mimatis.org/ro/romania</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://www.mimatis.org/slovenia</loc><lastmod>2026-07-02</lastmod></url>
   <url><loc>https://www.mimatis.org/spain</loc><lastmod>2026-10-27</lastmod></url>
   <url><loc>https://www.mimatis.org/es/espana</loc><lastmod>2026-10-27</lastmod></url>
@@ -42,7 +52,7 @@
   <url><loc>https://www.mimatis.org/sweden</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.mimatis.org/sv/sverige</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.mimatis.org/nl/nederland</loc><lastmod>2026-10-27</lastmod></url>
-  <url><loc>https://www.mimatis.org/united-kingdom</loc><lastmod>2026-07-02</lastmod></url>
+  <url><loc>https://www.mimatis.org/united-kingdom</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://www.mimatis.org/united-states</loc><lastmod>2026-10-23</lastmod></url>
   <url><loc>https://www.mimatis.org/es/estados-unidos</loc><lastmod>2026-10-23</lastmod></url>
   <url><loc>https://www.mimatis.org/mimatis_books</loc><lastmod>2026-10-17</lastmod></url>
