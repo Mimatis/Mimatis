@@ -111,14 +111,15 @@ hu:{name:'Hungary',flag:'HU',cards:[
   ]
 },
 ie:{name:'Ireland',flag:'IE',cards:[
-    {tag:'Helpline',name:'A Little Lifetime Foundation',desc:"Ireland's leading bereavement support for stillbirth and neonatal death — helpline, peer support, and hospital liaison.",link:'https://www.alittlelifetime.ie'},
-    {tag:'Association',name:'Feileacain',desc:'Stillbirth & Neonatal Death Association of Ireland — memory boxes, peer support, and remembrance events.',link:'https://www.feileacain.ie'},
-    {tag:'Miscarriage',name:'Miscarriage Association of Ireland',desc:'Support and information for anyone affected by miscarriage in Ireland.',link:'https://www.miscarriage.ie'},
-    {tag:'Support',name:'FirstLight Ireland',desc:'Crisis intervention and free counselling for families who have suddenly lost a child. 24/7 helpline: 1850 391 391.',link:'https://www.firstlight.ie'},
-    {tag:'Hospital',name:'HSE Bereavement Care',desc:'Every maternity hospital in Ireland has dedicated bereavement support — ask your midwife to refer you.',link:'https://www.hse.ie/eng/services/list/3/maternity/bereavement/'},
+    {tag:'Association',name:'Féileacáin',desc:'National charity for families after the death of a baby: counselling, peer support, groups and memory boxes in hospitals.',link:'https://www.feileacain.ie'},
+    {tag:'Support',name:'A Little Lifetime Foundation',desc:'Counselling, support groups and remembrance services for people affected by baby loss.',link:'https://www.alittlelifetime.ie'},
+    {tag:'Miscarriage',name:'Miscarriage Association of Ireland',desc:'A volunteer phone line and monthly support meetings in Dublin for anyone affected by miscarriage.',link:'https://www.miscarriage.ie'},
+    {tag:'Helpline 24/7',name:'FirstLight',desc:'Free crisis support and counselling after the sudden death of a child aged 0 to 18. 24-hour helpline: 1800 391 391.',link:'https://www.firstlight.ie'},
+    {tag:'Hospital',name:'HSE bereavement care',desc:'Every maternity unit should have a bereavement team with a specialist midwife. Ask your midwife to refer you.',link:'https://hse.ie/eng/services/list/3/maternity/bereavement-care'}
   ],funeral:[
-    {tag:'Funeral Support',name:'Irish Association of Funeral Directors',desc:'Find compassionate funeral directors with experience in baby and infant loss across Ireland.',link:'https://www.iafd.ie'},
-  ]},
+    {tag:'Funeral',name:'Hospital or private funeral',desc:'The hospital must explain your options and their costs. Stillbirths from 23 weeks or 400 g can be registered, free, with your baby\'s name. Full guide: mimatis.org/ireland',link:'https://www.mimatis.org/ireland'}
+  ]
+},
 it:{name:'Italy',flag:'IT',cards:[
     {tag:'Association',name:'CiaoLapo Onlus',desc:"Italy's leading organisation after perinatal and neonatal loss — support, research, and clinical guidance.",link:'https://www.ciaolapo.it'},
     {tag:'Association',name:'Associazione Materna',desc:'Italian association supporting mothers after pregnancy and neonatal loss.',link:'https://www.associazionematerna.it'},
