@@ -110,11 +110,13 @@ it:{name:'Italy',flag:'IT',cards:[
     {tag:'Helpline 24/7',name:'Telefono Azzurro',desc:'Italian helpline also supporting bereaved parents: 19696.',link:'https://www.azzurro.it'},
   ],funeral:[]},
 lv:{name:'Latvia',flag:'LV',cards:[
-    {tag:'Organisation',name:'Latvijas Masu asociacija',desc:'Latvian Nurses Association — guidance and referrals for parents after perinatal loss.',link:'https://www.lma.lv'},
-    {tag:'Hospital',name:'Rigas Dzemdību nams',desc:"Riga Maternity Hospital — Latvia's main maternity hospital with bereavement care.",link:'https://www.rdn.lv'},
-    {tag:'Hospital',name:'Paula Stradina Kliniska universitates slimnica',desc:"Latvia's university hospital with neonatal and perinatal bereavement support.",link:'https://www.stradini.lv'},
-    {tag:'Helpline',name:'Skalbes Krizes centrs',desc:'Latvian crisis centre — emotional support helpline: 67222922.',link:'https://www.skalbes.lv'},
-  ],funeral:[]},
+    {tag:'Free support',name:'Dzīve un sēras (Torņakalna fonds)',desc:'Free grief groups and consultations for parents who lost a child, including in pregnancy or at birth, until March 2028.',link:'https://www.dziveunseras.lv'},
+    {tag:'Memorial',name:'Dvēseļu dārzs',desc:'The Garden of Souls by Torņakalns church in Riga: a resting place for babies and memorial events for parents.',link:'https://www.dveseludarzs.lv'},
+    {tag:'Helpline 24/7',name:'Skalbes crisis line',desc:'Free, confidential support day and night: 116 123. Children: 116 111.',link:'https://www.skalbes.lv'}
+  ],funeral:[
+    {tag:'Funeral',name:'Burial at any stage',desc:'Since 2018 hospitals must tell you in writing that you can take your baby for burial, also before 22 weeks. VSAA pays a funeral allowance after a stillbirth. Full guide in English and Latvian: mimatis.org/latvia',link:'https://www.mimatis.org/latvia'}
+  ]
+},
 lt:{name:'Lithuania',flag:'LT',cards:[
     {tag:'Association',name:'Asociacija Angelų mamos',desc:"Lithuania's leading non-profit association for mothers and families after miscarriage, stillbirth, neonatal loss, or termination for medical reasons. Founded by a bereaved mother, offering community support and guidance in Lithuanian.",link:'https://www.angelumamos.lt'},
     {tag:'Hospital',name:'Vilnius University Hospital Santaros Klinikos',desc:"Lithuania's leading teaching hospital with a specialist perinatology and obstetrics department. Bereavement support is available through the maternity team.",link:'https://www.santa.lt'},
