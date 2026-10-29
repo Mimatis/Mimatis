@@ -137,6 +137,28 @@ h1{font-size:32px}h2{font-size:1.55rem}
 .langs .lmenu{position:absolute;right:0;top:calc(100% + 6px);background:#fff;border:1px solid var(--border);border-radius:3px;min-width:150px;padding:.4rem 0;z-index:20}
 .langs .lmenu a{display:block;padding:.35rem 1rem;color:var(--mid);text-decoration:none}
 .langs .lmenu a:hover,.langs .lmenu a[aria-current]{background:var(--green-light);color:var(--green-dark)}
+
+
+/* spain-extras */
+.langs summary{background:#FFD84D;border-color:#E9BC1B;color:#1E1E1E;font-weight:500;padding:.4rem .9rem}
+.langs summary:hover,.langs[open] summary{background:#FFCB1F}
+.langs summary .sw-l{margin-inline-end:.35rem}
+.xtra{padding:0 0 56px}
+.quick{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:48px}
+.qbtn{display:inline-block;padding:.75rem 1.2rem;border:1px solid var(--green);border-radius:3px;color:var(--green-dark);text-decoration:none;font-weight:500;background:#fff}
+.qbtn:hover{background:var(--green-light)}
+.qbtn.qpro{border-color:var(--blush);background:var(--lav-tint);color:var(--ink)}
+.qbtn.qpro:hover{background:#EEDDF7}
+.types h2{margin-bottom:.4rem}
+.types .intro{margin:0 0 1.5rem}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.tdef{border-top:3px solid var(--green);padding:1rem 0 0}
+.tdef h3{font-size:1.05rem;margin:0 0 .35rem}
+.tdef p{margin:0;color:var(--mid)}
+.types .fact-note{margin-top:1.5rem}
+@media(max-width:860px){.tgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.tgrid{grid-template-columns:1fr}.quick{flex-direction:column}.qbtn{text-align:center}}
+/* /spain-extras */
 </style>
 <script defer="" src="/consent.js"></script>
 <script type="application/ld+json" id="mimatis-ld">{"@context":"https://schema.org","@graph":[{"@type":"MedicalWebPage","@id":"https://www.mimatis.org/eu/espainia#page","url":"https://www.mimatis.org/eu/espainia","name":"Abortu espontaneoa, heriotza perinatala eta haur baten galera Espainian — Eskubideak eta laguntza | MIMATIS","headline":"Haur baten galeraren ondoren Espainian","description":null,"inLanguage":"eu","isPartOf":{"@id":"https://www.mimatis.org/#website"},"publisher":{"@id":"https://www.mimatis.org/#organization"},"audience":{"@type":"PeopleAudience","audienceType":"Parents after miscarriage, stillbirth or neonatal loss"},"about":[{"@type":"MedicalCondition","name":"Miscarriage"},{"@type":"MedicalCondition","name":"Stillbirth"},{"@type":"MedicalCondition","name":"Neonatal death"}],"spatialCoverage":{"@type":"Country","name":"Spain"},"lastReviewed":"2026-10-27"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hasiera","item":"https://www.mimatis.org/"},{"@type":"ListItem","position":2,"name":"Laguntza bilatu","item":"https://www.mimatis.org/#help"},{"@type":"ListItem","position":3,"name":"Haur baten galeraren ondoren Espainian","item":"https://www.mimatis.org/eu/espainia"}]}]}</script>
@@ -144,7 +166,7 @@ h1{font-size:32px}h2{font-size:1.55rem}
 <body>
 <nav>
 <a class="wordmark" href="https://www.mimatis.org">MIMATIS</a>
-<div class="navr"><a class="hide-m" href="https://www.mimatis.org/#help">Herrialde guztiak →</a><details class="langs"><summary>Euskara</summary><div class="lmenu"><a href="https://www.mimatis.org/spain" hreflang="en" lang="en">English</a><a href="https://www.mimatis.org/es/espana" hreflang="es" lang="es">Espa&ntilde;ol</a><a href="https://www.mimatis.org/ca/espanya" hreflang="ca" lang="ca">Catal&agrave;</a><a href="https://www.mimatis.org/eu/espainia" hreflang="eu" lang="eu" aria-current="true">Euskara</a><a href="https://www.mimatis.org/gl/espana" hreflang="gl" lang="gl">Galego</a><a href="https://www.mimatis.org/ru/ispaniya" hreflang="ru" lang="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</a><a href="https://www.mimatis.org/ar/isbania" hreflang="ar" lang="ar">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</a></div></details></div>
+<div class="navr"><a class="hide-m" href="https://www.mimatis.org/#help">Herrialde guztiak →</a><details class="langs"><summary><span class="sw-l">Aldatu hizkuntza:</span></summary><div class="lmenu"><a href="https://www.mimatis.org/spain" hreflang="en" lang="en">English</a><a href="https://www.mimatis.org/es/espana" hreflang="es" lang="es">Espa&ntilde;ol</a><a href="https://www.mimatis.org/ca/espanya" hreflang="ca" lang="ca">Catal&agrave;</a><a href="https://www.mimatis.org/eu/espainia" hreflang="eu" lang="eu" aria-current="true">Euskara</a><a href="https://www.mimatis.org/gl/espana" hreflang="gl" lang="gl">Galego</a><a href="https://www.mimatis.org/ru/ispaniya" hreflang="ru" lang="ru">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</a><a href="https://www.mimatis.org/ar/isbania" hreflang="ar" lang="ar">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</a></div></details></div>
 </nav>
 <main>
 <section class="hero">
@@ -159,6 +181,9 @@ h1{font-size:32px}h2{font-size:1.55rem}
 <div class="hero-photo"><img alt="Tximeleta argiak zeru urdin leun baten aurrean" src="/assets/bg-butterflies.jpg"/></div>
 </div>
 </section>
+<section class="xtra" id="loss-types-wrap"><div class="wrap"><div class="quick"><a class="qbtn" href="https://www.mimatis.org/#garden">Landatu lore bat oroimenaren lorategian</a><a class="qbtn" href="https://www.mimatis.org/journal">Irakurri artikuluak eta istorioak</a><a class="qbtn qpro" href="https://www.mimatis.org/#action">Ospitale, enpresa edo ikertzaile zara? Lan egin gurekin</a></div><div class="types" id="loss-types"><h2>Haurdunaldiko eta jaiotza inguruko galera motak, hitz errazetan</h2><p class="intro">Medikuek eta legeek hitz asko erabiltzen dituzte. Hau da horien esanahia.</p><div class="tgrid"><div class="tdef"><h3>Abortu espontaneo goiztiarra</h3><p>Haurdunaldia bere kabuz amaitzen denean lehen 13 asteetan. Galerarik ohikoena da, eta ia inoiz ez da gurasoek egindako zerbaitengatik.</p></div><div class="tdef"><h3>Haurdunaldiko galera berantiarra</h3><p>Haurra sabelean hiltzen denean, 14 aste inguru igaro ondoren eta jaiotza inguruko heriotzaren mugaren aurretik. Normalean amak bere haurra erditzen du.</p></div><div class="tdef"><h3>Fetu-heriotza: bizirik gabe jaiotako haurra</h3><p>Haurra erditu aurretik edo erditzean hiltzen denean, haurdunaldia aurreratuta dagoela. Medikuek askotan 22. astetik aurrera zenbatzen dute. Espainian, legeak 180 egun (26 aste inguru) erabiltzen ditu inskripziorako eta ehorzketarako.</p></div><div class="tdef"><h3>Jaioberriaren heriotza</h3><p>Haurra bizirik jaio eta bizitzako lehen 28 egunetan hiltzen denean, nahiz eta minutu gutxira izan.</p></div><div class="tdef"><h3>Bularreko haurraren bat-bateko heriotza</h3><p>Urtebete baino gutxiagoko haur baten bat-bateko heriotza, azalpenik gabea, ia beti lo dagoela. Ez da inoren errua.</p></div><div class="tdef"><h3>Haurdunaldi ektopikoa</h3><p>Haurdunaldia umetokitik kanpo hazten denean, gehienetan tronpa batean. Ezin du aurrera egin, eta amak berehalako arreta behar du.</p></div><div class="tdef"><h3>Haurdunaldi molarra</h3><p>Plazentaren arazo arraro bat, eta horregatik haurdunaldia ezin da garatu. Amak hilabete batzuetan kontrolak behar ditu.</p></div><div class="tdef"><h3>Haurdunaldi biokimikoa</h3><p>Oso galera goiztiarra, haurdunaldi-proba positiboaren ondoren gutxira, askotan hilekoaren garaian. Galera bat da hala ere.</p></div><div class="tdef"><h3>Arrazoi medikoengatiko etena</h3><p>Gurasoek nahi zuten haurdunaldi bat amaitzea erabakitzen dutenean, haurraren edo amaren osasun-arazo larri batengatik. Galera bat ere bada, eta laguntza bera merezi duzu.</p></div></div><p class="fact-note">Hitza edozein dela ere, zure haurra benetakoa izan zen eta zure dolua garrantzitsua da.</p></div></div></section><!-- /xtra -->
+
+
 <section class="facts">
 <div class="wrap">
 <h2>Zure eskubideak zehazten dituzten lau gauza</h2>
