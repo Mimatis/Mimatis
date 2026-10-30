@@ -163,82 +163,74 @@ a{color:var(--green)}
 .more{max-width:860px;margin:2.5rem auto 0;padding:0 clamp(16px,5vw,3rem)}
 .more h2{font-family:'Inter',sans-serif;font-weight:400;font-size:1.15rem;margin-bottom:1rem}
 
+
+
+/* art-design */
+:root{--sky:#E3F5F8}
+.readbar{position:sticky;top:0;z-index:30;height:3px;background:transparent}
+.readbar span{display:block;height:100%;width:0;background:var(--green);transition:width .1s linear}
+.ah-band .crumb{grid-column:1/-1;max-width:none;margin:0 0 .4rem;padding:0;line-height:1.6}
+.ah-band{background:var(--sky)}
+.ah-in{max-width:980px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:2rem;align-items:center;padding:clamp(48px,7vw,88px) clamp(16px,5vw,3rem)}
+.ah-band .article-hero{max-width:none;margin:0;padding:0}
+.article-pillar{padding:0;margin-bottom:1.2rem;color:var(--ink);letter-spacing:.3em;font-size:.68rem}
+.article-pillar::after{content:"";display:block;width:56px;height:2px;background:var(--green);margin-top:.9rem}
+.article-title{font-weight:700;letter-spacing:-.025em;line-height:1.08;font-size:clamp(2rem,4.6vw,3.2rem);margin-bottom:1.2rem}
+.article-subtitle{color:var(--ink);font-size:1.05rem;max-width:620px}
+.article-meta{border-top:1px solid rgba(0,112,138,.18);color:var(--mid)}
+.article-meta .rt{color:var(--green-dark);font-weight:500}
+.ah-flower{width:100%;height:auto;max-height:230px;object-fit:contain;transform:rotate(-8deg)}
+
+.article-body{padding-top:clamp(48px,6vw,72px)}
+.article-body>p:first-of-type{font-size:1.15rem!important;color:var(--ink)}
+.article-body>p:first-of-type::first-letter{color:var(--green-dark);font-weight:600}
+.article-body h2{font-weight:600;font-size:1.45rem;margin:3rem 0 1rem}
+.pull-quote{background:var(--sky);border:0;border-left:3px solid var(--green);border-radius:3px;padding:1.8rem 2rem;margin:2.8rem 0;text-align:left}
+.pull-quote p{font-size:1.25rem!important;font-weight:600;font-style:normal;color:var(--ink);max-width:none;margin:0!important;line-height:1.5!important}
+.pull-quote p::first-letter{font-size:inherit!important;float:none!important;margin:0!important;color:inherit!important;font-weight:inherit!important;line-height:inherit!important;font-family:inherit!important}
+.article-source{background:#fff;border:1px solid var(--border);border-top:3px solid var(--green);border-left-width:1px;border-radius:3px}
+.article-source .source-text{color:var(--mid)}
+.more .card{border-top:3px solid var(--green)}
+.more .cards{gap:1rem;background:none;border:0}
+.more .card{border-left:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border);border-radius:3px}
+@media(max-width:760px){
+ .ah-in{grid-template-columns:1fr;gap:0;padding-top:40px}
+ .ah-flower{display:none}
+}
+/* /art-design */
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mimatis.org/"}, {"@type": "ListItem", "position": 2, "name": "Journal", "item": "https://www.mimatis.org/journal"}, {"@type": "ListItem", "position": 3, "name": "Why grieving people seek water", "item": "https://www.mimatis.org/journal/why-grieving-people-seek-water"}]}, {"@type": "Article", "headline": "Why grieving people seek water", "description": "Rivers, oceans, lakes. Research on the nervous system is beginning to explain why so many bereaved parents are drawn to water in the weeks after loss.", "mainEntityOfPage": "https://www.mimatis.org/journal/why-grieving-people-seek-water", "author": {"@type": "NGO", "@id": "https://www.mimatis.org/#organization", "name": "MIMATIS", "url": "https://www.mimatis.org"}, "publisher": {"@type": "NGO", "@id": "https://www.mimatis.org/#organization", "name": "MIMATIS", "url": "https://www.mimatis.org"}, "articleSection": "Nature & Grief", "inLanguage": "en"}]}</script>
 <script src="/consent.js" defer></script>
 </head>
 <body>
 <header class="sn"><a class="wm" href="/">MIMATIS</a><nav aria-label="Main"><a href="/#help">Find help</a><a href="/guidance">Guidance</a><a href="/journal" aria-current="page">Journal</a><a href="/research">Research</a><a href="/about">Who we are</a></nav></header>
-<div class="crumb"><a href="/">Home</a> &rsaquo; <a href="/journal">Journal</a> &rsaquo; Why grieving people seek water</div>
+<div class="readbar" aria-hidden="true"><span></span></div>
 <main>
-<div class="article-page"><div class="article-hero">
+<div class="article-page"><section class="ah-band"><div class="ah-in"><div class="crumb"><a href="/">Home</a> &rsaquo; <a href="/journal">Journal</a> &rsaquo; Why grieving people seek water</div><div class="article-hero">
 <span class="article-pillar">Nature &amp; Grief</span>
 <h1 class="article-title">Why grieving people<br/>seek <em>water</em></h1>
 <p class="article-subtitle">Rivers, oceans, lakes. Research on the nervous system is beginning to explain why so many bereaved parents are drawn to water in the weeks after loss.</p>
 <div class="article-meta">
+<span class="rt">3 min read</span><span class="meta-dot"></span>
 <span>Nature &amp; Grief</span><span class="meta-dot"></span>
 <span>Neuroscience</span><span class="meta-dot"></span>
 <span>MIMATIS Journal</span>
 </div>
-</div>
-<div class="illustration-wrap">
-<svg style="width:100%;display:block" viewbox="0 0 820 300" xmlns="http://www.w3.org/2000/svg">
-<rect fill="#F1EFE8" height="300" width="820"></rect>
-<!-- Sky gradient area -->
-<rect fill="#E0F4F8" height="180" opacity=".35" width="820" x="0" y="0"></rect>
-<!-- Water surface -->
-<path d="M0 180 Q100 170 200 180 Q300 190 400 180 Q500 170 600 180 Q700 190 820 175 L820 300 L0 300Z" fill="#0097B2" opacity=".12"></path>
-<path d="M0 190 Q120 183 240 190 Q360 197 480 188 Q600 180 720 190 Q770 193 820 188 L820 300 L0 300Z" fill="#0097B2" opacity=".08"></path>
-<!-- Water ripples -->
-<ellipse cx="300" cy="210" fill="none" opacity=".3" rx="60" ry="8" stroke="#0097B2" stroke-width=".8"></ellipse>
-<ellipse cx="300" cy="210" fill="none" opacity=".25" rx="40" ry="5" stroke="#0097B2" stroke-width=".6"></ellipse>
-<ellipse cx="500" cy="220" fill="none" opacity=".25" rx="50" ry="7" stroke="#0097B2" stroke-width=".8"></ellipse>
-<ellipse cx="150" cy="230" fill="none" opacity=".2" rx="45" ry="6" stroke="#0097B2" stroke-width=".6"></ellipse>
-<!-- Shore line -->
-<path d="M0 178 Q200 168 400 178 Q600 188 820 173" fill="none" opacity=".15" stroke="#00708A" stroke-width=".8"></path>
-<!-- Pebbles on shore -->
-<ellipse cx="80" cy="176" fill="#E0DDD5" opacity=".8" rx="8" ry="4"></ellipse>
-<ellipse cx="100" cy="179" fill="#E0DDD5" opacity=".7" rx="6" ry="3"></ellipse>
-<ellipse cx="116" cy="175" fill="#E0DDD5" opacity=".6" rx="5" ry="2.5"></ellipse>
-<ellipse cx="680" cy="174" fill="#E0DDD5" opacity=".75" rx="7" ry="3.5"></ellipse>
-<ellipse cx="697" cy="177" fill="#E0DDD5" opacity=".65" rx="5" ry="2.5"></ellipse>
-<!-- Sitting figure silhouette -->
-<ellipse cx="410" cy="166" fill="#2C2C2A" opacity=".18" rx="12" ry="12"></ellipse>
-<path d="M398 166 Q410 155 422 166 Q422 178 410 180 Q398 178 398 166Z" fill="#2C2C2A" opacity=".12"></path>
-<!-- Small stone being thrown / ripple -->
-<circle cx="410" cy="195" fill="#0097B2" opacity=".4" r="2"></circle>
-<ellipse cx="410" cy="198" fill="none" opacity=".35" rx="10" ry="4" stroke="#0097B2" stroke-width=".8"></ellipse>
-<ellipse cx="410" cy="200" fill="none" opacity=".25" rx="18" ry="6" stroke="#0097B2" stroke-width=".6"></ellipse>
-<!-- Trees / reeds left -->
-<line opacity=".2" stroke="#00708A" stroke-width="1.5" x1="60" x2="60" y1="80" y2="175"></line>
-<line opacity=".18" stroke="#00708A" stroke-width="1.2" x1="75" x2="75" y1="95" y2="175"></line>
-<line opacity=".15" stroke="#00708A" stroke-width="1" x1="90" x2="90" y1="105" y2="175"></line>
-<!-- Reed tops -->
-<ellipse cx="60" cy="82" fill="#3B6D11" opacity=".25" rx="3" ry="8"></ellipse>
-<ellipse cx="75" cy="97" fill="#3B6D11" opacity=".2" rx="2.5" ry="7"></ellipse>
-<ellipse cx="90" cy="107" fill="#3B6D11" opacity=".18" rx="2" ry="6"></ellipse>
-<!-- Trees / reeds right -->
-<line opacity=".2" stroke="#00708A" stroke-width="1.5" x1="730" x2="730" y1="85" y2="172"></line>
-<line opacity=".18" stroke="#00708A" stroke-width="1.2" x1="745" x2="745" y1="98" y2="172"></line>
-<!-- Reflection of light on water -->
-<path d="M380 215 Q410 210 440 215" fill="none" opacity=".4" stroke="#fff" stroke-width="1.5"></path>
-<!-- Label -->
-<text fill="#5C5C58" font-family="Montserrat,sans-serif" font-size="10" letter-spacing="2" text-anchor="middle" x="410" y="282">NATURE  ·  THE NERVOUS SYSTEM  ·  GRIEF</text>
-</svg>
-</div>
+</div><img class="ah-flower" src="/assets/pf-blossom-cream.webp" alt="" aria-hidden="true"></div></section>
+
 <div class="article-body">
 <p>There is something many bereaved parents notice in the days and weeks after a loss. An unexpected pull toward water. A river they walk to without planning to. A beach they find themselves at in the middle of winter. The bath, running long after it has gone cold.</p>
 <p>This is not a coincidence, and it is not sentimental. There is an emerging body of research on what happens to the human nervous system when it encounters natural water — and it helps explain something that grieving people have known instinctively for a very long time.</p>
 <h2>What research on <em>blue space</em> tells us</h2>
 <p>The term “blue space” refers to natural water environments — rivers, lakes, coastlines, ponds, streams. Research on how these environments affect human psychology and physiology has grown significantly over the past decade, building on work in environmental psychology and neuroscience.</p>
-<p>Studies consistently show that time spent near natural water is associated with lower cortisol levels, reduced activity in the brain regions associated with threat response, and self-reported improvements in mood and mental clarity. One significant study conducted by researchers at the University of Exeter found that people living near blue spaces reported higher levels of wellbeing than those living in other natural or urban environments — even after controlling for income, physical activity, and other factors.</p>
+<p>Studies link time near natural water with better mood and lower stress. Researchers at the University of Exeter found, for example, that people in England who live closer to the coast report better health and wellbeing, even after taking income and other factors into account.</p>
 <div class="pull-quote">
 <p>The brain in grief is working hard — scanning, processing, adapting. Blue space appears to offer something the grieving mind rarely gets: permission to be still.</p>
 </div>
-<p>The mechanisms are not fully understood, but several explanations have been proposed. The sound of moving water — at a frequency of approximately 1,200 hertz — appears to activate the parasympathetic nervous system, the part of the nervous system responsible for rest and recovery. The visual experience of an open horizon reduces the constant vigilance that characterises the stress response. The absence of visual complexity that characterises most natural water environments may reduce the cognitive load on a brain that is already working very hard.</p>
+<p>The reasons are not fully understood, but several explanations have been proposed. The steady sound of moving water and the view of an open horizon may help the body move out of alert and into rest, the work of the parasympathetic nervous system. The absence of visual complexity that characterises most natural water environments may reduce the cognitive load on a brain that is already working very hard.</p>
 <h2>Grief and the threat response</h2>
-<p>The brain in acute grief is in a state of heightened alertness. The loss of a baby activates the same neurological circuits as physical threat — the body responds to profound loss as though to danger, because in evolutionary terms, the loss of offspring represents exactly that. This is why bereaved parents describe the physical symptoms of grief — the racing heart, the inability to eat, the constant low-level anxiety — that so closely resemble fear.</p>
-<p>The parasympathetic nervous system — the system that blue space appears to activate — is the antidote to this state. It is not a cure for grief. But it is a relief from the constant physical burden of it. This may explain why so many bereaved parents describe feeling, for the first time in weeks, able to breathe properly when they are near water.</p>
+<p>The body in acute grief is on high alert. Grief switches on the stress response, the same system that reacts to danger. This is why bereaved parents describe the physical symptoms of grief — the racing heart, the inability to eat, the constant low-level anxiety — that so closely resemble fear.</p>
+<p>The parasympathetic nervous system, which time near water may help to engage, works against this state. It is not a cure for grief. But it is a relief from the constant physical burden of it. This may explain why so many bereaved parents describe feeling, for the first time in weeks, able to breathe properly when they are near water.</p>
 <h2>The Japanese practice of <em>forest bathing</em></h2>
 <p>Related to the research on blue space is the Japanese practice of <em>shinrin-yoku</em> — forest bathing — which involves spending time slowly and attentively in a forest environment. Studies on shinrin-yoku published in peer-reviewed journals including <em>Environmental Health and Preventive Medicine</em> have shown measurable reductions in cortisol, blood pressure, and activity in the prefrontal cortex — the area of the brain most active during rumination and worry.</p>
 <p>Shinrin-yoku is not about exercise or achieving anything. It is about presence — moving slowly, engaging the senses, allowing the environment to do what environments do when we are not too busy to notice them. For bereaved parents who feel unable to rest but also unable to act, this quality of gentle, purposeful presence can be easier to access than formal meditation or therapy.</p>
@@ -259,5 +251,6 @@ a{color:var(--green)}
 <div>Asociaci&oacute;n MIMATIS &middot; Registered non-profit association in Spain, no. 633.864 &middot; Avinguda Catalunya 39, 17520 Puigcerd&agrave; (Girona), Spain &middot; <a href="mailto:contact@mimatis.org">contact@mimatis.org</a> &middot; <a href="/#privacy">Privacy</a> &middot; <a href="/#legal">Legal notice</a></div>
 <div>MIMATIS does not provide medical advice. If you are in crisis, please contact your local emergency number or a helpline in <a href="/#help">your country</a>.</div>
 </div></footer>
+<script id="art-read-js">(function(){var b=document.querySelector('.readbar span');if(!b)return;function u(){var d=document.documentElement,h=d.scrollHeight-d.clientHeight;b.style.width=(h>0?Math.min(100,d.scrollTop/h*100):0)+'%'}addEventListener('scroll',u,{passive:true});u()})();</script>
 </body>
 </html>

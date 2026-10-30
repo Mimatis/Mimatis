@@ -163,24 +163,60 @@ a{color:var(--green)}
 .more{max-width:860px;margin:2.5rem auto 0;padding:0 clamp(16px,5vw,3rem)}
 .more h2{font-family:'Inter',sans-serif;font-weight:400;font-size:1.15rem;margin-bottom:1rem}
 
+
+
+/* art-design */
+:root{--sky:#E3F5F8}
+.readbar{position:sticky;top:0;z-index:30;height:3px;background:transparent}
+.readbar span{display:block;height:100%;width:0;background:var(--green);transition:width .1s linear}
+.ah-band .crumb{grid-column:1/-1;max-width:none;margin:0 0 .4rem;padding:0;line-height:1.6}
+.ah-band{background:var(--sky)}
+.ah-in{max-width:980px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:2rem;align-items:center;padding:clamp(48px,7vw,88px) clamp(16px,5vw,3rem)}
+.ah-band .article-hero{max-width:none;margin:0;padding:0}
+.article-pillar{padding:0;margin-bottom:1.2rem;color:var(--ink);letter-spacing:.3em;font-size:.68rem}
+.article-pillar::after{content:"";display:block;width:56px;height:2px;background:var(--green);margin-top:.9rem}
+.article-title{font-weight:700;letter-spacing:-.025em;line-height:1.08;font-size:clamp(2rem,4.6vw,3.2rem);margin-bottom:1.2rem}
+.article-subtitle{color:var(--ink);font-size:1.05rem;max-width:620px}
+.article-meta{border-top:1px solid rgba(0,112,138,.18);color:var(--mid)}
+.article-meta .rt{color:var(--green-dark);font-weight:500}
+.ah-flower{width:100%;height:auto;max-height:230px;object-fit:contain;transform:rotate(-8deg)}
+
+.article-body{padding-top:clamp(48px,6vw,72px)}
+.article-body>p:first-of-type{font-size:1.15rem!important;color:var(--ink)}
+.article-body>p:first-of-type::first-letter{color:var(--green-dark);font-weight:600}
+.article-body h2{font-weight:600;font-size:1.45rem;margin:3rem 0 1rem}
+.pull-quote{background:var(--sky);border:0;border-left:3px solid var(--green);border-radius:3px;padding:1.8rem 2rem;margin:2.8rem 0;text-align:left}
+.pull-quote p{font-size:1.25rem!important;font-weight:600;font-style:normal;color:var(--ink);max-width:none;margin:0!important;line-height:1.5!important}
+.pull-quote p::first-letter{font-size:inherit!important;float:none!important;margin:0!important;color:inherit!important;font-weight:inherit!important;line-height:inherit!important;font-family:inherit!important}
+.article-source{background:#fff;border:1px solid var(--border);border-top:3px solid var(--green);border-left-width:1px;border-radius:3px}
+.article-source .source-text{color:var(--mid)}
+.more .card{border-top:3px solid var(--green)}
+.more .cards{gap:1rem;background:none;border:0}
+.more .card{border-left:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border);border-radius:3px}
+@media(max-width:760px){
+ .ah-in{grid-template-columns:1fr;gap:0;padding-top:40px}
+ .ah-flower{display:none}
+}
+/* /art-design */
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mimatis.org/"}, {"@type": "ListItem", "position": 2, "name": "Journal", "item": "https://www.mimatis.org/journal"}, {"@type": "ListItem", "position": 3, "name": "Fathers, too: the grief that is easy to miss", "item": "https://www.mimatis.org/journal/fathers-too-the-grief-that-is-easy-to-miss"}]}, {"@type": "Article", "headline": "Fathers, too: the grief that is easy to miss", "description": "After a baby dies, people ask how the mother is. What research shows about fathers’ grief after miscarriage, stillbirth and neonatal loss, and what seems to help.", "mainEntityOfPage": "https://www.mimatis.org/journal/fathers-too-the-grief-that-is-easy-to-miss", "author": {"@type": "NGO", "@id": "https://www.mimatis.org/#organization", "name": "MIMATIS", "url": "https://www.mimatis.org"}, "publisher": {"@type": "NGO", "@id": "https://www.mimatis.org/#organization", "name": "MIMATIS", "url": "https://www.mimatis.org"}, "articleSection": "Fathers & partners", "inLanguage": "en", "datePublished": "2026-10-23", "image": "https://www.mimatis.org/assets/journal-fathers.jpg"}]}</script>
 <script src="/consent.js" defer></script>
 </head>
 <body>
 <header class="sn"><a class="wm" href="/">MIMATIS</a><nav aria-label="Main"><a href="/#help">Find help</a><a href="/guidance">Guidance</a><a href="/journal" aria-current="page">Journal</a><a href="/research">Research</a><a href="/about">Who we are</a></nav></header>
-<div class="crumb"><a href="/">Home</a> &rsaquo; <a href="/journal">Journal</a> &rsaquo; Fathers, too: the grief that is easy to miss</div>
+<div class="readbar" aria-hidden="true"><span></span></div>
 <main>
-<div class="article-page"><div class="article-hero">
+<div class="article-page"><section class="ah-band"><div class="ah-in"><div class="crumb"><a href="/">Home</a> &rsaquo; <a href="/journal">Journal</a> &rsaquo; Fathers, too: the grief that is easy to miss</div><div class="article-hero">
   <span class="article-pillar">Fathers &amp; partners</span>
   <h1 class="article-title">Fathers, too: <em>the grief that is easy to miss</em></h1>
   <p class="article-subtitle">After a baby dies, people ask how the mother is. Research suggests that fathers and partners grieve too, often quietly, and are asked far less. What studies show, and what seems to help.</p>
   <div class="article-meta">
+<span class="rt">4 min read</span><span class="meta-dot"></span>
     <span>23 October 2026</span><span class="meta-dot"></span>
     <span>Fathers &amp; partners</span><span class="meta-dot"></span>
     <span>MIMATIS Journal</span>
   </div>
-</div>
+</div><img class="ah-flower" src="/assets/pf-leaves-green.webp" alt="" aria-hidden="true"></div></section>
 
 <div class="illustration-wrap" style="background:#F5F4F0">
   <img src="/assets/journal-fathers.jpg" alt="A white heart-shaped biscuit with the word BABY pressed into it, on a speckled plate among large green monstera leaves" loading="lazy" style="display:block;width:100%;max-width:400px;height:auto;margin:0 auto">
@@ -247,5 +283,6 @@ a{color:var(--green)}
 <div>Asociaci&oacute;n MIMATIS &middot; Registered non-profit association in Spain, no. 633.864 &middot; Avinguda Catalunya 39, 17520 Puigcerd&agrave; (Girona), Spain &middot; <a href="mailto:contact@mimatis.org">contact@mimatis.org</a> &middot; <a href="/#privacy">Privacy</a> &middot; <a href="/#legal">Legal notice</a></div>
 <div>MIMATIS does not provide medical advice. If you are in crisis, please contact your local emergency number or a helpline in <a href="/#help">your country</a>.</div>
 </div></footer>
+<script id="art-read-js">(function(){var b=document.querySelector('.readbar span');if(!b)return;function u(){var d=document.documentElement,h=d.scrollHeight-d.clientHeight;b.style.width=(h>0?Math.min(100,d.scrollTop/h*100):0)+'%'}addEventListener('scroll',u,{passive:true});u()})();</script>
 </body>
 </html>
