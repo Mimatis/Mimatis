@@ -175,6 +175,84 @@ a[href^="tel:"],.num{unicode-bidi:isolate;direction:ltr;display:inline-block}
 /* safety */
 .safety{background:#FFF4D6;border-left:3px solid #E9BC1B;color:#1E1E1E}
 /* /safety */
+
+
+
+
+/* es-design */
+:root{--sky:#E3F5F8}
+html,body{overflow-x:clip}
+[id]{scroll-margin-top:76px}
+h1{font-weight:700;letter-spacing:-.025em;line-height:1.05}
+h1 em{color:var(--green-dark);font-style:italic}
+h2{font-weight:600;letter-spacing:-.015em}
+.hero{background:var(--sky);padding:clamp(48px,7vw,80px) 0 0}
+.hero .hero-grid{align-items:end;gap:2rem;max-width:none;padding-left:max(3rem,calc(50vw - 540px + 3rem));padding-right:0}
+.hero-grid>div:first-child{padding-bottom:clamp(40px,6vw,72px)}
+.hero .eye{color:var(--ink);letter-spacing:.32em}
+.hero .eye::after{content:"";display:block;width:64px;height:2px;background:var(--green);margin-top:1rem}
+.hero h1{font-size:clamp(34px,5vw,58px);margin:1.4rem 0 1.4rem}
+.hero .lead{color:var(--ink)}
+.hero .quick{margin:1.8rem 0 0}
+.hero .qbtn{background:#fff}
+.hero-photo{align-self:end;justify-self:end;width:100%;max-width:520px;border-radius:0;box-shadow:none;overflow:visible}
+.hero-photo img{display:block;width:100%;height:auto;border-radius:0;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 14%);mask-image:linear-gradient(to right,transparent 0,#000 14%)}
+[dir=rtl] .hero .hero-grid{padding-left:0;padding-right:max(3rem,calc(50vw - 540px + 3rem))}
+[dir=rtl] .hero-photo img{transform:scaleX(-1)}
+.alerts{display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding-top:2.5rem;padding-bottom:.5rem}
+.alerts .crisis{margin:0;max-width:none;border-radius:3px}
+.alerts .safety{border-left-color:#E9BC1B}
+[dir=rtl] .alerts .crisis{border-left:0;border-right:3px solid var(--green)}
+[dir=rtl] .alerts .safety{border-right-color:#E9BC1B}
+/* jump bar */
+.jump{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--border);margin-top:2rem}
+.jump .wrap{display:flex;align-items:center;gap:1rem;height:60px}
+.jump .jl{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
+.jump .jc{display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:2px 0}
+.jump .jc::-webkit-scrollbar{display:none}
+.jump a{flex:none;font-size:.8rem;text-decoration:none;color:var(--mid);border:1px solid var(--border);border-radius:99px;padding:.38rem .9rem;background:#fff;transition:background .2s,color .2s,border-color .2s}
+.jump a:hover{border-color:var(--green);color:var(--green-dark)}
+.jump a.on{background:var(--green-dark);border-color:var(--green-dark);color:#fff}
+/* glossary */
+.xtra{padding-top:clamp(56px,7vw,88px)}
+.xtra .quick{display:none}
+.types h2{display:flex;align-items:center;gap:1rem}
+.types h2 .gf{height:56px;width:auto;flex:none}
+.tdef{padding-top:1.1rem}
+/* sections */
+body{counter-reset:sec}
+section{padding:clamp(64px,8vw,104px) 0}
+.doc h2{counter-increment:sec;position:relative}
+.doc h2::before{content:counter(sec,decimal-leading-zero);display:block;font-family:'Montserrat',sans-serif;font-size:.7rem;font-weight:400;letter-spacing:.24em;color:var(--green);margin-bottom:.9rem}
+.doc .narrow{position:relative}
+.doc .sf{position:absolute;top:-.4rem;right:3rem;height:92px;width:auto;max-width:110px;pointer-events:none;transform:rotate(6deg)}
+[dir=rtl] .doc .sf{right:auto;left:3rem;transform:rotate(-6deg)}
+.doc h2.hasf{padding-right:110px}
+[dir=rtl] .doc h2.hasf{padding-right:0;padding-left:110px}
+.tw{border:1px solid var(--border);border-radius:3px}
+th{background:var(--sky)}
+/* quote bands */
+.qb{background:var(--sky);padding:clamp(56px,7vw,88px) 0}
+.qb .narrow{display:flex;align-items:center;gap:2rem}
+.qb p{font-family:'Inter',sans-serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;letter-spacing:-.02em;line-height:1.15;color:var(--ink);margin:0;flex:1}
+.qb p em{display:block;color:var(--green-dark);font-style:italic}
+.qb img{height:120px;width:auto;flex:none}
+@media(max-width:780px){
+ .hero .hero-grid,[dir=rtl] .hero .hero-grid{padding:0;gap:0}
+ .hero-grid>div:first-child{padding:0 16px 28px}
+ .hero-art,.hero-photo{order:0}
+ .hero-photo{max-width:330px}
+ .alerts{grid-template-columns:1fr;padding-top:1.5rem}
+ .jump .jl{display:none}
+ .jump .wrap{height:54px}
+ .types h2 .gf{height:40px}
+ .doc .sf{height:58px;right:16px}
+ [dir=rtl] .doc .sf{left:16px}
+ .doc h2.hasf{padding-right:70px}
+ [dir=rtl] .doc h2.hasf{padding-left:70px}
+ .qb img{height:72px}
+}
+/* /es-design */
 </style>
 <script defer="" src="/consent.js"></script>
 <script type="application/ld+json" id="mimatis-ld">{"@context":"https://schema.org","@graph":[{"@type":"MedicalWebPage","@id":"https://www.mimatis.org/ar/isbania#page","url":"https://www.mimatis.org/ar/isbania","name":"الإجهاض وولادة طفل ميت وفقدان رضيع في إسبانيا — حقوقكم والدعم المتاح | MIMATIS","headline":"بعد فقدان طفل في إسبانيا","description":null,"inLanguage":"ar","isPartOf":{"@id":"https://www.mimatis.org/#website"},"publisher":{"@id":"https://www.mimatis.org/#organization"},"audience":{"@type":"PeopleAudience","audienceType":"Parents after miscarriage, stillbirth or neonatal loss"},"about":[{"@type":"MedicalCondition","name":"Miscarriage"},{"@type":"MedicalCondition","name":"Stillbirth"},{"@type":"MedicalCondition","name":"Neonatal death"}],"spatialCoverage":{"@type":"Country","name":"Spain"},"lastReviewed":"2026-10-27"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://www.mimatis.org/"},{"@type":"ListItem","position":2,"name":"الحصول على المساعدة","item":"https://www.mimatis.org/#help"},{"@type":"ListItem","position":3,"name":"بعد فقدان طفل في إسبانيا","item":"https://www.mimatis.org/ar/isbania"}]}]}</script>
@@ -189,16 +267,18 @@ a[href^="tel:"],.num{unicode-bidi:isolate;direction:ltr;display:inline-block}
 <div class="wrap hero-grid">
 <div>
 <span class="eye">الحصول على المساعدة · إسبانيا</span>
-<h1>بعد فقدان طفل في إسبانيا</h1>
+<h1>بعد فقدان طفل في <em>إسبانيا</em></h1>
 <p class="lead">معلومات موثوقة للآباء والأمهات في إسبانيا بعد الإجهاض أو ولادة طفل ميت أو وفاة طفل بعد الولادة بقليل: حقوقكم، والوقت مع طفلكم، والوداع، وتسجيل الطفل باسمه، والإجازة من العمل، والدعم القريب منكم. المصطلحات الإسبانية مكتوبة بين قوسين كما سترونها في الاستمارات.</p>
 <p class="checked">هذه ليست استشارة قانونية أو طبية. قد تتغير القواعد وتختلف من منطقة إلى أخرى، لذا يُرجى التأكد من كل أمر مهم مع الفريق الطبي في المستشفى أو السجل المدني (<em>Registro Civil</em>) أو الضمان الاجتماعي (<em>Seguridad Social</em>).</p>
-<div class="crisis">إذا كنتم في خطر أو تفكرون في إنهاء حياتكم، اتصلوا بالرقم <a href="tel:112">112</a> أو <a href="tel:024">024</a> (مجاناً، على مدار 24 ساعة). وفي كاتالونيا يمكنكم أيضاً الاتصال بالرقم <a href="tel:061">061</a>.</div>
-<div class="crisis safety safety-box" role="note">إذا كنتِ حاملًا وشعرتِ بأن شيئًا ليس على ما يرام، مثل نزيف أو ألم أو حمّى أو أن طفلكِ يتحرك أقل، فاذهبي إلى المستشفى أو اتصلي بالرقم <a href="tel:112">112</a> فورًا. لا تنتظري. لا تقدّم MIMATIS نصائح طبية: هذه الصفحة تتناول ما يحدث بعد الفقدان.</div>
+<div class="quick"><a class="qbtn" href="https://www.mimatis.org/#garden">ازرعوا زهرة في حديقة الذكرى</a><a class="qbtn" href="https://www.mimatis.org/journal">اقرؤوا مقالات وقصصًا</a><a class="qbtn qpro" href="https://www.mimatis.org/#action">هل أنتم مستشفى أو شركة أو باحثون؟ تعاونوا معنا</a></div><!-- es-quick -->
 </div>
-<div class="hero-photo"><img alt="فراشات فاتحة اللون أمام سماء زرقاء هادئة" src="/assets/bg-butterflies.jpg"/></div>
+<div class="hero-photo" aria-hidden="true"><img src="/assets/es-hero-butterfly.jpg" alt="" width="720" height="622" fetchpriority="high"></div>
 </div>
 </section>
-<section class="xtra" id="loss-types-wrap"><div class="wrap"><div class="quick"><a class="qbtn" href="https://www.mimatis.org/#garden">ازرعوا زهرة في حديقة الذكرى</a><a class="qbtn" href="https://www.mimatis.org/journal">اقرؤوا مقالات وقصصًا</a><a class="qbtn qpro" href="https://www.mimatis.org/#action">هل أنتم مستشفى أو شركة أو باحثون؟ تعاونوا معنا</a></div><div class="types" id="loss-types"><h2>أنواع فقدان الحمل والطفل بكلمات بسيطة</h2><p class="intro">يستخدم الأطباء والقوانين كلمات كثيرة مختلفة. هذا ما تعنيه.</p><div class="tgrid"><div class="tdef"><h3>الإجهاض المبكر</h3><p>عندما ينتهي الحمل من تلقاء نفسه في أول 13 أسبوعًا. هو أكثر أنواع الفقدان شيوعًا، ولا يكون تقريبًا أبدًا بسبب شيء فعله الوالدان.</p></div><div class="tdef"><h3>الإجهاض المتأخر</h3><p>عندما يموت الطفل في الرحم من نحو الأسبوع 14، قبل حدّ ولادة الجنين ميتًا. عادةً تلد الأم طفلها.</p></div><div class="tdef"><h3>ولادة الجنين ميتًا</h3><p>عندما يموت الطفل قبل الولادة أو أثناءها في مرحلة متأخرة من الحمل. غالبًا ما يحسب الأطباء من الأسبوع 22. في إسبانيا، يستخدم القانون 180 يومًا (نحو 26 أسبوعًا) للتسجيل والدفن.</p></div><div class="tdef"><h3>وفاة حديثي الولادة</h3><p>عندما يولد الطفل حيًّا ويموت في أول 28 يومًا من حياته، حتى لو بعد دقائق قليلة.</p></div><div class="tdef"><h3>متلازمة موت الرضيع المفاجئ</h3><p>الموت المفاجئ وغير المفسَّر لطفل عمره أقل من سنة، غالبًا أثناء النوم. ليس ذنب أحد.</p></div><div class="tdef"><h3>الحمل خارج الرحم</h3><p>عندما ينمو الحمل خارج الرحم، غالبًا في قناة فالوب. لا يمكن أن يستمر، وتحتاج الأم إلى رعاية عاجلة.</p></div><div class="tdef"><h3>الحمل العنقودي</h3><p>مشكلة نادرة في المشيمة تمنع الحمل من النمو. تحتاج الأم إلى متابعة طبية لبضعة أشهر.</p></div><div class="tdef"><h3>الحمل الكيميائي</h3><p>فقدان مبكر جدًا بعد وقت قصير من اختبار حمل إيجابي، غالبًا قرب موعد الدورة. وهو فقدان أيضًا.</p></div><div class="tdef"><h3>إنهاء الحمل لأسباب طبية</h3><p>عندما يقرر الوالدان إنهاء حمل مرغوب فيه بسبب مشكلة صحية خطيرة لدى الطفل أو الأم. وهو فقدان أيضًا، وتستحقون الدعم نفسه.</p></div></div><p class="fact-note">مهما كانت الكلمة، كان طفلكم حقيقيًا، وحزنكم مهم.</p></div></div></section><!-- /xtra -->
+<div class="wrap alerts"><div class="crisis">إذا كنتم في خطر أو تفكرون في إنهاء حياتكم، اتصلوا بالرقم <a href="tel:112">112</a> أو <a href="tel:024">024</a> (مجاناً، على مدار 24 ساعة). وفي كاتالونيا يمكنكم أيضاً الاتصال بالرقم <a href="tel:061">061</a>.</div>
+<div class="crisis safety safety-box" role="note">إذا كنتِ حاملًا وشعرتِ بأن شيئًا ليس على ما يرام، مثل نزيف أو ألم أو حمّى أو أن طفلكِ يتحرك أقل، فاذهبي إلى المستشفى أو اتصلي بالرقم <a href="tel:112">112</a> فورًا. لا تنتظري. لا تقدّم MIMATIS نصائح طبية: هذه الصفحة تتناول ما يحدث بعد الفقدان.</div></div>
+<nav class="jump" aria-label="في هذه الصفحة"><div class="wrap"><span class="jl">في هذه الصفحة</span><div class="jc"><a href="#situations">حالتكم</a><a href="#hospital">في المستشفى</a><a href="#goodbye">الوداع</a><a href="#name">التسجيل</a><a href="#work">العمل</a><a href="#home">في البيت</a><a href="#catalonia">المناطق</a><a href="#support">الدعم</a></div></div></nav>
+<section class="xtra" id="loss-types-wrap"><div class="wrap"><div class="types" id="loss-types"><h2><img class="gf" src="/assets/pf-daisy-white.webp" alt="" aria-hidden="true" loading="lazy">أنواع فقدان الحمل والطفل بكلمات بسيطة</h2><p class="intro">يستخدم الأطباء والقوانين كلمات كثيرة مختلفة. هذا ما تعنيه.</p><div class="tgrid"><div class="tdef"><h3>الإجهاض المبكر</h3><p>عندما ينتهي الحمل من تلقاء نفسه في أول 13 أسبوعًا. هو أكثر أنواع الفقدان شيوعًا، ولا يكون تقريبًا أبدًا بسبب شيء فعله الوالدان.</p></div><div class="tdef"><h3>الإجهاض المتأخر</h3><p>عندما يموت الطفل في الرحم من نحو الأسبوع 14، قبل حدّ ولادة الجنين ميتًا. عادةً تلد الأم طفلها.</p></div><div class="tdef"><h3>ولادة الجنين ميتًا</h3><p>عندما يموت الطفل قبل الولادة أو أثناءها في مرحلة متأخرة من الحمل. غالبًا ما يحسب الأطباء من الأسبوع 22. في إسبانيا، يستخدم القانون 180 يومًا (نحو 26 أسبوعًا) للتسجيل والدفن.</p></div><div class="tdef"><h3>وفاة حديثي الولادة</h3><p>عندما يولد الطفل حيًّا ويموت في أول 28 يومًا من حياته، حتى لو بعد دقائق قليلة.</p></div><div class="tdef"><h3>متلازمة موت الرضيع المفاجئ</h3><p>الموت المفاجئ وغير المفسَّر لطفل عمره أقل من سنة، غالبًا أثناء النوم. ليس ذنب أحد.</p></div><div class="tdef"><h3>الحمل خارج الرحم</h3><p>عندما ينمو الحمل خارج الرحم، غالبًا في قناة فالوب. لا يمكن أن يستمر، وتحتاج الأم إلى رعاية عاجلة.</p></div><div class="tdef"><h3>الحمل العنقودي</h3><p>مشكلة نادرة في المشيمة تمنع الحمل من النمو. تحتاج الأم إلى متابعة طبية لبضعة أشهر.</p></div><div class="tdef"><h3>الحمل الكيميائي</h3><p>فقدان مبكر جدًا بعد وقت قصير من اختبار حمل إيجابي، غالبًا قرب موعد الدورة. وهو فقدان أيضًا.</p></div><div class="tdef"><h3>إنهاء الحمل لأسباب طبية</h3><p>عندما يقرر الوالدان إنهاء حمل مرغوب فيه بسبب مشكلة صحية خطيرة لدى الطفل أو الأم. وهو فقدان أيضًا، وتستحقون الدعم نفسه.</p></div></div><p class="fact-note">مهما كانت الكلمة، كان طفلكم حقيقيًا، وحزنكم مهم.</p></div></div></section><!-- /xtra -->
 
 
 <section class="facts">
@@ -266,10 +346,10 @@ a[href^="tel:"],.num{unicode-bidi:isolate;direction:ltr;display:inline-block}
 <p>إذا عاش طفلكم، ولو لوقت قصير جداً، يُسجَّل كولادة ووفاة ويظهر في <em>Libro de Familia</em> الخاص بكم. يحق للوالدين كليهما إجازة ولادة كاملة. الدفن أو الحرق إلزامي.</p>
 </div>
 </section>
-<div class="pband" role="presentation" style="background-image:url('/assets/bg-white-flowers.jpg')"></div>
+<aside class="qb"><div class="narrow"><p>حدّ الأسبوع 26 يتعلق بالأوراق فقط. <em>لا يقول شيئاً عن حبكم ولا عن حجم فقدكم.</em></p><img class="qf" src="/assets/pf-hydrangea-blue.webp" alt="" aria-hidden="true" loading="lazy"></div></aside>
 <section class="doc" id="hospital">
-<div class="narrow">
-<h2>في المستشفى: وقت مع طفلكم</h2>
+<div class="narrow"><img class="sf" src="/assets/pf-blossom-pink.webp" alt="" aria-hidden="true" loading="lazy">
+<h2 class="hasf">في المستشفى: وقت مع طفلكم</h2>
 <p>صحتكم وسلامتكم أولًا. اتبعوا دائمًا إرشادات الفريق الطبي، وأخبروهم فورًا إذا شعرتم بتوعّك. عندما يقول الفريق إن ذلك آمن، يمكنكم طلب وقت مع طفلكم، والاتصال بمن تريدون وجودهم بقربكم، وطرح الأسئلة كلما احتجتم.</p>
 <p>كثير من الآباء والأمهات في إسبانيا لا يُخبَرون بما يحق لهم طلبه. يمكنكم أن تطلبوا:</p>
 <ul>
@@ -303,8 +383,8 @@ a[href^="tel:"],.num{unicode-bidi:isolate;direction:ltr;display:inline-block}
 </div>
 </section>
 <section class="doc" id="goodbye">
-<div class="narrow">
-<h2>الوداع: الجنازة</h2>
+<div class="narrow"><img class="sf" src="/assets/pf-daisy-white.webp" alt="" aria-hidden="true" loading="lazy">
+<h2 class="hasf">الوداع: الجنازة</h2>
 <p>يمكنكم توديع طفلكم بطريقتكم، في أي مرحلة من الحمل.</p>
 <ul>
 <li><strong>ابتداءً من الأسبوع 26،</strong> الدفن أو الحرق إلزامي.</li>
@@ -361,10 +441,10 @@ a[href^="tel:"],.num{unicode-bidi:isolate;direction:ltr;display:inline-block}
 <p>لمعرفة المزيد: <a href="https://www.umamanita.es/derechos-permiso-baja-maternidad-paternidad/" rel="noopener" target="_blank">Umamanita — الإجازات بعد وفاة طفل</a> (بالإسبانية).</p>
 </div>
 </section>
-<div class="pband" role="presentation" style="background-image:url('/assets/garden-rose.jpg');background-position:center 45%"></div>
+<aside class="qb"><div class="narrow"><p>مهما كانت الكلمة، <em>كان طفلكم حقيقيًا، وحزنكم مهم.</em></p><img class="qf" src="/assets/pf-leaves-olive.webp" alt="" aria-hidden="true" loading="lazy"></div></aside>
 <section class="doc" id="home">
-<div class="narrow">
-<h2>عند العودة إلى البيت</h2>
+<div class="narrow"><img class="sf" src="/assets/pf-hydrangea-blue.webp" alt="" aria-hidden="true" loading="lazy">
+<h2 class="hasf">عند العودة إلى البيت</h2>
 <p>العودة إلى البيت من دون طفلكم قد تكون من أصعب اللحظات. لا توجد طريقة صحيحة للحزن، ولا جدول زمني له.</p>
 <ul>
 <li><strong>جسمكِ</strong> قد يتصرف كما بعد أي ولادة، بما في ذلك نزول الحليب. اسألي القابلة عن الخيارات قبل مغادرة المستشفى، وتواصلي معها أو مع طبيبك إذا قلقتِ من أي شيء.</li>
@@ -486,5 +566,6 @@ a[href^="tel:"],.num{unicode-bidi:isolate;direction:ltr;display:inline-block}
 <span>MIMATIS — مجانية دائماً</span>
 <span><a href="mailto:contact@mimatis.org">contact@mimatis.org</a> · <a href="https://www.instagram.com/mimatis.community/" rel="noopener" target="_blank">Instagram</a></span>
 </footer>
+<script id="es-jump-js">(function(){var n=document.querySelector('.jump');if(!n||!('IntersectionObserver' in window))return;var c=n.querySelector('.jc'),L={};n.querySelectorAll('a').forEach(function(a){L[a.getAttribute('href').slice(1)]=a});var o=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var a=L[e.target.id];if(!a)return;n.querySelectorAll('a.on').forEach(function(x){x.classList.remove('on')});a.classList.add('on');c.scrollTo({left:a.offsetLeft-c.clientWidth/2+a.offsetWidth/2,behavior:'smooth'})})},{rootMargin:'-35% 0px -60% 0px'});Object.keys(L).forEach(function(id){var s=document.getElementById(id);if(s)o.observe(s)})})();</script>
 </body>
 </html>

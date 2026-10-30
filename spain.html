@@ -162,6 +162,84 @@ h1{font-size:32px}h2{font-size:1.55rem}
 /* safety */
 .safety{background:#FFF4D6;border-left:3px solid #E9BC1B;color:#1E1E1E}
 /* /safety */
+
+
+
+
+/* es-design */
+:root{--sky:#E3F5F8}
+html,body{overflow-x:clip}
+[id]{scroll-margin-top:76px}
+h1{font-weight:700;letter-spacing:-.025em;line-height:1.05}
+h1 em{color:var(--green-dark);font-style:italic}
+h2{font-weight:600;letter-spacing:-.015em}
+.hero{background:var(--sky);padding:clamp(48px,7vw,80px) 0 0}
+.hero .hero-grid{align-items:end;gap:2rem;max-width:none;padding-left:max(3rem,calc(50vw - 540px + 3rem));padding-right:0}
+.hero-grid>div:first-child{padding-bottom:clamp(40px,6vw,72px)}
+.hero .eye{color:var(--ink);letter-spacing:.32em}
+.hero .eye::after{content:"";display:block;width:64px;height:2px;background:var(--green);margin-top:1rem}
+.hero h1{font-size:clamp(34px,5vw,58px);margin:1.4rem 0 1.4rem}
+.hero .lead{color:var(--ink)}
+.hero .quick{margin:1.8rem 0 0}
+.hero .qbtn{background:#fff}
+.hero-photo{align-self:end;justify-self:end;width:100%;max-width:520px;border-radius:0;box-shadow:none;overflow:visible}
+.hero-photo img{display:block;width:100%;height:auto;border-radius:0;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 14%);mask-image:linear-gradient(to right,transparent 0,#000 14%)}
+[dir=rtl] .hero .hero-grid{padding-left:0;padding-right:max(3rem,calc(50vw - 540px + 3rem))}
+[dir=rtl] .hero-photo img{transform:scaleX(-1)}
+.alerts{display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding-top:2.5rem;padding-bottom:.5rem}
+.alerts .crisis{margin:0;max-width:none;border-radius:3px}
+.alerts .safety{border-left-color:#E9BC1B}
+[dir=rtl] .alerts .crisis{border-left:0;border-right:3px solid var(--green)}
+[dir=rtl] .alerts .safety{border-right-color:#E9BC1B}
+/* jump bar */
+.jump{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--border);margin-top:2rem}
+.jump .wrap{display:flex;align-items:center;gap:1rem;height:60px}
+.jump .jl{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
+.jump .jc{display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:2px 0}
+.jump .jc::-webkit-scrollbar{display:none}
+.jump a{flex:none;font-size:.8rem;text-decoration:none;color:var(--mid);border:1px solid var(--border);border-radius:99px;padding:.38rem .9rem;background:#fff;transition:background .2s,color .2s,border-color .2s}
+.jump a:hover{border-color:var(--green);color:var(--green-dark)}
+.jump a.on{background:var(--green-dark);border-color:var(--green-dark);color:#fff}
+/* glossary */
+.xtra{padding-top:clamp(56px,7vw,88px)}
+.xtra .quick{display:none}
+.types h2{display:flex;align-items:center;gap:1rem}
+.types h2 .gf{height:56px;width:auto;flex:none}
+.tdef{padding-top:1.1rem}
+/* sections */
+body{counter-reset:sec}
+section{padding:clamp(64px,8vw,104px) 0}
+.doc h2{counter-increment:sec;position:relative}
+.doc h2::before{content:counter(sec,decimal-leading-zero);display:block;font-family:'Montserrat',sans-serif;font-size:.7rem;font-weight:400;letter-spacing:.24em;color:var(--green);margin-bottom:.9rem}
+.doc .narrow{position:relative}
+.doc .sf{position:absolute;top:-.4rem;right:3rem;height:92px;width:auto;max-width:110px;pointer-events:none;transform:rotate(6deg)}
+[dir=rtl] .doc .sf{right:auto;left:3rem;transform:rotate(-6deg)}
+.doc h2.hasf{padding-right:110px}
+[dir=rtl] .doc h2.hasf{padding-right:0;padding-left:110px}
+.tw{border:1px solid var(--border);border-radius:3px}
+th{background:var(--sky)}
+/* quote bands */
+.qb{background:var(--sky);padding:clamp(56px,7vw,88px) 0}
+.qb .narrow{display:flex;align-items:center;gap:2rem}
+.qb p{font-family:'Inter',sans-serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;letter-spacing:-.02em;line-height:1.15;color:var(--ink);margin:0;flex:1}
+.qb p em{display:block;color:var(--green-dark);font-style:italic}
+.qb img{height:120px;width:auto;flex:none}
+@media(max-width:780px){
+ .hero .hero-grid,[dir=rtl] .hero .hero-grid{padding:0;gap:0}
+ .hero-grid>div:first-child{padding:0 16px 28px}
+ .hero-art,.hero-photo{order:0}
+ .hero-photo{max-width:330px}
+ .alerts{grid-template-columns:1fr;padding-top:1.5rem}
+ .jump .jl{display:none}
+ .jump .wrap{height:54px}
+ .types h2 .gf{height:40px}
+ .doc .sf{height:58px;right:16px}
+ [dir=rtl] .doc .sf{left:16px}
+ .doc h2.hasf{padding-right:70px}
+ [dir=rtl] .doc h2.hasf{padding-left:70px}
+ .qb img{height:72px}
+}
+/* /es-design */
 </style>
 <script src="/consent.js" defer></script>
 <script type="application/ld+json" id="mimatis-ld">{"@context":"https://schema.org","@graph":[{"@type":"MedicalWebPage","@id":"https://www.mimatis.org/spain#page","url":"https://www.mimatis.org/spain","name":"Miscarriage, Stillbirth & Baby Loss in Spain — Your Rights and Support | MIMATIS","headline":"After the loss of a baby in Spain","description":"Checked information for parents in Spain after miscarriage, stillbirth or the death of a baby: the 26-week line, time with your baby, funerals, registering a name, birth leave, and support groups across Spain and in Catalonia.","inLanguage":"en","isPartOf":{"@id":"https://www.mimatis.org/#website"},"publisher":{"@id":"https://www.mimatis.org/#organization"},"audience":{"@type":"PeopleAudience","audienceType":"Parents after miscarriage, stillbirth or neonatal loss"},"about":[{"@type":"MedicalCondition","name":"Miscarriage"},{"@type":"MedicalCondition","name":"Stillbirth"},{"@type":"MedicalCondition","name":"Neonatal death"}],"spatialCoverage":{"@type":"Country","name":"Spain"},"lastReviewed":"2026-10-27"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.mimatis.org/"},{"@type":"ListItem","position":2,"name":"Find help","item":"https://www.mimatis.org/#help"},{"@type":"ListItem","position":3,"name":"After the loss of a baby in Spain","item":"https://www.mimatis.org/spain"}]}]}</script>
@@ -176,16 +254,18 @@ h1{font-size:32px}h2{font-size:1.55rem}
 <div class="wrap hero-grid">
 <div>
 <span class="eye">Find help &middot; Spain</span>
-<h1>After the loss of a baby in Spain</h1>
+<h1>After the loss of a baby in <em>Spain</em></h1>
 <p class="lead">Checked information for parents in Spain after a miscarriage, a stillbirth or the death of a baby soon after birth: your rights, time with your baby, funerals, registering a name, leave from work and support near you. Spanish terms are given in brackets, as you will see them on forms.</p>
 <p class="checked">Not legal or medical advice. Rules can change and differ between regions, so please confirm anything important with your hospital team, the Civil Registry (<em>Registro Civil</em>) or the Social Security office (<em>Seguridad Social</em>).</p>
-<div class="crisis">If you are in danger or thinking about ending your life, call <a href="tel:112">112</a> or <a href="tel:024">024</a> (free, 24 hours a day). In Catalonia you can also call <a href="tel:061">061</a>.</div>
-<div class="crisis safety safety-box" role="note">If you are pregnant and something feels wrong, such as bleeding, pain, fever, or your baby moving less, go to the hospital or call <a href="tel:112">112</a> straight away. Do not wait. MIMATIS does not give medical advice: this page is about what happens after a loss.</div>
+<div class="quick"><a class="qbtn" href="https://www.mimatis.org/#garden">Plant a flower in the memorial garden</a><a class="qbtn" href="https://www.mimatis.org/journal">Read articles and stories</a><a class="qbtn qpro" href="https://www.mimatis.org/#action">Are you a hospital, company or researcher? Work with us</a></div><!-- es-quick -->
 </div>
-<div class="hero-photo"><img src="/assets/bg-butterflies.jpg" alt="Pale butterflies against a soft blue sky"></div>
+<div class="hero-photo" aria-hidden="true"><img src="/assets/es-hero-butterfly.jpg" alt="" width="720" height="622" fetchpriority="high"></div>
 </div>
 </section>
-<section class="xtra" id="loss-types-wrap"><div class="wrap"><div class="quick"><a class="qbtn" href="https://www.mimatis.org/#garden">Plant a flower in the memorial garden</a><a class="qbtn" href="https://www.mimatis.org/journal">Read articles and stories</a><a class="qbtn qpro" href="https://www.mimatis.org/#action">Are you a hospital, company or researcher? Work with us</a></div><div class="types" id="loss-types"><h2>Types of pregnancy and baby loss, in simple words</h2><p class="intro">Doctors and laws use many different words. This is what they mean.</p><div class="tgrid"><div class="tdef"><h3>Early miscarriage</h3><p>When a pregnancy ends on its own in the first 13 weeks. It is the most common loss, and it is almost never caused by anything the parents did.</p></div><div class="tdef"><h3>Late miscarriage</h3><p>When a baby dies in the womb from about 14 weeks, before the stillbirth line. The mother usually gives birth to her baby.</p></div><div class="tdef"><h3>Stillbirth</h3><p>When a baby dies before or during birth, later in pregnancy. Doctors often count from 22 weeks. In Spain, the law uses 180 days (about 26 weeks) for registration and burial.</p></div><div class="tdef"><h3>Neonatal death</h3><p>When a baby is born alive and dies in the first 28 days of life, even after only a few minutes.</p></div><div class="tdef"><h3>Sudden infant death (SIDS)</h3><p>The sudden, unexplained death of a baby under one year old, usually during sleep. It is no one&rsquo;s fault.</p></div><div class="tdef"><h3>Ectopic pregnancy</h3><p>When the pregnancy grows outside the womb, most often in a fallopian tube. It cannot continue, and the mother needs urgent care.</p></div><div class="tdef"><h3>Molar pregnancy</h3><p>A rare problem with the placenta, so the pregnancy cannot develop. The mother needs check-ups for some months afterwards.</p></div><div class="tdef"><h3>Chemical pregnancy</h3><p>A very early loss, soon after a positive pregnancy test, often around the time of a period. It is still a loss.</p></div><div class="tdef"><h3>Termination for medical reasons</h3><p>When parents decide to end a wanted pregnancy because of a serious health problem of the baby or the mother. It is a loss too, and you deserve the same support.</p></div></div><p class="fact-note">Whatever the word, your baby was real and your grief matters.</p></div></div></section><!-- /xtra -->
+<div class="wrap alerts"><div class="crisis">If you are in danger or thinking about ending your life, call <a href="tel:112">112</a> or <a href="tel:024">024</a> (free, 24 hours a day). In Catalonia you can also call <a href="tel:061">061</a>.</div>
+<div class="crisis safety safety-box" role="note">If you are pregnant and something feels wrong, such as bleeding, pain, fever, or your baby moving less, go to the hospital or call <a href="tel:112">112</a> straight away. Do not wait. MIMATIS does not give medical advice: this page is about what happens after a loss.</div></div>
+<nav class="jump" aria-label="On this page"><div class="wrap"><span class="jl">On this page</span><div class="jc"><a href="#situations">Your situation</a><a href="#hospital">At the hospital</a><a href="#goodbye">Saying goodbye</a><a href="#name">Registration</a><a href="#work">Work</a><a href="#home">At home</a><a href="#catalonia">Regions</a><a href="#support">Support</a></div></div></nav>
+<section class="xtra" id="loss-types-wrap"><div class="wrap"><div class="types" id="loss-types"><h2><img class="gf" src="/assets/pf-daisy-white.webp" alt="" aria-hidden="true" loading="lazy">Types of pregnancy and baby loss, in simple words</h2><p class="intro">Doctors and laws use many different words. This is what they mean.</p><div class="tgrid"><div class="tdef"><h3>Early miscarriage</h3><p>When a pregnancy ends on its own in the first 13 weeks. It is the most common loss, and it is almost never caused by anything the parents did.</p></div><div class="tdef"><h3>Late miscarriage</h3><p>When a baby dies in the womb from about 14 weeks, before the stillbirth line. The mother usually gives birth to her baby.</p></div><div class="tdef"><h3>Stillbirth</h3><p>When a baby dies before or during birth, later in pregnancy. Doctors often count from 22 weeks. In Spain, the law uses 180 days (about 26 weeks) for registration and burial.</p></div><div class="tdef"><h3>Neonatal death</h3><p>When a baby is born alive and dies in the first 28 days of life, even after only a few minutes.</p></div><div class="tdef"><h3>Sudden infant death (SIDS)</h3><p>The sudden, unexplained death of a baby under one year old, usually during sleep. It is no one&rsquo;s fault.</p></div><div class="tdef"><h3>Ectopic pregnancy</h3><p>When the pregnancy grows outside the womb, most often in a fallopian tube. It cannot continue, and the mother needs urgent care.</p></div><div class="tdef"><h3>Molar pregnancy</h3><p>A rare problem with the placenta, so the pregnancy cannot develop. The mother needs check-ups for some months afterwards.</p></div><div class="tdef"><h3>Chemical pregnancy</h3><p>A very early loss, soon after a positive pregnancy test, often around the time of a period. It is still a loss.</p></div><div class="tdef"><h3>Termination for medical reasons</h3><p>When parents decide to end a wanted pregnancy because of a serious health problem of the baby or the mother. It is a loss too, and you deserve the same support.</p></div></div><p class="fact-note">Whatever the word, your baby was real and your grief matters.</p></div></div></section><!-- /xtra -->
 
 
 
@@ -261,11 +341,11 @@ h1{font-size:32px}h2{font-size:1.55rem}
 </div>
 </section>
 
-<div class="pband" style="background-image:url('/assets/bg-white-flowers.jpg')" role="presentation"></div>
+<aside class="qb"><div class="narrow"><p>The 26-week line is about paperwork. <em>It says nothing about your love or the size of your loss.</em></p><img class="qf" src="/assets/pf-hydrangea-blue.webp" alt="" aria-hidden="true" loading="lazy"></div></aside>
 
 <section class="doc" id="hospital">
-<div class="narrow">
-<h2>At the hospital: time with your baby</h2>
+<div class="narrow"><img class="sf" src="/assets/pf-blossom-pink.webp" alt="" aria-hidden="true" loading="lazy">
+<h2 class="hasf">At the hospital: time with your baby</h2>
 <p>Your health and safety come first. Always follow the medical team&rsquo;s advice, and tell them straight away if you feel unwell. When the team says it is safe, you can ask for time with your baby, call the people you want near you, and ask questions as many times as you need.</p>
 <p>Many parents in Spain are not told what they can ask for. You can request:</p>
 <ul>
@@ -300,8 +380,8 @@ h1{font-size:32px}h2{font-size:1.55rem}
 </section>
 
 <section class="doc" id="goodbye">
-<div class="narrow">
-<h2>Saying goodbye: funerals</h2>
+<div class="narrow"><img class="sf" src="/assets/pf-daisy-white.webp" alt="" aria-hidden="true" loading="lazy">
+<h2 class="hasf">Saying goodbye: funerals</h2>
 <p>You can say goodbye to your baby in your own way, at any stage of pregnancy.</p>
 <ul>
 <li><strong>From 26 weeks,</strong> a burial or cremation is required.</li>
@@ -361,11 +441,11 @@ h1{font-size:32px}h2{font-size:1.55rem}
 </div>
 </section>
 
-<div class="pband" style="background-image:url('/assets/garden-rose.jpg');background-position:center 45%" role="presentation"></div>
+<aside class="qb"><div class="narrow"><p>Whatever the word, <em>your baby was real and your grief matters.</em></p><img class="qf" src="/assets/pf-leaves-olive.webp" alt="" aria-hidden="true" loading="lazy"></div></aside>
 
 <section class="doc" id="home">
-<div class="narrow">
-<h2>When you go home</h2>
+<div class="narrow"><img class="sf" src="/assets/pf-hydrangea-blue.webp" alt="" aria-hidden="true" loading="lazy">
+<h2 class="hasf">When you go home</h2>
 <p>Coming home without your baby can be one of the hardest moments. There is no right way to grieve and no timetable.</p>
 <ul>
 <li><strong>Your body</strong> may behave as after any birth, including milk coming in. Ask your midwife about your options before you leave hospital, and contact her or your doctor if anything worries you.</li>
@@ -494,5 +574,6 @@ h1{font-size:32px}h2{font-size:1.55rem}
 <span>MIMATIS &mdash; always free</span>
 <span><a href="mailto:contact@mimatis.org">contact@mimatis.org</a> &middot; <a href="https://www.instagram.com/mimatis.community/" target="_blank" rel="noopener">Instagram</a></span>
 </footer>
+<script id="es-jump-js">(function(){var n=document.querySelector('.jump');if(!n||!('IntersectionObserver' in window))return;var c=n.querySelector('.jc'),L={};n.querySelectorAll('a').forEach(function(a){L[a.getAttribute('href').slice(1)]=a});var o=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var a=L[e.target.id];if(!a)return;n.querySelectorAll('a.on').forEach(function(x){x.classList.remove('on')});a.classList.add('on');c.scrollTo({left:a.offsetLeft-c.clientWidth/2+a.offsetWidth/2,behavior:'smooth'})})},{rootMargin:'-35% 0px -60% 0px'});Object.keys(L).forEach(function(id){var s=document.getElementById(id);if(s)o.observe(s)})})();</script>
 </body>
 </html>
