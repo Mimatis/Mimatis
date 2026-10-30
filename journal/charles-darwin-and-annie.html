@@ -163,75 +163,64 @@ a{color:var(--green)}
 .more{max-width:860px;margin:2.5rem auto 0;padding:0 clamp(16px,5vw,3rem)}
 .more h2{font-family:'Inter',sans-serif;font-weight:400;font-size:1.15rem;margin-bottom:1rem}
 
+
+
+
+/* art-design */
+:root{--sky:#E3F5F8}
+.readbar{position:sticky;top:0;z-index:30;height:3px;background:transparent}
+.readbar span{display:block;height:100%;width:0;background:var(--green);transition:width .1s linear}
+.ah-band .crumb{grid-column:1/-1;max-width:none;margin:0 0 .4rem;padding:0;line-height:1.6}
+.ah-band{background:var(--sky)}
+.ah-in{max-width:980px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:2rem;align-items:center;padding:clamp(48px,7vw,88px) clamp(16px,5vw,3rem)}
+.ah-band .article-hero{max-width:none;margin:0;padding:0}
+.article-pillar{padding:0;margin-bottom:1.2rem;color:var(--ink);letter-spacing:.3em;font-size:.68rem}
+.article-pillar::after{content:"";display:block;width:56px;height:2px;background:var(--green);margin-top:.9rem}
+.article-title{font-weight:700;letter-spacing:-.025em;line-height:1.08;font-size:clamp(2rem,4.6vw,3.2rem);margin-bottom:1.2rem}
+.article-subtitle{color:var(--ink);font-size:1.05rem;max-width:620px}
+.article-meta{border-top:1px solid rgba(0,112,138,.18);color:var(--mid)}
+.article-meta .rt{color:var(--green-dark);font-weight:500}
+.ah-flower{width:100%;height:auto;max-height:230px;object-fit:contain;transform:rotate(-8deg)}
+.illustration-wrap{display:none}
+.article-body{padding-top:clamp(48px,6vw,72px)}
+.article-body>p:first-of-type{font-size:1.15rem!important;color:var(--ink)}
+.article-body>p:first-of-type::first-letter{color:var(--green-dark);font-weight:600}
+.article-body h2{font-weight:600;font-size:1.45rem;margin:3rem 0 1rem}
+.pull-quote{background:var(--sky);border:0;border-left:3px solid var(--green);border-radius:3px;padding:1.8rem 2rem;margin:2.8rem 0;text-align:left}
+.pull-quote p{font-size:1.25rem!important;font-weight:600;font-style:normal;color:var(--ink);max-width:none;margin:0!important;line-height:1.5!important}
+.pull-quote p::first-letter{font-size:inherit!important;float:none!important;margin:0!important;color:inherit!important;font-weight:inherit!important;line-height:inherit!important;font-family:inherit!important}
+.article-source{background:#fff;border:1px solid var(--border);border-top:3px solid var(--green);border-left-width:1px;border-radius:3px}
+.article-source .source-text{color:var(--mid)}
+.more .card{border-top:3px solid var(--green)}
+.more .cards{gap:1rem;background:none;border:0}
+.more .card{border-left:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border);border-radius:3px}
+@media(max-width:760px){
+ .ah-in{grid-template-columns:1fr;gap:0;padding-top:40px}
+ .ah-flower{display:none}
+}
+/* /art-design */
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mimatis.org/"}, {"@type": "ListItem", "position": 2, "name": "Journal", "item": "https://www.mimatis.org/journal"}, {"@type": "ListItem", "position": 3, "name": "Charles Darwin lost his daughter Annie at ten years old", "item": "https://www.mimatis.org/journal/charles-darwin-and-annie"}]}, {"@type": "Article", "headline": "Charles Darwin lost his daughter Annie at ten years old", "description": "How one of history's greatest minds processed the most personal of losses — and what his private letters reveal about grief, love, and the limits of reason.", "mainEntityOfPage": "https://www.mimatis.org/journal/charles-darwin-and-annie", "author": {"@type": "NGO", "@id": "https://www.mimatis.org/#organization", "name": "MIMATIS", "url": "https://www.mimatis.org"}, "publisher": {"@type": "NGO", "@id": "https://www.mimatis.org/#organization", "name": "MIMATIS", "url": "https://www.mimatis.org"}, "articleSection": "History & Stories of Meaning", "inLanguage": "en", "image": "https://www.mimatis.org/assets/journal-angel.jpg"}]}</script>
 <script src="/consent.js" defer></script>
 </head>
 <body>
 <header class="sn"><a class="wm" href="/">MIMATIS</a><nav aria-label="Main"><a href="/#help">Find help</a><a href="/guidance">Guidance</a><a href="/journal" aria-current="page">Journal</a><a href="/research">Research</a><a href="/about">Who we are</a></nav></header>
-<div class="crumb"><a href="/">Home</a> &rsaquo; <a href="/journal">Journal</a> &rsaquo; Charles Darwin lost his daughter Annie at ten years old</div>
+<div class="readbar" aria-hidden="true"><span></span></div>
 <main>
-<div class="article-page"><div class="article-hero">
+<div class="article-page"><section class="ah-band"><div class="ah-in"><div class="crumb"><a href="/">Home</a> &rsaquo; <a href="/journal">Journal</a> &rsaquo; Charles Darwin lost his daughter Annie at ten years old</div><div class="article-hero">
 <span class="article-pillar">History &amp; Stories of Meaning</span>
 <h1 class="article-title">Charles Darwin lost his<br/>daughter Annie at <em>ten years old</em></h1>
 <p class="article-subtitle">How one of history's greatest minds processed the most personal of losses — and what his private letters reveal about grief, love, and the limits of reason.</p>
 <div class="article-meta">
+<span class="rt">3 min read</span><span class="meta-dot"></span>
 <span>Charles Darwin</span><span class="meta-dot"></span>
 <span>History &amp; Literature</span><span class="meta-dot"></span>
 <span>MIMATIS Journal</span>
 </div>
-</div>
-<div class="illustration-wrap">
-<svg style="width:100%;display:block" viewbox="0 0 820 300" xmlns="http://www.w3.org/2000/svg">
-<rect fill="#F1EFE8" height="300" width="820"></rect>
-<!-- Large botanical illustration style - leaves and specimens -->
-<!-- Central fern/plant -->
-<path d="M410 260 C410 260 390 220 370 190 C350 160 355 130 375 120" fill="none" opacity=".35" stroke="#0097B2" stroke-width="1.2"></path>
-<path d="M410 260 C410 260 430 220 450 190 C470 160 465 130 445 120" fill="none" opacity=".35" stroke="#0097B2" stroke-width="1.2"></path>
-<line opacity=".25" stroke="#00708A" stroke-width="1.5" x1="410" x2="410" y1="260" y2="110"></line>
-<!-- Leaves left side of stem -->
-<path d="M406 230 C390 220 375 215 365 220" fill="none" opacity=".3" stroke="#3B6D11" stroke-width="1"></path>
-<path d="M365 220 C360 218 358 222 363 225 C368 228 376 226 406 230" fill="#0097B2" opacity=".12"></path>
-<path d="M404 205 C385 192 368 188 355 195" fill="none" opacity=".3" stroke="#3B6D11" stroke-width="1"></path>
-<path d="M355 195 C349 193 348 197 353 200 C358 204 370 203 404 205" fill="#0097B2" opacity=".1"></path>
-<path d="M402 178 C382 163 363 160 350 168" fill="none" opacity=".28" stroke="#3B6D11" stroke-width="1"></path>
-<path d="M350 168 C344 167 343 172 349 175 C355 178 367 177 402 178" fill="#0097B2" opacity=".09"></path>
-<!-- Leaves right side of stem -->
-<path d="M414 230 C430 220 445 215 455 220" fill="none" opacity=".3" stroke="#3B6D11" stroke-width="1"></path>
-<path d="M455 220 C460 218 462 222 457 225 C452 228 444 226 414 230" fill="#0097B2" opacity=".12"></path>
-<path d="M416 205 C435 192 452 188 465 195" fill="none" opacity=".3" stroke="#3B6D11" stroke-width="1"></path>
-<path d="M465 195 C471 193 472 197 467 200 C462 204 450 203 416 205" fill="#0097B2" opacity=".1"></path>
-<!-- Specimen labels/tags -->
-<rect fill="#fff" height="55" rx="2" stroke="#E0DDD5" stroke-width=".8" width="120" x="130" y="90"></rect>
-<line stroke="#E0DDD5" stroke-width=".5" x1="130" x2="250" y1="105" y2="105"></line>
-<rect fill="#C4BDB6" height="1.5" rx="1" width="80" x="138" y="112"></rect>
-<rect fill="#C4BDB6" height="1.5" rx="1" width="95" x="138" y="120"></rect>
-<rect fill="#C4BDB6" height="1.5" rx="1" width="70" x="138" y="128"></rect>
-<text fill="#5C5C58" font-family="Montserrat,sans-serif" font-size="8" letter-spacing="1" text-anchor="middle" x="190" y="101">SPECIMEN</text>
-<!-- Pin through label -->
-<circle cx="190" cy="90" fill="#E0DDD5" r="3"></circle>
-<line stroke="#C4BDB6" stroke-width=".8" x1="190" x2="190" y1="87" y2="80"></line>
-<!-- Second label right -->
-<rect fill="#fff" height="55" rx="2" stroke="#E0DDD5" stroke-width=".8" width="120" x="570" y="110"></rect>
-<line stroke="#E0DDD5" stroke-width=".5" x1="570" x2="690" y1="125" y2="125"></line>
-<rect fill="#C4BDB6" height="1.5" rx="1" width="80" x="578" y="132"></rect>
-<rect fill="#C4BDB6" height="1.5" rx="1" width="95" x="578" y="140"></rect>
-<rect fill="#C4BDB6" height="1.5" rx="1" width="60" x="578" y="148"></rect>
-<text fill="#5C5C58" font-family="Montserrat,sans-serif" font-size="8" letter-spacing="1" text-anchor="middle" x="630" y="121">DARWIN 1851</text>
-<circle cx="630" cy="110" fill="#E0DDD5" r="3"></circle>
-<line stroke="#C4BDB6" stroke-width=".8" x1="630" x2="630" y1="107" y2="100"></line>
-<!-- Small pressed flower bottom left -->
-<circle cx="160" cy="210" fill="none" opacity=".2" r="20" stroke="#0097B2" stroke-width=".6"></circle>
-<ellipse cx="148" cy="200" fill="#0097B2" opacity=".12" rx="8" ry="12" transform="rotate(-30 148 200)"></ellipse>
-<ellipse cx="172" cy="200" fill="#0097B2" opacity=".1" rx="8" ry="12" transform="rotate(30 172 200)"></ellipse>
-<ellipse cx="160" cy="192" fill="#0097B2" opacity=".11" rx="8" ry="12" transform="rotate(0 160 192)"></ellipse>
-<circle cx="160" cy="210" fill="#0097B2" opacity=".15" r="6"></circle>
-<!-- Label -->
-<text fill="#5C5C58" font-family="Montserrat,sans-serif" font-size="10" letter-spacing="2" text-anchor="middle" x="410" y="285">CHARLES DARWIN  ·  ANNE ELIZABETH DARWIN  ·  1851</text>
-</svg>
-</div>
+</div><img class="ah-flower" src="/assets/pf-leaves-olive.webp" alt="" aria-hidden="true"></div></section>
+
 <div class="article-body">
-<p>Charles Darwin was fifty-nine when he published <em>On the Origin of Species</em>. He was forty-two when his daughter Annie died. The two events were a decade apart, but those who have studied Darwin's life closely have observed that they were not unconnected.</p>
+<p>Charles Darwin was fifty when he published <em>On the Origin of Species</em> in 1859. He was forty-two when his daughter Annie died in 1851. The two events were eight years apart, but those who have studied Darwin's life closely have observed that they were not unconnected.</p>
 <p>Anne Elizabeth Darwin died in April 1851 at the age of ten, after a prolonged illness. She was, by all accounts, Darwin's favourite child — bright, affectionate, deeply loved. Her death devastated him in a way that he never fully recovered from, and that he rarely spoke about in public for the rest of his life.</p>
 <h2>What the private letters <em>reveal</em></h2>
 <p>What Darwin could not say publicly, he wrote privately. In letters to friends and family in the weeks after Annie's death, he described his grief with a directness that was unusual for a Victorian man of his position and reserve. He wrote of Annie's qualities in detail — her joyfulness, her curiosity, her tenderness — as though by describing her precisely he could hold on to something that was slipping away.</p>
@@ -245,7 +234,7 @@ a{color:var(--green)}
 <h2>What his grief made possible</h2>
 <p>This is not an inspirational story in the easy sense. Darwin did not “overcome” his grief or “turn it into something positive.” He carried it for the rest of his life. His wife Emma — who coped through her own religious faith — and Darwin grieved differently and sometimes at a distance, as bereaved couples so often do.</p>
 <p>But his grief deepened him. The man who published <em>On the Origin of Species</em> in 1859 had been living with the knowledge of how much could be lost, how quickly, and how little reason there was for it. That knowledge is present, some historians argue, in the way he wrote about nature — with an unflinching attention to suffering and death as intrinsic to life, not as aberrations or punishments.</p>
-<p>Annie is buried in Malvern, Worcestershire. Darwin rarely returned to visit her grave. But her name appears in his correspondence until the end of his life.</p>
+<p>Annie is buried in the churchyard of Malvern Priory, in Worcestershire. Her name appears in Darwin&rsquo;s correspondence until the end of his life.</p>
 <div class="article-source">
 <span class="source-label">Sources and further reading</span>
 <p class="source-text">The primary sources for this article are Darwin's published correspondence (available through the Darwin Correspondence Project, darwinproject.ac.uk), his private memorial essay for Annie (held in the Darwin Archive at Cambridge University Library and published in <em>Annie's Box</em> by Randal Keynes, 2001), and the biographical accounts of Darwin's life by Janet Browne (<em>Charles Darwin: Voyaging</em> and <em>Charles Darwin: The Power of Place</em>). All biographical claims are drawn from these published, academically reviewed sources.</p>
@@ -260,5 +249,6 @@ a{color:var(--green)}
 <div>Asociaci&oacute;n MIMATIS &middot; Registered non-profit association in Spain, no. 633.864 &middot; Avinguda Catalunya 39, 17520 Puigcerd&agrave; (Girona), Spain &middot; <a href="mailto:contact@mimatis.org">contact@mimatis.org</a> &middot; <a href="/#privacy">Privacy</a> &middot; <a href="/#legal">Legal notice</a></div>
 <div>MIMATIS does not provide medical advice. If you are in crisis, please contact your local emergency number or a helpline in <a href="/#help">your country</a>.</div>
 </div></footer>
+<script id="art-read-js">(function(){var b=document.querySelector('.readbar span');if(!b)return;function u(){var d=document.documentElement,h=d.scrollHeight-d.clientHeight;b.style.width=(h>0?Math.min(100,d.scrollTop/h*100):0)+'%'}addEventListener('scroll',u,{passive:true});u()})();</script>
 </body>
 </html>
