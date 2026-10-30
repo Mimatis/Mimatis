@@ -109,85 +109,90 @@ footer{border-top:1px solid var(--border);padding:2.5rem clamp(1.25rem,5vw,3rem)
 .faq .q a:hover{text-decoration:underline}
 /* /us-faq */
 
+
+
 /* us-design */
-:root{--cream:#F7F3ED;--mauve:#8E6A72;--mauve-line:#B79CA4;--col:calc(960px - 6rem)}
+:root{--sky:#E3F5F8;--col:calc(960px - 6rem)}
 html,body{overflow-x:clip}
+[id]{scroll-margin-top:76px}
 .wrap{padding-top:0}
 .bleed{margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);padding-left:max(clamp(1.25rem,5vw,3rem),calc(50vw - var(--col)/2));padding-right:max(clamp(1.25rem,5vw,3rem),calc(50vw - var(--col)/2))}
 /* hero */
-.us-hero{background:var(--cream);display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:2rem;align-items:end;padding-top:clamp(2.5rem,6vw,4.5rem);padding-right:0!important;margin-bottom:2.8rem}
+.us-hero{background:var(--sky);display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:2rem;align-items:end;padding-top:clamp(2.5rem,6vw,4.5rem);padding-right:0!important}
 .us-hero-text{padding-bottom:clamp(2.5rem,5vw,4rem)}
 .us-hero .eye{font-size:.7rem;letter-spacing:.32em;color:var(--ink);margin-bottom:0}
-.us-hero .eye::after{content:"";display:block;width:64px;height:2px;background:var(--mauve-line);margin-top:1rem}
-.us-hero h1{font-size:clamp(2.3rem,5.4vw,3.9rem);font-weight:700;letter-spacing:-.025em;line-height:1.04;margin:1.6rem 0 1rem}
+.us-hero .eye::after{content:"";display:block;width:64px;height:2px;background:var(--green);margin-top:1rem}
+.us-hero h1{font-size:clamp(2.3rem,5.2vw,3.7rem);font-weight:700;letter-spacing:-.025em;line-height:1.05;margin:1.5rem 0 1rem}
 .us-hero h1 em{color:var(--green-dark);font-style:italic}
-.us-hero .sub{font-style:normal;font-size:.95rem;color:var(--mid);margin-bottom:1.8rem}
+.us-hero .sub{font-style:normal;font-size:.95rem;color:var(--ink);margin-bottom:1.8rem}
 .us-hero .quick{margin:0}
-.us-hero .qbtn{background:#fff;border-color:rgba(0,112,138,.35)}
-.us-hero .qbtn.qes{flex-basis:100%}
-.us-hero-art{align-self:end;justify-self:end;width:100%;max-width:560px}
-.us-hero-art img{display:block;width:100%;height:auto;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 16%);mask-image:linear-gradient(to right,transparent 0,#000 16%)}
-/* intro */
+.us-hero .qbtn{background:#fff}
+.us-hero-art{align-self:end;justify-self:end;width:100%;max-width:500px}
+.us-hero-art img{display:block;width:100%;height:auto;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 14%);mask-image:linear-gradient(to right,transparent 0,#000 14%)}
+/* intro + alerts */
 .lt-custom{max-width:none}
 .lt-custom p,.lt-custom ul,.lt-custom .lt-note{max-width:760px}
-.lt-custom>p:first-of-type{font-family:'Inter',sans-serif;font-size:clamp(1.1rem,2vw,1.3rem);line-height:1.6;color:var(--ink);margin-bottom:1.2rem}
-.lt-note{background:var(--cream);border-left:2px solid var(--mauve-line);padding:1rem 1.2rem;font-style:normal;color:var(--mid)}
-/* alerts */
-.us-alerts{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:0 0 2.6rem}
+.lt-custom>p:first-of-type{font-size:1.05rem;color:var(--ink);line-height:1.8}
+.us-alerts{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:2.5rem 0 0}
 .us-alerts .lt-crisis{margin:0;border-radius:3px;border-left:3px solid var(--green);font-size:.88rem}
 .us-alerts .safety{border-left-color:#E9BC1B}
-/* glossary band */
-.types.bleed{background:var(--cream);margin-top:3.5rem;margin-bottom:0;padding-top:clamp(3rem,6vw,4.5rem);padding-bottom:clamp(3rem,6vw,4.5rem)}
-.types h2,.faq h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;letter-spacing:-.015em;line-height:1.15;margin-bottom:.6rem}
+/* jump bar */
+.jump{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--border);margin-top:2rem;margin-bottom:2.5rem}
+.jump .ji{display:flex;align-items:center;gap:1rem;height:60px}
+.jump .jl{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
+.jump .jc{display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:2px 0}
+.jump .jc::-webkit-scrollbar{display:none}
+.jump .jc{-webkit-mask-image:linear-gradient(to left,transparent 0,#000 28px);mask-image:linear-gradient(to left,transparent 0,#000 28px);padding-right:24px}
+.jump a{flex:none;font-size:.8rem;text-decoration:none;color:var(--mid);border:1px solid var(--border);border-radius:99px;padding:.38rem .9rem;background:#fff;transition:background .2s,color .2s,border-color .2s}
+.jump a:hover{border-color:var(--green);color:var(--green-dark);text-decoration:none}
+.jump a.on{background:var(--green-dark);border-color:var(--green-dark);color:#fff}
+/* glossary + faq */
+.types{margin:3.5rem 0 0}
+.types h2,.faq h2{display:flex;align-items:center;gap:1rem;font-size:clamp(1.6rem,3vw,2.1rem);font-weight:600;letter-spacing:-.015em;line-height:1.15;margin-bottom:.6rem}
+.types h2 .gf{height:56px;width:auto;flex:none}
 .types .intro{max-width:640px}
 .tgrid{gap:1.25rem}
-.tdef{background:#fff;border:0;border-radius:3px;padding:1.4rem 1.4rem 1.5rem;position:relative}
-.tdef .tflower{display:block;height:64px;width:auto;max-width:96px;object-fit:contain;margin:0 0 .9rem}
-.tdef h3{font-size:1.02rem;font-weight:600}
-.types .lt-note{background:#fff;max-width:none}
-/* faq */
 .faq{margin:4rem 0 1rem}
-.faq .q{border:1px solid var(--border);border-radius:3px;padding:1.4rem 1.5rem}
+.faq .q{border:1px solid var(--border);border-top:3px solid var(--green);border-radius:3px;padding:1.4rem 1.5rem}
 .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.4rem}
 .faq-grid .q:last-child:nth-child(odd){grid-column:1/-1}
 .faq .q h3{font-weight:600;font-size:1.02rem}
 /* toc */
-.lt-custom>.lt-lead{font-family:'Montserrat',sans-serif;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mauve);margin-top:3.5rem}
+.lt-custom>.lt-lead{font-family:'Montserrat',sans-serif;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--green);margin-top:3.5rem}
 .lt-toc{display:grid;grid-template-columns:1fr 1fr;column-gap:2.5rem;counter-reset:toc;max-width:none!important;border-top:1px solid var(--border)}
 .lt-custom .lt-toc li{counter-increment:toc;padding:.85rem 0 .85rem 2.6rem;margin:0;border-bottom:1px solid var(--border);font-size:.9rem}
-.lt-custom .lt-toc li::before{content:counter(toc,decimal-leading-zero);background:none;width:auto;height:auto;border-radius:0;top:.95rem;left:0;font-size:.72rem;letter-spacing:.15em;color:var(--mauve)}
+.lt-custom .lt-toc li::before{content:counter(toc,decimal-leading-zero);background:none;width:auto;height:auto;border-radius:0;top:.95rem;left:0;font-size:.72rem;letter-spacing:.15em;color:var(--green)}
 .lt-toc a{color:var(--ink)}
 /* sections */
 .lt-custom{counter-reset:sec 1}
-.us-sec{position:relative;counter-increment:sec;padding-top:clamp(3rem,6vw,4.5rem);padding-bottom:.5rem}
+.us-sec{position:relative;counter-increment:sec;padding-top:clamp(3.5rem,7vw,5rem);padding-bottom:.5rem}
 .us-sec+.us-sec{border-top:1px solid var(--border);margin-top:2.5rem}
-.us-sec h2.lt-part{border-top:0;margin:0 0 1.4rem;padding:0 130px 0 0;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;letter-spacing:-.015em;line-height:1.15}
-.us-sec h2.lt-part::before{content:counter(sec,decimal-leading-zero);display:block;font-family:'Montserrat',sans-serif;font-size:.72rem;font-weight:400;letter-spacing:.18em;color:var(--mauve);margin-bottom:.9rem}
-.us-sec .sec-flower{position:absolute;top:clamp(2.4rem,5vw,3.6rem);right:0;width:auto;height:110px;max-width:120px;object-fit:contain;pointer-events:none}
-.us-sec:nth-of-type(even) .sec-flower{transform:rotate(-8deg)}
-.us-sec:nth-of-type(odd) .sec-flower{transform:rotate(6deg)}
+.us-sec h2.lt-part{border-top:0;margin:0 0 1.4rem;padding:0;font-size:clamp(1.6rem,3vw,2.1rem);font-weight:600;letter-spacing:-.015em;line-height:1.15}
+.us-sec h2.lt-part::before{content:counter(sec,decimal-leading-zero);display:block;font-family:'Montserrat',sans-serif;font-size:.7rem;font-weight:400;letter-spacing:.24em;color:var(--green);margin-bottom:.9rem}
+.us-sec .sf{position:absolute;top:clamp(3rem,6vw,4.2rem);right:0;height:92px;width:auto;max-width:110px;pointer-events:none;transform:rotate(6deg)}
+.us-sec .sf+h2.lt-part{padding-right:120px}
 .us-sec h3,.us-sec .lt-lead{font-family:'Inter',sans-serif;font-size:1.08rem;font-weight:600;color:var(--ink);margin:2rem 0 .6rem}
 .lt-table-wrap{border:1px solid var(--border);border-radius:3px;margin:1.2rem 0 1.5rem}
-.lt-table th{background:var(--cream);border-bottom:1px solid var(--mauve-line);color:var(--green-dark)}
+.lt-table th{background:var(--sky);border-bottom:1px solid var(--green)}
 .lt-table tbody tr:last-child td{border-bottom:0}
+.lt-note{border-left-color:var(--green)}
 /* quote bands */
-.us-band{background:var(--cream);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:2rem;align-items:end;padding-right:0!important;margin-top:4rem;margin-bottom:0}
-.us-band .bq{padding:clamp(3rem,6vw,4.5rem) 0;align-self:center}
-.us-band .bq p{max-width:none;font-family:'Inter',sans-serif;font-size:clamp(1.6rem,3.4vw,2.6rem);font-weight:700;letter-spacing:-.02em;line-height:1.12;color:var(--ink);margin:0}
-.us-band .bq p em{display:block;color:var(--green-dark);font-style:italic}
-.us-band .bq p::before{content:"";display:block;width:64px;height:2px;background:var(--mauve-line);margin-bottom:1.4rem}
-.us-band .bart{justify-self:end;width:100%;max-width:380px}
-.us-band .bart img{display:block;width:100%;height:auto;max-height:440px;object-fit:cover;object-position:right bottom;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 18%);mask-image:linear-gradient(to right,transparent 0,#000 18%)}
+.qb{background:var(--sky);margin-top:4rem;padding-top:clamp(3.5rem,7vw,5.5rem);padding-bottom:clamp(3.5rem,7vw,5.5rem);display:flex;align-items:center;gap:2rem}
+.qb p{max-width:none!important;flex:1;font-family:'Inter',sans-serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;letter-spacing:-.02em;line-height:1.15;color:var(--ink);margin:0}
+.qb p em{display:block;color:var(--green-dark);font-style:italic}
+.qb img{height:120px;width:auto;flex:none}
 .crosslinks{margin-top:4rem}
 @media(max-width:860px){
- .us-hero,.us-band{grid-template-columns:1fr;gap:0}
+ .us-hero{grid-template-columns:1fr;gap:0}
  .us-hero-text{padding-right:clamp(1.25rem,5vw,3rem);padding-bottom:1.5rem}
- .us-hero-art{max-width:380px}
- .us-band .bq{padding:2.6rem clamp(1.25rem,5vw,3rem) 1rem 0}
- .us-band .bart{max-width:260px}
+ .us-hero-art{max-width:330px}
  .us-alerts,.faq-grid,.lt-toc{grid-template-columns:1fr}
- .us-sec .sec-flower{height:70px;max-width:80px}
- .us-sec h2.lt-part{padding-right:85px}
+ .jump .jl{display:none}
+ .jump .ji{height:54px}
+ .types h2 .gf{height:40px}
+ .us-sec .sf{height:58px}
+ .us-sec .sf+h2.lt-part{padding-right:70px}
+ .qb img{height:72px}
 }
 /* /us-design */
 </style>
@@ -203,15 +208,16 @@ html,body{overflow-x:clip}
 <header class="us-hero bleed"><div class="us-hero-text"><span class="eye">Find help &middot; United States</span>
 <h1>Support in the <em>United States</em></h1>
 <p class="sub">Verified support and information</p>
-<div class="quick"><a class="qbtn" href="https://www.mimatis.org/#garden">Plant a flower in the memorial garden</a><a class="qbtn" href="https://www.mimatis.org/journal">Read articles and stories</a><a class="qbtn qpro" href="https://www.mimatis.org/#action">Are you a hospital, company or researcher? Work with us</a></div><!-- /quick --></div><div class="us-hero-art" aria-hidden="true"><img src="/assets/us-hero-butterfly.jpg" alt="" width="830" height="750" fetchpriority="high"></div></header>
+<div class="quick"><a class="qbtn" href="https://www.mimatis.org/#garden">Plant a flower in the memorial garden</a><a class="qbtn" href="https://www.mimatis.org/journal">Read articles and stories</a><a class="qbtn qpro" href="https://www.mimatis.org/#action">Are you a hospital, company or researcher? Work with us</a></div><!-- /quick --></div><div class="us-hero-art" aria-hidden="true"><img src="/assets/es-hero-butterfly.jpg" alt="" width="720" height="622" fetchpriority="high"></div></header>
 <div class="lt-custom">
 <div class="us-alerts"><div class="lt-crisis">If you are in danger, or thinking about ending your life, please call or text <strong><a href="tel:988">988</a></strong> now, or call <strong><a href="tel:911">911</a></strong> in an emergency. The <strong>988 Lifeline</strong> is free, confidential and open 24 hours a day. You can also call or text the <strong>National Maternal Mental Health Hotline</strong> on <strong><a href="tel:+18338526262">1-833-852-6262</a></strong>, any time, in English or Spanish.</div>
 <div class="lt-crisis safety safety-box" role="note">If you are pregnant and something feels wrong, such as bleeding, pain, fever, or your baby moving less, go to the hospital or call <a href="tel:911">911</a> straight away. Do not wait. MIMATIS does not give medical advice: this page is about what happens after a loss.</div></div>
+<nav class="jump bleed" aria-label="On this page"><div class="ji"><span class="jl">On this page</span><div class="jc"><a href="#situation">Your situation</a><a href="#hospital">At the hospital</a><a href="#name">Certificates</a><a href="#goodbye">Saying goodbye</a><a href="#work">Work</a><a href="#home">At home</a><a href="#regions">Support near you</a><a href="#usa">Organisations</a></div></div></nav>
 <p>We are so sorry that you are here. Whether your baby died early in pregnancy, later in pregnancy, at birth or soon after, your baby matters and your grief is real. In the United States, a loss after 20 weeks is called a stillbirth, and a loss before 20 weeks is usually called a miscarriage. Many families also say &ldquo;pregnancy loss&rdquo; or &ldquo;infant loss&rdquo;.</p>
 <p>This page gathers what parents in the United States need to know, in the order you are likely to need it. Please take only what you need today. The rest will still be here.</p>
 <p class="lt-note">MIMATIS shares information and trusted links. It is not legal or medical advice. In the United States, most of the rules are made by each of the 50 states, and some by the federal government. They differ a lot. We say clearly what applies everywhere and what depends on your state, and we tell you what to ask. Please confirm anything important with your hospital team, your state&rsquo;s vital records office, your employer or your health insurer. Information checked in October 2026.</p>
 
-<div class="types bleed" id="loss-types"><h2>Types of pregnancy and baby loss, in simple words</h2><p class="intro">Doctors, hospitals and laws use many different words. This is what they mean in the United States.</p><div class="tgrid"><div class="tdef"><img class="tflower" src="/assets/pf-daisy-white.webp" alt="" aria-hidden="true" loading="lazy"><h3>Early miscarriage</h3><p>When a pregnancy ends on its own in the first 13 weeks. It is the most common loss, and it is almost never caused by anything the parents did.</p></div><div class="tdef"><img class="tflower" src="/assets/pf-blossom-cream.webp" alt="" aria-hidden="true" loading="lazy"><h3>Late miscarriage</h3><p>When a baby dies in the womb between about 14 and 20 weeks. Doctors may call it a second-trimester loss. The mother often gives birth to her baby.</p></div><div class="tdef"><img class="tflower" src="/assets/pf-hydrangea-blue.webp" alt="" aria-hidden="true" loading="lazy"><h3>Stillbirth</h3><p>When a baby dies in the womb or during birth at 20 weeks of pregnancy or later. This is the definition the CDC uses. Most states then record a fetal death.</p></div><div class="tdef"><img class="tflower" src="/assets/pf-blossom-pink.webp" alt="" aria-hidden="true" loading="lazy"><h3>Neonatal death</h3><p>When a baby is born alive and dies in the first 28 days of life, even after only a few minutes.</p></div><div class="tdef"><img class="tflower" src="/assets/pf-pansy-lilac.webp" alt="" aria-hidden="true" loading="lazy"><h3>Sudden infant death (SIDS / SUID)</h3><p>The sudden, unexpected death of a baby under one year old, usually during sleep. SIDS is when no cause is found. It is no one&rsquo;s fault.</p></div><div class="tdef"><img class="tflower" src="/assets/pf-gypsophila-red.webp" alt="" aria-hidden="true" loading="lazy"><h3>Ectopic pregnancy</h3><p>When the pregnancy grows outside the womb, most often in a fallopian tube. It cannot continue, and the mother needs urgent care.</p></div><div class="tdef"><img class="tflower" src="/assets/pf-rose-yellow.webp" alt="" aria-hidden="true" loading="lazy"><h3>Molar pregnancy</h3><p>A rare problem with the placenta, so the pregnancy cannot develop. The mother needs check-ups for some months afterwards.</p></div><div class="tdef"><img class="tflower" src="/assets/pf-hydrangea-violet.webp" alt="" aria-hidden="true" loading="lazy"><h3>Chemical pregnancy</h3><p>A very early loss, soon after a positive pregnancy test, often around the time of a period. It is still a loss.</p></div><div class="tdef"><img class="tflower" src="/assets/pf-sprig-pink.webp" alt="" aria-hidden="true" loading="lazy"><h3>Termination for medical reasons (TFMR)</h3><p>When parents decide to end a wanted pregnancy because of a serious health problem of the baby or the mother. It is a loss too, and you deserve the same support.</p></div></div><p class="lt-note" style="margin-top:1.4rem">Whatever the word, your baby was real and your grief matters.</p></div><!-- /types -->
+<div class="types" id="loss-types"><h2><img class="gf" src="/assets/pf-daisy-white.webp" alt="" aria-hidden="true" loading="lazy">Types of pregnancy and baby loss, in simple words</h2><p class="intro">Doctors, hospitals and laws use many different words. This is what they mean in the United States.</p><div class="tgrid"><div class="tdef"><h3>Early miscarriage</h3><p>When a pregnancy ends on its own in the first 13 weeks. It is the most common loss, and it is almost never caused by anything the parents did.</p></div><div class="tdef"><h3>Late miscarriage</h3><p>When a baby dies in the womb between about 14 and 20 weeks. Doctors may call it a second-trimester loss. The mother often gives birth to her baby.</p></div><div class="tdef"><h3>Stillbirth</h3><p>When a baby dies in the womb or during birth at 20 weeks of pregnancy or later. This is the definition the CDC uses. Most states then record a fetal death.</p></div><div class="tdef"><h3>Neonatal death</h3><p>When a baby is born alive and dies in the first 28 days of life, even after only a few minutes.</p></div><div class="tdef"><h3>Sudden infant death (SIDS / SUID)</h3><p>The sudden, unexpected death of a baby under one year old, usually during sleep. SIDS is when no cause is found. It is no one&rsquo;s fault.</p></div><div class="tdef"><h3>Ectopic pregnancy</h3><p>When the pregnancy grows outside the womb, most often in a fallopian tube. It cannot continue, and the mother needs urgent care.</p></div><div class="tdef"><h3>Molar pregnancy</h3><p>A rare problem with the placenta, so the pregnancy cannot develop. The mother needs check-ups for some months afterwards.</p></div><div class="tdef"><h3>Chemical pregnancy</h3><p>A very early loss, soon after a positive pregnancy test, often around the time of a period. It is still a loss.</p></div><div class="tdef"><h3>Termination for medical reasons (TFMR)</h3><p>When parents decide to end a wanted pregnancy because of a serious health problem of the baby or the mother. It is a loss too, and you deserve the same support.</p></div></div><p class="lt-note" style="margin-top:1.4rem">Whatever the word, your baby was real and your grief matters.</p></div><!-- /types -->
 <div class="faq" id="questions"><h2>Common questions</h2><div class="faq-grid"><div class="q"><h3>Do you get a death certificate after a miscarriage?</h3><p>Usually not before 20 weeks. Most states record a fetal death from 20 weeks of pregnancy, or from 350 grams, and a few states at any stage. Many states also let parents ask for a certificate of stillbirth to keep. If your baby was born alive, even for a short time, there is a birth certificate and a death certificate. Your state&rsquo;s vital records office can tell you exactly what applies. <a href="#name">Read more &rarr;</a></p></div><div class="q"><h3>Is there bereavement leave after a pregnancy loss?</h3><p>There is no national paid leave for pregnancy loss. If you are eligible, the Family and Medical Leave Act (FMLA) gives up to 12 weeks of unpaid, job-protected leave, and pregnancy loss counts as a serious health condition. Some states go further: Illinois gives up to 10 workdays and California up to 5 days of leave after a miscarriage or stillbirth, and several states have paid family leave. <a href="#work">Read more &rarr;</a></p></div><div class="q"><h3>Is it a miscarriage or a stillbirth?</h3><p>In the United States, a loss at 20 weeks of pregnancy or later is called a stillbirth (the CDC definition). A loss before 20 weeks is usually called a miscarriage. Both are real losses, and you deserve the same care and support. <a href="#weight">Read more &rarr;</a></p></div><div class="q"><h3>Do I have to have a funeral?</h3><p>The rules differ by state and by hospital, especially before 20 weeks. You can usually choose a burial or cremation arranged by the hospital, one through a funeral home, or your own ceremony. Tell the hospital team as early as you can what you would like. <a href="#goodbye">Read more &rarr;</a></p></div><div class="q"><h3>What is NILMDTS?</h3><p>Now I Lay Me Down To Sleep (NILMDTS) is a US charity that gives free professional remembrance portraits to families who lose a baby. Ask your hospital team whether they can contact a photographer for you. <a href="#hospital">Read more &rarr;</a></p></div></div></div><!-- /faq -->
 <span class="lt-lead">On this page</span>
 <ul class="lt-toc">
@@ -228,7 +234,7 @@ html,body{overflow-x:clip}
 <li><a href="#sources">Where this information comes from</a></li>
 </ul>
 
-<section class="us-sec"><img class="sec-flower" src="/assets/pf-leaves-olive.webp" alt="" aria-hidden="true" loading="lazy"><h2 class="lt-part" id="weight">The most important thing to know: 20 weeks, and your state</h2>
+<section class="us-sec"><h2 class="lt-part" id="weight">The most important thing to know: 20 weeks, and your state</h2>
 <p>The US Centers for Disease Control and Prevention (CDC) defines a <strong>stillbirth</strong> as the loss of a pregnancy <strong>at or after the 20th week</strong>. A <strong>miscarriage</strong> is usually a loss before 20 weeks. Doctors also say <em>fetal death</em> for both.</p>
 <p>For records, most states count a fetal death at <strong>20 weeks or more, or at 350 grams or more</strong>. A few states record a fetal death at any stage of pregnancy. Which rules apply to you depends on your state, so there is no single US rule on the paperwork.</p>
 <div class="lt-table-wrap">
@@ -243,7 +249,7 @@ html,body{overflow-x:clip}
 </table>
 </div>
 <p>This line is about paperwork. It says nothing about your love or the size of your loss. Your baby matters, whenever you lost them.</p></section>
-<section class="us-sec"><img class="sec-flower" src="/assets/pf-blossom-pink.webp" alt="" aria-hidden="true" loading="lazy"><h2 class="lt-part" id="situation">What happens in your situation</h2>
+<section class="us-sec"><h2 class="lt-part" id="situation">What happens in your situation</h2>
 <h3 class="lt-h">Early miscarriage</h3>
 <p>Losing a baby in the first months of pregnancy is very common, and it is still a real loss. Many parents feel alone with it, because others may not have known about the pregnancy. Your grief deserves care and time.</p>
 <ul>
@@ -264,7 +270,7 @@ html,body{overflow-x:clip}
 </ul>
 <h3 class="lt-h">If your baby was born alive and then died</h3>
 <p>If your baby lived, even for a short time, your baby is generally recorded as a birth and as a death, as for any person. The exact rules are set by your state, so ask the hospital team for the birth certificate and death certificate. You can hold your baby, bathe and dress your baby and make memories for as long as the team can allow. Many hospitals have a bereavement nurse, a chaplain or a social worker for families in this situation. Please ask.</p></section>
-<section class="us-sec"><img class="sec-flower" src="/assets/pf-daisy-white.webp" alt="" aria-hidden="true" loading="lazy"><h2 class="lt-part" id="hospital">At the hospital: time with your baby</h2>
+<section class="us-sec"><img class="sf" src="/assets/pf-blossom-pink.webp" alt="" aria-hidden="true" loading="lazy"><h2 class="lt-part" id="hospital">At the hospital: time with your baby</h2>
 <p>Your health and safety come first. Always follow the medical team&rsquo;s advice, and tell them straight away if you feel unwell. If you learn that your baby has died before birth, the team will explain what happens next, including the timing of the birth and pain relief, and you can ask them any questions you have.</p>
 <p>These are things you can ask for:</p>
 <ul>
@@ -288,8 +294,7 @@ html,body{overflow-x:clip}
 <p><strong>Free professional photos:</strong> <a href="https://www.nowilaymedowntosleep.org" target="_blank" rel="noopener">Now I Lay Me Down To Sleep</a> offers free professional portraits to families who lose a baby. You can also ask for portraits if you lost your baby in the past. Find a photographer on the website at <a href="https://www.nowilaymedowntosleep.org/find-photographers" target="_blank" rel="noopener">nowilaymedowntosleep.org/find-photographers</a>, or call <a href="tel:+17202833339">720-283-3339</a>.</p>
 <h3 class="lt-h">If you feel your wishes are not respected</h3>
 <p>Hospital practice varies across the country. If you feel unheard, you can ask to speak with the <strong>charge nurse</strong>, the <strong>hospital chaplain</strong>, a <strong>social worker</strong> or the <strong>patient advocate</strong> (many hospitals have a <em>patient relations</em> office). A support organisation can also help you say what you want.</p></section>
-<aside class="us-band bleed" aria-label="Your baby matters, and your grief is real."><div class="bq"><p>Your baby matters, <em>and your grief is real.</em></p></div><div class="bart" aria-hidden="true"><img src="/assets/us-band-gypsophila.jpg" alt="" width="520" height="930" loading="lazy" style="object-position:right bottom"></div></aside>
-<section class="us-sec"><img class="sec-flower" src="/assets/pf-buttercup.webp" alt="" aria-hidden="true" loading="lazy"><h2 class="lt-part" id="name">Certificates, records and your baby&rsquo;s name</h2>
+<section class="us-sec"><h2 class="lt-part" id="name">Certificates, records and your baby&rsquo;s name</h2>
 <p>In the United States, the death of a baby after about 20 weeks is recorded by the state as a <strong>fetal death</strong>. Each state has its own rules for the record and for any certificate you can keep.</p>
 <span class="lt-lead">The fetal death record</span>
 <ul>
@@ -308,7 +313,7 @@ html,body{overflow-x:clip}
 <p>The Star Legacy Foundation keeps a <a href="https://starlegacyfoundation.org/certificate-of-birth-resulting-in-stillbirth/" target="_blank" rel="noopener">state-by-state page</a> with how to apply, fees and rules.</p>
 <span class="lt-lead">If your baby was born alive</span>
 <p>Ask the hospital for your baby&rsquo;s birth certificate and death certificate. You will need the death certificate for a funeral, and sometimes for insurance.</p></section>
-<section class="us-sec"><img class="sec-flower" src="/assets/pf-hydrangea-blue.webp" alt="" aria-hidden="true" loading="lazy"><h2 class="lt-part" id="goodbye">Saying goodbye: funerals</h2>
+<section class="us-sec"><img class="sf" src="/assets/pf-daisy-white.webp" alt="" aria-hidden="true" loading="lazy"><h2 class="lt-part" id="goodbye">Saying goodbye: funerals</h2>
 <p>You can say goodbye to your baby in your own way, at any stage of pregnancy. In the United States, the rules for what happens to a baby&rsquo;s body after a loss, especially before 20 weeks, differ by state and by hospital.</p>
 <ul>
 <li><strong>Ask early.</strong> Tell the hospital team as early as you can what you would like: to take your baby home, to bury or cremate your baby, or to let the hospital arrange it.</li>
@@ -331,7 +336,7 @@ html,body{overflow-x:clip}
 </ul>
 <span class="lt-lead">Places of memory</span>
 <p>Many cemeteries, hospitals and parishes hold a memorial service for babies lost in pregnancy, often in October, which is Pregnancy and Infant Loss Awareness Month. October 15 is Pregnancy and Infant Loss Remembrance Day, and every year on the <strong>second Sunday of December at 7:00 pm</strong>, families around the world light a candle for their children (<em>Worldwide Candle Lighting</em>). Your hospital&rsquo;s chaplain and local groups can tell you what exists near you.</p></section>
-<section class="us-sec"><img class="sec-flower" src="/assets/pf-leaves-green.webp" alt="" aria-hidden="true" loading="lazy"><h2 class="lt-part" id="work">Time off work and money</h2>
+<section class="us-sec"><h2 class="lt-part" id="work">Time off work and money</h2>
 <p>You do not have to go back to work while you are in shock. The United States has no national paid leave for pregnancy loss. What you can get depends on your employer, the size of the company and your state. Here is what the law offers.</p>
 <h3 class="lt-h">Federal rules</h3>
 <ul>
@@ -353,7 +358,7 @@ html,body{overflow-x:clip}
 <p>The IRS says you cannot claim a stillborn child as a dependent. A child must be treated as born alive under state or local law, with proof such as a birth certificate. Some states have their own tax benefits after a stillbirth. The Star Legacy Foundation lists examples: Arizona, Arkansas and Minnesota. They often require a Certificate of Birth Resulting in Stillbirth. Rules change, so please ask a tax professional. Star Legacy&rsquo;s <a href="https://starlegacyfoundation.org/stillbirth-tax-information" target="_blank" rel="noopener">tax information page</a> is a good place to start.</p>
 <h3 class="lt-h">Health insurance and Medicaid</h3>
 <p>Federal law requires Medicaid to cover pregnancy-related care for at least 60 days after a pregnancy ends. Since 2022, states can extend this to 12 months, and many have. We could not confirm from official sources whether and how this applies after a pregnancy loss in each state, so please ask your state Medicaid office or the hospital&rsquo;s financial counsellor. If you have bills you do not understand, you can ask the hospital for an itemised bill and for its financial help policy.</p></section>
-<section class="us-sec"><img class="sec-flower" src="/assets/pf-rose-yellow.webp" alt="" aria-hidden="true" loading="lazy"><h2 class="lt-part" id="home">When you go home</h2>
+<section class="us-sec"><img class="sf" src="/assets/pf-hydrangea-blue.webp" alt="" aria-hidden="true" loading="lazy"><h2 class="lt-part" id="home">When you go home</h2>
 <p>Coming home without your baby can be one of the hardest moments. There is no right way to grieve and no timetable.</p>
 <ul>
 <li><strong>Your body</strong> may behave as after any birth, including milk coming in. Ask your doctor or midwife about your options before you leave the hospital. The Star Legacy Foundation has a page on <a href="https://starlegacyfoundation.org" target="_blank" rel="noopener">lactation after a loss</a>.</li>
@@ -367,8 +372,7 @@ html,body{overflow-x:clip}
 </ul>
 <p>You may also find comfort in our <a href="https://www.mimatis.org/#support">guidance for the days after loss</a>.</p>
 <p id="memorial">You can plant a flower for your baby in our <a href="https://www.mimatis.org/#garden">memorial garden</a>. It stays there, with your baby&rsquo;s name.</p></section>
-<aside class="us-band bleed" aria-label="Please take only what you need today. The rest will still be here."><div class="bq"><p>Please take only what you need today. <em>The rest will still be here.</em></p></div><div class="bart" aria-hidden="true"><img src="/assets/us-band-flowers.jpg" alt="" width="400" height="1125" loading="lazy" style="object-position:right 12%"></div></aside>
-<section class="us-sec"><img class="sec-flower" src="/assets/pf-pansy-lilac.webp" alt="" aria-hidden="true" loading="lazy"><h2 class="lt-part" id="regions">Support near you</h2>
+<section class="us-sec"><h2 class="lt-part" id="regions">Support near you</h2>
 <p>The United States is large, and local support depends on where you live. These national organisations have chapters or groups across the country. We will add more over time.</p>
 <div class="lt-table-wrap">
 <table class="lt-table">
@@ -382,7 +386,7 @@ html,body{overflow-x:clip}
 </table>
 </div>
 <p>Your hospital&rsquo;s chaplaincy, social worker or bereavement nurse can also tell you about groups near you.</p></section>
-<section class="us-sec"><img class="sec-flower" src="/assets/pf-daisy-red.webp" alt="" aria-hidden="true" loading="lazy"><h2 class="lt-part" id="usa">Organisations and helplines across the United States</h2>
+<section class="us-sec"><h2 class="lt-part" id="usa">Organisations and helplines across the United States</h2>
 <h3 class="lt-table-title">Organisations and information</h3>
 <div class="lt-table-wrap">
 <table class="lt-table">
@@ -413,7 +417,7 @@ html,body{overflow-x:clip}
 </tbody>
 </table>
 </div></section>
-<section class="us-sec"><img class="sec-flower" src="/assets/pf-hydrangea-violet.webp" alt="" aria-hidden="true" loading="lazy"><h2 class="lt-part" id="sources">Where this information comes from</h2>
+<section class="us-sec"><h2 class="lt-part" id="sources">Where this information comes from</h2>
 <ul>
 <li>Definition of stillbirth: <a href="https://www.cdc.gov/stillbirth/about/index.html" target="_blank" rel="noopener">CDC, About Stillbirth</a>. Fetal death records and the 20-week and 350-gram line: <a href="https://cdc.gov/nchs/nvss/fetal_death.htm" target="_blank" rel="noopener">CDC National Center for Health Statistics</a></li>
 <li>Delivery options, tests and trying again: <a href="https://www.acog.org/womens-health/faqs/stillbirth" target="_blank" rel="noopener">ACOG, Stillbirth FAQ</a> (2020, reviewed 2022)</li>
@@ -431,5 +435,6 @@ html,body{overflow-x:clip}
 <span>MIMATIS &mdash; always free</span>
 <span><a href="mailto:contact@mimatis.org">contact@mimatis.org</a> &middot; <a href="https://www.instagram.com/mimatis.community/" target="_blank" rel="noopener">Instagram</a></span>
 </footer>
+<script id="us-jump-js">(function(){var n=document.querySelector('.jump');if(!n||!('IntersectionObserver' in window))return;var c=n.querySelector('.jc'),L={};n.querySelectorAll('a').forEach(function(a){L[a.getAttribute('href').slice(1)]=a});var o=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var a=L[e.target.getAttribute('data-j')||e.target.id];if(!a)return;n.querySelectorAll('a.on').forEach(function(x){x.classList.remove('on')});a.classList.add('on');c.scrollTo({left:a.offsetLeft-c.clientWidth/2+a.offsetWidth/2,behavior:'smooth'})})},{rootMargin:'-35% 0px -60% 0px'});Object.keys(L).forEach(function(id){var s=document.getElementById(id);if(!s)return;var t=s.closest('section')||s;t.setAttribute('data-j',id);o.observe(t)})})();</script>
 </body>
 </html>
