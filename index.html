@@ -1629,6 +1629,36 @@ a.jn-more{text-decoration:none}
  .pa-facts-row,.pa-cols,.pa-steps{grid-template-columns:1fr;gap:1.6rem}
 }
 /* /pa-design */
+
+
+
+/* jl-design */
+.jn-wrap{padding-top:0!important}
+.jn-head{position:relative;display:grid!important;grid-template-columns:minmax(0,1fr) 170px;align-items:center;gap:1.5rem 2rem;background:#E3F5F8;border-bottom:0!important;
+ margin:0 calc(50% - 50vw) 3rem!important;padding:clamp(48px,7vw,84px) max(clamp(16px,5vw,3rem),calc(50vw - 580px + 3rem)) clamp(40px,6vw,64px)!important}
+.jn-head>div:first-child{grid-column:1}
+.jn-eye{color:var(--ink)!important;letter-spacing:.3em!important;font-size:.68rem!important;margin-bottom:0!important}
+.jn-eye::after{content:"";display:block;width:56px;height:2px;background:var(--green);margin:.9rem 0 1.3rem}
+.jn-h1{font-weight:700!important;letter-spacing:-.025em;line-height:1.05!important;font-size:clamp(2.1rem,4.8vw,3.4rem)!important}
+.jn-h1 em{font-style:italic;color:var(--green-dark)}
+.jn-intro{font-size:1.05rem;line-height:1.7;color:var(--ink);max-width:40rem;margin:1.1rem 0 0}
+.jn-hflower{grid-column:2;grid-row:1/span 2;width:100%;max-height:190px;object-fit:contain;transform:rotate(-8deg)}
+.jn-tabs{grid-column:1/-1}
+.jn-tabs .jtab{border-radius:99px!important;background:#fff}
+.jn-cat{color:var(--green)!important;letter-spacing:.2em!important}
+.jn-title{font-weight:600!important}
+.jn-card,.jn-lead{transition:transform .25s ease}
+.jn-card:hover{transform:translateY(-3px)}
+.jn-img.jn-pf{background:#E3F5F8}
+.jn-img.jn-pf img{width:42%!important;height:auto!important;object-fit:contain!important;transform:rotate(-6deg)}
+.jn-share{background:#E3F5F8;border-left:3px solid var(--green);border-radius:3px;padding:2rem 2.2rem;margin-top:3.5rem}
+.jn-share h2{font-family:'Inter',sans-serif;font-size:1.5rem;font-weight:600;color:var(--ink);margin:0 0 .5rem}
+.jn-share p{font-size:.95rem;color:var(--mid);line-height:1.7;margin:0 0 1rem;max-width:40rem}
+.jn-share a{font-family:'Inter',sans-serif;font-size:1.15rem;font-weight:600;color:var(--green-dark);text-decoration:underline;text-underline-offset:4px}
+@media(min-width:761px){a.jn-lead{display:grid!important;grid-template-columns:1.25fr 1fr;gap:2.5rem;align-items:center}}
+@media(max-width:760px){.jn-head{grid-template-columns:1fr}.jn-hflower{display:none}}
+@media(prefers-reduced-motion:reduce){.jn-card:hover{transform:none}}
+/* /jl-design */
 </style>
 <script type="application/ld+json">
 {
@@ -2602,7 +2632,7 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
   <div class="gs-sub-view active" id="journal-landing">
     <div class="jn-wrap">
       <header class="jn-head">
-        <div><span class="jn-eye">MIMATIS Journal</span><h1 class="jn-h1">Stories, research and remembrance</h1></div>
+        <div><span class="jn-eye">MIMATIS Journal</span><h1 class="jn-h1">Stories, research and <em>remembrance</em></h1><p class="jn-intro">Parents&rsquo; stories, research explained simply, and ways to remember, written with care for families after pregnancy and baby loss.</p></div><img class="jn-hflower" src="/assets/pf-blossom-pink.webp" alt="" aria-hidden="true"><div class="jn-hspacer" hidden></div>
         <div class="jn-tabs" role="toolbar" aria-label="Filter articles"><button class="jtab active" onclick="filterJournal('all',this)">All</button>
 <button class="jtab" onclick="filterJournal('stories',this)">Parents&rsquo; stories</button>
 <button class="jtab" onclick="filterJournal('art',this)">Art &amp; memory</button>
