@@ -162,6 +162,84 @@ h1{font-size:32px}h2{font-size:1.55rem}
 /* safety */
 .safety{background:#FFF4D6;border-left:3px solid #E9BC1B;color:#1E1E1E}
 /* /safety */
+
+
+
+
+/* es-design */
+:root{--sky:#E3F5F8}
+html,body{overflow-x:clip}
+[id]{scroll-margin-top:76px}
+h1{font-weight:700;letter-spacing:-.025em;line-height:1.05}
+h1 em{color:var(--green-dark);font-style:italic}
+h2{font-weight:600;letter-spacing:-.015em}
+.hero{background:var(--sky);padding:clamp(48px,7vw,80px) 0 0}
+.hero .hero-grid{align-items:end;gap:2rem;max-width:none;padding-left:max(3rem,calc(50vw - 540px + 3rem));padding-right:0}
+.hero-grid>div:first-child{padding-bottom:clamp(40px,6vw,72px)}
+.hero .eye{color:var(--ink);letter-spacing:.32em}
+.hero .eye::after{content:"";display:block;width:64px;height:2px;background:var(--green);margin-top:1rem}
+.hero h1{font-size:clamp(34px,5vw,58px);margin:1.4rem 0 1.4rem}
+.hero .lead{color:var(--ink)}
+.hero .quick{margin:1.8rem 0 0}
+.hero .qbtn{background:#fff}
+.hero-photo{align-self:end;justify-self:end;width:100%;max-width:520px;border-radius:0;box-shadow:none;overflow:visible}
+.hero-photo img{display:block;width:100%;height:auto;border-radius:0;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 14%);mask-image:linear-gradient(to right,transparent 0,#000 14%)}
+[dir=rtl] .hero .hero-grid{padding-left:0;padding-right:max(3rem,calc(50vw - 540px + 3rem))}
+[dir=rtl] .hero-photo img{transform:scaleX(-1)}
+.alerts{display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding-top:2.5rem;padding-bottom:.5rem}
+.alerts .crisis{margin:0;max-width:none;border-radius:3px}
+.alerts .safety{border-left-color:#E9BC1B}
+[dir=rtl] .alerts .crisis{border-left:0;border-right:3px solid var(--green)}
+[dir=rtl] .alerts .safety{border-right-color:#E9BC1B}
+/* jump bar */
+.jump{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--border);margin-top:2rem}
+.jump .wrap{display:flex;align-items:center;gap:1rem;height:60px}
+.jump .jl{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
+.jump .jc{display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:2px 0}
+.jump .jc::-webkit-scrollbar{display:none}
+.jump a{flex:none;font-size:.8rem;text-decoration:none;color:var(--mid);border:1px solid var(--border);border-radius:99px;padding:.38rem .9rem;background:#fff;transition:background .2s,color .2s,border-color .2s}
+.jump a:hover{border-color:var(--green);color:var(--green-dark)}
+.jump a.on{background:var(--green-dark);border-color:var(--green-dark);color:#fff}
+/* glossary */
+.xtra{padding-top:clamp(56px,7vw,88px)}
+.xtra .quick{display:none}
+.types h2{display:flex;align-items:center;gap:1rem}
+.types h2 .gf{height:56px;width:auto;flex:none}
+.tdef{padding-top:1.1rem}
+/* sections */
+body{counter-reset:sec}
+section{padding:clamp(64px,8vw,104px) 0}
+.doc h2{counter-increment:sec;position:relative}
+.doc h2::before{content:counter(sec,decimal-leading-zero);display:block;font-family:'Montserrat',sans-serif;font-size:.7rem;font-weight:400;letter-spacing:.24em;color:var(--green);margin-bottom:.9rem}
+.doc .narrow{position:relative}
+.doc .sf{position:absolute;top:-.4rem;right:3rem;height:92px;width:auto;max-width:110px;pointer-events:none;transform:rotate(6deg)}
+[dir=rtl] .doc .sf{right:auto;left:3rem;transform:rotate(-6deg)}
+.doc h2.hasf{padding-right:110px}
+[dir=rtl] .doc h2.hasf{padding-right:0;padding-left:110px}
+.tw{border:1px solid var(--border);border-radius:3px}
+th{background:var(--sky)}
+/* quote bands */
+.qb{background:var(--sky);padding:clamp(56px,7vw,88px) 0}
+.qb .narrow{display:flex;align-items:center;gap:2rem}
+.qb p{font-family:'Inter',sans-serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;letter-spacing:-.02em;line-height:1.15;color:var(--ink);margin:0;flex:1}
+.qb p em{display:block;color:var(--green-dark);font-style:italic}
+.qb img{height:120px;width:auto;flex:none}
+@media(max-width:780px){
+ .hero .hero-grid,[dir=rtl] .hero .hero-grid{padding:0;gap:0}
+ .hero-grid>div:first-child{padding:0 16px 28px}
+ .hero-art,.hero-photo{order:0}
+ .hero-photo{max-width:330px}
+ .alerts{grid-template-columns:1fr;padding-top:1.5rem}
+ .jump .jl{display:none}
+ .jump .wrap{height:54px}
+ .types h2 .gf{height:40px}
+ .doc .sf{height:58px;right:16px}
+ [dir=rtl] .doc .sf{left:16px}
+ .doc h2.hasf{padding-right:70px}
+ [dir=rtl] .doc h2.hasf{padding-left:70px}
+ .qb img{height:72px}
+}
+/* /es-design */
 </style>
 <script src="/consent.js" defer></script>
 <script type="application/ld+json" id="mimatis-ld">{"@context":"https://schema.org","@graph":[{"@type":"MedicalWebPage","@id":"https://www.mimatis.org/es/espana#page","url":"https://www.mimatis.org/es/espana","name":"Muerte gestacional, perinatal y neonatal en España: tus derechos y apoyo | MIMATIS","headline":"Tras la pérdida de un bebé en España","description":"Información verificada para familias en España tras una pérdida gestacional, una muerte perinatal o neonatal: la línea de las 26 semanas, tiempo con tu bebé, despedida, inscripción con nombre, permiso por nacimiento y grupos de apoyo en España y Cataluña.","inLanguage":"es","isPartOf":{"@id":"https://www.mimatis.org/#website"},"publisher":{"@id":"https://www.mimatis.org/#organization"},"audience":{"@type":"PeopleAudience","audienceType":"Parents after miscarriage, stillbirth or neonatal loss"},"about":[{"@type":"MedicalCondition","name":"Miscarriage"},{"@type":"MedicalCondition","name":"Stillbirth"},{"@type":"MedicalCondition","name":"Neonatal death"}],"spatialCoverage":{"@type":"Country","name":"Spain"},"lastReviewed":"2026-10-27"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.mimatis.org/"},{"@type":"ListItem","position":2,"name":"Buscar ayuda","item":"https://www.mimatis.org/#help"},{"@type":"ListItem","position":3,"name":"Tras la pérdida de un bebé en España","item":"https://www.mimatis.org/es/espana"}]}]}</script>
@@ -176,16 +254,18 @@ h1{font-size:32px}h2{font-size:1.55rem}
 <div class="wrap hero-grid">
 <div>
 <span class="eye">Encontrar ayuda &middot; Espa&ntilde;a</span>
-<h1>Tras la p&eacute;rdida de un beb&eacute; en Espa&ntilde;a</h1>
+<h1>Tras la p&eacute;rdida de un beb&eacute; en <em>Espa&ntilde;a</em></h1>
 <p class="lead">Informaci&oacute;n verificada para familias en Espa&ntilde;a tras una p&eacute;rdida gestacional, una muerte perinatal o la muerte de un beb&eacute; poco despu&eacute;s de nacer: tus derechos, el tiempo con tu beb&eacute;, la despedida, la inscripci&oacute;n con nombre, el permiso laboral y el apoyo cerca de ti.</p>
 <p class="checked">Esto no es asesoramiento legal ni m&eacute;dico. Las normas pueden cambiar y var&iacute;an entre comunidades aut&oacute;nomas: confirma lo importante con el equipo del hospital, el Registro Civil o la Seguridad Social.</p>
-<div class="crisis">Si est&aacute;s en peligro o piensas en quitarte la vida, llama al <a href="tel:112">112</a> o al <a href="tel:024">024</a> (gratuito, 24 horas). En Catalu&ntilde;a tambi&eacute;n puedes llamar al <a href="tel:061">061</a>.</div>
-<div class="crisis safety safety-box" role="note">Si est&aacute;s embarazada y notas que algo no va bien, como sangrado, dolor, fiebre o que tu beb&eacute; se mueve menos, ve al hospital o llama al <a href="tel:112">112</a> enseguida. No esperes. MIMATIS no da consejo m&eacute;dico: esta p&aacute;gina trata de lo que ocurre despu&eacute;s de una p&eacute;rdida.</div>
+<div class="quick"><a class="qbtn" href="https://www.mimatis.org/#garden">Planta una flor en el jardín del recuerdo</a><a class="qbtn" href="https://www.mimatis.org/journal">Lee artículos e historias</a><a class="qbtn qpro" href="https://www.mimatis.org/#action">¿Eres un hospital, una empresa o investigas? Colabora con nosotros</a></div><!-- es-quick -->
 </div>
-<div class="hero-photo"><img src="/assets/bg-butterflies.jpg" alt="Mariposas claras sobre un cielo azul suave"></div>
+<div class="hero-photo" aria-hidden="true"><img src="/assets/es-hero-butterfly.jpg" alt="" width="720" height="622" fetchpriority="high"></div>
 </div>
 </section>
-<section class="xtra" id="loss-types-wrap"><div class="wrap"><div class="quick"><a class="qbtn" href="https://www.mimatis.org/#garden">Planta una flor en el jardín del recuerdo</a><a class="qbtn" href="https://www.mimatis.org/journal">Lee artículos e historias</a><a class="qbtn qpro" href="https://www.mimatis.org/#action">¿Eres un hospital, una empresa o investigas? Colabora con nosotros</a></div><div class="types" id="loss-types"><h2>Tipos de pérdida gestacional y perinatal, en palabras sencillas</h2><p class="intro">Médicos y leyes usan muchas palabras distintas. Esto es lo que significan.</p><div class="tgrid"><div class="tdef"><h3>Aborto espontáneo temprano</h3><p>Cuando el embarazo termina por sí solo en las primeras 13 semanas. Es la pérdida más frecuente y casi nunca se debe a algo que hicieran los padres.</p></div><div class="tdef"><h3>Pérdida gestacional tardía</h3><p>Cuando el bebé muere en el útero a partir de unas 14 semanas, antes de la línea de la muerte perinatal. Normalmente la madre da a luz a su bebé.</p></div><div class="tdef"><h3>Muerte fetal: bebé nacido sin vida</h3><p>Cuando el bebé muere antes o durante el parto, más avanzado el embarazo. Los médicos suelen contar desde las 22 semanas. En España, la ley usa los 180 días (unas 26 semanas) para la inscripción y el entierro.</p></div><div class="tdef"><h3>Muerte neonatal</h3><p>Cuando el bebé nace con vida y muere en sus primeros 28 días, aunque sea a los pocos minutos.</p></div><div class="tdef"><h3>Muerte súbita del lactante</h3><p>La muerte repentina e inexplicable de un bebé menor de un año, casi siempre mientras duerme. No es culpa de nadie.</p></div><div class="tdef"><h3>Embarazo ectópico</h3><p>Cuando el embarazo crece fuera del útero, casi siempre en una trompa. No puede continuar y la madre necesita atención urgente.</p></div><div class="tdef"><h3>Embarazo molar</h3><p>Un problema poco frecuente de la placenta, por el que el embarazo no puede desarrollarse. La madre necesita controles durante unos meses.</p></div><div class="tdef"><h3>Embarazo bioquímico</h3><p>Una pérdida muy temprana, poco después de una prueba de embarazo positiva, a menudo cerca de la regla. También es una pérdida.</p></div><div class="tdef"><h3>Interrupción por motivos médicos</h3><p>Cuando los padres deciden terminar un embarazo deseado por un problema grave de salud del bebé o de la madre. También es una pérdida y mereces el mismo apoyo.</p></div></div><p class="fact-note">Sea cual sea la palabra, tu bebé fue real y tu duelo importa.</p></div></div></section><!-- /xtra -->
+<div class="wrap alerts"><div class="crisis">Si est&aacute;s en peligro o piensas en quitarte la vida, llama al <a href="tel:112">112</a> o al <a href="tel:024">024</a> (gratuito, 24 horas). En Catalu&ntilde;a tambi&eacute;n puedes llamar al <a href="tel:061">061</a>.</div>
+<div class="crisis safety safety-box" role="note">Si est&aacute;s embarazada y notas que algo no va bien, como sangrado, dolor, fiebre o que tu beb&eacute; se mueve menos, ve al hospital o llama al <a href="tel:112">112</a> enseguida. No esperes. MIMATIS no da consejo m&eacute;dico: esta p&aacute;gina trata de lo que ocurre despu&eacute;s de una p&eacute;rdida.</div></div>
+<nav class="jump" aria-label="En esta página"><div class="wrap"><span class="jl">En esta p&aacute;gina</span><div class="jc"><a href="#situaciones">Tu caso</a><a href="#hospital">En el hospital</a><a href="#despedida">Despedida</a><a href="#nombre">Inscripci&oacute;n</a><a href="#trabajo">Trabajo</a><a href="#casa">En casa</a><a href="#cataluna">Comunidades</a><a href="#apoyo">Apoyo</a></div></div></nav>
+<section class="xtra" id="loss-types-wrap"><div class="wrap"><div class="types" id="loss-types"><h2><img class="gf" src="/assets/pf-daisy-white.webp" alt="" aria-hidden="true" loading="lazy">Tipos de pérdida gestacional y perinatal, en palabras sencillas</h2><p class="intro">Médicos y leyes usan muchas palabras distintas. Esto es lo que significan.</p><div class="tgrid"><div class="tdef"><h3>Aborto espontáneo temprano</h3><p>Cuando el embarazo termina por sí solo en las primeras 13 semanas. Es la pérdida más frecuente y casi nunca se debe a algo que hicieran los padres.</p></div><div class="tdef"><h3>Pérdida gestacional tardía</h3><p>Cuando el bebé muere en el útero a partir de unas 14 semanas, antes de la línea de la muerte perinatal. Normalmente la madre da a luz a su bebé.</p></div><div class="tdef"><h3>Muerte fetal: bebé nacido sin vida</h3><p>Cuando el bebé muere antes o durante el parto, más avanzado el embarazo. Los médicos suelen contar desde las 22 semanas. En España, la ley usa los 180 días (unas 26 semanas) para la inscripción y el entierro.</p></div><div class="tdef"><h3>Muerte neonatal</h3><p>Cuando el bebé nace con vida y muere en sus primeros 28 días, aunque sea a los pocos minutos.</p></div><div class="tdef"><h3>Muerte súbita del lactante</h3><p>La muerte repentina e inexplicable de un bebé menor de un año, casi siempre mientras duerme. No es culpa de nadie.</p></div><div class="tdef"><h3>Embarazo ectópico</h3><p>Cuando el embarazo crece fuera del útero, casi siempre en una trompa. No puede continuar y la madre necesita atención urgente.</p></div><div class="tdef"><h3>Embarazo molar</h3><p>Un problema poco frecuente de la placenta, por el que el embarazo no puede desarrollarse. La madre necesita controles durante unos meses.</p></div><div class="tdef"><h3>Embarazo bioquímico</h3><p>Una pérdida muy temprana, poco después de una prueba de embarazo positiva, a menudo cerca de la regla. También es una pérdida.</p></div><div class="tdef"><h3>Interrupción por motivos médicos</h3><p>Cuando los padres deciden terminar un embarazo deseado por un problema grave de salud del bebé o de la madre. También es una pérdida y mereces el mismo apoyo.</p></div></div><p class="fact-note">Sea cual sea la palabra, tu bebé fue real y tu duelo importa.</p></div></div></section><!-- /xtra -->
 
 
 
@@ -261,11 +341,11 @@ h1{font-size:32px}h2{font-size:1.55rem}
 </div>
 </section>
 
-<div class="pband" style="background-image:url('/assets/bg-white-flowers.jpg')" role="presentation"></div>
+<aside class="qb"><div class="narrow"><p>La línea de las 26 semanas es administrativa. <em>No dice nada sobre tu amor ni sobre el tamaño de tu pérdida.</em></p><img class="qf" src="/assets/pf-hydrangea-blue.webp" alt="" aria-hidden="true" loading="lazy"></div></aside>
 
 <section class="doc" id="hospital">
-<div class="narrow">
-<h2>En el hospital: tiempo con tu beb&eacute;</h2>
+<div class="narrow"><img class="sf" src="/assets/pf-blossom-pink.webp" alt="" aria-hidden="true" loading="lazy">
+<h2 class="hasf">En el hospital: tiempo con tu beb&eacute;</h2>
 <p>Tu salud y tu seguridad son lo primero. Sigue siempre las indicaciones del equipo m&eacute;dico y av&iacute;sales enseguida si te encuentras mal. Cuando el equipo te diga que es seguro, puedes pedir tiempo con tu beb&eacute;, llamar a las personas que quieras tener cerca y preguntar todas las veces que lo necesites.</p>
 <p>A muchas familias en Espa&ntilde;a no se les dice lo que pueden pedir. Puedes solicitar:</p>
 <ul>
@@ -300,8 +380,8 @@ h1{font-size:32px}h2{font-size:1.55rem}
 </section>
 
 <section class="doc" id="despedida">
-<div class="narrow">
-<h2>La despedida: entierro o incineraci&oacute;n</h2>
+<div class="narrow"><img class="sf" src="/assets/pf-daisy-white.webp" alt="" aria-hidden="true" loading="lazy">
+<h2 class="hasf">La despedida: entierro o incineraci&oacute;n</h2>
 <p>Puedes despedirte de tu beb&eacute; a tu manera, en cualquier momento del embarazo.</p>
 <ul>
 <li><strong>Desde las 26 semanas,</strong> el entierro o la incineraci&oacute;n son obligatorios.</li>
@@ -361,11 +441,11 @@ h1{font-size:32px}h2{font-size:1.55rem}
 </div>
 </section>
 
-<div class="pband" style="background-image:url('/assets/garden-rose.jpg');background-position:center 45%" role="presentation"></div>
+<aside class="qb"><div class="narrow"><p>Sea cual sea la palabra, <em>tu bebé fue real y tu duelo importa.</em></p><img class="qf" src="/assets/pf-leaves-olive.webp" alt="" aria-hidden="true" loading="lazy"></div></aside>
 
 <section class="doc" id="casa">
-<div class="narrow">
-<h2>Al volver a casa</h2>
+<div class="narrow"><img class="sf" src="/assets/pf-hydrangea-blue.webp" alt="" aria-hidden="true" loading="lazy">
+<h2 class="hasf">Al volver a casa</h2>
 <p>Volver a casa sin tu beb&eacute; puede ser uno de los momentos m&aacute;s duros. No hay una forma correcta de vivir el duelo ni un calendario.</p>
 <ul>
 <li><strong>Tu cuerpo</strong> puede reaccionar como tras cualquier parto, incluida la subida de la leche. Pregunta a tu matrona por las opciones antes del alta, y consulta con ella o con tu m&eacute;dico si algo te preocupa.</li>
@@ -494,5 +574,6 @@ h1{font-size:32px}h2{font-size:1.55rem}
 <span>MIMATIS &mdash; siempre gratuito</span>
 <span><a href="mailto:contact@mimatis.org">contact@mimatis.org</a> &middot; <a href="https://www.instagram.com/mimatis.community/" target="_blank" rel="noopener">Instagram</a></span>
 </footer>
+<script id="es-jump-js">(function(){var n=document.querySelector('.jump');if(!n||!('IntersectionObserver' in window))return;var c=n.querySelector('.jc'),L={};n.querySelectorAll('a').forEach(function(a){L[a.getAttribute('href').slice(1)]=a});var o=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var a=L[e.target.id];if(!a)return;n.querySelectorAll('a.on').forEach(function(x){x.classList.remove('on')});a.classList.add('on');c.scrollTo({left:a.offsetLeft-c.clientWidth/2+a.offsetWidth/2,behavior:'smooth'})})},{rootMargin:'-35% 0px -60% 0px'});Object.keys(L).forEach(function(id){var s=document.getElementById(id);if(s)o.observe(s)})})();</script>
 </body>
 </html>

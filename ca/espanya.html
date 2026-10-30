@@ -163,6 +163,84 @@ h1{font-size:32px}h2{font-size:1.55rem}
 /* safety */
 .safety{background:#FFF4D6;border-left:3px solid #E9BC1B;color:#1E1E1E}
 /* /safety */
+
+
+
+
+/* es-design */
+:root{--sky:#E3F5F8}
+html,body{overflow-x:clip}
+[id]{scroll-margin-top:76px}
+h1{font-weight:700;letter-spacing:-.025em;line-height:1.05}
+h1 em{color:var(--green-dark);font-style:italic}
+h2{font-weight:600;letter-spacing:-.015em}
+.hero{background:var(--sky);padding:clamp(48px,7vw,80px) 0 0}
+.hero .hero-grid{align-items:end;gap:2rem;max-width:none;padding-left:max(3rem,calc(50vw - 540px + 3rem));padding-right:0}
+.hero-grid>div:first-child{padding-bottom:clamp(40px,6vw,72px)}
+.hero .eye{color:var(--ink);letter-spacing:.32em}
+.hero .eye::after{content:"";display:block;width:64px;height:2px;background:var(--green);margin-top:1rem}
+.hero h1{font-size:clamp(34px,5vw,58px);margin:1.4rem 0 1.4rem}
+.hero .lead{color:var(--ink)}
+.hero .quick{margin:1.8rem 0 0}
+.hero .qbtn{background:#fff}
+.hero-photo{align-self:end;justify-self:end;width:100%;max-width:520px;border-radius:0;box-shadow:none;overflow:visible}
+.hero-photo img{display:block;width:100%;height:auto;border-radius:0;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 14%);mask-image:linear-gradient(to right,transparent 0,#000 14%)}
+[dir=rtl] .hero .hero-grid{padding-left:0;padding-right:max(3rem,calc(50vw - 540px + 3rem))}
+[dir=rtl] .hero-photo img{transform:scaleX(-1)}
+.alerts{display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding-top:2.5rem;padding-bottom:.5rem}
+.alerts .crisis{margin:0;max-width:none;border-radius:3px}
+.alerts .safety{border-left-color:#E9BC1B}
+[dir=rtl] .alerts .crisis{border-left:0;border-right:3px solid var(--green)}
+[dir=rtl] .alerts .safety{border-right-color:#E9BC1B}
+/* jump bar */
+.jump{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--border);margin-top:2rem}
+.jump .wrap{display:flex;align-items:center;gap:1rem;height:60px}
+.jump .jl{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
+.jump .jc{display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:2px 0}
+.jump .jc::-webkit-scrollbar{display:none}
+.jump a{flex:none;font-size:.8rem;text-decoration:none;color:var(--mid);border:1px solid var(--border);border-radius:99px;padding:.38rem .9rem;background:#fff;transition:background .2s,color .2s,border-color .2s}
+.jump a:hover{border-color:var(--green);color:var(--green-dark)}
+.jump a.on{background:var(--green-dark);border-color:var(--green-dark);color:#fff}
+/* glossary */
+.xtra{padding-top:clamp(56px,7vw,88px)}
+.xtra .quick{display:none}
+.types h2{display:flex;align-items:center;gap:1rem}
+.types h2 .gf{height:56px;width:auto;flex:none}
+.tdef{padding-top:1.1rem}
+/* sections */
+body{counter-reset:sec}
+section{padding:clamp(64px,8vw,104px) 0}
+.doc h2{counter-increment:sec;position:relative}
+.doc h2::before{content:counter(sec,decimal-leading-zero);display:block;font-family:'Montserrat',sans-serif;font-size:.7rem;font-weight:400;letter-spacing:.24em;color:var(--green);margin-bottom:.9rem}
+.doc .narrow{position:relative}
+.doc .sf{position:absolute;top:-.4rem;right:3rem;height:92px;width:auto;max-width:110px;pointer-events:none;transform:rotate(6deg)}
+[dir=rtl] .doc .sf{right:auto;left:3rem;transform:rotate(-6deg)}
+.doc h2.hasf{padding-right:110px}
+[dir=rtl] .doc h2.hasf{padding-right:0;padding-left:110px}
+.tw{border:1px solid var(--border);border-radius:3px}
+th{background:var(--sky)}
+/* quote bands */
+.qb{background:var(--sky);padding:clamp(56px,7vw,88px) 0}
+.qb .narrow{display:flex;align-items:center;gap:2rem}
+.qb p{font-family:'Inter',sans-serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;letter-spacing:-.02em;line-height:1.15;color:var(--ink);margin:0;flex:1}
+.qb p em{display:block;color:var(--green-dark);font-style:italic}
+.qb img{height:120px;width:auto;flex:none}
+@media(max-width:780px){
+ .hero .hero-grid,[dir=rtl] .hero .hero-grid{padding:0;gap:0}
+ .hero-grid>div:first-child{padding:0 16px 28px}
+ .hero-art,.hero-photo{order:0}
+ .hero-photo{max-width:330px}
+ .alerts{grid-template-columns:1fr;padding-top:1.5rem}
+ .jump .jl{display:none}
+ .jump .wrap{height:54px}
+ .types h2 .gf{height:40px}
+ .doc .sf{height:58px;right:16px}
+ [dir=rtl] .doc .sf{left:16px}
+ .doc h2.hasf{padding-right:70px}
+ [dir=rtl] .doc h2.hasf{padding-left:70px}
+ .qb img{height:72px}
+}
+/* /es-design */
 </style>
 <script defer="" src="/consent.js"></script>
 <script type="application/ld+json" id="mimatis-ld">{"@context":"https://schema.org","@graph":[{"@type":"MedicalWebPage","@id":"https://www.mimatis.org/ca/espanya#page","url":"https://www.mimatis.org/ca/espanya","name":"Avortament, mort gestacional i pèrdua d’un nadó a Espanya — Drets i suport | MIMATIS","headline":"Després de la pèrdua d’un nadó a Espanya","description":null,"inLanguage":"ca","isPartOf":{"@id":"https://www.mimatis.org/#website"},"publisher":{"@id":"https://www.mimatis.org/#organization"},"audience":{"@type":"PeopleAudience","audienceType":"Parents after miscarriage, stillbirth or neonatal loss"},"about":[{"@type":"MedicalCondition","name":"Miscarriage"},{"@type":"MedicalCondition","name":"Stillbirth"},{"@type":"MedicalCondition","name":"Neonatal death"}],"spatialCoverage":{"@type":"Country","name":"Spain"},"lastReviewed":"2026-10-27"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inici","item":"https://www.mimatis.org/"},{"@type":"ListItem","position":2,"name":"Trobar ajuda","item":"https://www.mimatis.org/#help"},{"@type":"ListItem","position":3,"name":"Després de la pèrdua d’un nadó a Espanya","item":"https://www.mimatis.org/ca/espanya"}]}]}</script>
@@ -177,16 +255,18 @@ h1{font-size:32px}h2{font-size:1.55rem}
 <div class="wrap hero-grid">
 <div>
 <span class="eye">Trobar ajuda · Espanya</span>
-<h1>Després de la pèrdua d’un nadó a Espanya</h1>
+<h1>Després de la pèrdua d’un nadó a <em>Espanya</em></h1>
 <p class="lead">Informació verificada per a famílies a Espanya després d’un avortament espontani, una mort gestacional o la mort d’un nadó poc després de néixer: els teus drets, el temps amb el teu nadó, el comiat, el registre amb un nom, el permís de la feina i el suport a prop teu. Els termes en castellà apareixen entre parèntesis, tal com els veuràs als formularis.</p>
 <p class="checked">No és assessorament legal ni mèdic. Les normes poden canviar i són diferents segons la comunitat autònoma; confirma qualsevol cosa important amb l’equip de l’hospital, el Registre Civil (<em>Registro Civil</em>) o la Seguretat Social (<em>Seguridad Social</em>).</p>
-<div class="crisis">Si estàs en perill o penses a treure’t la vida, truca al <a href="tel:112">112</a> o al <a href="tel:024">024</a> (gratuït, 24 hores al dia). A Catalunya també pots trucar al <a href="tel:061">061</a>.</div>
-<div class="crisis safety safety-box" role="note">Si estàs embarassada i notes que alguna cosa no va bé, com ara sagnat, dolor, febre o que el teu nadó es mou menys, ves a l’hospital o truca al <a href="tel:112">112</a> de seguida. No esperis. MIMATIS no dona consell mèdic: aquesta pàgina tracta del que passa després d’una pèrdua.</div>
+<div class="quick"><a class="qbtn" href="https://www.mimatis.org/#garden">Planta una flor al jardí del record</a><a class="qbtn" href="https://www.mimatis.org/journal">Llegeix articles i històries</a><a class="qbtn qpro" href="https://www.mimatis.org/#action">Ets un hospital, una empresa o investigues? Col·labora amb nosaltres</a></div><!-- es-quick -->
 </div>
-<div class="hero-photo"><img alt="Papallones clares sobre un cel blau suau" src="/assets/bg-butterflies.jpg"/></div>
+<div class="hero-photo" aria-hidden="true"><img src="/assets/es-hero-butterfly.jpg" alt="" width="720" height="622" fetchpriority="high"></div>
 </div>
 </section>
-<section class="xtra" id="loss-types-wrap"><div class="wrap"><div class="quick"><a class="qbtn" href="https://www.mimatis.org/#garden">Planta una flor al jardí del record</a><a class="qbtn" href="https://www.mimatis.org/journal">Llegeix articles i històries</a><a class="qbtn qpro" href="https://www.mimatis.org/#action">Ets un hospital, una empresa o investigues? Col·labora amb nosaltres</a></div><div class="types" id="loss-types"><h2>Tipus de pèrdua gestacional i perinatal, en paraules senzilles</h2><p class="intro">Els metges i les lleis fan servir moltes paraules diferents. Això és el que volen dir.</p><div class="tgrid"><div class="tdef"><h3>Avortament espontani precoç</h3><p>Quan l’embaràs s’acaba per si sol en les primeres 13 setmanes. És la pèrdua més freqüent i gairebé mai no és per res que hagin fet els pares.</p></div><div class="tdef"><h3>Pèrdua gestacional tardana</h3><p>Quan el nadó mor a l’úter a partir d’unes 14 setmanes, abans de la línia de la mort perinatal. Normalment la mare dona a llum el seu nadó.</p></div><div class="tdef"><h3>Mort fetal: nadó nascut sense vida</h3><p>Quan el nadó mor abans o durant el part, més endavant en l’embaràs. Els metges sovint compten des de les 22 setmanes. A Espanya, la llei fa servir els 180 dies (unes 26 setmanes) per a la inscripció i l’enterrament.</p></div><div class="tdef"><h3>Mort neonatal</h3><p>Quan el nadó neix amb vida i mor en els primers 28 dies, encara que sigui al cap de pocs minuts.</p></div><div class="tdef"><h3>Mort sobtada del lactant</h3><p>La mort sobtada i inexplicable d’un nadó de menys d’un any, gairebé sempre mentre dorm. No és culpa de ningú.</p></div><div class="tdef"><h3>Embaràs ectòpic</h3><p>Quan l’embaràs creix fora de l’úter, gairebé sempre en una trompa. No pot continuar i la mare necessita atenció urgent.</p></div><div class="tdef"><h3>Embaràs molar</h3><p>Un problema poc freqüent de la placenta, pel qual l’embaràs no es pot desenvolupar. La mare necessita controls durant uns mesos.</p></div><div class="tdef"><h3>Embaràs bioquímic</h3><p>Una pèrdua molt precoç, poc després d’una prova d’embaràs positiva, sovint a prop de la regla. També és una pèrdua.</p></div><div class="tdef"><h3>Interrupció per motius mèdics</h3><p>Quan els pares decideixen acabar un embaràs desitjat per un problema greu de salut del nadó o de la mare. També és una pèrdua i mereixes el mateix suport.</p></div></div><p class="fact-note">Sigui quina sigui la paraula, el teu nadó va ser real i el teu dol importa.</p></div></div></section><!-- /xtra -->
+<div class="wrap alerts"><div class="crisis">Si estàs en perill o penses a treure’t la vida, truca al <a href="tel:112">112</a> o al <a href="tel:024">024</a> (gratuït, 24 hores al dia). A Catalunya també pots trucar al <a href="tel:061">061</a>.</div>
+<div class="crisis safety safety-box" role="note">Si estàs embarassada i notes que alguna cosa no va bé, com ara sagnat, dolor, febre o que el teu nadó es mou menys, ves a l’hospital o truca al <a href="tel:112">112</a> de seguida. No esperis. MIMATIS no dona consell mèdic: aquesta pàgina tracta del que passa després d’una pèrdua.</div></div>
+<nav class="jump" aria-label="En aquesta pàgina"><div class="wrap"><span class="jl">En aquesta p&agrave;gina</span><div class="jc"><a href="#situations">El teu cas</a><a href="#hospital">A l&rsquo;hospital</a><a href="#goodbye">Comiat</a><a href="#name">Inscripci&oacute;</a><a href="#work">Feina</a><a href="#home">A casa</a><a href="#catalonia">Comunitats</a><a href="#support">Suport</a></div></div></nav>
+<section class="xtra" id="loss-types-wrap"><div class="wrap"><div class="types" id="loss-types"><h2><img class="gf" src="/assets/pf-daisy-white.webp" alt="" aria-hidden="true" loading="lazy">Tipus de pèrdua gestacional i perinatal, en paraules senzilles</h2><p class="intro">Els metges i les lleis fan servir moltes paraules diferents. Això és el que volen dir.</p><div class="tgrid"><div class="tdef"><h3>Avortament espontani precoç</h3><p>Quan l’embaràs s’acaba per si sol en les primeres 13 setmanes. És la pèrdua més freqüent i gairebé mai no és per res que hagin fet els pares.</p></div><div class="tdef"><h3>Pèrdua gestacional tardana</h3><p>Quan el nadó mor a l’úter a partir d’unes 14 setmanes, abans de la línia de la mort perinatal. Normalment la mare dona a llum el seu nadó.</p></div><div class="tdef"><h3>Mort fetal: nadó nascut sense vida</h3><p>Quan el nadó mor abans o durant el part, més endavant en l’embaràs. Els metges sovint compten des de les 22 setmanes. A Espanya, la llei fa servir els 180 dies (unes 26 setmanes) per a la inscripció i l’enterrament.</p></div><div class="tdef"><h3>Mort neonatal</h3><p>Quan el nadó neix amb vida i mor en els primers 28 dies, encara que sigui al cap de pocs minuts.</p></div><div class="tdef"><h3>Mort sobtada del lactant</h3><p>La mort sobtada i inexplicable d’un nadó de menys d’un any, gairebé sempre mentre dorm. No és culpa de ningú.</p></div><div class="tdef"><h3>Embaràs ectòpic</h3><p>Quan l’embaràs creix fora de l’úter, gairebé sempre en una trompa. No pot continuar i la mare necessita atenció urgent.</p></div><div class="tdef"><h3>Embaràs molar</h3><p>Un problema poc freqüent de la placenta, pel qual l’embaràs no es pot desenvolupar. La mare necessita controls durant uns mesos.</p></div><div class="tdef"><h3>Embaràs bioquímic</h3><p>Una pèrdua molt precoç, poc després d’una prova d’embaràs positiva, sovint a prop de la regla. També és una pèrdua.</p></div><div class="tdef"><h3>Interrupció per motius mèdics</h3><p>Quan els pares decideixen acabar un embaràs desitjat per un problema greu de salut del nadó o de la mare. També és una pèrdua i mereixes el mateix suport.</p></div></div><p class="fact-note">Sigui quina sigui la paraula, el teu nadó va ser real i el teu dol importa.</p></div></div></section><!-- /xtra -->
 
 
 <section class="facts">
@@ -254,10 +334,10 @@ h1{font-size:32px}h2{font-size:1.55rem}
 <p>Si el teu nadó va viure, encara que fos molt poc temps, s’inscriu com a naixement i com a defunció, i apareix al vostre <em>Libro de Familia</em>. Tots dos progenitors tenen dret al permís de naixement complet. L’enterrament o la incineració són obligatoris.</p>
 </div>
 </section>
-<div class="pband" role="presentation" style="background-image:url('/assets/bg-white-flowers.jpg')"></div>
+<aside class="qb"><div class="narrow"><p>El límit de les 26 setmanes és qüestió de paperassa. <em>No diu res del teu amor ni de la mida de la teva pèrdua.</em></p><img class="qf" src="/assets/pf-hydrangea-blue.webp" alt="" aria-hidden="true" loading="lazy"></div></aside>
 <section class="doc" id="hospital">
-<div class="narrow">
-<h2>A l’hospital: temps amb el teu nadó</h2>
+<div class="narrow"><img class="sf" src="/assets/pf-blossom-pink.webp" alt="" aria-hidden="true" loading="lazy">
+<h2 class="hasf">A l’hospital: temps amb el teu nadó</h2>
 <p>La teva salut i la teva seguretat són el primer. Segueix sempre les indicacions de l’equip mèdic i avisa’ls de seguida si et trobes malament. Quan l’equip et digui que és segur, pots demanar temps amb el teu nadó, trucar les persones que vulguis tenir a prop i fer preguntes tantes vegades com calgui.</p>
 <p>A moltes famílies d’Espanya no se’ls explica què poden demanar. Pots demanar:</p>
 <ul>
@@ -291,8 +371,8 @@ h1{font-size:32px}h2{font-size:1.55rem}
 </div>
 </section>
 <section class="doc" id="goodbye">
-<div class="narrow">
-<h2>El comiat: funerals</h2>
+<div class="narrow"><img class="sf" src="/assets/pf-daisy-white.webp" alt="" aria-hidden="true" loading="lazy">
+<h2 class="hasf">El comiat: funerals</h2>
 <p>Pots acomiadar-te del teu nadó a la teva manera, en qualsevol moment de l’embaràs.</p>
 <ul>
 <li><strong>A partir de les 26 setmanes,</strong> l’enterrament o la incineració són obligatoris.</li>
@@ -349,10 +429,10 @@ h1{font-size:32px}h2{font-size:1.55rem}
 <p>Per saber-ne més: <a href="https://www.umamanita.es/derechos-permiso-baja-maternidad-paternidad/" rel="noopener" target="_blank">Umamanita — permisos després de la mort d’un nadó</a> (en castellà).</p>
 </div>
 </section>
-<div class="pband" role="presentation" style="background-image:url('/assets/garden-rose.jpg');background-position:center 45%"></div>
+<aside class="qb"><div class="narrow"><p>Sigui quina sigui la paraula, <em>el teu nadó va ser real i el teu dol importa.</em></p><img class="qf" src="/assets/pf-leaves-olive.webp" alt="" aria-hidden="true" loading="lazy"></div></aside>
 <section class="doc" id="home">
-<div class="narrow">
-<h2>Quan tornes a casa</h2>
+<div class="narrow"><img class="sf" src="/assets/pf-hydrangea-blue.webp" alt="" aria-hidden="true" loading="lazy">
+<h2 class="hasf">Quan tornes a casa</h2>
 <p>Tornar a casa sense el teu nadó pot ser un dels moments més durs. No hi ha una manera correcta de fer el dol ni cap calendari.</p>
 <ul>
 <li><strong>El teu cos</strong> pot reaccionar com després de qualsevol part, inclosa la pujada de la llet. Pregunta a la llevadora quines opcions tens abans de sortir de l’hospital, i contacta amb ella o amb el metge si alguna cosa et preocupa.</li>
@@ -474,5 +554,6 @@ h1{font-size:32px}h2{font-size:1.55rem}
 <span>MIMATIS — sempre gratuït</span>
 <span><a href="mailto:contact@mimatis.org">contact@mimatis.org</a> · <a href="https://www.instagram.com/mimatis.community/" rel="noopener" target="_blank">Instagram</a></span>
 </footer>
+<script id="es-jump-js">(function(){var n=document.querySelector('.jump');if(!n||!('IntersectionObserver' in window))return;var c=n.querySelector('.jc'),L={};n.querySelectorAll('a').forEach(function(a){L[a.getAttribute('href').slice(1)]=a});var o=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var a=L[e.target.id];if(!a)return;n.querySelectorAll('a.on').forEach(function(x){x.classList.remove('on')});a.classList.add('on');c.scrollTo({left:a.offsetLeft-c.clientWidth/2+a.offsetWidth/2,behavior:'smooth'})})},{rootMargin:'-35% 0px -60% 0px'});Object.keys(L).forEach(function(id){var s=document.getElementById(id);if(s)o.observe(s)})})();</script>
 </body>
 </html>

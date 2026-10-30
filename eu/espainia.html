@@ -163,6 +163,84 @@ h1{font-size:32px}h2{font-size:1.55rem}
 /* safety */
 .safety{background:#FFF4D6;border-left:3px solid #E9BC1B;color:#1E1E1E}
 /* /safety */
+
+
+
+
+/* es-design */
+:root{--sky:#E3F5F8}
+html,body{overflow-x:clip}
+[id]{scroll-margin-top:76px}
+h1{font-weight:700;letter-spacing:-.025em;line-height:1.05}
+h1 em{color:var(--green-dark);font-style:italic}
+h2{font-weight:600;letter-spacing:-.015em}
+.hero{background:var(--sky);padding:clamp(48px,7vw,80px) 0 0}
+.hero .hero-grid{align-items:end;gap:2rem;max-width:none;padding-left:max(3rem,calc(50vw - 540px + 3rem));padding-right:0}
+.hero-grid>div:first-child{padding-bottom:clamp(40px,6vw,72px)}
+.hero .eye{color:var(--ink);letter-spacing:.32em}
+.hero .eye::after{content:"";display:block;width:64px;height:2px;background:var(--green);margin-top:1rem}
+.hero h1{font-size:clamp(34px,5vw,58px);margin:1.4rem 0 1.4rem}
+.hero .lead{color:var(--ink)}
+.hero .quick{margin:1.8rem 0 0}
+.hero .qbtn{background:#fff}
+.hero-photo{align-self:end;justify-self:end;width:100%;max-width:520px;border-radius:0;box-shadow:none;overflow:visible}
+.hero-photo img{display:block;width:100%;height:auto;border-radius:0;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 14%);mask-image:linear-gradient(to right,transparent 0,#000 14%)}
+[dir=rtl] .hero .hero-grid{padding-left:0;padding-right:max(3rem,calc(50vw - 540px + 3rem))}
+[dir=rtl] .hero-photo img{transform:scaleX(-1)}
+.alerts{display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding-top:2.5rem;padding-bottom:.5rem}
+.alerts .crisis{margin:0;max-width:none;border-radius:3px}
+.alerts .safety{border-left-color:#E9BC1B}
+[dir=rtl] .alerts .crisis{border-left:0;border-right:3px solid var(--green)}
+[dir=rtl] .alerts .safety{border-right-color:#E9BC1B}
+/* jump bar */
+.jump{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--border);margin-top:2rem}
+.jump .wrap{display:flex;align-items:center;gap:1rem;height:60px}
+.jump .jl{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--soft);white-space:nowrap}
+.jump .jc{display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:2px 0}
+.jump .jc::-webkit-scrollbar{display:none}
+.jump a{flex:none;font-size:.8rem;text-decoration:none;color:var(--mid);border:1px solid var(--border);border-radius:99px;padding:.38rem .9rem;background:#fff;transition:background .2s,color .2s,border-color .2s}
+.jump a:hover{border-color:var(--green);color:var(--green-dark)}
+.jump a.on{background:var(--green-dark);border-color:var(--green-dark);color:#fff}
+/* glossary */
+.xtra{padding-top:clamp(56px,7vw,88px)}
+.xtra .quick{display:none}
+.types h2{display:flex;align-items:center;gap:1rem}
+.types h2 .gf{height:56px;width:auto;flex:none}
+.tdef{padding-top:1.1rem}
+/* sections */
+body{counter-reset:sec}
+section{padding:clamp(64px,8vw,104px) 0}
+.doc h2{counter-increment:sec;position:relative}
+.doc h2::before{content:counter(sec,decimal-leading-zero);display:block;font-family:'Montserrat',sans-serif;font-size:.7rem;font-weight:400;letter-spacing:.24em;color:var(--green);margin-bottom:.9rem}
+.doc .narrow{position:relative}
+.doc .sf{position:absolute;top:-.4rem;right:3rem;height:92px;width:auto;max-width:110px;pointer-events:none;transform:rotate(6deg)}
+[dir=rtl] .doc .sf{right:auto;left:3rem;transform:rotate(-6deg)}
+.doc h2.hasf{padding-right:110px}
+[dir=rtl] .doc h2.hasf{padding-right:0;padding-left:110px}
+.tw{border:1px solid var(--border);border-radius:3px}
+th{background:var(--sky)}
+/* quote bands */
+.qb{background:var(--sky);padding:clamp(56px,7vw,88px) 0}
+.qb .narrow{display:flex;align-items:center;gap:2rem}
+.qb p{font-family:'Inter',sans-serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;letter-spacing:-.02em;line-height:1.15;color:var(--ink);margin:0;flex:1}
+.qb p em{display:block;color:var(--green-dark);font-style:italic}
+.qb img{height:120px;width:auto;flex:none}
+@media(max-width:780px){
+ .hero .hero-grid,[dir=rtl] .hero .hero-grid{padding:0;gap:0}
+ .hero-grid>div:first-child{padding:0 16px 28px}
+ .hero-art,.hero-photo{order:0}
+ .hero-photo{max-width:330px}
+ .alerts{grid-template-columns:1fr;padding-top:1.5rem}
+ .jump .jl{display:none}
+ .jump .wrap{height:54px}
+ .types h2 .gf{height:40px}
+ .doc .sf{height:58px;right:16px}
+ [dir=rtl] .doc .sf{left:16px}
+ .doc h2.hasf{padding-right:70px}
+ [dir=rtl] .doc h2.hasf{padding-left:70px}
+ .qb img{height:72px}
+}
+/* /es-design */
 </style>
 <script defer="" src="/consent.js"></script>
 <script type="application/ld+json" id="mimatis-ld">{"@context":"https://schema.org","@graph":[{"@type":"MedicalWebPage","@id":"https://www.mimatis.org/eu/espainia#page","url":"https://www.mimatis.org/eu/espainia","name":"Abortu espontaneoa, heriotza perinatala eta haur baten galera Espainian — Eskubideak eta laguntza | MIMATIS","headline":"Haur baten galeraren ondoren Espainian","description":null,"inLanguage":"eu","isPartOf":{"@id":"https://www.mimatis.org/#website"},"publisher":{"@id":"https://www.mimatis.org/#organization"},"audience":{"@type":"PeopleAudience","audienceType":"Parents after miscarriage, stillbirth or neonatal loss"},"about":[{"@type":"MedicalCondition","name":"Miscarriage"},{"@type":"MedicalCondition","name":"Stillbirth"},{"@type":"MedicalCondition","name":"Neonatal death"}],"spatialCoverage":{"@type":"Country","name":"Spain"},"lastReviewed":"2026-10-27"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hasiera","item":"https://www.mimatis.org/"},{"@type":"ListItem","position":2,"name":"Laguntza bilatu","item":"https://www.mimatis.org/#help"},{"@type":"ListItem","position":3,"name":"Haur baten galeraren ondoren Espainian","item":"https://www.mimatis.org/eu/espainia"}]}]}</script>
@@ -177,16 +255,18 @@ h1{font-size:32px}h2{font-size:1.55rem}
 <div class="wrap hero-grid">
 <div>
 <span class="eye">Laguntza bilatu · Espainia</span>
-<h1>Haur baten galeraren ondoren Espainian</h1>
+<h1>Haur baten galeraren ondoren <em>Espainian</em></h1>
 <p class="lead">Informazio egiaztatua Espainian bizi diren familientzat, abortu espontaneo, heriotza perinatal edo jaio eta gutxira hildako haur baten ondoren: zure eskubideak, zure haurrarekin denbora, agurra, izenarekin erregistratzea, laneko baimena eta zure inguruko laguntza. Gaztelaniazko terminoak parentesi artean daude, inprimakietan ikusiko dituzun bezala.</p>
 <p class="checked">Ez da aholku juridiko edo medikoa. Arauak alda daitezke eta erkidegoen artean desberdinak dira; egiaztatu gauza garrantzitsuak ospitaleko taldearekin, Erregistro Zibilarekin (<em>Registro Civil</em>) edo Gizarte Segurantzarekin (<em>Seguridad Social</em>).</p>
-<div class="crisis">Arriskuan bazaude edo zure buruaz beste egitea pentsatzen ari bazara, deitu <a href="tel:112">112</a> edo <a href="tel:024">024</a> zenbakira (doan, eguneko 24 orduetan). Katalunian <a href="tel:061">061</a> zenbakira ere dei dezakezu.</div>
-<div class="crisis safety safety-box" role="note">Haurdun bazaude eta zerbait ondo ez doala sumatzen baduzu, hala nola odoljarioa, mina, sukarra edo zure haurra gutxiago mugitzen dela, joan ospitalera edo deitu <a href="tel:112">112</a>ra berehala. Ez itxaron. MIMATISek ez du aholku medikorik ematen: orri hau galera baten ondoren gertatzen denari buruzkoa da.</div>
+<div class="quick"><a class="qbtn" href="https://www.mimatis.org/#garden">Landatu lore bat oroimenaren lorategian</a><a class="qbtn" href="https://www.mimatis.org/journal">Irakurri artikuluak eta istorioak</a><a class="qbtn qpro" href="https://www.mimatis.org/#action">Ospitale, enpresa edo ikertzaile zara? Lan egin gurekin</a></div><!-- es-quick -->
 </div>
-<div class="hero-photo"><img alt="Tximeleta argiak zeru urdin leun baten aurrean" src="/assets/bg-butterflies.jpg"/></div>
+<div class="hero-photo" aria-hidden="true"><img src="/assets/es-hero-butterfly.jpg" alt="" width="720" height="622" fetchpriority="high"></div>
 </div>
 </section>
-<section class="xtra" id="loss-types-wrap"><div class="wrap"><div class="quick"><a class="qbtn" href="https://www.mimatis.org/#garden">Landatu lore bat oroimenaren lorategian</a><a class="qbtn" href="https://www.mimatis.org/journal">Irakurri artikuluak eta istorioak</a><a class="qbtn qpro" href="https://www.mimatis.org/#action">Ospitale, enpresa edo ikertzaile zara? Lan egin gurekin</a></div><div class="types" id="loss-types"><h2>Haurdunaldiko eta jaiotza inguruko galera motak, hitz errazetan</h2><p class="intro">Medikuek eta legeek hitz asko erabiltzen dituzte. Hau da horien esanahia.</p><div class="tgrid"><div class="tdef"><h3>Abortu espontaneo goiztiarra</h3><p>Haurdunaldia bere kabuz amaitzen denean lehen 13 asteetan. Galerarik ohikoena da, eta ia inoiz ez da gurasoek egindako zerbaitengatik.</p></div><div class="tdef"><h3>Haurdunaldiko galera berantiarra</h3><p>Haurra sabelean hiltzen denean, 14 aste inguru igaro ondoren eta jaiotza inguruko heriotzaren mugaren aurretik. Normalean amak bere haurra erditzen du.</p></div><div class="tdef"><h3>Fetu-heriotza: bizirik gabe jaiotako haurra</h3><p>Haurra erditu aurretik edo erditzean hiltzen denean, haurdunaldia aurreratuta dagoela. Medikuek askotan 22. astetik aurrera zenbatzen dute. Espainian, legeak 180 egun (26 aste inguru) erabiltzen ditu inskripziorako eta ehorzketarako.</p></div><div class="tdef"><h3>Jaioberriaren heriotza</h3><p>Haurra bizirik jaio eta bizitzako lehen 28 egunetan hiltzen denean, nahiz eta minutu gutxira izan.</p></div><div class="tdef"><h3>Bularreko haurraren bat-bateko heriotza</h3><p>Urtebete baino gutxiagoko haur baten bat-bateko heriotza, azalpenik gabea, ia beti lo dagoela. Ez da inoren errua.</p></div><div class="tdef"><h3>Haurdunaldi ektopikoa</h3><p>Haurdunaldia umetokitik kanpo hazten denean, gehienetan tronpa batean. Ezin du aurrera egin, eta amak berehalako arreta behar du.</p></div><div class="tdef"><h3>Haurdunaldi molarra</h3><p>Plazentaren arazo arraro bat, eta horregatik haurdunaldia ezin da garatu. Amak hilabete batzuetan kontrolak behar ditu.</p></div><div class="tdef"><h3>Haurdunaldi biokimikoa</h3><p>Oso galera goiztiarra, haurdunaldi-proba positiboaren ondoren gutxira, askotan hilekoaren garaian. Galera bat da hala ere.</p></div><div class="tdef"><h3>Arrazoi medikoengatiko etena</h3><p>Gurasoek nahi zuten haurdunaldi bat amaitzea erabakitzen dutenean, haurraren edo amaren osasun-arazo larri batengatik. Galera bat ere bada, eta laguntza bera merezi duzu.</p></div></div><p class="fact-note">Hitza edozein dela ere, zure haurra benetakoa izan zen eta zure dolua garrantzitsua da.</p></div></div></section><!-- /xtra -->
+<div class="wrap alerts"><div class="crisis">Arriskuan bazaude edo zure buruaz beste egitea pentsatzen ari bazara, deitu <a href="tel:112">112</a> edo <a href="tel:024">024</a> zenbakira (doan, eguneko 24 orduetan). Katalunian <a href="tel:061">061</a> zenbakira ere dei dezakezu.</div>
+<div class="crisis safety safety-box" role="note">Haurdun bazaude eta zerbait ondo ez doala sumatzen baduzu, hala nola odoljarioa, mina, sukarra edo zure haurra gutxiago mugitzen dela, joan ospitalera edo deitu <a href="tel:112">112</a>ra berehala. Ez itxaron. MIMATISek ez du aholku medikorik ematen: orri hau galera baten ondoren gertatzen denari buruzkoa da.</div></div>
+<nav class="jump" aria-label="Orri honetan"><div class="wrap"><span class="jl">Orri honetan</span><div class="jc"><a href="#situations">Zure kasua</a><a href="#hospital">Ospitalean</a><a href="#goodbye">Agurra</a><a href="#name">Inskripzioa</a><a href="#work">Lana</a><a href="#home">Etxean</a><a href="#catalonia">Erkidegoak</a><a href="#support">Laguntza</a></div></div></nav>
+<section class="xtra" id="loss-types-wrap"><div class="wrap"><div class="types" id="loss-types"><h2><img class="gf" src="/assets/pf-daisy-white.webp" alt="" aria-hidden="true" loading="lazy">Haurdunaldiko eta jaiotza inguruko galera motak, hitz errazetan</h2><p class="intro">Medikuek eta legeek hitz asko erabiltzen dituzte. Hau da horien esanahia.</p><div class="tgrid"><div class="tdef"><h3>Abortu espontaneo goiztiarra</h3><p>Haurdunaldia bere kabuz amaitzen denean lehen 13 asteetan. Galerarik ohikoena da, eta ia inoiz ez da gurasoek egindako zerbaitengatik.</p></div><div class="tdef"><h3>Haurdunaldiko galera berantiarra</h3><p>Haurra sabelean hiltzen denean, 14 aste inguru igaro ondoren eta jaiotza inguruko heriotzaren mugaren aurretik. Normalean amak bere haurra erditzen du.</p></div><div class="tdef"><h3>Fetu-heriotza: bizirik gabe jaiotako haurra</h3><p>Haurra erditu aurretik edo erditzean hiltzen denean, haurdunaldia aurreratuta dagoela. Medikuek askotan 22. astetik aurrera zenbatzen dute. Espainian, legeak 180 egun (26 aste inguru) erabiltzen ditu inskripziorako eta ehorzketarako.</p></div><div class="tdef"><h3>Jaioberriaren heriotza</h3><p>Haurra bizirik jaio eta bizitzako lehen 28 egunetan hiltzen denean, nahiz eta minutu gutxira izan.</p></div><div class="tdef"><h3>Bularreko haurraren bat-bateko heriotza</h3><p>Urtebete baino gutxiagoko haur baten bat-bateko heriotza, azalpenik gabea, ia beti lo dagoela. Ez da inoren errua.</p></div><div class="tdef"><h3>Haurdunaldi ektopikoa</h3><p>Haurdunaldia umetokitik kanpo hazten denean, gehienetan tronpa batean. Ezin du aurrera egin, eta amak berehalako arreta behar du.</p></div><div class="tdef"><h3>Haurdunaldi molarra</h3><p>Plazentaren arazo arraro bat, eta horregatik haurdunaldia ezin da garatu. Amak hilabete batzuetan kontrolak behar ditu.</p></div><div class="tdef"><h3>Haurdunaldi biokimikoa</h3><p>Oso galera goiztiarra, haurdunaldi-proba positiboaren ondoren gutxira, askotan hilekoaren garaian. Galera bat da hala ere.</p></div><div class="tdef"><h3>Arrazoi medikoengatiko etena</h3><p>Gurasoek nahi zuten haurdunaldi bat amaitzea erabakitzen dutenean, haurraren edo amaren osasun-arazo larri batengatik. Galera bat ere bada, eta laguntza bera merezi duzu.</p></div></div><p class="fact-note">Hitza edozein dela ere, zure haurra benetakoa izan zen eta zure dolua garrantzitsua da.</p></div></div></section><!-- /xtra -->
 
 
 <section class="facts">
@@ -254,10 +334,10 @@ h1{font-size:32px}h2{font-size:1.55rem}
 <p>Zure haurra bizi izan bazen, oso denbora gutxian bada ere, jaiotza eta heriotza gisa erregistratzen da, eta zuen <em>Libro de Familia</em> liburuan agertzen da. Bi gurasoek jaiotza-baimen osorako eskubidea dute. Ehorzketa edo errausketa nahitaezkoa da.</p>
 </div>
 </section>
-<div class="pband" role="presentation" style="background-image:url('/assets/bg-white-flowers.jpg')"></div>
+<aside class="qb"><div class="narrow"><p>26 asteko muga paperen kontua da. <em>Ez du ezer esaten zure maitasunaz edo zure galeraren tamainaz.</em></p><img class="qf" src="/assets/pf-hydrangea-blue.webp" alt="" aria-hidden="true" loading="lazy"></div></aside>
 <section class="doc" id="hospital">
-<div class="narrow">
-<h2>Ospitalean: denbora zure haurrarekin</h2>
+<div class="narrow"><img class="sf" src="/assets/pf-blossom-pink.webp" alt="" aria-hidden="true" loading="lazy">
+<h2 class="hasf">Ospitalean: denbora zure haurrarekin</h2>
 <p>Zure osasuna eta segurtasuna dira lehenengoak. Jarraitu beti talde medikoaren argibideei, eta esan berehala gaizki sentitzen bazara. Taldeak segurua dela esaten dizunean, denbora eska dezakezu zure haurrarekin egoteko, ondoan nahi dituzun pertsonei deitu eta behar adina aldiz galdetu.</p>
 <p>Espainiako familia askori ez zaie esaten zer eska dezaketen. Hau eska dezakezu:</p>
 <ul>
@@ -291,8 +371,8 @@ h1{font-size:32px}h2{font-size:1.55rem}
 </div>
 </section>
 <section class="doc" id="goodbye">
-<div class="narrow">
-<h2>Agurra: hiletak</h2>
+<div class="narrow"><img class="sf" src="/assets/pf-daisy-white.webp" alt="" aria-hidden="true" loading="lazy">
+<h2 class="hasf">Agurra: hiletak</h2>
 <p>Zure haurrari zure erara agur egin diezaiokezu, haurdunaldiaren edozein unetan.</p>
 <ul>
 <li><strong>26. astetik aurrera,</strong> ehorzketa edo errausketa nahitaezkoa da.</li>
@@ -349,10 +429,10 @@ h1{font-size:32px}h2{font-size:1.55rem}
 <p>Gehiago jakiteko: <a href="https://www.umamanita.es/derechos-permiso-baja-maternidad-paternidad/" rel="noopener" target="_blank">Umamanita — baimenak haur baten heriotzaren ondoren</a> (gaztelaniaz).</p>
 </div>
 </section>
-<div class="pband" role="presentation" style="background-image:url('/assets/garden-rose.jpg');background-position:center 45%"></div>
+<aside class="qb"><div class="narrow"><p>Hitza edozein dela ere, <em>zure haurra benetakoa izan zen eta zure dolua garrantzitsua da.</em></p><img class="qf" src="/assets/pf-leaves-olive.webp" alt="" aria-hidden="true" loading="lazy"></div></aside>
 <section class="doc" id="home">
-<div class="narrow">
-<h2>Etxera itzultzean</h2>
+<div class="narrow"><img class="sf" src="/assets/pf-hydrangea-blue.webp" alt="" aria-hidden="true" loading="lazy">
+<h2 class="hasf">Etxera itzultzean</h2>
 <p>Zure haurrik gabe etxera itzultzea une gogorrenetako bat izan daiteke. Ez dago dolua bizitzeko modu zuzenik, ezta egutegirik ere.</p>
 <ul>
 <li><strong>Zure gorputzak</strong> edozein erditzeren ondoren bezala erreakziona dezake, esnea igotzea barne. Galdetu emaginari zure aukerez ospitaletik irten aurretik, eta jarri harremanetan berarekin edo medikuarekin zerbaitek kezkatzen bazaitu.</li>
@@ -474,5 +554,6 @@ h1{font-size:32px}h2{font-size:1.55rem}
 <span>MIMATIS — beti doan</span>
 <span><a href="mailto:contact@mimatis.org">contact@mimatis.org</a> · <a href="https://www.instagram.com/mimatis.community/" rel="noopener" target="_blank">Instagram</a></span>
 </footer>
+<script id="es-jump-js">(function(){var n=document.querySelector('.jump');if(!n||!('IntersectionObserver' in window))return;var c=n.querySelector('.jc'),L={};n.querySelectorAll('a').forEach(function(a){L[a.getAttribute('href').slice(1)]=a});var o=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var a=L[e.target.id];if(!a)return;n.querySelectorAll('a.on').forEach(function(x){x.classList.remove('on')});a.classList.add('on');c.scrollTo({left:a.offsetLeft-c.clientWidth/2+a.offsetWidth/2,behavior:'smooth'})})},{rootMargin:'-35% 0px -60% 0px'});Object.keys(L).forEach(function(id){var s=document.getElementById(id);if(s)o.observe(s)})})();</script>
 </body>
 </html>
