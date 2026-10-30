@@ -163,69 +163,69 @@ a{color:var(--green)}
 .more{max-width:860px;margin:2.5rem auto 0;padding:0 clamp(16px,5vw,3rem)}
 .more h2{font-family:'Inter',sans-serif;font-weight:400;font-size:1.15rem;margin-bottom:1rem}
 
+
+
+/* art-design */
+:root{--sky:#E3F5F8}
+.readbar{position:sticky;top:0;z-index:30;height:3px;background:transparent}
+.readbar span{display:block;height:100%;width:0;background:var(--green);transition:width .1s linear}
+.ah-band .crumb{grid-column:1/-1;max-width:none;margin:0 0 .4rem;padding:0;line-height:1.6}
+.ah-band{background:var(--sky)}
+.ah-in{max-width:980px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:2rem;align-items:center;padding:clamp(48px,7vw,88px) clamp(16px,5vw,3rem)}
+.ah-band .article-hero{max-width:none;margin:0;padding:0}
+.article-pillar{padding:0;margin-bottom:1.2rem;color:var(--ink);letter-spacing:.3em;font-size:.68rem}
+.article-pillar::after{content:"";display:block;width:56px;height:2px;background:var(--green);margin-top:.9rem}
+.article-title{font-weight:700;letter-spacing:-.025em;line-height:1.08;font-size:clamp(2rem,4.6vw,3.2rem);margin-bottom:1.2rem}
+.article-subtitle{color:var(--ink);font-size:1.05rem;max-width:620px}
+.article-meta{border-top:1px solid rgba(0,112,138,.18);color:var(--mid)}
+.article-meta .rt{color:var(--green-dark);font-weight:500}
+.ah-flower{width:100%;height:auto;max-height:230px;object-fit:contain;transform:rotate(-8deg)}
+
+.article-body{padding-top:clamp(48px,6vw,72px)}
+.article-body>p:first-of-type{font-size:1.15rem!important;color:var(--ink)}
+.article-body>p:first-of-type::first-letter{color:var(--green-dark);font-weight:600}
+.article-body h2{font-weight:600;font-size:1.45rem;margin:3rem 0 1rem}
+.pull-quote{background:var(--sky);border:0;border-left:3px solid var(--green);border-radius:3px;padding:1.8rem 2rem;margin:2.8rem 0;text-align:left}
+.pull-quote p{font-size:1.25rem!important;font-weight:600;font-style:normal;color:var(--ink);max-width:none;margin:0!important;line-height:1.5!important}
+.pull-quote p::first-letter{font-size:inherit!important;float:none!important;margin:0!important;color:inherit!important;font-weight:inherit!important;line-height:inherit!important;font-family:inherit!important}
+.article-source{background:#fff;border:1px solid var(--border);border-top:3px solid var(--green);border-left-width:1px;border-radius:3px}
+.article-source .source-text{color:var(--mid)}
+.more .card{border-top:3px solid var(--green)}
+.more .cards{gap:1rem;background:none;border:0}
+.more .card{border-left:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border);border-radius:3px}
+@media(max-width:760px){
+ .ah-in{grid-template-columns:1fr;gap:0;padding-top:40px}
+ .ah-flower{display:none}
+}
+/* /art-design */
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mimatis.org/"}, {"@type": "ListItem", "position": 2, "name": "Journal", "item": "https://www.mimatis.org/journal"}, {"@type": "ListItem", "position": 3, "name": "Memory boxes — what to put in them, and why they help", "item": "https://www.mimatis.org/journal/memory-boxes"}]}, {"@type": "Article", "headline": "Memory boxes — what to put in them, and why they help", "description": "A memory box is not about preserving grief. It is about acknowledging that your baby existed and that their existence mattered.", "mainEntityOfPage": "https://www.mimatis.org/journal/memory-boxes", "author": {"@type": "NGO", "@id": "https://www.mimatis.org/#organization", "name": "MIMATIS", "url": "https://www.mimatis.org"}, "publisher": {"@type": "NGO", "@id": "https://www.mimatis.org/#organization", "name": "MIMATIS", "url": "https://www.mimatis.org"}, "articleSection": "Healing Through Art", "inLanguage": "en", "image": "https://www.mimatis.org/assets/journal-memorial-tree.jpg"}]}</script>
 <script src="/consent.js" defer></script>
 </head>
 <body>
 <header class="sn"><a class="wm" href="/">MIMATIS</a><nav aria-label="Main"><a href="/#help">Find help</a><a href="/guidance">Guidance</a><a href="/journal" aria-current="page">Journal</a><a href="/research">Research</a><a href="/about">Who we are</a></nav></header>
-<div class="crumb"><a href="/">Home</a> &rsaquo; <a href="/journal">Journal</a> &rsaquo; Memory boxes — what to put in them, and why they help</div>
+<div class="readbar" aria-hidden="true"><span></span></div>
 <main>
-<div class="article-page"><div class="article-hero">
+<div class="article-page"><section class="ah-band"><div class="ah-in"><div class="crumb"><a href="/">Home</a> &rsaquo; <a href="/journal">Journal</a> &rsaquo; Memory boxes — what to put in them, and why they help</div><div class="article-hero">
 <span class="article-pillar">Healing Through Art</span>
 <h1 class="article-title">Memory boxes — what to put<br/>in them, and <em>why they help</em></h1>
 <p class="article-subtitle">A memory box is not about preserving grief. It is about acknowledging that your baby existed and that their existence mattered.</p>
 <div class="article-meta">
+<span class="rt">3 min read</span><span class="meta-dot"></span>
 <span>Healing Through Art</span>
 <span class="meta-dot"></span>
 <span>Remembrance</span>
 <span class="meta-dot"></span>
 <span>MIMATIS Journal</span>
 </div>
-</div>
-<div class="illustration-wrap">
-<svg style="width:100%;display:block" viewbox="0 0 820 320" xmlns="http://www.w3.org/2000/svg">
-<rect fill="#F1EFE8" height="320" width="820"></rect>
-<!-- Main box open -->
-<rect fill="#fff" height="120" rx="4" stroke="#E0DDD5" stroke-width="1.5" width="260" x="280" y="160"></rect>
-<!-- Box lid open -->
-<path d="M280 160 Q410 100 540 160" fill="none" stroke="#E0DDD5" stroke-width="1.5"></path>
-<path d="M280 160 Q410 110 540 160" fill="#fff" stroke="#E0DDD5" stroke-width="1"></path>
-<!-- Inside box items -->
-<!-- Small photo -->
-<rect fill="#E0F4F8" height="36" opacity=".7" rx="2" stroke="#0097B2" stroke-width=".8" width="45" x="305" y="185"></rect>
-<rect fill="#0097B2" height="24" opacity=".15" rx="1" width="37" x="309" y="189"></rect>
-<!-- Pressed flower -->
-<ellipse cx="390" cy="210" fill="#0097B2" opacity=".2" rx="12" ry="8" transform="rotate(-15 390 210)"></ellipse>
-<ellipse cx="385" cy="205" fill="#0097B2" opacity=".15" rx="9" ry="6" transform="rotate(25 385 205)"></ellipse>
-<ellipse cx="396" cy="207" fill="#0097B2" opacity=".18" rx="8" ry="5" transform="rotate(-40 396 207)"></ellipse>
-<line opacity=".4" stroke="#3B6D11" stroke-width=".8" x1="390" x2="390" y1="218" y2="235"></line>
-<!-- Footprint -->
-<ellipse cx="450" cy="198" fill="#E0DDD5" opacity=".8" rx="10" ry="14"></ellipse>
-<ellipse cx="444" cy="187" fill="#E0DDD5" opacity=".6" rx="4" ry="3"></ellipse>
-<ellipse cx="452" cy="185" fill="#E0DDD5" opacity=".6" rx="4" ry="3"></ellipse>
-<ellipse cx="459" cy="187" fill="#E0DDD5" opacity=".6" rx="3.5" ry="3"></ellipse>
-<ellipse cx="464" cy="191" fill="#E0DDD5" opacity=".6" rx="3" ry="2.5"></ellipse>
-<!-- Lock/clasp -->
-<rect fill="#E0DDD5" height="4" rx="2" width="20" x="400" y="275"></rect>
-<!-- Small lock -->
-<rect fill="#E0DDD5" height="5" rx="1" width="6" x="407" y="270"></rect>
-<!-- Flowers scattered -->
-<circle cx="160" cy="140" fill="none" opacity=".2" r="18" stroke="#0097B2" stroke-width=".8"></circle>
-<circle cx="160" cy="140" fill="#0097B2" opacity=".12" r="8"></circle>
-<circle cx="178" cy="130" fill="none" opacity=".15" r="10" stroke="#0097B2" stroke-width=".8"></circle>
-<circle cx="660" cy="150" fill="none" opacity=".2" r="15" stroke="#0097B2" stroke-width=".8"></circle>
-<circle cx="660" cy="150" fill="#0097B2" opacity=".1" r="6"></circle>
-<!-- Label -->
-<text fill="#5C5C58" font-family="Montserrat,sans-serif" font-size="10" letter-spacing="2" text-anchor="middle" x="410" y="300">MEMORY  ·  REMEMBRANCE  ·  CONNECTION</text>
-</svg>
-</div>
+</div><img class="ah-flower" src="/assets/pf-rose-yellow.webp" alt="" aria-hidden="true"></div></section>
+
 <div class="article-body">
 <p>When a baby dies, there is very little that can be held. The pregnancy was real. The baby was real. But in the days after a loss, there is so often an absence of tangible things — a room that was being prepared but was never used, a name that was chosen but rarely spoken aloud.</p>
 <p>A memory box changes that. It gives grief something to hold.</p>
 <h2>What a memory box <em>actually is</em></h2>
 <p>A memory box is a container — usually a small wooden or cardboard box — in which parents keep objects connected to their baby. It might be given to them by a hospital bereavement team. It might be something they put together themselves. The contents vary entirely, because the point is not the objects themselves but what they represent: acknowledgement that this baby was here, that they mattered, and that their parents remember them.</p>
-<p>Many hospitals in the UK, Netherlands, Ireland, and Australia now provide memory boxes as a standard part of bereavement care. Organisations like Sands UK, NILMDTS (Now I Lay Me Down to Sleep), and Steunpunt NOVA in the Netherlands provide boxes, professional photography, and support to help families create these keepsakes. But a memory box does not need to come from anywhere official. It can be assembled quietly, over time, by parents who are finding their way through.</p>
+<p>Many hospitals now offer memory boxes as part of bereavement care. In the UK, Sands provides memory boxes to many maternity units, and in the United States Now I Lay Me Down to Sleep (NILMDTS) offers free remembrance photography. But a memory box does not need to come from anywhere official. It can be assembled quietly, over time, by parents who are finding their way through.</p>
 <div class="pull-quote">
 <p>A memory box is not about preserving grief. It is about acknowledging that your baby existed — and that their existence mattered.</p>
 </div>
@@ -240,14 +240,14 @@ a{color:var(--green)}
 <div class="item-card"><span class="item-num">06</span><span class="item-name">Letters or cards</span><span class="item-desc">Letters written to the baby, cards from family and friends, anything that records the love that surrounded them — before and after their birth.</span></div>
 </div>
 <h2>Why memory boxes help — <em>what the research shows</em></h2>
-<p>Research in perinatal bereavement consistently shows that tangible connection to a baby who has died supports long-term grief outcomes. A 2021 review published in BMC Pregnancy and Childbirth found that parents who received structured bereavement support — including the opportunity to see, hold, and create keepsakes for their baby — reported better long-term psychological wellbeing compared to those who did not.</p>
+<p>Studies of parents after stillbirth find that many value the time they spent with their baby and the keepsakes they took home, and that few regret seeing and holding their baby. The evidence is not the same for every family, which is why these choices should always be offered and never pressed.</p>
 <p>The evidence suggests that the act of acknowledgement — the hospital offering a memory box, a midwife asking if the parent would like photographs, a family member sitting with them as they carefully place objects inside — communicates something that words cannot always reach: your baby was real, your loss is real, and you are not grieving alone.</p>
 <h2>When you cannot make one straight away</h2>
 <p>Not every parent is ready to think about a memory box in the first days. Some find that the hospital provided one before they were able to receive it properly. Some find that they created one instinctively without knowing that was what it was called.</p>
 <p>There is no correct time. A memory box can be started the day after a loss or a year later. Objects can be added over time — a pressed flower from the garden on an anniversary, a letter written on what would have been a birthday. A memory box is not a finished object. It is a living one.</p>
 <div class="article-source">
 <span class="source-label">Sources and further reading</span>
-<p class="source-text">Research on contact with the baby and keepsakes after stillbirth is explained on our <a href="/research">Research page</a>. Information on professional bereavement photography is available through NILMDTS (nilmdts.org) and Tommy's (tommys.org). Memory boxes and bereavement support are listed by country in the MIMATIS Find Help directory at mimatis.org.</p>
+<p class="source-text">Research on contact with the baby and keepsakes after stillbirth is explained on our <a href="/research">Research page</a>. Information on professional bereavement photography is available through NILMDTS (nowilaymedowntosleep.org) and Tommy's (tommys.org). Memory boxes and bereavement support are listed by country in the MIMATIS Find Help directory at mimatis.org.</p>
 </div>
 </div>
 </div>
@@ -259,5 +259,6 @@ a{color:var(--green)}
 <div>Asociaci&oacute;n MIMATIS &middot; Registered non-profit association in Spain, no. 633.864 &middot; Avinguda Catalunya 39, 17520 Puigcerd&agrave; (Girona), Spain &middot; <a href="mailto:contact@mimatis.org">contact@mimatis.org</a> &middot; <a href="/#privacy">Privacy</a> &middot; <a href="/#legal">Legal notice</a></div>
 <div>MIMATIS does not provide medical advice. If you are in crisis, please contact your local emergency number or a helpline in <a href="/#help">your country</a>.</div>
 </div></footer>
+<script id="art-read-js">(function(){var b=document.querySelector('.readbar span');if(!b)return;function u(){var d=document.documentElement,h=d.scrollHeight-d.clientHeight;b.style.width=(h>0?Math.min(100,d.scrollTop/h*100):0)+'%'}addEventListener('scroll',u,{passive:true});u()})();</script>
 </body>
 </html>
