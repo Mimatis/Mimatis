@@ -1575,6 +1575,55 @@ a.jn-more{text-decoration:none}
 .st-note{font-size:.75rem;line-height:1.6;color:rgba(255,255,255,.7);margin-top:.9rem;text-align:center}
 .st-note a{color:#F6EAFB}
 @media(max-width:700px){.gd-story{padding:64px 0 72px}.st-in{padding:0 16px}.st-row{grid-template-columns:1fr;gap:0}.st-window{padding:1.4rem 1.1rem 1.2rem}}
+
+
+
+/* pa-design */
+#pg-action{--sky:#E3F5F8}
+.pa-wrap{max-width:1080px;margin:0 auto;padding:0 3rem}
+.pa-eye{display:block;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--ink);margin-bottom:1rem}
+.pa-eye::after{content:"";display:block;width:56px;height:2px;background:var(--green);margin-top:.9rem}
+.pa-hero{background:var(--sky);overflow:hidden;padding:0!important}
+.pa-hero-in{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:2rem;align-items:end;padding-left:max(3rem,calc(50vw - 540px + 3rem))}
+.pa-hero-text{padding:clamp(56px,8vw,104px) 0 clamp(48px,7vw,88px)}
+.pa-h1{font-family:'Inter',sans-serif;font-size:clamp(34px,5vw,58px);font-weight:700;letter-spacing:-.025em;line-height:1.05;color:var(--ink);margin:1.4rem 0 1.4rem}
+.pa-h1 em{color:var(--green-dark);font-style:italic}
+.pa-lead{font-size:1.08rem;line-height:1.75;color:var(--ink);max-width:36rem;margin:0 0 1.8rem}
+.pa-mailline{font-size:.95rem;color:var(--mid);margin:0}
+.pa-mail{color:var(--green-dark);font-weight:500;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.pa-mail:hover{color:var(--green)}
+.pa-hero-art{justify-self:end;width:100%;max-width:480px}
+.pa-hero-art img{display:block;width:100%;height:auto;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 14%);mask-image:linear-gradient(to right,transparent 0,#000 14%)}
+.pa-facts{border-bottom:1px solid var(--border);padding:clamp(40px,5vw,56px) 0}
+.pa-facts-row{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem}
+.pa-num{display:block;font-family:'Inter',sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;letter-spacing:-.015em;color:var(--green-dark);margin-bottom:.4rem}
+.pa-fact p{font-size:.86rem;color:var(--mid);line-height:1.6;margin:0}
+.pa-sec{padding:clamp(64px,8vw,104px) 0}
+.pa-h2{font-family:'Inter',sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;letter-spacing:-.015em;line-height:1.15;color:var(--ink);margin:0 0 2.2rem}
+.pa-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.pa-col{border:1px solid var(--border);border-top:3px solid var(--green);border-radius:3px;padding:1.8rem 1.6rem}
+.pa-n{display:block;font-size:.7rem;letter-spacing:.24em;color:var(--green);margin-bottom:.8rem}
+.pa-col h3{font-family:'Inter',sans-serif;font-size:1.12rem;font-weight:600;color:var(--ink);margin:0 0 1rem}
+.pa-col ul{list-style:none;margin:0;padding:0}
+.pa-col li{position:relative;padding-left:1.1rem;margin-bottom:.7rem;font-size:.9rem;line-height:1.6;color:var(--mid)}
+.pa-col li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--green)}
+.pa-steps-sec{background:var(--sky)}
+.pa-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;counter-reset:none}
+.pa-steps li span{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#fff;border:1px solid var(--green);color:var(--green-dark);font-family:'Inter',sans-serif;font-weight:600;margin-bottom:1rem}
+.pa-steps h3{font-family:'Inter',sans-serif;font-size:1.05rem;font-weight:600;color:var(--ink);margin:0 0 .4rem}
+.pa-steps p{font-size:.9rem;color:var(--mid);line-height:1.6;margin:0}
+.pa-contact{padding:clamp(72px,9vw,120px) 0;text-align:center}
+.pa-contact .pa-h2{margin-bottom:.8rem}
+.pa-cline{font-size:.95rem;color:var(--mid);margin:0 0 1.2rem}
+.pa-mail-big{font-family:'Inter',sans-serif;font-size:clamp(1.5rem,3.4vw,2.4rem);font-weight:600;letter-spacing:-.01em}
+@media(max-width:860px){
+ .pa-wrap{padding:0 16px}
+ .pa-hero-in{grid-template-columns:1fr;gap:0;padding-left:0}
+ .pa-hero-text{padding:44px 16px 24px}
+ .pa-hero-art{max-width:300px}
+ .pa-facts-row,.pa-cols,.pa-steps{grid-template-columns:1fr;gap:1.6rem}
+}
+/* /pa-design */
 </style>
 <script type="application/ld+json">
 {
@@ -3639,103 +3688,79 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
 <!-- ============ TAKE ACTION ============ -->
 <div id="pg-action" class="pg">
 
-  <section class="ta-hero">
-    <div class="ta-wrap ta-hero-in">
-      <span class="ta-eye">Take action</span>
-      <h1 class="ta-h1">Together, we can change what happens when a baby dies.</h1>
-      <p class="ta-lead">Every family deserves care, clear information and a place to remember, in any country and in their own language. Companies, organisations and hospitals can help MIMATIS reach every parent who needs it.</p>
-      <div class="ta-btns">
-        <button class="ta-btn" onclick="document.getElementById('ta-companies').scrollIntoView({behavior:'smooth'})">For companies &amp; organisations</button>
-        <button class="ta-btn ta-btn-ghost" onclick="document.getElementById('ta-hospitals').scrollIntoView({behavior:'smooth'})">For hospitals</button>
+  <section class="pa-hero" aria-labelledby="pa-h1">
+    <div class="pa-hero-in">
+      <div class="pa-hero-text">
+        <span class="pa-eye">Partnerships</span>
+        <h1 class="pa-h1" id="pa-h1">Better care when a baby dies. <em>Together.</em></h1>
+        <p class="pa-lead">MIMATIS works with hospitals, organisations and researchers so that every family who loses a baby gets clear, verified information and support, in their own language.</p>
+        <p class="pa-mailline">Write to us: <a class="pa-mail" href="mailto:contact@mimatis.org?subject=Partnership%20with%20MIMATIS">contact@mimatis.org</a></p>
+      </div>
+      <div class="pa-hero-art" aria-hidden="true"><img src="/assets/es-hero-butterfly.jpg" alt="" width="720" height="622"></div>
+    </div>
+  </section>
+
+  <section class="pa-facts" aria-label="MIMATIS in numbers">
+    <div class="pa-wrap pa-facts-row">
+      <div class="pa-fact"><span class="pa-num">29</span><p>country guides with verified information on rights, care and support</p></div>
+      <div class="pa-fact"><span class="pa-num">1.9 million</span><p>babies stillborn every year worldwide (UNICEF, 2023 estimates)</p></div>
+      <div class="pa-fact"><span class="pa-num">Non-profit</span><p>Asociaci&oacute;n MIMATIS, registered no. 633.864 (Registro Nacional de Asociaciones, Spain)</p></div>
+    </div>
+  </section>
+
+  <section class="pa-sec" aria-labelledby="pa-who">
+    <div class="pa-wrap">
+      <span class="pa-eye">How we can work together</span>
+      <h2 class="pa-h2" id="pa-who">Three ways to partner</h2>
+      <div class="pa-cols">
+        <div class="pa-col" id="ta-hospitals">
+          <span class="pa-n">01</span>
+          <h3>Hospitals &amp; care teams</h3>
+          <ul>
+            <li>Information for parents in their own language, to share before they go home</li>
+            <li>Remembrance events and talks for staff and families</li>
+            <li>Comfort for families, such as seed letters and memory items</li>
+          </ul>
+        </div>
+        <div class="pa-col" id="ta-companies">
+          <span class="pa-n">02</span>
+          <h3>Companies &amp; organisations</h3>
+          <ul>
+            <li>Sponsor a country guide or a translation</li>
+            <li>Fund memory items that maternity teams give to families</li>
+            <li>Support employees after pregnancy or baby loss</li>
+          </ul>
+        </div>
+        <div class="pa-col" id="ta-research">
+          <span class="pa-n">03</span>
+          <h3>Researchers</h3>
+          <ul>
+            <li>Share findings with parents in plain, careful language</li>
+            <li>Raise awareness of the stillbirths that could be prevented</li>
+            <li>Bring the voice of bereaved parents into better care</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="ta-teal" aria-labelledby="ta-mission-h">
-    <div class="ta-wrap">
-      <div class="ta-teal-head">
-        <h2 class="ta-h2 ta-w" id="ta-mission-h">Help that reaches every parent</h2>
-        <p class="ta-w ta-intro">Around 1.9 million babies are stillborn every year, one every 17 seconds, and many more are lost in pregnancy or soon after birth. Most parents do not know what help exists until they need it. MIMATIS works on three fronts at once.</p>
-      </div>
-      <div class="ta-tiles">
-        <div class="ta-tile">
-          <img src="/assets/action-butterflies.jpg" alt="Pale butterflies against a blue sky" loading="lazy">
-          <h3>Care for every parent</h3>
-          <p>Checked information on rights, hospital care and support in each country, written in English and in the language parents speak.</p>
-        </div>
-        <div class="ta-tile">
-          <img src="/assets/action-white-flowers.jpg" alt="White flowers among green leaves" loading="lazy">
-          <h3>Remembrance over the years</h3>
-          <p>A memorial garden, seed letters, music and stories that help families carry their love for their baby long after the first weeks.</p>
-        </div>
-        <div class="ta-tile">
-          <img src="/assets/action-stars.jpg" alt="Soft silver stars on blue" loading="lazy">
-          <h3>Awareness and prevention</h3>
-          <p>Speaking openly about pregnancy and baby loss, what good care looks like, and the stillbirths that could be prevented.</p>
-        </div>
-      </div>
-      <p class="ta-src">Source: UNICEF Data, stillbirths and stillbirth rates (2023 estimates).</p>
+  <section class="pa-sec pa-steps-sec" aria-labelledby="pa-how">
+    <div class="pa-wrap">
+      <span class="pa-eye">How it starts</span>
+      <h2 class="pa-h2" id="pa-how">A simple first step</h2>
+      <ol class="pa-steps">
+        <li><span>1</span><h3>Write to us</h3><p>A few lines about your hospital or organisation.</p></li>
+        <li><span>2</span><h3>We listen</h3><p>A short call about your goals and what already exists.</p></li>
+        <li><span>3</span><h3>We start small</h3><p>One clear first project, then we grow together.</p></li>
+      </ol>
     </div>
   </section>
 
-  <section class="ta-burg" aria-label="Companies and hospitals">
-    <div class="ta-wrap">
-
-      <div class="ta-block" id="ta-companies">
-        <span class="ta-eye ta-eye-w">For companies &amp; organisations</span>
-        <h2 class="ta-h2 ta-w">Help us reach every parent</h2>
-        <p class="ta-w ta-intro">Pregnancy and baby loss touches around half of all adults, directly or through someone close to them, including your colleagues and customers. By partnering with MIMATIS, your organisation helps raise awareness and makes sure that a parent, wherever they live, can find help in their own language.</p>
-        <div class="ta-ways">
-          <div class="ta-way"><span class="ta-way-n">01</span><h3>Sponsor a country or a language</h3><p>Fund a full country guide, or its translation, so families there can read about their rights and support in their own language.</p></div>
-          <div class="ta-way"><span class="ta-way-n">02</span><h3>Bring comfort to hospitals</h3><p>Fund seed letters and memory items that maternity teams can give to families.</p></div>
-          <div class="ta-way"><span class="ta-way-n">03</span><h3>Support your own people</h3><p>Help managers and HR teams respond with care when an employee loses a baby.</p></div>
-          <div class="ta-way"><span class="ta-way-n">04</span><h3>Raise awareness together</h3><p>Campaigns, events and 15 October, the day of remembrance for pregnancy and infant loss, with your staff or customers.</p></div>
-        </div>
-        <div class="ta-contact">
-          <p class="ta-w">Tell us about your organisation, or simply start a conversation.</p>
-          <a class="ta-mail" href="mailto:contact@mimatis.org?subject=Partnership%20with%20MIMATIS">contact@mimatis.org</a>
-        </div>
-      </div>
-
-      <div class="ta-rule" role="presentation"></div>
-
-      <div class="ta-block" id="ta-hospitals">
-        <span class="ta-eye ta-eye-w">For hospitals &amp; care teams</span>
-        <h2 class="ta-h2 ta-w">Why working together matters</h2>
-        <div class="ta-two">
-          <div>
-            <p class="ta-w ta-p">The hours in hospital shape how parents grieve for years. Whether they had time with their baby, whether someone explained what was happening, whether they left with a photo, a name and a number to call: parents remember these moments for decades.</p>
-            <p class="ta-w ta-p">Many parents are not told what they can ask for. Families who live far from home may not understand the local language at the moment it matters most. Hospital teams carry this too, often with little time and few resources.</p>
-          </div>
-          <div class="ta-hosp-card">
-            <h3>What we can do together</h3>
-            <ul>
-              <li>Information for parents in their own language, before and after they go home</li>
-              <li>Events together: remembrance days, talks for staff and families</li>
-              <li>Support in the hospital, alongside your teams</li>
-              <li>Comfort for families, such as seed letters and memory items</li>
-            </ul>
-            <p class="ta-small">Some hospitals already have bereavement protocols, others are just starting. We begin by listening to your goals.</p>
-          </div>
-        </div>
-        <div class="ta-contact">
-          <p class="ta-w">Tell us about your hospital and what you would like to achieve.</p>
-          <a class="ta-mail" href="mailto:contact@mimatis.org?subject=Working%20with%20our%20hospital">contact@mimatis.org</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="ta-partners" aria-label="Our partners">
-    <div class="ta-wrap">
-      <span class="act-partners-lbl" style="text-align:center">Our partners</span>
-      <div class="act-partners">
-        <a href="https://krizinionestumocentras.lt/" target="_blank" rel="noopener"><img src="/assets/partner-krizinio-nestumo-centras.png" alt="Krizinio N&#279;&scaron;tumo Centras" loading="lazy"></a>
-        <a href="https://stillbirthalliance.org" target="_blank" rel="noopener"><img src="/assets/partner-international-stillbirth-alliance.png" alt="International Stillbirth Alliance" loading="lazy"></a>
-        <a href="https://mamoszurnalas.lt/" target="_blank" rel="noopener"><img src="/assets/partner-mamos-zurnalas.svg" alt="Mamos &#382;urnalas" loading="lazy" width="170" height="68"></a>
-      </div>
-      <p class="act-reg">Asociaci&oacute;n MIMATIS &middot; Registered association no. 633.864 (Registro Nacional de Asociaciones, Spain)</p>
+  <section class="pa-contact" aria-labelledby="pa-c">
+    <div class="pa-wrap">
+      <h2 class="pa-h2" id="pa-c">Start a conversation</h2>
+      <p class="pa-cline">Write to Victoria, founder of MIMATIS</p>
+      <a class="pa-mail pa-mail-big" href="mailto:contact@mimatis.org?subject=Partnership%20with%20MIMATIS">contact@mimatis.org</a>
     </div>
   </section>
 
