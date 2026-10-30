@@ -5037,7 +5037,10 @@ buildWCards(yesSay,'yes-cards','yes');
 
 
 // ── JOURNAL NAVIGATION (single authoritative version) ──
+var JOURNAL_STATIC={leo:'leo-what-i-wish-had-been-different',fathers:'fathers-too-the-grief-that-is-easy-to-miss',noteveryloss:'not-every-loss-is-the-same',seedletters:'seed-letters',october15:'15-october-how-europe-remembers',cslewis:'cs-lewis-a-grief-observed',darwin:'charles-darwin-and-annie',memoryboxes:'memory-boxes',water:'why-grieving-people-seek-water',ptsd:'grief-in-the-body'};
 function openJournalArticle(key) {
+  // Articles live as their own pages (/journal/...), which carry the current design and corrections.
+  if(JOURNAL_STATIC[key]){ window.location.href='/journal/'+JOURNAL_STATIC[key]; return; }
   showPage('journal');
   setTimeout(function() {
     document.querySelectorAll('#pg-journal .gs-sub-view').forEach(function(v){
