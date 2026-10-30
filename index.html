@@ -1578,6 +1578,8 @@ a.jn-more{text-decoration:none}
 
 
 
+
+
 /* pa-design */
 #pg-action{--sky:#E3F5F8}
 .pa-wrap{max-width:1080px;margin:0 auto;padding:0 3rem}
@@ -1594,11 +1596,14 @@ a.jn-more{text-decoration:none}
 .pa-mail:hover{color:var(--green)}
 .pa-hero-art{justify-self:end;width:100%;max-width:480px}
 .pa-hero-art img{display:block;width:100%;height:auto;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 14%);mask-image:linear-gradient(to right,transparent 0,#000 14%)}
-.pa-facts{border-bottom:1px solid var(--border);padding:clamp(40px,5vw,56px) 0}
+.pa-goal{padding:clamp(64px,8vw,104px) 0 clamp(40px,5vw,64px)}
+.pa-reg{font-size:.78rem;color:var(--soft);margin:2rem 0 0}
 .pa-facts-row{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem}
+.pa-fact{border-top:1px solid var(--border);padding-top:1.4rem}
 .pa-num{display:block;font-family:'Inter',sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;letter-spacing:-.015em;color:var(--green-dark);margin-bottom:.4rem}
-.pa-fact p{font-size:.86rem;color:var(--mid);line-height:1.6;margin:0}
+.pa-fact p{font-size:.92rem;color:var(--mid);line-height:1.6;margin:0}
 .pa-sec{padding:clamp(64px,8vw,104px) 0}
+.pa-sec-ways{padding-top:clamp(32px,4vw,48px)}
 .pa-h2{font-family:'Inter',sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;letter-spacing:-.015em;line-height:1.15;color:var(--ink);margin:0 0 2.2rem}
 .pa-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
 .pa-col{border:1px solid var(--border);border-top:3px solid var(--green);border-radius:3px;padding:1.8rem 1.6rem}
@@ -3693,33 +3698,37 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
       <div class="pa-hero-text">
         <span class="pa-eye">Partnerships</span>
         <h1 class="pa-h1" id="pa-h1">Better care when a baby dies. <em>Together.</em></h1>
-        <p class="pa-lead">MIMATIS works with hospitals, organisations and researchers so that every family who loses a baby gets clear, verified information and support, in their own language.</p>
+        <p class="pa-lead">Every family who loses a baby, through miscarriage, stillbirth, neonatal death or sudden infant death, deserves good care and clear information. MIMATIS brings it together in one place, for every country. We cannot do it alone.</p>
         <p class="pa-mailline">Write to us: <a class="pa-mail" href="mailto:contact@mimatis.org?subject=Partnership%20with%20MIMATIS">contact@mimatis.org</a></p>
       </div>
       <div class="pa-hero-art" aria-hidden="true"><img src="/assets/es-hero-butterfly.jpg" alt="" width="720" height="622"></div>
     </div>
   </section>
 
-  <section class="pa-facts" aria-label="MIMATIS in numbers">
-    <div class="pa-wrap pa-facts-row">
-      <div class="pa-fact"><span class="pa-num">29</span><p>country guides with verified information on rights, care and support</p></div>
-      <div class="pa-fact"><span class="pa-num">1.9 million</span><p>babies stillborn every year worldwide (UNICEF, 2023 estimates)</p></div>
-      <div class="pa-fact"><span class="pa-num">Non-profit</span><p>Asociaci&oacute;n MIMATIS, registered no. 633.864 (Registro Nacional de Asociaciones, Spain)</p></div>
+  <section class="pa-goal" aria-labelledby="pa-goal-h">
+    <div class="pa-wrap">
+      <span class="pa-eye">Our goal</span>
+      <h2 class="pa-h2" id="pa-goal-h">Global help, all in one place</h2>
+      <div class="pa-facts-row">
+        <div class="pa-fact"><span class="pa-num">One place</span><p>Information, support and remembrance for parents after every kind of pregnancy and baby loss, in their own language.</p></div>
+        <div class="pa-fact"><span class="pa-num">Every country</span><p>Some countries already offer families very good care. Many still do not. We want every family to receive the care the best hospitals already give.</p></div>
+        <div class="pa-fact"><span class="pa-num">Prevention</span><p>Around 1.9 million babies are stillborn every year (UNICEF, 2023), and some stillbirths and sudden infant deaths can be prevented. We want to share what helps, with medical teams at our side.</p></div>
+      </div>
     </div>
   </section>
 
-  <section class="pa-sec" aria-labelledby="pa-who">
+  <section class="pa-sec pa-sec-ways" aria-labelledby="pa-who">
     <div class="pa-wrap">
       <span class="pa-eye">How we can work together</span>
       <h2 class="pa-h2" id="pa-who">Three ways to partner</h2>
       <div class="pa-cols">
         <div class="pa-col" id="ta-hospitals">
           <span class="pa-n">01</span>
-          <h3>Hospitals &amp; care teams</h3>
+          <h3>Hospitals &amp; medical teams</h3>
           <ul>
             <li>Information for parents in their own language, to share before they go home</li>
             <li>Remembrance events and talks for staff and families</li>
-            <li>Comfort for families, such as seed letters and memory items</li>
+            <li>Help us share, accurately, what can prevent stillbirth and sudden infant death</li>
           </ul>
         </div>
         <div class="pa-col" id="ta-companies">
@@ -3727,7 +3736,7 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
           <h3>Companies &amp; organisations</h3>
           <ul>
             <li>Sponsor a country guide or a translation</li>
-            <li>Fund memory items that maternity teams give to families</li>
+            <li>Fund memory items and comfort for families in hospital</li>
             <li>Support employees after pregnancy or baby loss</li>
           </ul>
         </div>
@@ -3735,8 +3744,8 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
           <span class="pa-n">03</span>
           <h3>Researchers</h3>
           <ul>
-            <li>Share findings with parents in plain, careful language</li>
-            <li>Raise awareness of the stillbirths that could be prevented</li>
+            <li>Share evidence on preventing stillbirth and SIDS, in plain language</li>
+            <li>Help us compare care between countries and show what works</li>
             <li>Bring the voice of bereaved parents into better care</li>
           </ul>
         </div>
@@ -3761,6 +3770,7 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
       <h2 class="pa-h2" id="pa-c">Start a conversation</h2>
       <p class="pa-cline">Write to Victoria, founder of MIMATIS</p>
       <a class="pa-mail pa-mail-big" href="mailto:contact@mimatis.org?subject=Partnership%20with%20MIMATIS">contact@mimatis.org</a>
+      <p class="pa-reg">Asociaci&oacute;n MIMATIS &middot; non-profit association, registered no. 633.864 (Registro Nacional de Asociaciones, Spain)</p>
     </div>
   </section>
 
