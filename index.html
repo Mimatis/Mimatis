@@ -1632,6 +1632,7 @@ a.jn-more{text-decoration:none}
 
 
 
+
 /* jl-design */
 .jn-wrap{padding-top:0!important}
 .jn-head{position:relative;display:grid!important;grid-template-columns:minmax(0,1fr) 170px;align-items:center;gap:1.5rem 2rem;background:#E3F5F8;border-bottom:0!important;
@@ -1797,9 +1798,8 @@ a.jn-more{text-decoration:none}
     <button onclick="showPage('research')" data-page="research">Research</button>
     
     
-    <button onclick="window.location.href='/mimatis_books'" data-page="books">Books &amp; Remembrance</button>
     <button onclick="showPage('story')" data-page="story">Who We Are</button>
-    <button onclick="showPage('journal')" data-page="journal">Journal</button>
+    <button onclick="showPage('journal')" data-page="journal">Journal &amp; Remembrance</button>
     <button onclick="showPage('action')" data-page="action">Partner with us</button>
     <div class="nav-dd-wrap" id="nav-dd-support">
       
@@ -1825,9 +1825,8 @@ a.jn-more{text-decoration:none}
   <button onclick="showPage('research');closeMob()">Research</button>
   
   
-  <button onclick="window.location.href='/mimatis_books'">Books &amp; Remembrance</button>
   <button onclick="showPage('story');closeMob()">Who We Are</button>
-  <button onclick="showPage('journal');closeMob()">Journal</button>
+  <button onclick="showPage('journal');closeMob()">Journal &amp; Remembrance</button>
   <button onclick="showPage('action');closeMob()">Partner with us</button>
     
   <button onclick="showPage('privacy');closeMob()">Privacy Policy</button>
@@ -2164,29 +2163,7 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
     <p class="gd-q-src">From the MIMATIS seed letters</p>
   </section>
 
-  <section class="gd-story" id="story" aria-labelledby="story-h">
-    <div class="st-sky" id="st-sky" aria-hidden="true"></div>
-    <div class="st-in">
-      <span class="st-eye">Share your story</span>
-      <h2 class="st-h2" id="story-h">Every story is a light <em>for another parent</em></h2>
-      <p class="st-lead">Tell us about your baby, about your loss, or about what helped you. We read every story. With your permission, some may be shared in our Journal, so that other parents feel less alone.</p>
-      <form class="st-window" id="st-form" novalidate>
-        <div class="st-row">
-          <div class="st-f"><label for="st-name">Your name <span>(optional)</span></label><input id="st-name" type="text" maxlength="80" autocomplete="name"></div>
-          <div class="st-f"><label for="st-email">Your email <span>(so we can reply)</span></label><input id="st-email" type="email" maxlength="120" autocomplete="email"></div>
-        </div>
-        <div class="st-row">
-          <div class="st-f"><label for="st-baby">Your baby&rsquo;s name <span>(optional)</span></label><input id="st-baby" type="text" maxlength="60"></div>
-          <div class="st-f"><label for="st-country">Country <span>(optional)</span></label><input id="st-country" type="text" maxlength="60" autocomplete="country-name"></div>
-        </div>
-        <div class="st-f"><label for="st-text">Your story</label><textarea id="st-text" rows="8" maxlength="8000" placeholder="Write as much or as little as you wish."></textarea></div>
-        <input type="text" id="st-hp" tabindex="-1" autocomplete="off" aria-hidden="true" class="st-hp">
-        <p class="st-msg" id="st-msg" role="status"></p>
-        <button type="submit" class="st-btn" id="st-send">Send your story</button>
-        <p class="st-note">Your story comes straight to us at contact@mimatis.org. We read every story, and we never publish anything without asking you first.</p>
-      </form>
-    </div>
-  </section>
+  
 
 </div>
 
@@ -4001,9 +3978,9 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
       <button class="foot-link" onclick="showPage('garden')">Garden</button>
       <a class="foot-link" href="/research" onclick="showPage('research');return false;">Research</a>
       
-      <a class="foot-link" href="/mimatis_books">Books &amp; Remembrance</a>
+      
       <a class="foot-link" href="/about" onclick="showPage('story');return false;">Who We Are</a>
-      <a class="foot-link" href="/journal" onclick="showPage('journal');return false;">Journal</a>
+      <a class="foot-link" href="/journal">Journal &amp; Remembrance</a>
       <a class="foot-link" href="/guidance" onclick="showPage('support');return false;">Guidance &amp; Support</a>
       
       <button class="foot-link" onclick="showPage('privacy')">Privacy Policy</button>
@@ -4304,7 +4281,8 @@ function applyPageMeta(id){
   if(md)md.setAttribute('content',m.d);
 }
 function showPage(id){
-  if(id==='books'){window.location.href='/mimatis_books';return;}
+  if(id==='books'){window.location.href='/journal#makers';return;}
+  if(id==='journal'){window.location.href='/journal';return;}
   if(id==='collab')id='action'; // Collaborate page retired; old links land on Take Action
   applyPageMeta(id);
   document.querySelectorAll('.pg').forEach(function(p){p.classList.remove('active');});
