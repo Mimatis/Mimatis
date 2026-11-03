@@ -563,6 +563,7 @@ footer{background:var(--green-dark);padding:3rem 3rem}
 .partner-logo{display:inline-flex;align-items:center;opacity:.9;transition:opacity .2s}
 .partner-logo:hover{opacity:1}
 .partner-logo img{width:auto;height:auto;max-width:200px;max-height:110px;display:block}
+.partner-logo--wide img{max-width:220px}
 .newsletter-inner{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
 .newsletter-text{}
 .newsletter-eye{font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:.75rem}
@@ -1516,6 +1517,8 @@ a.jn-more{text-decoration:none}
 .hm-partners-logos a{display:inline-flex;opacity:.8;transition:opacity .2s}
 .hm-partners-logos a:hover{opacity:1}
 .hm-partners-logos img{display:block;width:auto;height:auto;max-width:150px;max-height:62px}
+.hm-partners-logos .hm-partner-wide img{max-width:200px}
+@media(max-width:780px){.hm-partners-logos .hm-partner-wide img{max-width:160px}}
 @media(max-width:780px){.hm-partners-logos{gap:1.25rem 2rem}.hm-partners-logos img{max-width:120px;max-height:50px}}
 
 /* ── Oct 2026: Instagram in hero, Friends with flower photo, Share your story ── */
@@ -1969,6 +1972,7 @@ a.jn-more{text-decoration:none}
           <a href="https://krizinionestumocentras.lt/" target="_blank" rel="noopener" aria-label="Krizinio Nėštumo Centras"><img src="/assets/partner-krizinio-nestumo-centras.png" alt="Krizinio Nėštumo Centras logo" loading="lazy"></a>
           <a href="https://stillbirthalliance.org" target="_blank" rel="noopener" aria-label="International Stillbirth Alliance"><img src="/assets/partner-international-stillbirth-alliance.png" alt="International Stillbirth Alliance logo" loading="lazy"></a>
           <a href="https://mamoszurnalas.lt/" target="_blank" rel="noopener" aria-label="Mamos žurnalas"><img src="/assets/partner-mamos-zurnalas.svg" alt="Mamos žurnalas logo" loading="lazy" width="150" height="60"></a>
+          <a href="https://www.nowilaymedowntosleep.org/" target="_blank" rel="noopener" class="hm-partner-wide" aria-label="Now I Lay Me Down to Sleep"><img src="/assets/partner-now-i-lay-me-down-to-sleep.png" alt="Now I Lay Me Down to Sleep logo" loading="lazy" width="200" height="62"></a>
         </div>
       </div>
     </div>
@@ -4058,6 +4062,9 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
       </a>
       <a href="https://mamoszurnalas.lt/" target="_blank" rel="noopener" class="partner-logo" aria-label="Mamos žurnalas">
         <img src="/assets/partner-mamos-zurnalas.svg" loading="lazy" alt="Mamos žurnalas logo" width="200" height="80">
+      </a>
+      <a href="https://www.nowilaymedowntosleep.org/" target="_blank" rel="noopener" class="partner-logo partner-logo--wide" aria-label="Now I Lay Me Down to Sleep">
+        <img src="/assets/partner-now-i-lay-me-down-to-sleep.png" loading="lazy" alt="Now I Lay Me Down to Sleep logo" width="220" height="68">
       </a>
     </div>
   </div>
