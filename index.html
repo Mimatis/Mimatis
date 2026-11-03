@@ -561,6 +561,7 @@ footer{background:var(--green-dark);padding:3rem 3rem}
 .partner-logo{display:inline-flex;align-items:center;opacity:.9;transition:opacity .2s}
 .partner-logo:hover{opacity:1}
 .partner-logo img{width:auto;height:auto;max-width:200px;max-height:110px;display:block}
+.partner-logo--wide img{max-width:260px}
 .newsletter-inner{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
 .newsletter-text{}
 .newsletter-eye{font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--green);display:block;margin-bottom:.75rem}
@@ -1178,6 +1179,7 @@ footer{background:var(--green-dark);padding:3rem 3rem}
 #pg-action .act-partners-lbl{display:block;font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--soft);margin:2.5rem 0 1.25rem}
 #pg-action .act-partners{display:flex;justify-content:center;align-items:center;gap:2.5rem;flex-wrap:wrap}
 #pg-action .act-partners img{max-height:70px;max-width:170px;width:auto;height:auto;display:block}
+#pg-action .act-partner-wide img{max-width:220px}
 #pg-action .act-partner{position:relative;overflow:hidden;background:#F6EAFB}
 #pg-action .act-corner{position:absolute;right:-90px;bottom:-90px;width:300px;height:300px;pointer-events:none}
 #pg-action .act-partner-inner{position:relative}
@@ -3578,6 +3580,7 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
       <div class="act-partners">
         <a href="https://krizinionestumocentras.lt/" target="_blank" rel="noopener"><img src="/assets/partner-krizinio-nestumo-centras.png" alt="Krizinio N&#279;&scaron;tumo Centras" loading="lazy"></a>
         <a href="https://stillbirthalliance.org" target="_blank" rel="noopener"><img src="/assets/partner-international-stillbirth-alliance.png" alt="International Stillbirth Alliance" loading="lazy"></a>
+        <a href="https://www.nowilaymedowntosleep.org/" target="_blank" rel="noopener" class="act-partner-wide"><img src="/assets/partner-now-i-lay-me-down-to-sleep.png" alt="Now I Lay Me Down to Sleep" loading="lazy"></a>
       </div>
       <p class="act-reg">Asociaci&oacute;n MIMATIS &middot; Registered association no. 633.864 (Registro Nacional de Asociaciones, Spain)</p>
     </div>
@@ -3760,6 +3763,9 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
       </a>
       <a href="https://stillbirthalliance.org" target="_blank" rel="noopener" class="partner-logo" aria-label="International Stillbirth Alliance">
         <img src="/assets/partner-international-stillbirth-alliance.png" loading="lazy" alt="International Stillbirth Alliance logo">
+      </a>
+      <a href="https://www.nowilaymedowntosleep.org/" target="_blank" rel="noopener" class="partner-logo partner-logo--wide" aria-label="Now I Lay Me Down to Sleep">
+        <img src="/assets/partner-now-i-lay-me-down-to-sleep.png" loading="lazy" alt="Now I Lay Me Down to Sleep logo">
       </a>
     </div>
   </div>
