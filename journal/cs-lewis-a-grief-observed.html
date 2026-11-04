@@ -201,9 +201,39 @@ a{color:var(--green)}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mimatis.org/"}, {"@type": "ListItem", "position": 2, "name": "Journal", "item": "https://www.mimatis.org/journal"}, {"@type": "ListItem", "position": 3, "name": "“No one ever told me grief felt so like fear.”", "item": "https://www.mimatis.org/journal/cs-lewis-a-grief-observed"}]}, {"@type": "Article", "headline": "“No one ever told me grief felt so like fear.”", "description": "After losing his wife, C.S. Lewis wrote one of the most honest accounts of grief ever published. What he described mirrors what bereaved parents feel today.", "mainEntityOfPage": "https://www.mimatis.org/journal/cs-lewis-a-grief-observed", "author": {"@type": "NGO", "@id": "https://www.mimatis.org/#organization", "name": "MIMATIS", "url": "https://www.mimatis.org"}, "publisher": {"@type": "NGO", "@id": "https://www.mimatis.org/#organization", "name": "MIMATIS", "url": "https://www.mimatis.org"}, "articleSection": "History & Literature", "inLanguage": "en", "image": "https://www.mimatis.org/assets/journal-baby-heart.jpg"}]}</script>
 <script src="/consent.js" defer></script>
+<style id="mmn-css">
+/* MIMATIS site navigation: identical to the landing page menu (site_nav.py) */
+html{scroll-padding-top:64px}
+#mmn{position:sticky;top:0;left:0;right:0;z-index:300;height:64px;box-sizing:border-box;background:rgba(255,255,255,0.97);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid rgba(30,30,30,0.08);display:flex;align-items:center;justify-content:space-between;padding:0 48px;margin:0;direction:ltr}
+#mmn .mmn-logo{font-family:'Inter',sans-serif;font-size:17.6px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:#00708A;text-decoration:none;line-height:1}
+#mmn .mmn-links{display:flex;gap:28px;align-items:center}
+#mmn .mmn-links a{font-family:'Montserrat',sans-serif;font-size:10.08px;font-weight:400;letter-spacing:.15em;text-transform:uppercase;color:#2B2B29;text-decoration:none;white-space:nowrap;line-height:1.85;transition:color .2s}
+#mmn .mmn-links a:hover{color:#00708A;text-decoration:none}
+#mmn .mmn-links a.active{color:#1E1E1E;border-bottom:2px solid #0097B2;padding-bottom:2px}
+#mmn .mmn-links a.mmn-ig{display:inline-flex;color:#2B2B29}
+#mmn .mmn-links a.mmn-ig:hover{color:#00708A}
+#mmn .mmn-hbg{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;margin:0;width:auto;height:auto;box-shadow:none}
+#mmn .mmn-hbg span{display:block;width:22px;height:1.5px;background:#00708A;transition:all .3s}
+#mmn .mmn-hbg.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+#mmn .mmn-hbg.open span:nth-child(2){opacity:0}
+#mmn .mmn-hbg.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+#mmn-mob{display:none;position:fixed;top:64px;left:0;right:0;bottom:0;background:#fff;z-index:299;flex-direction:column;align-items:center;justify-content:center;gap:28px;padding:32px;overflow-y:auto;box-sizing:border-box}
+#mmn-mob.open{display:flex}
+#mmn-mob a{font-family:'Inter',sans-serif;font-size:24px;font-style:italic;font-weight:400;color:#00708A;text-decoration:none;line-height:1.3}
+#mmn-mob a:hover{color:#0097B2}
+.mmn-langbar{display:flex;justify-content:flex-end;padding:12px 48px 0}
+.mmn-langbar .navr{display:flex;gap:12px;align-items:center;font-size:.78rem}
+.jump,.readbar{top:64px!important}
+@media(max-width:1080px){#mmn .mmn-links{display:none}#mmn .mmn-hbg{display:flex}}
+@media(max-width:640px){#mmn{padding:0 20px}.mmn-langbar{padding:12px 20px 0}}
+</style>
 </head>
 <body>
-<header class="sn"><a class="wm" href="/">MIMATIS</a><nav aria-label="Main"><a href="/#help">Find help</a><a href="/guidance">Guidance</a><a href="/journal" aria-current="page">Journal</a><a href="/research">Research</a><a href="/about">Who we are</a></nav></header>
+<!-- mmn -->
+<header id="mmn"><a class="mmn-logo" href="/">MIMATIS</a><div class="mmn-links" role="navigation" aria-label="Main"><a href="/#help">Find Help</a><a href="/#garden">Garden</a><a href="/research">Research</a><a href="/about">Who We Are</a><a href="/journal" class="active" aria-current="page">Journal &amp; Remembrance</a><a href="/events">Events</a><a href="/#action">Partner with us</a><a class="mmn-ig" href="https://www.instagram.com/mimatis.community/" target="_blank" rel="noopener" aria-label="MIMATIS on Instagram" title="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a></div><button class="mmn-hbg" id="mmn-hbg" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mmn-mob"><span></span><span></span><span></span></button></header>
+<div id="mmn-mob" aria-label="Menu"><a href="/">Home</a><a href="/#help">Find Help</a><a href="/#garden">Garden</a><a href="/research">Research</a><a href="/about">Who We Are</a><a href="/journal">Journal &amp; Remembrance</a><a href="/events">Events</a><a href="/#action">Partner with us</a><a href="/#privacy">Privacy Policy</a><a href="/#legal">Legal Notice</a><a href="https://www.instagram.com/mimatis.community/" target="_blank" rel="noopener">Instagram</a></div>
+<script>(function(){var b=document.getElementById('mmn-hbg'),m=document.getElementById('mmn-mob');if(!b||!m)return;function s(o){m.classList.toggle('open',o);b.classList.toggle('open',o);b.setAttribute('aria-expanded',o?'true':'false');document.body.style.overflow=o?'hidden':''}b.addEventListener('click',function(){s(!m.classList.contains('open'))});m.addEventListener('click',function(e){if(e.target.tagName==='A')s(false)});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.classList.contains('open')){s(false);b.focus()}})})();</script>
+<!-- /mmn -->
 <div class="readbar" aria-hidden="true"><span></span></div>
 <main>
 <div class="article-page"><section class="ah-band"><div class="ah-in"><div class="crumb"><a href="/">Home</a> &rsaquo; <a href="/journal">Journal</a> &rsaquo; “No one ever told me grief felt so like fear.”</div><div class="article-hero">
@@ -250,7 +280,7 @@ a{color:var(--green)}
 </main>
 <footer class="sf"><div class="sf-in">
 <div class="sf-links"><a href="/">Home</a><a href="/#help">Find help in your country</a><a href="/guidance">Guidance &amp; support</a><a href="/journal">Journal</a><a href="/research">Research</a><a href="/#garden">Memorial garden</a><a href="/about">Who we are</a><a href="/#action">Partner with us</a><a href="https://www.instagram.com/mimatis.community/" target="_blank" rel="noopener">Instagram</a></div>
-<div>Asociaci&oacute;n MIMATIS &middot; Registered non-profit association in Spain, no. 633.864 &middot; Avinguda Catalunya 39, 17520 Puigcerd&agrave; (Girona), Spain &middot; <a href="mailto:contact@mimatis.org">contact@mimatis.org</a> &middot; <a href="/#privacy">Privacy</a> &middot; <a href="/#legal">Legal notice</a></div>
+<div>Asociaci&oacute;n MIMATIS &middot; Registered non-profit association in Spain, no. 633.864 &middot; Puigcerd&agrave;, Spain &middot; <a href="mailto:contact@mimatis.org">contact@mimatis.org</a> &middot; <a href="/#privacy">Privacy</a> &middot; <a href="/#legal">Legal notice</a></div>
 <div>MIMATIS does not provide medical advice. If you are in crisis, please contact your local emergency number or a helpline in <a href="/#help">your country</a>.</div>
 </div></footer>
 <script id="art-read-js">(function(){var b=document.querySelector('.readbar span');if(!b)return;function u(){var d=document.documentElement,h=d.scrollHeight-d.clientHeight;b.style.width=(h>0?Math.min(100,d.scrollTop/h*100):0)+'%'}addEventListener('scroll',u,{passive:true});u()})();</script>

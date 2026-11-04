@@ -282,6 +282,7 @@ footer{background:var(--green-dark);padding:3rem 3rem}
   .pg-inner,.pg-inner-narrow{padding:4rem 2rem}
   .info-strip{padding:2.25rem 2rem}
 }
+@media(max-width:1080px){.nav-links{display:none}.hbg{display:flex}}
 @media(max-width:640px){
   #nav{padding:0 1.25rem}.nav-links{display:none}.hbg{display:flex}
   .home-hero{padding:5.5rem 1.25rem 3rem;min-height:auto}
@@ -1060,6 +1061,7 @@ footer{background:var(--green-dark);padding:3rem 3rem}
 
 /* GUIDANCE DROPDOWN */
 .nav-dd-wrap{position:relative;display:inline-block}
+#nav-dd-support{display:none}
 .nav-dd-menu{display:none;position:absolute;top:calc(100% + 10px);right:0;background:var(--white);border:1px solid var(--border);border-radius:8px;padding:.4rem;min-width:250px;box-shadow:0 8px 32px rgba(0,0,0,.1);z-index:500;flex-direction:column}
 .nav-dd-menu.open{display:flex}
 .nav-dd-trigger{background:none;border:none;font-family:'Montserrat',sans-serif;font-size:.72rem;color:var(--mid);cursor:pointer;padding:0}
@@ -1750,9 +1752,7 @@ a.jn-more{text-decoration:none}
       "logo": "https://www.mimatis.org/assets/story-butterfly-stars.jpg",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Avinguda Catalunya 39",
         "addressLocality": "Puigcerdà",
-        "postalCode": "17520",
         "addressRegion": "Girona",
         "addressCountry": "ES"
       },
@@ -3892,7 +3892,7 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
 
       <div>
         <h3 style="font-family:'Inter',sans-serif;font-size:1.1rem;font-weight:400;color:var(--ink);margin-bottom:.75rem">1. Who is responsible for your data</h3>
-        <p style="font-size:.87rem;color:var(--mid);line-height:1.85;margin-bottom:.75rem">Asociaci&oacute;n MIMATIS, a non-profit association registered in the Registro Nacional de Asociaciones (Spain) under no. 633.864. Registered address: Avinguda Catalunya 39, 17520 Puigcerd&agrave; (Girona), Spain. Contact: <a href="mailto:contact@mimatis.org" style="color:var(--green-dark);text-decoration:none">contact@mimatis.org</a>.</p>
+        <p style="font-size:.87rem;color:var(--mid);line-height:1.85;margin-bottom:.75rem">Asociaci&oacute;n MIMATIS, a non-profit association registered in the Registro Nacional de Asociaciones (Spain) under no. 633.864. Based in Puigcerd&agrave;, Spain. Contact: <a href="mailto:contact@mimatis.org" style="color:var(--green-dark);text-decoration:none">contact@mimatis.org</a>.</p>
       </div>
 
       <div>
@@ -4093,7 +4093,7 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
       <a href="https://www.facebook.com/profile.php?id=61591476064107" target="_blank" rel="noopener" class="foot-link">Facebook</a>
       <button class="foot-link" id="cookie-settings-link" onclick="mimatisCookieSettings()" style="display:none">Cookie settings</button>
     </div>
-    <p class="foot-copy">&copy; 2026 Asociaci&oacute;n MIMATIS &middot; Registered association no. 633.864 &middot; Avinguda Catalunya 39, 17520 Puigcerd&agrave; (Girona), Spain &middot; All resources are independent organisations. MIMATIS does not provide medical advice.</p>
+    <p class="foot-copy">&copy; 2026 Asociaci&oacute;n MIMATIS &middot; Registered association no. 633.864 &middot; Puigcerd&agrave;, Spain &middot; All resources are independent organisations. MIMATIS does not provide medical advice.</p>
   </div>
 </footer>
 
