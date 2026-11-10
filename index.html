@@ -1894,6 +1894,29 @@ a.jn-more{text-decoration:none}
 @media(max-width:640px){.hmg-grid{grid-template-columns:1fr}.hmg-res{padding:1.4rem 1.1rem 1.2rem}.hmg-chips{flex-wrap:nowrap;overflow-x:auto;margin-right:-16px;padding-right:16px;scrollbar-width:none}.hmg-chip{white-space:nowrap;flex:0 0 auto}.hmg-btn{width:100%;justify-content:center}}
 @media(prefers-reduced-motion:reduce){.hmg-card,.hmg-arr,.hmg-chip{transition:none}}
 </style>
+<style id="pa-mb-css">
+.pa-mb{background:#fff;border-top:1px solid var(--border,#E8E4DF)}
+.pa-mb-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.pa-mb-art img{display:block;width:100%;height:auto;max-width:460px;margin:0 auto}
+.pa-mb .pa-h2{margin-bottom:1.2rem}
+.pa-mb .pa-h2 em{font-style:italic;color:var(--green-dark,#00708A)}
+.pa-mb-lead{font-size:1rem;line-height:1.75;color:var(--mid,#2B2B29);margin:0 0 1rem}
+.pa-mb-boxes{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin:1.6rem 0}
+.pa-mb-box{border:1px solid var(--border,#E8E4DF);border-top:3px solid var(--green,#0097B2);border-radius:3px;padding:1.1rem 1.2rem;background:#fff}
+.pa-mb-box-l{border-top-color:var(--blush,#E2A9F1);background:#FCF7FE}
+.pa-mb-k{display:block;font-family:'Inter',sans-serif;font-size:1rem;font-weight:600;color:var(--ink,#1E1E1E);margin-bottom:.4rem}
+.pa-mb-box p{font-size:.87rem;line-height:1.65;color:var(--mid,#2B2B29);margin:0}
+.pa-mb-steps{list-style:none;margin:0 0 1.8rem;padding:0;display:grid;gap:.7rem}
+.pa-mb-steps li{display:flex;gap:.8rem;align-items:baseline;font-size:.92rem;line-height:1.6;color:var(--mid,#2B2B29)}
+.pa-mb-steps b{flex:0 0 26px;height:26px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:#E3F5F8;color:var(--green-dark,#00708A);font-family:'Inter',sans-serif;font-size:.8rem}
+.pa-mb-cta{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1.2rem}
+.pa-mb-btn{display:inline-block;font-family:'Montserrat',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:#fff;background:var(--green,#0097B2);border-radius:3px;padding:.95rem 1.5rem;transition:background .2s}
+.pa-mb-btn:hover{background:var(--green-dark,#00708A)}
+.pa-mb-btn:focus-visible{outline:2px solid var(--green-dark,#00708A);outline-offset:2px}
+.pa-mb-note{font-size:.82rem;color:var(--soft,#5C5C58)}
+@media(max-width:860px){.pa-mb-grid{grid-template-columns:1fr}.pa-mb-art img{max-width:400px}}
+@media(max-width:560px){.pa-mb-boxes{grid-template-columns:1fr}.pa-mb-btn{width:100%;text-align:center}}
+</style>
 </head>
 <body>
 
@@ -3895,7 +3918,7 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
           <h3>Companies &amp; organisations</h3>
           <ul>
             <li>Sponsor a country guide or a translation</li>
-            <li>Fund memory items and comfort for families in hospital</li>
+            <li><a href="#pa-memory" onclick="event.preventDefault();document.getElementById('pa-memory').scrollIntoView({behavior:'smooth'})">Sponsor memory boxes</a> for parents and siblings, and comfort for families in hospital</li>
             <li>Support employees after pregnancy or baby loss</li>
           </ul>
         </div>
@@ -3911,6 +3934,30 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
       </div>
     </div>
   </section>
+
+  <!-- pa-memory -->
+  <section class="pa-sec pa-mb" id="pa-memory" aria-labelledby="pa-mb-h">
+    <div class="pa-wrap pa-mb-grid">
+      <div class="pa-mb-art"><img src="/assets/partner-memory-box.webp" alt="An open memory box holding a seed letter, a photo card, a name tag and pressed flowers" width="1000" height="1000" loading="lazy"></div>
+      <div class="pa-mb-text">
+        <span class="pa-eye">For businesses</span>
+        <h2 class="pa-h2" id="pa-mb-h">Sponsor a <em>memory box</em></h2>
+        <p class="pa-mb-lead">Many parents leave hospital with empty arms and very few things to remember their baby by. A memory box gives them a safe place for what they do have: a photo, hand and foot prints, a lock of hair, the hospital bracelet, a name card.</p>
+        <p class="pa-mb-lead">Your company can sponsor memory boxes for <strong>parents</strong>, and for <strong>brothers and sisters</strong>, given to families through the hospitals we work with.</p>
+        <div class="pa-mb-boxes">
+          <div class="pa-mb-box"><span class="pa-mb-k">For parents</span><p>A keepsake box for photos, prints, a lock of hair and the hospital bracelet, with a MIMATIS seed letter they can plant in their baby&rsquo;s memory.</p></div>
+          <div class="pa-mb-box pa-mb-box-l"><span class="pa-mb-k">For brothers and sisters</span><p>A smaller box for siblings, with something gentle to hold and a simple way to remember together, such as a seed letter to plant.</p></div>
+        </div>
+        <ol class="pa-mb-steps">
+          <li><b>1</b>You choose how many boxes, and for which country or hospital.</li>
+          <li><b>2</b>We prepare them with the hospital&rsquo;s bereavement team, so they fit what families need.</li>
+          <li><b>3</b>With your permission, we thank you on this page. The boxes themselves carry no advertising.</li>
+        </ol>
+        <div class="pa-mb-cta"><a class="pa-mb-btn" href="mailto:contact@mimatis.org?subject=Sponsoring%20memory%20boxes">Sponsor memory boxes</a><span class="pa-mb-note">Write to contact@mimatis.org</span></div>
+      </div>
+    </div>
+  </section>
+  <!-- /pa-memory -->
 
   <section class="pa-sec pa-steps-sec" aria-labelledby="pa-how">
     <div class="pa-wrap">
