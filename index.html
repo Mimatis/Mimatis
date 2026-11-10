@@ -1854,6 +1854,46 @@ a.jn-more{text-decoration:none}
 </script>
 <style>a.gs-card,a.gs-nova-card{display:block;color:inherit;text-decoration:none;text-align:left;line-height:normal}a.gs-card:focus-visible,a.gs-nova-card:focus-visible{outline:2px solid var(--green);outline-offset:-2px}</style>
 <script src="/consent.js" defer></script>
+<style id="hmg-css">
+.hmg-chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:-1rem 0 1.6rem}
+.hmg-chip{font-family:'Montserrat',sans-serif;font-size:.8rem;font-weight:500;color:var(--green-dark,#00708A);background:#fff;border:1px solid #B9DFE7;border-radius:3px;padding:.55rem 1rem;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.hmg-chip:hover{background:#E3F5F8}
+.hmg-chip[aria-pressed="true"]{background:var(--green,#0097B2);border-color:var(--green,#0097B2);color:#fff}
+.hmg-chip:focus-visible,.hmg-card:focus-visible,.hmg-btn:focus-visible,.hmg-stat:focus-visible{outline:2px solid var(--green-dark,#00708A);outline-offset:2px}
+.hmg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.hmg-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--border,#E8E4DF);border-top:3px solid var(--green,#0097B2);border-radius:3px;padding:1.4rem 1.5rem 1.2rem;text-decoration:none;color:inherit;font-family:'Montserrat',sans-serif;transition:background .2s,opacity .25s,border-color .2s}
+.hmg-card:hover{background:#E3F5F8;border-color:#B9DFE7;border-top-color:var(--green-dark,#00708A)}
+.hmg-card.hmg-off{opacity:.28}
+.hmg-top{display:flex;align-items:center;justify-content:space-between;gap:.6rem;margin-bottom:.9rem}
+.hmg-n{font-family:'Inter',sans-serif;font-size:1.5rem;font-weight:700;color:var(--green,#0097B2);letter-spacing:-.02em;line-height:1}
+.hmg-tag{font-size:.64rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--green-dark,#00708A);background:#E3F5F8;border-radius:3px;padding:.3rem .55rem;white-space:nowrap}
+.hmg-tag-l{background:#F6EAFB;color:#6E3B80}
+.hmg-t{font-family:'Inter',sans-serif;font-size:1.1rem;font-weight:600;color:var(--ink,#1E1E1E);line-height:1.3;margin-bottom:.45rem}
+.hmg-d{font-size:.88rem;color:var(--mid,#2B2B29);line-height:1.65;flex:1}
+.hmg-foot{display:flex;justify-content:space-between;align-items:center;margin-top:1.1rem;padding-top:.8rem;border-top:1px solid var(--border,#E8E4DF);font-size:.76rem;color:var(--soft,#5C5C58)}
+.hmg-arr{color:var(--green,#0097B2);font-size:1.05rem;transition:transform .2s}
+.hmg-card:hover .hmg-arr{transform:translateX(4px)}
+.hmg-res{margin-top:2.6rem;background:#E3F5F8;border-radius:3px;padding:2rem 2rem 1.6rem}
+.hmg-res-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.4rem 1.5rem;margin-bottom:1.3rem}
+.hmg-res-head h3{font-family:'Inter',sans-serif;font-size:1.25rem;font-weight:600;color:var(--ink,#1E1E1E);margin:0}
+.hmg-res-head p{font-size:.86rem;color:var(--mid,#2B2B29);margin:0}
+.hmg-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.hmg-stat{display:flex;flex-direction:column;background:#fff;border-radius:3px;padding:1.3rem 1.4rem;text-decoration:none;color:inherit;font-family:'Montserrat',sans-serif;border:1px solid transparent;transition:border-color .2s}
+.hmg-stat:hover{border-color:var(--green,#0097B2)}
+.hmg-sn{font-family:'Inter',sans-serif;font-size:2.3rem;font-weight:700;letter-spacing:-.03em;color:var(--green,#0097B2);line-height:1;margin-bottom:.6rem}
+.hmg-st{font-size:.9rem;color:var(--ink,#1E1E1E);line-height:1.6;flex:1}
+.hmg-src{font-size:.72rem;color:var(--soft,#5C5C58);margin-top:.8rem}
+.hmg-sl{font-size:.8rem;font-weight:600;color:var(--green-dark,#00708A);margin-top:.5rem}
+.hmg-care{font-size:.82rem;color:var(--mid,#2B2B29);margin:1.1rem 0 0}
+.hmg-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:2rem}
+.hmg-btn{display:inline-flex;align-items:center;font-family:'Montserrat',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:#fff;background:var(--green,#0097B2);border:1px solid var(--green,#0097B2);border-radius:3px;padding:.85rem 1.3rem;transition:background .2s,color .2s}
+.hmg-btn:hover{background:var(--green-dark,#00708A);border-color:var(--green-dark,#00708A)}
+.hmg-btn-o{background:#fff;color:var(--green-dark,#00708A)}
+.hmg-btn-o:hover{background:#E3F5F8;color:var(--green-dark,#00708A)}
+@media(max-width:900px){.hmg-grid{grid-template-columns:1fr 1fr}.hmg-stats{grid-template-columns:1fr}}
+@media(max-width:640px){.hmg-grid{grid-template-columns:1fr}.hmg-res{padding:1.4rem 1.1rem 1.2rem}.hmg-chips{flex-wrap:nowrap;overflow-x:auto;margin-right:-16px;padding-right:16px;scrollbar-width:none}.hmg-chip{white-space:nowrap;flex:0 0 auto}.hmg-btn{width:100%;justify-content:center}}
+@media(prefers-reduced-motion:reduce){.hmg-card,.hmg-arr,.hmg-chip{transition:none}}
+</style>
 </head>
 <body>
 
@@ -1994,18 +2034,21 @@ a.jn-more{text-decoration:none}
   </div>
 
   <!-- FOR PARENTS: FIRST DAYS -->
-  <section class="hm-sec" aria-labelledby="hm-days-h">
+  <section class="hm-sec hmg" aria-labelledby="hm-days-h">
     <div class="hm-wrap">
       <span class="hm-eye">For parents</span>
-      <h2 class="hm-h2" id="hm-days-h">Guidance for the first days, and the years after</h2>
+      <h2 class="hm-h2" id="hm-days-h">Guidance for the first days, and <em>the years after</em></h2>
       <p class="hm-intro">Practical, honest information to read at your own pace, or to share with the people around you.</p>
-      <div class="hm-guide-grid">
-        <button class="hm-guide" onclick="showPage('support');gsOpenSub('guidance')"><span class="hm-n">01</span><span class="hm-gt">What to expect and how to cope</span><span class="hm-gd">The first hours, time with your baby, and the decisions you may face.</span></button>
-        <button class="hm-guide" onclick="showPage('support');gsOpenSub('letters')"><span class="hm-n">02</span><span class="hm-gt">Finding the right words</span><span class="hm-gd">Letter templates for when words are hard to find.</span></button>
-        <button class="hm-guide" onclick="showPage('support');gsOpenSub('words')"><span class="hm-n">03</span><span class="hm-gt">What to say, and what not to</span><span class="hm-gd">For family, friends and colleagues who want to help.</span></button>
-        <button class="hm-guide" onclick="showPage('support');gsOpenSub('info')"><span class="hm-n">04</span><span class="hm-gt">Information cards in your language</span><span class="hm-gd">Cards from Steunpunt NOVA in more than ten languages.</span></button>
-        <button class="hm-guide" onclick="showPage('support');gsOpenSub('recovery')"><span class="hm-n">05</span><span class="hm-gt">Your body after loss</span><span class="hm-gd">What to expect physically, and how to care for yourself.</span></button>
-        <button class="hm-guide" onclick="showPage('support');gsOpenSub('partners')"><span class="hm-n">06</span><span class="hm-gt">For partners and fathers</span><span class="hm-gd">Grief that is often quieter, and just as real.</span></button>
+      <div class="hmg-chips" role="group" aria-label="Show guides for"><button type="button" class="hmg-chip" data-f="all" aria-pressed="true">All guides</button><button type="button" class="hmg-chip" data-f="days" aria-pressed="false">The first days</button><button type="button" class="hmg-chip" data-f="weeks" aria-pressed="false">The first weeks</button><button type="button" class="hmg-chip" data-f="years" aria-pressed="false">The years after</button><button type="button" class="hmg-chip" data-f="family" aria-pressed="false">For family &amp; friends</button></div>
+      <div class="hmg-grid" id="hmg-grid"><a class="hmg-card" href="/guidance/what-to-expect" data-stage="days" onclick="event.preventDefault();showPage('support');gsOpenSub('guidance')"><span class="hmg-top"><span class="hmg-n">01</span><span class="hmg-tag">First days</span></span><span class="hmg-t">What to expect and how to cope</span><span class="hmg-d">The first hours, time with your baby, and the decisions you may face.</span><span class="hmg-foot"><span>3 min read</span><span class="hmg-arr" aria-hidden="true">&rarr;</span></span></a><a class="hmg-card" href="/guidance/letter-templates" data-stage="weeks years" onclick="event.preventDefault();showPage('support');gsOpenSub('letters')"><span class="hmg-top"><span class="hmg-n">02</span><span class="hmg-tag">Any time</span></span><span class="hmg-t">Finding the right words</span><span class="hmg-d">Letter templates for when words are hard to find.</span><span class="hmg-foot"><span>5 min read</span><span class="hmg-arr" aria-hidden="true">&rarr;</span></span></a><a class="hmg-card" href="/guidance/what-to-say" data-stage="family" onclick="event.preventDefault();showPage('support');gsOpenSub('words')"><span class="hmg-top"><span class="hmg-n">03</span><span class="hmg-tag hmg-tag-l">Family &amp; friends</span></span><span class="hmg-t">What to say, and what not to</span><span class="hmg-d">For family, friends and colleagues who want to help.</span><span class="hmg-foot"><span>4 min read</span><span class="hmg-arr" aria-hidden="true">&rarr;</span></span></a><a class="hmg-card" href="/guidance" data-stage="days" onclick="event.preventDefault();showPage('support');gsOpenSub('info')"><span class="hmg-top"><span class="hmg-n">04</span><span class="hmg-tag">First days</span></span><span class="hmg-t">Information cards in your language</span><span class="hmg-d">Cards from Steunpunt NOVA in more than ten languages.</span><span class="hmg-foot"><span>Download and print</span><span class="hmg-arr" aria-hidden="true">&rarr;</span></span></a><a class="hmg-card" href="/guidance/your-body-after-loss" data-stage="weeks" onclick="event.preventDefault();showPage('support');gsOpenSub('recovery')"><span class="hmg-top"><span class="hmg-n">05</span><span class="hmg-tag">First weeks</span></span><span class="hmg-t">Your body after loss</span><span class="hmg-d">What to expect physically, and how to care for yourself.</span><span class="hmg-foot"><span>8 min read</span><span class="hmg-arr" aria-hidden="true">&rarr;</span></span></a><a class="hmg-card" href="/guidance/partners-and-fathers" data-stage="weeks years" onclick="event.preventDefault();showPage('support');gsOpenSub('partners')"><span class="hmg-top"><span class="hmg-n">06</span><span class="hmg-tag">Weeks &amp; years after</span></span><span class="hmg-t">For partners and fathers</span><span class="hmg-d">Grief that is often quieter, and just as real.</span><span class="hmg-foot"><span>12 min read</span><span class="hmg-arr" aria-hidden="true">&rarr;</span></span></a></div>
+      <div class="hmg-res" aria-labelledby="hmg-res-h">
+        <div class="hmg-res-head"><h3 id="hmg-res-h">What research tells parents</h3><p>From published studies, each explained in plain words on our research page.</p></div>
+        <div class="hmg-stats"><a class="hmg-stat" href="/research#rq-why"><span class="hmg-sn">3 in 4</span><span class="hmg-st">stillbirths have a probable or possible cause found when full tests are done.</span><span class="hmg-src">Stillbirth Collaborative Research Network, JAMA, 2011</span><span class="hmg-sl">Why did my baby die? &rarr;</span></a><a class="hmg-stat" href="/research#rq-again"><span class="hmg-sn">2.5%</span><span class="hmg-st">of pregnancies after a stillbirth ended in stillbirth, compared with 0.4% without one: higher, but still low.</span><span class="hmg-src">Lamont et al., BMJ, 2015</span><span class="hmg-sl">Will it happen again? &rarr;</span></a><a class="hmg-stat" href="/research#rq-feelings"><span class="hmg-sn">3 in 10</span><span class="hmg-st">women had post-traumatic stress symptoms one month after a miscarriage or ectopic pregnancy. Strong feelings are common.</span><span class="hmg-src">Farren et al., AJOG, 2020</span><span class="hmg-sl">Is what I feel normal? &rarr;</span></a></div>
+        <p class="hmg-care">If your feelings make daily life very hard, talk to your doctor or midwife, or a support organisation in your country.</p>
+      </div>
+      <div class="hmg-cta">
+        <a class="hmg-btn" href="/guidance" onclick="event.preventDefault();showPage('support')">Read all guidance</a>
+        <a class="hmg-btn hmg-btn-o" href="/#help" onclick="event.preventDefault();showPage('help')">Find help in your country</a>
       </div>
       <div class="hm-more-row">
         <button class="hm-tile" onclick="showPage('garden')"><span class="hm-tile-k">Memorial garden</span><span>Plant a flower in your baby&rsquo;s name.</span></button>
@@ -2014,6 +2057,16 @@ a.jn-more{text-decoration:none}
       </div>
     </div>
   </section>
+  <script id="hmg-js">
+  (function(){
+    var chips=document.querySelectorAll('.hmg-chip'), cards=document.querySelectorAll('.hmg-card');
+    for(var i=0;i<chips.length;i++){chips[i].addEventListener('click',function(){
+      var f=this.getAttribute('data-f');
+      for(var j=0;j<chips.length;j++){chips[j].setAttribute('aria-pressed',chips[j]===this?'true':'false');}
+      for(var k=0;k<cards.length;k++){var on=f==='all'||(' '+cards[k].getAttribute('data-stage')+' ').indexOf(' '+f+' ')>-1;cards[k].classList.toggle('hmg-off',!on);}
+    });}
+  })();
+  </script>
 
   <!-- WITH HOSPITALS -->
   <section class="hm-sec hm-hosp" id="hm-hospitals" aria-labelledby="hm-hosp-h">
