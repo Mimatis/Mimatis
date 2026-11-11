@@ -1917,6 +1917,49 @@ a.jn-more{text-decoration:none}
 @media(max-width:860px){.pa-mb-grid{grid-template-columns:1fr}.pa-mb-art img{max-width:400px}}
 @media(max-width:560px){.pa-mb-boxes{grid-template-columns:1fr}.pa-mb-btn{width:100%;text-align:center}}
 </style>
+<style id="cs-css">
+.cs-sec{background:var(--sky,#E3F5F8)}
+.cs-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.cs-points{list-style:none;margin:1.4rem 0 1.6rem;padding:0;display:grid;gap:.6rem}
+.cs-points li{position:relative;padding-left:1.3rem;font-size:.95rem;line-height:1.6;color:var(--mid,#2B2B29)}
+.cs-points li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:50%;background:var(--green,#0097B2)}
+.cs-about{border-top:1px solid #C5E3EA;padding-top:1rem}
+.cs-about summary{cursor:pointer;font-size:.9rem;font-weight:500;color:var(--green-dark,#00708A)}
+.cs-about summary:focus-visible{outline:2px solid var(--green-dark,#00708A);outline-offset:3px}
+.cs-about-body{margin-top:1rem}
+.cs-about-body p{font-size:.85rem;line-height:1.7;color:var(--mid,#2B2B29);margin:0 0 .8rem}
+.cs-about-body strong{font-weight:600;color:var(--ink,#1E1E1E)}
+.cs-about-body a{color:var(--green-dark,#00708A)}
+.cs-card{background:#fff;border:1px solid var(--border,#E8E4DF);border-top:4px solid var(--green,#0097B2);border-radius:3px;padding:2rem 1.9rem;min-height:26rem;display:flex;flex-direction:column}
+.cs-step{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--soft,#5C5C58);margin:0 0 .6rem}
+.cs-bar{height:3px;background:#E8E4DF;margin:0 0 1.5rem}
+.cs-bar i{display:block;height:3px;background:var(--green,#0097B2);transition:width .25s}
+.cs-q{font-family:'Inter',sans-serif;font-size:1.25rem;font-weight:500;line-height:1.35;color:var(--ink,#1E1E1E);margin:0 0 .5rem}
+.cs-q:focus{outline:none}
+.cs-hint{font-size:.85rem;line-height:1.6;color:var(--soft,#5C5C58);margin:0 0 1.1rem}
+.cs-opts{display:grid;gap:.55rem;margin:.6rem 0 0}
+.cs-opt{display:block;width:100%;text-align:left;font-family:'Montserrat',sans-serif;font-size:.95rem;color:var(--ink,#1E1E1E);background:#fff;border:1px solid #BFD9DF;border-radius:3px;padding:.85rem 1rem;cursor:pointer;transition:background .15s,border-color .15s}
+.cs-opt:hover{background:#F2FAFC;border-color:var(--green,#0097B2)}
+.cs-opt:focus-visible,.cs-btn:focus-visible,.cs-back:focus-visible,.cs-select:focus-visible{outline:2px solid var(--green-dark,#00708A);outline-offset:2px}
+.cs-opt[aria-pressed="true"]{background:var(--green-light,#E0F4F8);border-color:var(--green-dark,#00708A)}
+.cs-opt-q{color:var(--soft,#5C5C58);border-style:dashed}
+.cs-select{width:100%;font-family:'Montserrat',sans-serif;font-size:.95rem;color:var(--ink,#1E1E1E);background:#fff;border:1px solid #BFD9DF;border-radius:3px;padding:.85rem 1rem;margin:.6rem 0 0}
+.cs-foot{margin-top:auto;padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.cs-btn{font-family:'Montserrat',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--green,#0097B2);border:0;border-radius:3px;padding:.95rem 1.5rem;cursor:pointer;transition:background .2s}
+.cs-btn:hover{background:var(--green-dark,#00708A)}
+.cs-btn[disabled]{opacity:.55;cursor:default}
+.cs-back{font-family:'Montserrat',sans-serif;font-size:.85rem;color:var(--green-dark,#00708A);background:none;border:0;padding:.4rem 0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.cs-consent{font-size:.88rem;line-height:1.7;color:var(--mid,#2B2B29);margin:0 0 .8rem}
+.cs-err{font-size:.85rem;color:#9B2C2C;margin:1rem 0 0}
+.cs-sum{list-style:none;margin:.4rem 0 0;padding:0;display:grid;gap:.35rem}
+.cs-sum li{font-size:.85rem;line-height:1.5;color:var(--mid,#2B2B29)}
+.cs-sum b{font-weight:600;color:var(--ink,#1E1E1E)}
+.cs-links{display:grid;gap:.5rem;margin-top:1.2rem}
+.cs-links a,.cs-links button{font-family:'Montserrat',sans-serif;font-size:.92rem;color:var(--green-dark,#00708A);background:none;border:0;padding:0;text-align:left;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:900px){.cs-grid{grid-template-columns:1fr}.cs-card{min-height:0}}
+@media(max-width:560px){.cs-card{padding:1.5rem 1.1rem}.cs-btn{width:100%}}
+@media(prefers-reduced-motion:reduce){.cs-bar i{transition:none}}
+</style>
 </head>
 <body>
 
@@ -2116,6 +2159,37 @@ a.jn-more{text-decoration:none}
     </div>
   </section>
 
+  <!-- care-survey -->
+  <section class="hm-sec cs-sec" id="care-survey" aria-labelledby="cs-h">
+    <div class="hm-wrap cs-grid">
+      <div class="cs-intro">
+        <span class="hm-eye">Research &middot; Anonymous survey</span>
+        <h2 class="hm-h2" id="cs-h">Help us show how families are cared for, country by <em>country</em></h2>
+        <p class="hm-p">MIMATIS is asking parents how they were cared for when their baby died, in pregnancy or after birth. With enough answers we can show hospitals and decision-makers what good care looks like, and where it is missing.</p>
+        <ul class="cs-points">
+          <li>Anonymous: no name, no email, nothing to type</li>
+          <li>Ten short questions, each answered with one tap</li>
+          <li>For parents aged 18 or over, wherever and whenever the loss happened</li>
+        </ul>
+        <details class="cs-about">
+          <summary>About this survey and your privacy</summary>
+          <div class="cs-about-body">
+            <p><strong>Who runs it.</strong> Asociaci&oacute;n MIMATIS, a non-profit association registered in Spain (no. 633.864). Questions: <a href="mailto:contact@mimatis.org?subject=Care%20survey">contact@mimatis.org</a>.</p>
+            <p><strong>Why.</strong> To understand how parents experience care after pregnancy and baby loss in different countries, and to use the totals in our work with hospitals, in articles and in reports.</p>
+            <p><strong>What we store.</strong> Only the answers you tap, the country where you were cared for and the month in which you answered. We do not ask for or store your name, email, the hospital&rsquo;s name, exact dates or anything you write. We do not store your IP address with your answers and the survey sets no cookies. As with any website, our hosting and database providers (Cloudflare and Supabase, with the database in the European Union) process technical data such as your IP address to deliver the page and receive the answers.</p>
+            <p><strong>Your choice.</strong> Taking part is voluntary. Every question has &ldquo;Prefer not to say&rdquo;, and nothing is sent until you press &ldquo;Send my answers&rdquo;. Because the answers cannot be linked to you, we cannot find or delete them afterwards.</p>
+            <p><strong>What we publish.</strong> Totals only. We do not publish results for any group of fewer than 10 answers. This is a survey of experiences, not a clinical study, and it does not replace medical advice.</p>
+            <p><strong>If you need support.</strong> Answering may bring back difficult memories. You can stop at any time. <button type="button" class="hm-inline" onclick="showPage('help')">Find support in your country &rarr;</button></p>
+          </div>
+        </details>
+      </div>
+      <div class="cs-card" id="cs-card" aria-live="polite">
+        <noscript><p class="cs-q">This survey needs JavaScript. You can also write to contact@mimatis.org.</p></noscript>
+      </div>
+    </div>
+  </section>
+  <!-- /care-survey -->
+
   <!-- WITH COMPANIES -->
   <section class="hm-sec hm-comp" id="hm-companies" aria-labelledby="hm-comp-h">
     <img class="hm-star" src="/assets/home-star.jpg" alt="" aria-hidden="true" loading="lazy">
@@ -2208,6 +2282,93 @@ a.jn-more{text-decoration:none}
 <script>
 function hmGo(){var v=document.getElementById('hm-country').value;if(v){window.location.href='/'+v;}else{showPage('help');}}
 function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({behavior:'smooth',block:'start'});}}
+</script>
+<script id="cs-js">
+/* Care survey (anonymous). Answers go to Supabase table care_survey (insert only). No cookies, no local storage. */
+(function(){
+  var card=document.getElementById('cs-card'); if(!card) return;
+  var LIVE=/^(www\.)?mimatis\.org$/.test(location.hostname);
+  var YN=[['yes','Yes'],['partly','Partly'],['no','No'],['na','This does not apply to me'],['pns','Prefer not to say']];
+  var YN2=[['yes','Yes'],['no','No'],['na','This does not apply to me'],['pns','Prefer not to say']];
+  var Q=[
+    {k:'country',t:'In which country were you cared for?',h:'Choose the country where the loss happened, even if you live somewhere else now.',type:'country'},
+    {k:'period',t:'How long ago was it?',o:[['lt1','In the last 12 months'],['y1_5','1 to 5 years ago'],['y5_10','5 to 10 years ago'],['gt10','More than 10 years ago'],['pns','Prefer not to say']]},
+    {k:'loss',t:'Which of these is closest to your loss?',h:'If you have had more than one loss, please answer about one of them.',o:[['miscarriage','Miscarriage'],['ectopic_molar','Ectopic or molar pregnancy'],['tfmr','Ending a pregnancy for medical reasons'],['stillbirth','Stillbirth'],['neonatal','My baby died after birth'],['other','Something else'],['pns','Prefer not to say']]},
+    {k:'explained',t:'Did staff explain what was happening in a way you could understand?',o:YN},
+    {k:'language',t:'Was your care in a language you understand well?',o:YN},
+    {k:'room',t:'Were you cared for away from other mothers and newborn babies?',o:YN2},
+    {k:'see_hold',t:'Were you offered the choice to see or hold your baby?',o:YN2},
+    {k:'keepsakes',t:'Were you offered keepsakes, such as photos or hand and footprints?',o:YN2},
+    {k:'support_info',t:'Before you went home, were you told where to find support?',o:YN2},
+    {k:'overall',t:'Overall, how would you describe the care you received?',o:[['5','Very good'],['4','Good'],['3','Mixed'],['2','Poor'],['1','Very poor'],['pns','Prefer not to say']]}
+  ];
+  var A={},step=-1,sending=false;
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function label(q,v){ if(q.type==='country'){var s=document.getElementById('hm-country'); if(v==='other') return 'Another country'; if(s){for(var i=0;i<s.options.length;i++){if(s.options[i].value===v) return s.options[i].text;}} return v;} for(var j=0;j<q.o.length;j++){if(q.o[j][0]===v) return q.o[j][1];} return v; }
+  function focusQ(){var e=card.querySelector('.cs-q'); if(e){e.setAttribute('tabindex','-1'); try{e.focus({preventScroll:true});}catch(x){}}}
+  function intro(){
+    step=-1;
+    card.innerHTML='<p class="cs-q">Before you start</p>'+
+      '<p class="cs-consent">This survey is anonymous and voluntary. It asks about the care you received when your baby died, which is sensitive health information. We store only the answers you tap. We do not store your name, email or IP address with them, and we cannot link them to you.</p>'+
+      '<p class="cs-consent">Nothing is sent until you press &ldquo;Send my answers&rdquo; at the end. After that, your answers cannot be found or deleted, because they are anonymous.</p>'+
+      '<p class="cs-consent">By starting, you confirm that you are 18 or over and agree that MIMATIS may store and use your anonymous answers for research and reporting, as described in &ldquo;About this survey and your privacy&rdquo;.</p>'+
+      '<div class="cs-foot"><button type="button" class="cs-btn" id="cs-start">I agree, start the survey</button></div>';
+    document.getElementById('cs-start').onclick=function(){show(0);};
+  }
+  function show(i){
+    step=i; var q=Q[i], h='<p class="cs-step">Question '+(i+1)+' of '+Q.length+'</p><div class="cs-bar"><i style="width:'+Math.round((i)/Q.length*100)+'%"></i></div><p class="cs-q" id="cs-qt">'+esc(q.t)+'</p>';
+    if(q.h) h+='<p class="cs-hint">'+esc(q.h)+'</p>';
+    if(q.type==='country'){
+      h+='<select class="cs-select" id="cs-country" aria-labelledby="cs-qt"><option value="">Choose a country</option>';
+      var s=document.getElementById('hm-country');
+      if(s){for(var n=0;n<s.options.length;n++){var o=s.options[n]; if(o.value) h+='<option value="'+esc(o.value)+'"'+(A.country===o.value?' selected':'')+'>'+esc(o.text)+'</option>';}}
+      h+='<option value="other"'+(A.country==='other'?' selected':'')+'>Another country</option></select>';
+      h+='<div class="cs-foot"><button type="button" class="cs-back" id="cs-back">Back</button><button type="button" class="cs-btn" id="cs-next">Next</button></div>';
+    } else {
+      h+='<div class="cs-opts" role="group" aria-labelledby="cs-qt">';
+      for(var j=0;j<q.o.length;j++){var v=q.o[j][0]; h+='<button type="button" class="cs-opt'+(v==='pns'||v==='na'?' cs-opt-q':'')+'" data-v="'+v+'" aria-pressed="'+(A[q.k]===v)+'">'+esc(q.o[j][1])+'</button>';}
+      h+='</div><div class="cs-foot"><button type="button" class="cs-back" id="cs-back">Back</button></div>';
+    }
+    card.innerHTML=h;
+    document.getElementById('cs-back').onclick=function(){ if(i===0) intro(); else show(i-1); };
+    if(q.type==='country'){
+      document.getElementById('cs-next').onclick=function(){var v=document.getElementById('cs-country').value; if(!v){document.getElementById('cs-country').focus(); return;} A.country=v; next(i);};
+    } else {
+      var bs=card.querySelectorAll('.cs-opt');
+      for(var b=0;b<bs.length;b++){bs[b].onclick=function(){A[q.k]=this.getAttribute('data-v'); next(i);};}
+    }
+    focusQ();
+  }
+  function next(i){ if(i+1<Q.length) show(i+1); else review(); }
+  function review(){
+    step=Q.length; var h='<p class="cs-step">Ready to send</p><div class="cs-bar"><i style="width:100%"></i></div><p class="cs-q">Your answers</p><ul class="cs-sum">';
+    for(var i=0;i<Q.length;i++){h+='<li>'+esc(Q[i].t)+' <b>'+esc(label(Q[i],A[Q[i].k]))+'</b></li>';}
+    h+='</ul><p class="cs-err" id="cs-err" role="alert" hidden></p><div class="cs-foot"><button type="button" class="cs-back" id="cs-back">Back</button><button type="button" class="cs-btn" id="cs-send">Send my answers</button></div>';
+    card.innerHTML=h;
+    document.getElementById('cs-back').onclick=function(){show(Q.length-1);};
+    document.getElementById('cs-send').onclick=send;
+    focusQ();
+  }
+  function send(){
+    if(sending) return; sending=true;
+    var btn=document.getElementById('cs-send'), err=document.getElementById('cs-err');
+    btn.disabled=true; btn.textContent='Sending…'; err.hidden=true;
+    var row={}; for(var i=0;i<Q.length;i++){row[Q[i].k]=A[Q[i].k];}
+    function ok(){sending=false; done();}
+    function fail(){sending=false; btn.disabled=false; btn.textContent='Send my answers'; err.textContent='Sorry, your answers could not be sent. Please try again in a moment.'; err.hidden=false;}
+    if(!LIVE){ setTimeout(ok,300); return; } /* previews and local copies never write to the database */
+    try{ getSB().from('care_survey').insert([row]).then(function(r){ if(r.error) fail(); else ok(); },fail); }catch(e){ fail(); }
+  }
+  function done(){
+    var c=A.country, link=(c&&c!=='other')?'<a href="/'+esc(c)+'">Support and your rights in '+esc(label(Q[0],c))+' &rarr;</a>':'';
+    A={};
+    card.innerHTML='<p class="cs-q">Thank you</p><p class="cs-consent">Your answers have been sent. They will help us show hospitals why this care matters.</p><p class="cs-consent">If answering has brought back difficult memories, please reach out to someone you trust or to a support organisation.</p><div class="cs-links">'+link+'<button type="button" id="cs-help">Find support in any country &rarr;</button><button type="button" id="cs-garden">Plant a flower in your baby&rsquo;s name &rarr;</button></div>';
+    document.getElementById('cs-help').onclick=function(){showPage('help');};
+    document.getElementById('cs-garden').onclick=function(){showPage('garden');};
+    focusQ();
+  }
+  intro();
+})();
 </script>
 
 
@@ -3986,7 +4147,7 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
   <div class="pg-inner-narrow">
     <span class="sec-eye">Legal &middot; GDPR</span>
     <h2 class="sec-title">Privacy <em>Policy</em></h2>
-    <p style="font-size:.8rem;color:var(--soft);margin-bottom:3rem;font-style:italic">Last updated: 19 October 2026</p>
+    <p style="font-size:.8rem;color:var(--soft);margin-bottom:3rem;font-style:italic">Last updated: 11 November 2026</p>
 
     <div style="display:flex;flex-direction:column;gap:2.5rem">
 
@@ -3997,7 +4158,7 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
 
       <div>
         <h3 style="font-family:'Inter',sans-serif;font-size:1.1rem;font-weight:400;color:var(--ink);margin-bottom:.75rem">2. What data we collect</h3>
-        <p style="font-size:.87rem;color:var(--mid);line-height:1.85;margin-bottom:.75rem">We collect personal data only when you choose to give it to us:</p><div style="border:1px solid var(--bdr);overflow-x:auto"><div style="min-width:520px"><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;background:var(--off);padding:.75rem 1.25rem;border-bottom:1px solid var(--bdr)"><span style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--soft)">Data</span><span style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--soft)">Purpose</span><span style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--soft)">Legal basis</span></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;padding:.85rem 1.25rem;border-bottom:1px solid var(--bdr)"><span style="font-size:.82rem;color:var(--mid)">Memorial Garden: your baby&rsquo;s first name, the flower you choose and, if you wish, a year</span><span style="font-size:.82rem;color:var(--mid)">To show a flower in the Memorial Garden</span><span style="font-size:.82rem;color:var(--mid)">Consent (you choose to plant a flower)</span></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;padding:.85rem 1.25rem;border-bottom:1px solid var(--bdr)"><span style="font-size:.82rem;color:var(--mid)">Friends of MIMATIS: your email address</span><span style="font-size:.82rem;color:var(--mid)">To write to you a few times a year about the work of MIMATIS and ways to support it</span><span style="font-size:.82rem;color:var(--mid)">Consent (you tick the box and choose to join)</span></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;padding:.85rem 1.25rem"><span style="font-size:.82rem;color:var(--mid)">Emails you send us, including stories shared from the Memorial Garden page: your email address and what you write</span><span style="font-size:.82rem;color:var(--mid)">To reply to you. We publish a story only with your written permission</span><span style="font-size:.82rem;color:var(--mid)">Consent and our legitimate interest in answering messages</span></div></div></div><p style="font-size:.82rem;color:var(--soft);margin-top:1rem">We do not sell or share your data with anyone for their own purposes. We do not ask for your name when you plant a flower, so a flower cannot be linked to you.</p>
+        <p style="font-size:.87rem;color:var(--mid);line-height:1.85;margin-bottom:.75rem">We collect personal data only when you choose to give it to us:</p><div style="border:1px solid var(--bdr);overflow-x:auto"><div style="min-width:520px"><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;background:var(--off);padding:.75rem 1.25rem;border-bottom:1px solid var(--bdr)"><span style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--soft)">Data</span><span style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--soft)">Purpose</span><span style="font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--soft)">Legal basis</span></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;padding:.85rem 1.25rem;border-bottom:1px solid var(--bdr)"><span style="font-size:.82rem;color:var(--mid)">Memorial Garden: your baby&rsquo;s first name, the flower you choose and, if you wish, a year</span><span style="font-size:.82rem;color:var(--mid)">To show a flower in the Memorial Garden</span><span style="font-size:.82rem;color:var(--mid)">Consent (you choose to plant a flower)</span></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;padding:.85rem 1.25rem;border-bottom:1px solid var(--bdr)"><span style="font-size:.82rem;color:var(--mid)">Friends of MIMATIS: your email address</span><span style="font-size:.82rem;color:var(--mid)">To write to you a few times a year about the work of MIMATIS and ways to support it</span><span style="font-size:.82rem;color:var(--mid)">Consent (you tick the box and choose to join)</span></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;padding:.85rem 1.25rem"><span style="font-size:.82rem;color:var(--mid)">Emails you send us, including stories shared from the Memorial Garden page: your email address and what you write</span><span style="font-size:.82rem;color:var(--mid)">To reply to you. We publish a story only with your written permission</span><span style="font-size:.82rem;color:var(--mid)">Consent and our legitimate interest in answering messages</span></div></div></div><p style="font-size:.82rem;color:var(--soft);margin-top:1rem">We do not sell or share your data with anyone for their own purposes. We do not ask for your name when you plant a flower, so a flower cannot be linked to you.</p><p id="cs-priv" style="font-size:.85rem;color:var(--mid);line-height:1.8;margin-top:1rem"><strong style="font-weight:400;color:var(--ink)">Care survey.</strong> The survey on our home page about care after pregnancy and baby loss is anonymous. We store only the answers you choose, the country where you were cared for and the month in which you answered. We do not ask for or store your name, email address or IP address with the answers, the survey sets no cookies, and we cannot link answers to a person. For this reason the answers cannot be found, corrected or deleted afterwards. You take part only if you agree at the start. We use the answers for research and reporting, and publish totals only, never for groups of fewer than 10 answers.</p>
       </div>
 
       <div>
@@ -4007,7 +4168,7 @@ function hmScroll(id){var e=document.getElementById(id);if(e){e.scrollIntoView({
 
       <div>
         <h3 style="font-family:'Inter',sans-serif;font-size:1.1rem;font-weight:400;color:var(--ink);margin-bottom:.75rem">4. Where your data is stored and for how long</h3>
-        <div style="display:flex;flex-direction:column;gap:.5rem"><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">Memorial Garden and Friends of MIMATIS</strong> &mdash; stored with Supabase, a database provider with servers in the European Union (Frankfurt, Germany). Flowers are kept permanently, as they form a lasting memorial, unless you ask us to remove one. Friends&rsquo; email addresses are kept until you ask to leave.</p></div><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">Emails</strong> &mdash; kept only as long as needed to reply and follow up.</p></div><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">Google tags</strong> &mdash; if you accept them, Google keeps measurement data according to its own retention settings, at most 14 months for Analytics data.</p></div></div><p style="font-size:.85rem;color:var(--mid);line-height:1.85;margin-top:.75rem">To leave Friends of MIMATIS or remove a flower, write to <a href="mailto:contact@mimatis.org" style="color:var(--green-dark);text-decoration:none">contact@mimatis.org</a>.</p>
+        <div style="display:flex;flex-direction:column;gap:.5rem"><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">Memorial Garden and Friends of MIMATIS</strong> &mdash; stored with Supabase, a database provider with servers in the European Union (Frankfurt, Germany). Flowers are kept permanently, as they form a lasting memorial, unless you ask us to remove one. Friends&rsquo; email addresses are kept until you ask to leave.</p></div><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">Emails</strong> &mdash; kept only as long as needed to reply and follow up.</p></div><div id="cs-priv-store" style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">Care survey answers</strong> &mdash; stored with Supabase in the European Union, without anything that identifies you, and kept for as long as they are useful for our research and reporting.</p></div><div style="display:flex;gap:.75rem;align-items:flex-start"><div style="width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:.55rem"></div><p style="font-size:.85rem;color:var(--mid);line-height:1.7"><strong style="font-weight:400;color:var(--ink)">Google tags</strong> &mdash; if you accept them, Google keeps measurement data according to its own retention settings, at most 14 months for Analytics data.</p></div></div><p style="font-size:.85rem;color:var(--mid);line-height:1.85;margin-top:.75rem">To leave Friends of MIMATIS or remove a flower, write to <a href="mailto:contact@mimatis.org" style="color:var(--green-dark);text-decoration:none">contact@mimatis.org</a>.</p>
       </div>
 
       <div>
