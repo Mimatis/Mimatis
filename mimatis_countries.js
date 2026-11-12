@@ -33,6 +33,15 @@ be:{name:'Belgium',flag:'BE',cards:[
     {tag:'Funeral',name:'Burial or cremation: your right at any stage',desc:'From 180 days, registration and burial or cremation are required; before that, they are your right. Municipalities have star gardens for babies. Full guide in English, Dutch and French: mimatis.org/belgium',link:'https://www.mimatis.org/belgium'}
   ]
 },
+ca:{name:'Canada',flag:'CA',cards:[
+    {tag:'Association',name:'Baby\'s Breath',desc:'National charity for families after the sudden death of a baby, including stillbirth and SIDS: peer bereavement support in English and French. 1-800-363-7437.',link:'https://www.babysbreathcanada.ca'},
+    {tag:'Support',name:'PAIL Network (Ontario)',desc:'Free peer support after any pregnancy loss or the death of a baby: groups and one-to-one phone support. 1-888-303-7245.',link:'https://pailnetwork.sunnybrook.ca'},
+    {tag:'Helpline 24/7',name:'9-8-8 Suicide Crisis Helpline',desc:'Call or text 9-8-8, free, 24 hours a day, in English and French, everywhere in Canada.',link:'https://988.ca'},
+    {tag:'Work',name:'EI and leave after a loss',desc:'EI sickness benefits before week 20, maternity benefits from week 20. Federally regulated workplaces: up to 8 weeks of leave after a stillbirth, 3 days after another pregnancy loss.',link:'https://www.canada.ca/en/services/benefits/ei/ei-maternity-parental/special-circumstances.html'}
+  ],funeral:[
+    {tag:'Funeral',name:'Burial and cremation',desc:'Rules differ in each province and territory. The hospital should explain all your options. Full guide: mimatis.org/canada',link:'https://www.mimatis.org/canada'}
+  ]
+},
 hr:{name:'Croatia',flag:'HR',cards:[
     {tag:'Peer support',name:'RODA - Roditelji u akciji',desc:'Parents\' association with a forum section for parents who have lost a baby, at any stage.',link:'https://www.roda.hr'},
     {tag:'Psychological help',name:'TESA',desc:'Free psychological counselling by phone on working days, 10:00-22:00: 01 48 28 888, or by email: psiho.pomoc@tesa.hr.',link:'https://www.therapyroute.com/article/suicide-hotlines-and-crisis-lines-in-croatia-by-therapyroute'},
@@ -179,6 +188,15 @@ nl:{name:'Netherlands',flag:'NL',cards:[
     {tag:'Crisis',name:'113 Zelfmoordpreventie',desc:'Suicide prevention line, free, 24 hours. Tel: 113 or 0800-0113. Chat at 113.nl.',link:'https://www.113.nl'}
   ],funeral:[
     {tag:'Funeral',name:'Burial or cremation (uitvaart)',desc:'From 24 weeks, the birth is reported to the municipality and a burial or cremation takes place within 6 working days. Before 24 weeks it is not required, but possible. A funeral director and a coffin are optional. Full guide: mimatis.org/netherlands',link:'https://www.mimatis.org/netherlands'}
+  ]
+},
+nz:{name:'New Zealand',flag:'NZ',cards:[
+    {tag:'Official',name:'Whetūrangitia',desc:'Government information for families and whānau after the death of a baby or child: registration, leave, payments, funeral grants and support.',link:'https://wheturangitia.services.govt.nz'},
+    {tag:'Association',name:'Sands New Zealand',desc:'A network of parent-run groups for families after the death of a baby, at any stage of pregnancy or in infancy. Local and online support groups.',link:'https://www.sands.org.nz'},
+    {tag:'Helpline 24/7',name:'1737, Need to talk?',desc:'Free call or text 1737 at any time to talk with a trained counsellor.',link:'https://healthify.nz/grief-loss-support'},
+    {tag:'Work',name:'Leave after a loss',desc:'3 days of paid bereavement leave after a miscarriage or stillbirth, for both parents. Primary carer leave and parental leave payments continue if you were eligible.',link:'https://www.employment.govt.nz/leave-and-holidays/bereavement-leave'}
+  ],funeral:[
+    {tag:'Funeral',name:'Burial and cremation',desc:'After 20 weeks, a baby must be registered and buried or cremated. Work and Income may help with a funeral grant: 0800 559 009. Full guide: mimatis.org/new-zealand',link:'https://www.mimatis.org/new-zealand'}
   ]
 },
 pl:{name:'Poland',flag:'PL',cards:[
