@@ -22,6 +22,7 @@ LINKS = [
     ('Research', '/research', 'research'),
     ('Who We Are', '/about', 'about'),
     ('Journal &amp; Remembrance', '/journal', 'journal'),
+    ('Makers', '/makers', 'makers'),
     ('Events', '/events', 'events'),
     ('Partner with us', '/#action', 'action'),
 ]
@@ -57,7 +58,7 @@ html{scroll-padding-top:64px}
 .mmn-langbar{display:flex;justify-content:flex-end;padding:12px 48px 0}
 .mmn-langbar .navr{display:flex;gap:12px;align-items:center;font-size:.78rem}
 .jump,.readbar{top:64px!important}
-@media(max-width:1080px){#mmn .mmn-links{display:none}#mmn .mmn-hbg{display:flex}}
+@media(max-width:1180px){#mmn .mmn-links{display:none}#mmn .mmn-hbg{display:flex}}
 @media(max-width:640px){#mmn{padding:0 20px}.mmn-langbar{padding:12px 20px 0}}
 </style>
 """
@@ -72,6 +73,8 @@ def section_of(path):
         return 'about'
     if path == 'events.html':
         return 'events'
+    if path == 'makers.html':
+        return 'makers'
     if path == 'journal.html' or path.startswith('journal/'):
         return 'journal'
     if path == 'guidance.html' or path.startswith('guidance/'):
