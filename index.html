@@ -282,7 +282,7 @@ footer{background:var(--green-dark);padding:3rem 3rem}
   .pg-inner,.pg-inner-narrow{padding:4rem 2rem}
   .info-strip{padding:2.25rem 2rem}
 }
-@media(max-width:1080px){.nav-links{display:none}.hbg{display:flex}}
+@media(max-width:1180px){.nav-links{display:none}.hbg{display:flex}}
 @media(max-width:640px){
   #nav{padding:0 1.25rem}.nav-links{display:none}.hbg{display:flex}
   .home-hero{padding:5.5rem 1.25rem 3rem;min-height:auto}
@@ -1930,6 +1930,7 @@ a.jn-more{text-decoration:none}
     
     <button onclick="showPage('story')" data-page="story">Who We Are</button>
     <button onclick="showPage('journal')" data-page="journal">Journal &amp; Remembrance</button>
+    <button onclick="location.href='/makers'">Makers</button>
     <button onclick="location.href='/events'">Events</button>
     <button onclick="showPage('action')" data-page="action">Partner with us</button>
     <div class="nav-dd-wrap" id="nav-dd-support">
@@ -1958,6 +1959,7 @@ a.jn-more{text-decoration:none}
   
   <button onclick="showPage('story');closeMob()">Who We Are</button>
   <button onclick="showPage('journal');closeMob()">Journal &amp; Remembrance</button>
+  <button onclick="location.href='/makers'">Makers</button>
   <button onclick="location.href='/events'">Events</button>
   <button onclick="showPage('action');closeMob()">Partner with us</button>
     
@@ -4499,7 +4501,7 @@ function applyPageMeta(id){
   if(md)md.setAttribute('content',m.d);
 }
 function showPage(id){
-  if(id==='books'){window.location.href='/journal#makers';return;}
+  if(id==='books'){window.location.href='/makers';return;}
   if(id==='journal'){window.location.href='/journal';return;}
   if(id==='collab')id='action'; // Collaborate page retired; old links land on Take Action
   applyPageMeta(id);
