@@ -137,10 +137,10 @@ ie:{name:'Ireland',flag:'IE',cards:[
   ]
 },
 it:{name:'Italy',flag:'IT',cards:[
-    {tag:'Association',name:'CiaoLapo Onlus',desc:"Italy's leading organisation after perinatal and neonatal loss — support, research, and clinical guidance.",link:'https://www.ciaolapo.it'},
-    {tag:'Association',name:'Associazione Materna',desc:'Italian association supporting mothers after pregnancy and neonatal loss.',link:'https://www.associazionematerna.it'},
+    {tag:'Association',name:'CiaoLapo',desc:"Italy's main organisation after pregnancy and baby loss. Free helpline 800 60 16 60 (Mon–Fri, 1–3 pm), email support and groups.",link:'https://www.ciaolapo.it'},
+    {tag:'Association',name:'AILPe — Associazione Italiana Lutto Perinatale',desc:'National association for every kind of perinatal loss: WhatsApp line +39 379 354 0916 (reply usually within 24 hours), an online self-help group every Monday 9–11 pm, and a symbolic certificate for your baby.',link:'https://www.luttoperinatale.life/'},
     {tag:'Helpline',name:'Telefono Amico',desc:'Italian emotional support: 02 2327 2327.',link:'https://www.telefonoamico.it'},
-    {tag:'Helpline 24/7',name:'Telefono Azzurro',desc:'Italian helpline also supporting bereaved parents: 19696.',link:'https://www.azzurro.it'},
+    {tag:'Helpline · English',name:'Samaritans Onlus',desc:'Emotional support in English and Italian, every day 1–10 pm: 06 77208977.',link:'https://www.samaritansonlus.org'},
   ],funeral:[]},
 lv:{name:'Latvia',flag:'LV',cards:[
     {tag:'Free support',name:'Dzīve un sēras (Torņakalna fonds)',desc:'Free grief groups and consultations for parents who lost a child, including in pregnancy or at birth, until March 2028.',link:'https://www.dziveunseras.lv'},
