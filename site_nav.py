@@ -18,7 +18,7 @@ IG = 'https://www.instagram.com/mimatis.community/'
 # (label, href, section key) — same items and order as the landing page menu
 LINKS = [
     ('Find Help', '/#help', 'help'),
-    ('Garden', '/#garden', 'garden'),
+    ('Garden', '/garden', 'garden'),
     ('Research', '/research', 'research'),
     ('Who We Are', '/about', 'about'),
     ('Journal &amp; Remembrance', '/journal', 'journal'),
@@ -75,6 +75,8 @@ def section_of(path):
         return 'events'
     if path == 'makers.html':
         return 'makers'
+    if path == 'garden.html':
+        return 'garden'
     if path == 'journal.html' or path.startswith('journal/'):
         return 'journal'
     if path == 'guidance.html' or path.startswith('guidance/'):
