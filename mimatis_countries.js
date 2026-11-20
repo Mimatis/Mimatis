@@ -136,6 +136,15 @@ ie:{name:'Ireland',flag:'IE',cards:[
     {tag:'Funeral',name:'Hospital or private funeral',desc:'The hospital must explain your options and their costs. Stillbirths from 23 weeks or 400 g can be registered, free, with your baby\'s name. Full guide: mimatis.org/ireland',link:'https://www.mimatis.org/ireland'}
   ]
 },
+il:{name:'Israel',flag:'IL',cards:[
+    {tag:'Official',name:'National Insurance Institute',desc:'After a silent birth (stillbirth) after 22 weeks: hospitalization grant, birth grant and maternity allowance, as after any birth. Call *6050.',link:'https://www.btl.gov.il/English%20Homepage/Benefits/Maternity%20Insurance/Pages/womanafterastillbirth.aspx'},
+    {tag:'Rights',name:'Kol Zchut',desc:'Detailed information on your rights after a silent birth or a miscarriage, in Hebrew, Arabic and Russian.',link:'https://www.kolzchut.org.il/he/%D7%96%D7%9B%D7%95%D7%AA%D7%95%D7%9F_%D7%9C%D7%99%D7%95%D7%9C%D7%93%D7%AA_%D7%A9%D7%A2%D7%91%D7%A8%D7%94_%D7%9C%D7%99%D7%93%D7%94_%D7%A9%D7%A7%D7%98%D7%94_%D7%95%D7%9C%D7%91%D7%9F_%D7%96%D7%95%D7%92%D7%94'},
+    {tag:'Association',name:'Nitzotzot Inbar',desc:'Support for families after a silent birth: training for hospital staff and care kits for parents leaving the hospital.',link:'https://www.ninbar.org'},
+    {tag:'Helpline 24/7',name:'ERAN, emotional first aid',desc:'Call 1201 at any time, or write on WhatsApp to 052-845-1201.',link:'https://en.eran.org.il'}
+  ],funeral:[
+    {tag:'Funeral',name:'Farewell and burial',desc:'After 20 weeks (or 500 g), or if your baby died in the first 30 days, you choose how involved you want to be in the farewell and burial, civil or religious. Full guide: mimatis.org/israel',link:'https://www.mimatis.org/israel'}
+  ]
+},
 it:{name:'Italy',flag:'IT',cards:[
     {tag:'Association',name:'CiaoLapo',desc:"Italy's main organisation after pregnancy and baby loss. Free helpline 800 60 16 60 (Mon–Fri, 1–3 pm), email support and groups.",link:'https://www.ciaolapo.it'},
     {tag:'Association',name:'AILPe — Associazione Italiana Lutto Perinatale',desc:'National association for every kind of perinatal loss: WhatsApp line +39 379 354 0916 (reply usually within 24 hours), an online self-help group every Monday 9–11 pm, and a symbolic certificate for your baby.',link:'https://www.luttoperinatale.life/'},
